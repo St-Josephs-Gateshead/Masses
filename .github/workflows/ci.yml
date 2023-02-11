@@ -12,6 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - run: |
+          pip install httpx
           python scripts/configure.py
           make -j $(nproc +1)
           python scripts/package.py
