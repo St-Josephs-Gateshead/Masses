@@ -29,7 +29,7 @@ assert repo
 
 
 url = f"https://api.github.com/repos/{repo}/releases/latest"
-resp = httpx.get(url)
+resp = httpx.get(url, follow_redirects=True)
 if resp.status_code == 404:
     print("No previous release")
     generate_makefile(set(x.parent for x in root.glob("*/[Mm]akefile")))
