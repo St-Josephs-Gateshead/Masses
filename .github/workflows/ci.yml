@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          submodules: true
       - run: |
           pip install httpx
           python scripts/configure.py
