@@ -17,17 +17,20 @@ jobs:
           cat makefile
           pwd
           ls -R
-      # - uses: xu-cheng/texlive-action/full@v1
-      #   with:
-      #     run: |
-      #       apk add make
-      #       make -j $(nproc)
-      # - run: |
-      #     python scripts/package.py
-      # - uses: "marvinpinto/action-automatic-releases@latest"
-      #   with:
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     automatic_release_tag: "latest"
-      #     prerelease: false
-      #     files: |
-      #       pdfs/*.pdf
+      - uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            pwd
+            ls -R
+            apk add make
+            make -j $(nproc)
+      - run: |
+          python scripts/package.py
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          files: |
+            pdfs/*.pdf
