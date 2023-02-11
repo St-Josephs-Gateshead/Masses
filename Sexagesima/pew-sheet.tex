@@ -11,7 +11,11 @@
 \usepackage{rubrics}
 \usepackage{styling}
 % Config
-\pagestyle{giplain}
+\copypagestyle{versionplain}{plain}
+\newcommand{\version}{\tiny Release: v1.0.0 (template v1.2.1)}
+\makeevenfoot{versionplain}{\thepage}{}{\version}
+\makeoddfoot{versionplain}{\version}{}{\thepage}
+\pagestyle{versionplain}
 \thispagestyle{empty}
 % layout
 \setulmarginsandblock{0.5in}{0.7in}{*}
