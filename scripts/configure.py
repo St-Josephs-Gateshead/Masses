@@ -16,6 +16,7 @@ root = Path(__file__).parent.parent
 
 
 def generate_makefile(dirs: Iterable[Path]):
+    print(dirs)
     makefile = root / "makefile"
     if not dirs:
         makefile.write_text(".PHONY: all\n\n all:\n\techo 'nothing to do...'\n\n")
@@ -64,10 +65,6 @@ with zipf.open("wb") as f:
     f.write(resp.content)
 unpack_archive(zipf)
 # archive inner dir is reponame-releasename
-from subprocess import run
-
-run(["pwd"])
-run(["ls", "-R", "."])
 outdir = next(Path(".").glob(f"{repo.replace('/','-')}*"))
 outdir.rename("latest-release")
 
