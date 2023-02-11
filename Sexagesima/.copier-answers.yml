@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier
-_commit: v1.1.0
+_commit: v1.2.0
 _src_path: gh:2e0byo/MassTemplate.git
 alleluia: tract
 asperges: true
@@ -17,3 +17,4 @@ masses_path: ../Ordinaries/masses
 preface: simple
 repo_url: https://github.com/St-Josephs-Gateshead/Masses
 rite: roman
+version: v1.0.0
