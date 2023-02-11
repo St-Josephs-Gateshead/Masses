@@ -10,9 +10,9 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - run: |
-          scripts/configure.py
+          python scripts/configure.py
           make -j $(nproc +1)
-          scripts/package.py
+          python scripts/package.py
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
