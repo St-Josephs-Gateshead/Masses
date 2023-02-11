@@ -20,6 +20,7 @@ jobs:
       - uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
+            apk add git
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             pwd
             ls -R
