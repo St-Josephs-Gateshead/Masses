@@ -9,7 +9,7 @@ creed_path: ../Ordinaries/credo
 creedp: true
 feast_name: Dominica in Sexagesima
 gloria: false
-img_file: ../img/logo.png
+img_file: ../img/logo.eps
 marian: true
 mass_setting: 17
 mass_type: Missa Cantata
