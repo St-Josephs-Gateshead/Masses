@@ -60,7 +60,11 @@ with zipf.open("wb") as f:
     f.write(resp.content)
 unpack_archive(zipf)
 # archive inner dir is reponame-releasename
-outdir = Path(f"{repo.split('/')[1]}-{data['name'].lstrip('v')}")
+from subprocess import run
+
+run(["pwd"])
+run(["ls", "-R", "."])
+outdir = next(Path(".").glob(f"{repo.replace('/','-')*}"))
 outdir.rename("latest-release")
 
 changed_dirs = set()
