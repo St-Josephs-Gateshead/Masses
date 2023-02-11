@@ -53,7 +53,7 @@ def download_pdfs(outdir: Path):
                 f.write(r.content)
 
 
-resp = httpx.get(data["zipball_url"])
+resp = httpx.get(data["zipball_url"], follow_redirects=True)
 resp.raise_for_status()
 zipf = Path("latest-release.zip")
 with zipf.open("wb") as f:
