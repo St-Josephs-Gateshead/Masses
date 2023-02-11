@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier
+_commit: v1.1.0
+_src_path: gh:2e0byo/MassTemplate.git
+alleluia: tract
+asperges: true
+creator_name: John Morris
+creed: 1
+creed_path: ../Ordinaries/credo
+creedp: true
+feast_name: Dominica in Sexagesima
+gloria: false
+img_file: ../img/logo.png
+marian: true
+mass_setting: 17
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: simple
+repo_url: https://github.com/St-Josephs-Gateshead/Masses
+rite: roman
