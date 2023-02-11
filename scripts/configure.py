@@ -16,8 +16,12 @@ root = Path(__file__).parent.parent
 
 
 def generate_makefile(dirs: Iterable[Path]):
+    makefile = root / "makefile"
+    if not dirs:
+        makefile.write_text(".PHONY: all\n\n all:\n\techo 'nothing to do...'\n\n")
+
     dirs = [x.relative_to(root) for x in dirs]
-    with (root / "makefile").open("w") as f:
+    with makefile.open("w") as f:
         f.write(f".PHONY: all {' '.join(str(x) for x in dirs)}\n\n")
         for dir in dirs:
             f.write(f"{dir}:\n")
