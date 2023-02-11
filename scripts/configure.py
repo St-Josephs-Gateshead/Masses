@@ -20,6 +20,7 @@ def generate_makefile(dirs: Iterable[Path]):
     makefile = root / "makefile"
     if not dirs:
         makefile.write_text(".PHONY: all\n\n all:\n\techo 'nothing to do...'\n\n")
+        return
 
     dirs = [x.relative_to(root) for x in dirs]
     with makefile.open("w") as f:
