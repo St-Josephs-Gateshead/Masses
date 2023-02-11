@@ -14,7 +14,8 @@ jobs:
       - run: |
           pip install httpx
           python scripts/configure.py
-          make -j $(nproc +1)
+          cat makefile
+          make -j $(nproc)
           python scripts/package.py
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
