@@ -4,6 +4,7 @@ from os import environ
 from pathlib import Path
 from shutil import unpack_archive
 from sys import path
+from typing import Iterable
 
 import httpx
 
@@ -14,7 +15,8 @@ from package import oldname
 root = Path(__file__).parent.parent
 
 
-def generate_makefile(dirs):
+def generate_makefile(dirs: Iterable[Path]):
+    dirs = [x.relative_to(root) for x in dirs]
     with (root / "makefile").open("w") as f:
         f.write(f".PHONY: all {' '.join(str(x) for x in dirs)}\n\n")
         for dir in dirs:
