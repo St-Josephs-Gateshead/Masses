@@ -64,7 +64,7 @@ from subprocess import run
 
 run(["pwd"])
 run(["ls", "-R", "."])
-outdir = next(Path(".").glob(f"{repo.replace('/','-')*}"))
+outdir = next(Path(".").glob(f"{repo.replace('/','-')}*"))
 outdir.rename("latest-release")
 
 changed_dirs = set()
