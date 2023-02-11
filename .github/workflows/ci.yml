@@ -2,21 +2,21 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
-  - release:
-      name: "Release"
-      runs-on: "ubuntu-latest"
-      steps:
-        - run: |
-            scripts/configure.py
-            make -j $(nproc +1)
-
-            scripts/package.py
-        - uses: "marvinpinto/action-automatic-releases@latest"
-          with:
-            repo_token: "${{ secrets.GITHUB_TOKEN }}"
-            automatic_release_tag: "latest"
-            prerelease: false
-            files: |
-              pdfs/*.pdf
+  release:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: |
+          scripts/configure.py
+          make -j $(nproc +1)
+          scripts/package.py
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          files: |
+            pdfs/*.pdf
