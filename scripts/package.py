@@ -14,9 +14,11 @@ def oldname(p: Path):
 
 
 if __name__ == "__main__":
-    Path("./pdfs").mkdir(exist_ok=True)
+    root = Path(__file__).parent.parent
+    (root / "pdfs").mkdir(exist_ok=True)
 
-    for pdf in Path(".").glob("**/*.pdf"):
+    for pdf in root.glob("**/*.pdf"):
+        print(pdf)
         if pdf.parent.name == "pdfs":
             continue
         target = Path("./pdfs", newname(pdf))
