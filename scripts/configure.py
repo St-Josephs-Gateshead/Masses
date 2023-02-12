@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-from filecmp import cmp
+from collections import namedtuple
+from datetime import datetime
+from io import BytesIO
 from os import environ
 from pathlib import Path
-from shutil import unpack_archive
+from re import findall
 from sys import path
+from time import sleep
 from typing import Iterable
+from zipfile import ZipFile
 
 import httpx
 
@@ -13,6 +17,20 @@ path.insert(0, str(Path("__file__").parent))
 from package import oldname
 
 root = Path(__file__).parent.parent
+
+
+def get(*args, **kwargs):
+    while True:
+        kwargs["follow_redirects"] = kwargs.get("follow_redirects", True)
+        r = httpx.get(*args, **kwargs)
+        if r.status_code == 403:
+            reset = datetime.fromtimestamp(int(r.headers["X-RateLimit-Reset"]))
+            diff = max((reset - datetime.now()).total_seconds(), 0)
+            print("Ratelimited for", diff, "seconds")
+            sleep(diff)
+        else:
+            r.raise_for_status()
+            return r
 
 
 def generate_makefile(dirs: Iterable[Path]):
@@ -30,31 +48,14 @@ def generate_makefile(dirs: Iterable[Path]):
             f.write(f"\tmake -C {dir}\n\n")
 
 
-repo = environ["GITHUB_REPOSITORY"]
-assert repo
-
-
-url = f"https://api.github.com/repos/{repo}/releases/latest"
-resp = httpx.get(url, follow_redirects=True)
-if resp.status_code == 404:
-    print("No previous release")
-    generate_makefile(set(x.parent for x in root.glob("**/[Mm]akefile")))
-    exit(0)
-resp.raise_for_status()
-data = resp.json()
-
-resp = httpx.get(data["assets_url"])
-resp.raise_for_status()
-assets = resp.json()
-
-
 def download_pdfs(outdir: Path):
     for asset in assets:
         name = asset["name"]
         if not name.endswith(".pdf") or "_" not in name:
             print("skipping", name)
             continue
-        if oldname(name).name == outdir.parts[-1]:
+        old = oldname(name)
+        if old.parent.name == outdir.name:
             print("downloading", old)
             r = httpx.get(asset["browser_download_url"])
             r.raise_for_status()
@@ -62,31 +63,57 @@ def download_pdfs(outdir: Path):
                 f.write(r.content)
 
 
-resp = httpx.get(data["zipball_url"], follow_redirects=True)
-resp.raise_for_status()
-zipf = Path("latest-release.zip")
-with zipf.open("wb") as f:
-    f.write(resp.content)
-unpack_archive(zipf)
-# archive inner dir is reponame-releasename
-outdir = next(Path(".").glob(f"{repo.replace('/','-')}*"))
+Version = namedtuple("Version", "document_version,template_version")
 
-changed_dirs = set()
-for origf in outdir.glob("**/*.tex"):
-    print(origf)
-    parts = []
-    for part in reversed(origf.parts):
-        if part == outdir.name:
-            break
-        parts.append(part)
-    parts.reverse()
-    currentf = Path(root, *parts)
-    print(currentf)
-    if not cmp(origf, currentf):
-        print(origf, "differs from", currentf)
-        changed_dirs.add(currentf.parent)
+
+def version(texf: Path) -> Version | None:
+    assert texf.suffix == ".tex"
+    try:
+        line = next(l for l in texf.read_text().splitlines() if "\\version" in l)
+    except StopIteration:
+        return None
+
+    match = findall(r"(v[0-9]+\.[0-9]+\.[0-9]+.+?)", line)
+    if match:
+        assert len(match) == 2
+        # regex catches any trailing chars for e.g. v1.0.0rc1, but we also have a ) after it
+        return Version(match[0].strip(), match[1].replace(")", "").strip())
     else:
-        print(origf, "is identical to", currentf)
-        download_pdfs(currentf.parent)
+        return None
 
-generate_makefile(changed_dirs)
+
+if __name__ == "__main__":
+    repo = environ["GITHUB_REPOSITORY"]
+    assert repo
+
+    url = f"https://api.github.com/repos/{repo}/releases/latest"
+    try:
+        data = get(url).json()
+    except Exception:
+        print("Unable to get previous release, assuming none")
+        all_dirs = set(x.parent for x in root.glob("**/[Mm]akefile"))
+        generate_makefile(all_dirs)
+        exit(0)
+
+    assets = get(data["assets_url"]).json()
+
+    zipf = get(data["zipball_url"]).content
+    zipf = ZipFile(BytesIO(zipf))
+    outer = Path(zipf.namelist()[0])
+    zipf.extractall()
+    release = Path("latest-release")
+    outer.rename(release)
+    assert release.exists()
+
+    changed_dirs = set()
+    for origf in release.glob("**/*.tex"):
+        currentf = root / origf.relative_to(release)
+        if v := version(origf):
+            if v != version(currentf):
+                print(origf, "differs from", currentf)
+                changed_dirs.add(currentf.parent)
+            else:
+                print(origf, "is identical to", currentf)
+                download_pdfs(currentf.parent)
+
+    generate_makefile(changed_dirs)
