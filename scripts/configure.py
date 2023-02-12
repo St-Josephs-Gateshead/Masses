@@ -83,8 +83,10 @@ for origf in outdir.glob("**/*.tex"):
     currentf = Path(root, *parts)
     print(currentf)
     if not cmp(origf, currentf):
+        print(origf, "differs from", currentf)
         changed_dirs.add(currentf.parent)
     else:
+        print(origf, "is identical to", currentf)
         download_pdfs(currentf.parent)
 
 generate_makefile(changed_dirs)
