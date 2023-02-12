@@ -49,9 +49,12 @@ assets = resp.json()
 
 
 def download_pdfs(outdir: Path):
-    old = oldname(outdir)
     for asset in assets:
-        if asset["name"] == old.name:
+        name = asset["name"]
+        if not name.endswith(".pdf") or "_" not in name:
+            print("skipping", name)
+            continue
+        if oldname(name).name == outdir.parts[-1]:
             print("downloading", old)
             r = httpx.get(asset["browser_download_url"])
             r.raise_for_status()
