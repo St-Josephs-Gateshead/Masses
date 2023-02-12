@@ -70,13 +70,15 @@ outdir = next(Path(".").glob(f"{repo.replace('/','-')}*"))
 outdir.rename("latest-release")
 
 changed_dirs = set()
-for origf in outdir.glob("*/*.tex"):
+for origf in outdir.glob("**/*.tex"):
+    print(origf)
     parts = []
     for part in origf.parts:
         if part == outdir.name:
             break
         parts.append(part)
     currentf = Path(root, *parts)
+    print(currentf)
     if not cmp(origf, currentf):
         changed_dirs.add(currentf.parent)
     else:
