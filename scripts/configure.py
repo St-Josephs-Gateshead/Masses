@@ -72,10 +72,11 @@ changed_dirs = set()
 for origf in outdir.glob("**/*.tex"):
     print(origf)
     parts = []
-    for part in origf.parts:
+    for part in reversed(origf.parts):
         if part == outdir.name:
             break
         parts.append(part)
+    parts.reverse()
     currentf = Path(root, *parts)
     print(currentf)
     if not cmp(origf, currentf):
