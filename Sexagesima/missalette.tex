@@ -1,5 +1,4 @@
 \documentclass[a5paper,10pt]{memoir}
-% useless commit to force ci.
 % Packages
 \usepackage[nobottomtitles]{titlesec}
 \usepackage{fontspec}
@@ -13,7 +12,7 @@
 \usepackage{titlepage}
 % Config
 \copypagestyle{versionplain}{plain}
-\newcommand{\version}{\tiny Release: v1.0.0 (template v1.2.1)}
+\newcommand{\version}{\tiny Release: v1.0.0 (template v1.2.2)}
 \makeevenfoot{versionplain}{\thepage}{}{\version}
 \makeoddfoot{versionplain}{\version}{}{\thepage}
 \pagestyle{versionplain}
@@ -44,8 +43,37 @@
 \titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.eps}
 
 % 
-\section{Introit}
+\section{Asperges}
 \red{When the celebrant reaches the altar:}
+\gregorioscore{asperges}
+\black{
+  \l{\v\ Osténde nobis, Dómine, misericórdiam tuam.}
+  \e{\v\ O Lord, show Thy mercy upon us.}
+  \l{\r\ Et salutáre tuum da nobis.}
+  \e{\r\ And grant us Thy salvation.}
+  \domineexaudi
+  \dominusvobiscum
+  \oremus
+  \l{%
+    Exáudi nos, Dómine sancte, Pater omnípotens, ætérne Deus, et míttere
+    dignéris sanctum Angelum tuum de cælis, qui custódiat, fóveat, prótegat,
+    vísitet atque deféndat omnes habitántes in hoc habitáculo. Per Christum
+    Dóminum nostrum.
+  }
+  \e{%
+    Hear us, O holy Lord, almighty Father, everlasting God, and vouchsafe to
+    send Thy holy Angel from heaven, to guard, cherish, protect, visit and
+    defend all that are assembled in this place: through Christ our Lord.
+  }
+  \amen
+}
+% 
+
+% 
+\section{Introit}
+% 
+\red{Immediately after the Asperges}
+% 
 \gregorioscore{introit}
 \oneColumnTranslation{\introitTranslation}
 % 
@@ -137,7 +165,10 @@
 
 \section{Post-Communion Collect}
 \gregorioscore{dominus-vobiscum}
-\black{\postcommunion}
+\black{
+  \oremus
+  \postcommunion
+}
 \gregorioscore{amen}
 
 \section{Dismissal}
