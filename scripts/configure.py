@@ -34,7 +34,7 @@ def get(*args, **kwargs):
 
 
 def generate_makefile(dirs: Iterable[Path]):
-    print(dirs)
+    print("generating makefile for", dirs)
     makefile = root / "makefile"
     if not dirs:
         makefile.write_text(".PHONY: all\n\n all:\n\techo 'nothing to do...'\n\n")
@@ -106,7 +106,9 @@ if __name__ == "__main__":
     assert release.exists()
 
     changed_dirs = set()
-    for origf in release.glob("**/*.tex"):
+    fs = list(release.glob("**/*.tex"))
+    print("fs", fs)
+    for origf in fs:
         currentf = root / origf.relative_to(release)
         if v := version(origf):
             if v != version(currentf):
@@ -115,5 +117,7 @@ if __name__ == "__main__":
             else:
                 print(origf, "is identical to", currentf)
                 download_pdfs(currentf.parent)
+        else:
+            print(origf, "has no version, skipping...")
 
     generate_makefile(changed_dirs)
