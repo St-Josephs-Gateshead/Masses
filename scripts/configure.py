@@ -38,7 +38,7 @@ url = f"https://api.github.com/repos/{repo}/releases/latest"
 resp = httpx.get(url, follow_redirects=True)
 if resp.status_code == 404:
     print("No previous release")
-    generate_makefile(set(x.parent for x in root.glob("*/[Mm]akefile")))
+    generate_makefile(set(x.parent for x in root.glob("**/[Mm]akefile")))
     exit(0)
 resp.raise_for_status()
 data = resp.json()
@@ -67,7 +67,6 @@ with zipf.open("wb") as f:
 unpack_archive(zipf)
 # archive inner dir is reponame-releasename
 outdir = next(Path(".").glob(f"{repo.replace('/','-')}*"))
-outdir.rename("latest-release")
 
 changed_dirs = set()
 for origf in outdir.glob("**/*.tex"):
