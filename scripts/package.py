@@ -15,11 +15,12 @@ def oldname(p: Path):
 
 if __name__ == "__main__":
     root = Path(__file__).parent.parent
-    (root / "pdfs").mkdir(exist_ok=True)
+    outdir = root / "pdfs"
+    outdir.mkdir(exist_ok=True)
 
     for pdf in root.glob("**/*.pdf"):
-        print(pdf)
         if pdf.parent.name == "pdfs":
             continue
-        target = Path("./pdfs", newname(pdf))
+        target = outdir / newname(pdf)
         copyfile(pdf, target)
+        print("Copied", pdf, "to", target)
