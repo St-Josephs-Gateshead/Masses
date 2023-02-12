@@ -4,7 +4,7 @@ from shutil import copyfile
 
 
 def newname(p: Path):
-    return Path(f"{p.parent.name}_{p.name}.{p.stem}")
+    return Path(f"{p.parent.name}_{p.name}")
 
 
 def oldname(p: Path):
