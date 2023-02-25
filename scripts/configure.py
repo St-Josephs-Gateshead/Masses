@@ -112,7 +112,8 @@ if __name__ == "__main__":
                     all_dirs.remove(currentf.parent)
             else:
                 print(origf, "has no version, skipping...")
-    except Exception:
+    except Exception as e:
         print("Unable to get previous release, assuming none")
+        print(e)
 
     generate_makefile(all_dirs)
