@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import traceback
 from collections import namedtuple
+from contextlib import suppress
 from datetime import datetime
 from io import BytesIO
 from os import environ
@@ -110,7 +111,8 @@ if __name__ == "__main__":
                 else:
                     print(origf, "is identical to", currentf)
                     download_pdfs(currentf.parent)
-                    all_dirs.remove(currentf.parent)
+                    with suppress(KeyError):
+                        all_dirs.remove(currentf.parent)
             else:
                 print(origf, "has no version, skipping...")
     except Exception as e:
