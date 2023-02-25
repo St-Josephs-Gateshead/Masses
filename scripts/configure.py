@@ -57,8 +57,7 @@ def download_pdfs(outdir: Path):
         old = oldname(Path(name))
         if old.parent.name == outdir.name:
             print("downloading", old)
-            r = httpx.get(asset["browser_download_url"])
-            r.raise_for_status()
+            r = get(asset["browser_download_url"])
             with (outdir / old.name).open("wb") as f:
                 f.write(r.content)
 
