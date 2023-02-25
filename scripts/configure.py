@@ -85,12 +85,12 @@ if __name__ == "__main__":
     repo = environ["GITHUB_REPOSITORY"]
     assert repo
 
+    all_dirs = set(x.parent for x in root.glob("**/[Mm]akefile"))
     url = f"https://api.github.com/repos/{repo}/releases/latest"
     try:
         data = get(url).json()
     except Exception:
         print("Unable to get previous release, assuming none")
-        all_dirs = set(x.parent for x in root.glob("**/[Mm]akefile"))
         generate_makefile(all_dirs)
         exit(0)
 
@@ -105,10 +105,12 @@ if __name__ == "__main__":
     assert release.exists()
 
     changed_dirs = set()
+    considered = set()
     fs = list(release.glob("**/*.tex"))
     print("fs", fs)
     for origf in fs:
         currentf = root / origf.relative_to(release)
+        considered.add(currentf.parent)
         if v := version(origf):
             if v != version(currentf):
                 print(origf, "differs from", currentf)
@@ -119,4 +121,5 @@ if __name__ == "__main__":
         else:
             print(origf, "has no version, skipping...")
 
+    changed_dirs |= all_dirs - considered
     generate_makefile(changed_dirs)
