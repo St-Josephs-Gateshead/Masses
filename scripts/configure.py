@@ -114,6 +114,6 @@ if __name__ == "__main__":
                 print(origf, "has no version, skipping...")
     except Exception as e:
         print("Unable to get previous release, assuming none")
-        print(e)
+        print("Error was:", e)
 
     generate_makefile(all_dirs)
