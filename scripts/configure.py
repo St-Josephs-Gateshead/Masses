@@ -54,7 +54,7 @@ def download_pdfs(outdir: Path):
         if not name.endswith(".pdf") or "_" not in name:
             print("skipping", name)
             continue
-        old = oldname(name)
+        old = oldname(Path(name))
         if old.parent.name == outdir.name:
             print("downloading", old)
             r = httpx.get(asset["browser_download_url"])
