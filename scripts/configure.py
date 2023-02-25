@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import traceback
 from collections import namedtuple
 from datetime import datetime
 from io import BytesIO
@@ -114,6 +115,6 @@ if __name__ == "__main__":
                 print(origf, "has no version, skipping...")
     except Exception as e:
         print("Unable to get previous release, assuming none")
-        print("Error was:", e)
+        traceback.print_exc()
 
     generate_makefile(all_dirs)
