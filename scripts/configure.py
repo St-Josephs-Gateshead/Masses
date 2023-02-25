@@ -89,37 +89,30 @@ if __name__ == "__main__":
     url = f"https://api.github.com/repos/{repo}/releases/latest"
     try:
         data = get(url).json()
+        assets = get(data["assets_url"]).json()
+        zipf = get(data["zipball_url"]).content
+        zipf = ZipFile(BytesIO(zipf))
+        outer = Path(zipf.namelist()[0])
+        zipf.extractall()
+        release = Path("latest-release")
+        outer.rename(release)
+        assert release.exists()
+
+        changed_dirs = set()
+        fs = list(release.glob("**/*.tex"))
+        print("fs", fs)
+        for origf in fs:
+            currentf = root / origf.relative_to(release)
+            if v := version(origf):
+                if v != version(currentf):
+                    print(origf, "differs from", currentf)
+                else:
+                    print(origf, "is identical to", currentf)
+                    download_pdfs(currentf.parent)
+                    all_dirs.remove(currentf.parent)
+            else:
+                print(origf, "has no version, skipping...")
     except Exception:
         print("Unable to get previous release, assuming none")
-        generate_makefile(all_dirs)
-        exit(0)
 
-    assets = get(data["assets_url"]).json()
-
-    zipf = get(data["zipball_url"]).content
-    zipf = ZipFile(BytesIO(zipf))
-    outer = Path(zipf.namelist()[0])
-    zipf.extractall()
-    release = Path("latest-release")
-    outer.rename(release)
-    assert release.exists()
-
-    changed_dirs = set()
-    considered = set()
-    fs = list(release.glob("**/*.tex"))
-    print("fs", fs)
-    for origf in fs:
-        currentf = root / origf.relative_to(release)
-        considered.add(currentf.parent)
-        if v := version(origf):
-            if v != version(currentf):
-                print(origf, "differs from", currentf)
-                changed_dirs.add(currentf.parent)
-            else:
-                print(origf, "is identical to", currentf)
-                download_pdfs(currentf.parent)
-        else:
-            print(origf, "has no version, skipping...")
-
-    changed_dirs |= all_dirs - considered
-    generate_makefile(changed_dirs)
+    generate_makefile(all_dirs)
