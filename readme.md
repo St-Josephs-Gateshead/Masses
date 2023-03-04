@@ -1,7 +1,7 @@
-# Missalettes for Masses at St. Cuthbert's Catholic Church, Durham
+# Missalettes for Masses at St. Joseph's Catholic Church, Gateshead
 
 This repository holds source code to generate missalettes for Masses at
-St. Joseph's Catholic Church, Durham.  Masses are generated with a copier
+St. Joseph's Catholic Church, Gateshead.  Masses are generated with a copier
 template, such as [MassTemplate](https://github.com/2e0byo/MassTemplate).
 
 ## Getting pdfs
