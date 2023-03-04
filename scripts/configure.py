@@ -45,6 +45,7 @@ def generate_makefile(dirs: Iterable[Path]):
     dirs = [x.relative_to(root) for x in dirs]
     with makefile.open("w") as f:
         f.write(f".PHONY: all {' '.join(str(x) for x in dirs)}\n\n")
+        f.write(f"all: {' '.join(str(x) for x in dirs)}\n\n")
         for dir in dirs:
             f.write(f"{dir}:\n")
             f.write(f"\tmake -C {dir}\n\n")
