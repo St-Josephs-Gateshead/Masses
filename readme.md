@@ -37,7 +37,7 @@ it's trivial to hard code the url to fetch the latest release.)
 ## Fast CI
 
 Building gregoriotex documents takes *for ever*.  Most pushes only update one or
-two Masses, but as the repository grows we grind to a half trying to rebuild
+two Masses, but as the repository grows we grind to a halt trying to rebuild
 everything.
 
 The solution is to rely on document versioning to see when we need to update a
