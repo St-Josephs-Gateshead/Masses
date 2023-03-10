@@ -1,0 +1,103 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica III in Quadragesima}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Oculi mei semper ad Dóminum, quia ipse evéllet de láqueo pedes meos: réspice in me, et miserére mei, quóniam únicus et pauper sum ego.
+  \v\ Ad te, Dómine, levávi ánimam meam: Deus meus, in te confído, non erubéscam
+}
+\newcommand{\introitTranslation}{%
+  My eyes are ever toward the Lord, for He will free my feet from the snare. Look toward me, and have pity on me, for I am alone and afflicted.
+  \v\ To You I lift up my soul, O Lord. In You, O my God, I trust; let me not be put to shame.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Quǽsumus, omnípotens Deus, vota humílium réspice: atque, ad defensiónem nostram, déxteram tuæ majestátis exténde.
+  }
+  \e{%
+    We beseech You, almighty God, hear the prayers of the humble and stretch forth the right hand of Your majesty to protect us.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Estóte imitatóres Dei, sicut fílii caríssimi: et ambuláte in dilectióne, sicut et Christus diléxit nos, et trádidit semetípsum pro nobis oblatiónem, et hóstiam Deo in odórem suavitátis. Fornicátio autem et omnis immundítia aut avarítia nec nominétur in vobis, sicut decet sanctos: aut turpitúdo aut stultilóquium aut scurrílitas, quæ ad rem non pértinet: sed magis gratiárum áctio. Hoc enim scitóte intelligéntes, quod omnis fornicátor aut immúndus aut ávarus, quod est idolórum sérvitus, non habet hereditátem in regno Christi et Dei. Nemo vos sedúcat inánibus verbis: propter hæc enim venit ira Dei in fílios diffidéntiæ. Nolíte ergo éffici partícipes eórum. Erátis enim aliquándo ténebræ: nunc autem lux in Dómino. Ut fílii lucis ambuláte: fructus enim lucis est in omni bonitáte et iustítia et veritáte.
+  }
+  \e{%
+    Brethren: Be imitators of God, as very dear children and walk in love, as Christ also loved us and delivered Himself up for us an offering and a sacrifice to God to ascend in fragrant odor. But immorality and every uncleanness or covetousness, let it not even be named among you, as becomes saints; or obscenity or foolish talk or scurrility, which are out of place; but rather thanksgiving. For know this and understand, that no fornicator, or unclean person, or covetous one - for that is idolatry - has any inheritance in the kingdom of Christ and God. Let no one lead you astray with empty words; for because of these things the wrath of God comes upon the children of disobedience. Do not, then, become partakers with them. For you were once darkness, but now you are light in the Lord. Walk, then, as children of light, for the fruit of the light is in all goodness and justice and truth.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Exsúrge, Dómine, non præváleat homo: iudicéntur gentes in conspéctu tuo.
+  \v\ In converténdo inimícum meum retrórsum, infirmabúntur, et períbunt a facie tua.
+}
+\newcommand{\gradualTranslation}{%
+  Rise, O Lord, let not man prevail; let the nations be judged in Your presence.
+  \v\ Because my enemies are turned back, overthrown and destroyed before You.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Erat Iesus eiíciens dæmónium, et illud erat mutum. Et cum eiecísset dæmónium, locútus est mutus, et admirátæ sunt turbæ. Quidam autem ex eis dixérunt: In Beélzebub, príncipe dæmoniórum, éiicit dæmónia. Et álii tentántes, signum de cœlo quærébant ab eo. Ipse autem ut vidit cogitatiónes eórum, dixit eis: Omne regnum in seípsum divísum desolábitur, et domus supra domum cadet. Si autem et sátanas in seípsum divísus est, quómodo stabit regnum eius? quia dícitis, in Beélzebub me eiícere dæmónia. Si autem ego in Beélzebub eiício dæmónia: fílii vestri in quo eiíciunt? Ideo ipsi iúdices vestri erunt. Porro si in dígito Dei eiício dæmónia: profécto pervénit in vos regnum Dei. Cum fortis armátus custódit átrium suum, in pace sunt ea, quæ póssidet. Si autem fórtior eo supervéniens vícerit eum, univérsa arma eius áuferet, in quibus confidébat, et spólia eius distríbuet. Qui non est mecum, contra me est: et qui non cólligit mecum, dispérgit. Cum immúndus spíritus exíerit de hómine, ámbulat per loca inaquósa, quærens réquiem: et non invéniens, dicit: Revértar in domum meam, unde exívi. Et cum vénerit, invénit eam scopis mundátam, et ornátam. Tunc vadit, et assúmit septem álios spíritus secum nequióres se, et ingréssi hábitant ibi. Et fiunt novíssima hóminis illíus peióra prióribus. Factum est autem, cum hæc díceret: extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.
+  }
+  \e{%
+At that time, Jesus was casting out a devil, and the same was dumb; and when He had cast out the devil, the dumb man spoke. And the crowds marveled. But some of them said, By Beelzebub, the prince of devils, He casts out devils. And others, to test Him, demanded from Him a sign from heaven. But He, seeing their thoughts, said to them: Every kingdom divided against itself is brought to desolation, and house will fall upon house. If, then, Satan also is divided against himself, how shall his kingdom stand? because you say that I cast out devils by Beelzebub. Now, if I cast out devils by Beelzebub, by whom do your children cast them out? Therefore they shall be your judges. But if I cast out devils by the finger of God, then the kingdom of God has come upon you. When the strong man, fully armed, guards his courtyard, his property is undisturbed. But if a stronger than he attacks and overcomes him, he will take away all his weapons that he relied upon, and will divide his spoils. He who is not with Me is against Me; and he who does not gather with Me scatters. When the unclean spirit has gone out of a man, he roams through waterless places in search of rest; and finding none, he says, ‘I will return to my house which I left.’ And when he has come to it, he finds the place swept. Then he goes and takes seven other spirits more evil than himself, and they enter in and dwell there; and the last state of that man becomes worse that the first. Now it came to pass as He was saying these things, that a certain woman from the crowd lifted up her voice and said to Him, Blessed is the womb that bore You, and the breasts that nursed You. But He said, Rather, blessed are they who hear the word of God and keep it.
+  }
+}
+\newcommand{\offertory}{%
+  Iustítiæ Dómini rectæ, lætificántes corda, et iudícia eius dulcióra super mel et favum: nam et servus tuus custódit ea.
+}
+\newcommand{\offertoryTranslation}{%
+  The precepts of the Lord are right, rejoicing the heart, and His ordinances are sweeter than syrup or honey from the comb; therefore Your servant is careful of them.
+}
+\newcommand{\secret}{%
+  \l{%
+    Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et, ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet.
+  }
+  \e{%
+    May this offering, we beseech You, O Lord, cleanse us of our sins, and make holy the bodies and minds of Your servants for the celebration of the sacrificial rite.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Passer invénit sibi domum, et turtur nidum, ubi repónat pullos suos: altária tua, Dómine virtútum, Rex meus, et Deus meus: beáti, qui hábitant in domo tua, in sǽculum sǽculi laudábunt te.
+}
+\newcommand{\communionTranslation}{%
+  The sparrow finds a home, and the swallow a nest in which she puts her young - Your altars, O Lord of Hosts, my King and my God! Happy they who dwell in Your house! continually they praise You.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    A cunctis nos, quǽsumus, Dómine, reátibus et perículis propitiátus absólve: quos tanti mystérii tríbuis esse partícipes.
+  }
+  \e{%
+    Be merciful, O Lord, we beseech You, and free from guilt and danger those whom You grant to share in this great sacrament.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/17/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/17/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/17/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/17/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/17/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
