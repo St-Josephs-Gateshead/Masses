@@ -18,13 +18,13 @@ jobs:
           python scripts/configure.py
           echo "Makefile is:"
           cat makefile
-      - uses: xu-cheng/texlive-action/full@v1
-        with:
-          run: |
-            apk add git
-            git config --global --add safe.directory "$GITHUB_WORKSPACE"
-            apk add make
-            make -j $(nproc)
+      - name: install latex
+        run: |
+          sudo apt update && sudo apt install texlive
+      - name: build
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          make -j
       - run: |
           python scripts/package.py
       - uses: "marvinpinto/action-automatic-releases@latest"
