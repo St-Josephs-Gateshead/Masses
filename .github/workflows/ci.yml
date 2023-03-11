@@ -20,7 +20,7 @@ jobs:
           cat makefile
       - name: install latex
         run: |
-          sudo apt update && sudo apt install texlive
+          sudo apt update && sudo apt install -y texlive latexmk
       - name: build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
