@@ -13,14 +13,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-      - run: |
+      - name: generate makefile
+        run: |
           pip install httpx
           python scripts/configure.py
           echo "Makefile is:"
           cat makefile
       - name: install latex
         run: |
-          sudo apt update && sudo apt install -y texlive texlive-music texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended texlive-luatex latexmk
+          sudo apt update && sudo apt install -y texlive texlive-music texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-luatex latexmk
       - name: build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
