@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier
+_commit: v1.2.4
+_src_path: gh:2e0byo/MassTemplate
+alleluia: tract
+asperges: true
+creator_name: John Morris
+creed: 1
+creed_path: ../Ordinaries/credo
+creedp: true
+feast_name: Dominica I Passionis
+gloria: false
+img_file: ../img/logo.eps
+marian: true
+mass_setting: 17
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: simple
+repo_url: https://github.com/St-Josephs-Gateshead/Masses
+rite: roman
+version: v1.0.0
