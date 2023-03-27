@@ -9,7 +9,7 @@ creed_path: ../Ordinaries/credo
 creedp: true
 feast_name: Dominica III in Quadragesima
 gloria: false
-img_file: ../img/logo.eps
+img_file: ../img/logo.pdf
 marian: true
 mass_setting: 17
 mass_type: Missa Cantata

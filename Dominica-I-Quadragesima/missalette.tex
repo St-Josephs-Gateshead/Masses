@@ -12,7 +12,7 @@
 \usepackage{titlepage}
 % Config
 \copypagestyle{versionplain}{plain}
-\newcommand{\version}{\tiny Release: v1.0.0 (template v1.2.2)}
+\newcommand{\version}{\tiny Release: v1.0.1 (template v2.0.0)}
 \makeevenfoot{versionplain}{\thepage}{}{\version}
 \makeoddfoot{versionplain}{\version}{}{\thepage}
 \pagestyle{versionplain}
@@ -40,7 +40,7 @@
 \begin{document}
 \selectlanguage{latin}
 
-\titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.eps}
+\titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.pdf}
 
 % 
 \section{Asperges}
@@ -100,7 +100,9 @@
 \red{After the Chanting of the lesson, or during the (secret) reading if
   so appointed:}
 \gregorioscore{gradual}
+% 
 \gregorioscore{tract}
+% 
 \oneColumnTranslation{\gradualTranslation}
 % 
 
