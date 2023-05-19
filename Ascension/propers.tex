@@ -1,0 +1,109 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{In Ascensione Domini}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Viri Galilǽi, quid admirámini aspiciéntes in cœlum? allelúia: quemádmodum vidístis eum ascendéntem in cœlum, ita véniet, allelúia, allelúia, allelúia.
+  Omnes gentes, pláudite mánibus: iubiláte Deo in voce exsultatiónis.
+}
+\newcommand{\introitTranslation}{%
+  Ye men of Galilee, why stand you looking up to heaven? alleluia: This Jesus who is taken up from you into heaven, shall so come, as you have seen him going into heaven, alleluia, allleuia, alleluia
+  O clap your hands, all ye nations: shout unto God with the voice of joy
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Aufer a nobis, quǽsumus, Dómine, iniquitátes nostras: ut ad Sancta sanctórum puris mereámur méntibus introíre. Per Christum, Dóminum nostrum. Amen.
+  }
+  \e{%
+    Take away from us our iniquities, we beseech Thee, O Lord, that we may be worthy to enter with pure minds into the Holy of Holies, through Christ our Lord. Amen. 
+  }
+  \l{
+    Orámus te, Dómine, per mérita Sanctórum tuórum, quorum relíquiæ hic sunt, et ómnium Sanctórum: ut indulgére dignéris ómnia peccáta mea. Amen.
+  }
+  \e{
+    We beseech Thee, O Lord, by the merits of Thy Saints, whose relics are here, and of all the Saints, that Thou wouldst vouchsafe to forgive me all my sins. Amen.
+  }
+}
+\newcommand{\lesson}{%
+  \l{%
+Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Iesus facere et docére usque in diem, qua, præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est: quibus et prǽbuit seípsum vivum post passiónem suam in multas arguméntis, per dies quadragínta appárens eis et loquens de regno Dei. Et convéscens, præcépit eis, ab Ierosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis -inquit - per os meum: quia Ioánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu Sancto non post multos hos dies. Igitur qui convénerant, interrogábant eum, dicéntes: Dómine, si in témpore hoc restítues regnum Israël? Dixit autem eis: Non est vestrum nosse témpora vel moménta, quæ Pater pósuit in sua potestáte: sed accipiétis virtútem superveniéntis Spíritus Sancti in vos, et éritis mihi testes in Ierúsalem et in omni Iudǽa et Samaría et usque ad últimum terræ. Et cum hæc dixísset, vidéntibus illis, elevátus est, et nubes suscépit eum ab óculis eórum. Cumque intuerétur in cœlum eúntem illum, ecce, duo viri astitérunt iuxta illos in véstibus albis, qui et dixérunt: Viri Galilǽi, quid statis aspiciéntes in cœlum? Hic Iesus, qui assúmptus est a vobis in cœlum, sic véniet, quemádmodum vidístis eum eúntem in cœlum.
+  }
+  \e{%
+The former treatise I made, O Theophilus, of all things which Jesus began to do and to teach, until the day on which, giving commandments by the Holy Ghost to the Apostles whom he had chosen, he was taken up: To whom also He shewed Himself alive after His Passion by many proofs, for forty days appearing to them, and speaking of the Kingdom of God. And eating together with them, he commanded them, that they should not depart from Jerusalem, but should wait for the promise of the Father, which you have heard - saith he - by My mouth; For John indeed baptized with water, but you shall be baptized with the Holy Ghost not many days hence. They therefore who were come together asked him, saying: Lord, wilt Thou at this time restore again the kingdom to Israel? But He said to them: It is not for you to know the times or moments which the Father hath put in his own power: but you shall receive the power of the Holy Ghost coming upon you, and you shall be witnesses unto Me in Jerusalem, and in all Judea, and Samaria, and even to the uttermost part of the earth. And when He had said these things, while they looked on, He was raised up: and a cloud received Him out of their sight. And while they were beholding him going up to heaven, behold two men stood by them in white garments, who also said: Ye men of Galilee, why stand you looking up to heaven? This Jesus, who is taken up from you into heaven, shall so come, as you have seen him going into heaven.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Allelúia, allelúia.
+  Ascéndit Deus in iubilatióne, et Dóminus in voce tubæ. Allelúia.
+  \v~Dóminus in Sina in sancto, ascéndens in altum, captívam duxit captivitátem. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  Allelúja, allelúja.
+  God is ascended with jubilee, and the Lord with the sound of trumpet. Allelúja.
+  \v~The Lord is in Sinai, in the holy place. Thou hast ascended on high, thou hast led captivity captive. Allelúja.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Iesus: et exprobrávit incredulitátem eórum et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et dixit eis: Eúntes in mundum univérsum, prædicáte Evangélium omni creatúræ. Qui credíderit et baptizátus fúerit, salvus erit: qui vero non credíderit, condemnábitur. Signa autem eos, qui credíderint, hæc sequéntur: In nómine meo dæmónia eiícient: linguis loquantur novis: serpentes tollent: et si mortíferum quid bíberint, non eis nocébit: super ægros manus impónent, et bene habébunt. Et Dóminus quidem Iesus, postquam locútus est eis, assúmptus est in cœlum, et sedet a dextris Dei. Illi autem profécti, prædicavérunt ubíque, Dómino cooperánte et sermónem confirmánte, sequéntibus signis.
+  }
+  \e{%
+    At length he appeared to the eleven as they were at table: and he upbraided them with their incredulity and hardness of heart, because they did not believe them who had seen him after he was risen again. And he said to them: Go ye into the whole world, and preach the gospel to every creature. He that believeth and is baptized, shall be saved: but he that believeth not shall be condemned. And these signs shall follow them that believe: In my name they shall cast out devils; they shall speak with new tongues; they shall take up serpents; and if they shall drink any deadly thing, it shall not hurt them; they shall lay their hands upon the sick, and they shall recover. And the Lord Jesus, after he had spoken to them, was taken up into heaven and sitteth on the right hand of God. But they going forth preached everywhere, the Lord working withal, and confirming the word with signs that followed.
+  }
+}
+\newcommand{\offertory}{%
+  Ascéndit Deus in iubilatióne, et Dóminus in voce tubæ, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+  God is ascended with jubilee, and the Lord with the sound of trumpet, allelúja.
+}
+\newcommand{\secret}{%
+  \l{%
+    Súscipe, Dómine, múnera, quæ pro Fílii tui gloriósa censióne deférimus: et concéde propítius; ut a præséntibus perículis liberémur, et ad vitam per veniámus ætérnam.
+  }
+  \e{%
+    Receive, O Lord, the gifts which we offer for the glorious Ascension of thy Son, and mercifully grant that we may be delivered from present dangers and attain eternal life.
+  }
+}
+\newcommand{\communion}{%
+  Psállite Dómino, qui ascéndit super cœlos cœlórum ad Oriéntem, allelúia.
+}
+\newcommand{\communionTranslation}{%
+  Sing ye to the Lord, who mounteth above the heaven of heavens to the East, alleluia.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Præsta nobis, quǽsumus, omnípotens et miséricors Deus: ut, quæ visibílibus mystériis suménda percépimus, invisíbili consequámur efféctu.
+  }
+  \e{%
+    Grant us, we beseech thee, almighty and merciful God, that what we have taken and received in visible mysteries, may profit us by its invisible effects.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/1/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/1/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/1/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/1/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
