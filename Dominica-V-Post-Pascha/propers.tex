@@ -1,0 +1,105 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica V Post Pascha}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Vocem iucunditátis annuntiáte, et audiátur, allelúia: annuntiáte usque ad extrémum terræ: liberávit Dóminus pópulum suum, allelúia, allelúia.
+  Iubiláte Deo, omnis terra, psalmum dícite nómini eius: date glóriam laudi eius.
+}
+\newcommand{\introitTranslation}{%
+  Declare it with the voice of joy: make this to be heard, allelúja: and speak it out even to the ends of the earth. Say: The Lord hath redeemed his people, allelúja, allelúja
+  Shout with joy to God, all the earth, sing ye a psalm to his name; give glory to his praise.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Deus, a quo bona cuncta procédunt, largíre supplícibus tuis: ut cogitémus, te inspiránte, quæ recta sunt; et, te gubernánte, éadem faciámus.
+  }
+  \e{%
+    O God, from Whom all good things do come, grant to us thy humble servants that by thy holy inspiration we may think those things that be good, and by thy merciful guiding may perform the same.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Caríssimi: Estóte factóres verbi, et non auditóres tantum: falléntes vosmetípsos. Quia si quis audítor est verbi et non factor: hic comparábitur viro consideránti vultum nativitátis suæ in spéculo: considerávit enim se et ábiit, et statim oblítus est, qualis fúerit. Qui autem perspéxerit in legem perfectam libertátis et permánserit in ea, non audítor obliviósus factus, sed factor óperis: hic beátus in facto suo erit. Si quis autem putat se religiósum esse, non refrénans linguam suam, sed sedúcens cor suum, huius vana est relígio. Relígio munda et immaculáta apud Deum et Patrem hæc est: Visitáre pupíllos et viduas in tribulatióne eórum, et immaculátum se custodíre ab hoc sǽculo.
+  }
+  \e{%
+    Dearly beloved: But be ye doers of the word, and not hearers only, deceiving your own selves. For if a man be a hearer of the word, and not a doer, he shall be compared to a man beholding his own countenance in a glass. For he beheld himself, and went his way, and presently forgot what manner of man he was. But he that hath looked into the perfect law of liberty, and hath continued therein, not becoming a forgetful hearer, but a doer of the work; this man shall be blessed in his deed. And if any man think himself to be religious, not bridling his tongue, but deceiving his own heart, this man's religion is vain. Religion clean and undefiled before God and the Father, is this: to visit the fatherless and widows in their tribulation: and to keep one's self unspotted from this world.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Allelúia, allelúia.
+  V. Surréxit Christus, et illúxit nobis, quos rédemit sánguine suo. Allelúia.
+  Exívi a Patre, et veni in mundum: íterum relínquo mundum, et vado ad Patrem. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  Allelúja, allelúja.
+  V. Christ is risen and hath shone upon us whom he redeemed with his blood. Alleluia,
+  I came forth from the Father, and am come into the world: again I leave the world, and I go to the Father. Allelúja.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Dixit Iesus discípulis suis: Amen, amen, dico vobis: si quid petiéritis Patrem in nómine meo, dabit vobis. Usque modo non petístis quidquam in nómine meo: Pétite, et accipiétis, ut gáudium vestrum sit plenum. Hæc in provérbiis locútus sum vobis. Venit hora, cum iam non in provérbiis loquar vobis, sed palam de Patre annuntiábo vobis. In illo die in nómine meo petétis: et non dico vobis, quia ego rogábo Patrem de vobis: ipse enim Pater amat vos, quia vos me amástis, et credidístis quia ego a Deo exívi. Exívi a Patre et veni in mundum: íterum relínquo mundum et vado ad Patrem. Dicunt ei discípuli eius: Ecce, nunc palam loquéris et provérbium nullum dicis. Nunc scimus, quia scis ómnia et non opus est tibi, ut quis te intérroget: in hoc crédimus, quia a Deo exísti.
+  }
+  \e{%
+    In that time, Jesus said to His disciples: Amen, amen I say to you: if you ask the Father any thing in my name, he will give it you. Hitherto you have not asked any thing in my name. Ask, and you shall receive; that your joy may be full. These things I have spoken to you in proverbs. The hour cometh, when I will no more speak to you in proverbs, but will shew you plainly of the Father. In that day you shall ask in my name; and I say not to you, that I will ask the Father for you: For the Father himself loveth you, because you have loved me, and have believed that I came out from God. I came forth from the Father, and am come into the world: again I leave the world, and I go to the Father. His disciples say to him: Behold, now thou speakest plainly, and speakest no proverb. Now we know that thou knowest all things, and thou needest not that any man should ask thee. By this we believe that thou camest forth from God.
+  }
+}
+\newcommand{\offertory}{%
+  Benedícite, gentes, Dóminum, Deum nostrum, et obaudíte vocem laudis eius: qui pósuit ánimam meam ad vitam, et non dedit commovéri pedes meos: benedíctus Dóminus, qui non amóvit deprecatiónem meam et misericórdiam suam a me, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+  O bless our God, ye Gentiles: and make the voice of his praise to be heard. Who hath set my soul to live: and hath not suffered my feet to be moved: Blessed be God, who hath not turned away my prayer, nor his mercy from me, allelúja.
+}
+\newcommand{\secret}{%
+  \l{%
+    Súscipe, Dómine, fidélium preces cum oblatiónibus hostiárum: ut, per hæc piæ devotiónis offícia, ad cœléstem glóriam transeámus.
+  }
+  \e{%
+    Receive, O Lord, the prayers of thy faithful with offerings of victims, that by these services of pious devotion we may pass to heavenly glory.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Cantáte Dómino, allelúia: cantáte Dómino et benedícite nomen eius: bene nuntiáte de die in diem salutáre eius, allelúia, allelúia.
+}
+\newcommand{\communionTranslation}{%
+  Sing ye to the Lord and bless his name: shew forth his salvation from day to day, allelúja, allelúja.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Tríbue nobis, Dómine, cæléstis mensæ virtúte satiátis: et desideráre, quæ recta sunt, et desideráta percípere.
+  }
+  \e{%
+    Grant us, O Lord, fed with the virtue of a heavenly table, to desire what is right, and to gain what we desire.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/1/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/1/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/1/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/1/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
