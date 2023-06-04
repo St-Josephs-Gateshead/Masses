@@ -21,7 +21,10 @@ jobs:
           cat makefile
       - name: install latex
         run: |
-          sudo apt update && sudo apt install -y texlive texlive-music texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-luatex texlive-lang-english texlive-lang-european latexmk
+          sudo apt update && sudo apt install -y texlive texlive-music \
+          texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended \
+          texlive-luatex texlive-lang-english texlive-lang-european latexmk \
+          texlive-extra-utils
       - name: build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
