@@ -1,0 +1,18 @@
+% styling commands for liturgy booklets
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{styling}
+\RequirePackage{multicol}
+
+\newcommand{\oneColumnTranslation}[1]{%
+  {\small #1}}
+
+\newcommand{\threeColumnTranslation}[1]{%
+  \begin{multicols}{3}
+    \small
+    #1
+  \end{multicols}}
+
+% multicols
+\renewcommand{\columnseprulecolor}{\color{red}}
+\setlength{\multicolsep}{0em}
+\setlength{\columnseprule}{0.4pt}
