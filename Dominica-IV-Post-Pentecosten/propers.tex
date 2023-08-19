@@ -1,0 +1,106 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica IV Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Dóminus illuminátio mea et salus mea, quem timebo? Dóminus defensor vitæ meæ, a quo trepidábo? qui tríbulant me inimíci mei, ipsi infirmáti sunt, et cecidérunt.
+  Si consístant advérsum me castra: non timébit cor meum.
+}
+\newcommand{\introitTranslation}{%
+  The Lord is my light and my salvation; whom should I fear? The Lord is my life’s refuge; of whom should I be afraid? My enemies that trouble me, themselves stumble and fall.
+  Though an army encamp against me, my heart will not fear.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Da nobis, quǽsumus, Dómine: ut et mundi cursus pacífice nobis tuo órdine dirigátur; et Ecclésia tua tranquílla devotióne lætétur.
+  }
+  \e{%
+    Grant us, we beseech You, O Lord, that the course of the world may be directed according to Your rule in peace and that Your Church may have the joy of serving You undisturbed.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Exístimo, quod non sunt condígnæ passiónes huius témporis ad futúram glóriam, quæ revelábitur in nobis. Nam exspectátio creatúræ revelatiónem filiórum Dei exspéctat. Vanitáti enim creatúra subiécta est, non volens, sed propter eum, qui subiécit eam in spe: quia et ipsa creatúra liberábitur a servitúte corruptiónis, in libertátem glóriæ filiórum Dei. Scimus enim, quod omnis creatúra ingemíscit et párturit usque adhuc. Non solum autem illa, sed et nos ipsi primítias spíritus habéntes: et ipsi intra nos gémimus, adoptiónem filiórum Dei exspectántes, redemptiónem córporis nostri: in Christo Iesu, Dómino nostro.
+  }
+  \e{%
+    Brethren: I reckon that the sufferings of the present time are not worthy to be compared with the glory to come that will be revealed in us. For the eager longing of creation awaits the revelation of the sons of God. For creation was made subject to vanity - not by its own will but by reason of Him Who made it subject - in hope, because creation itself also will be delivered from its slavery to corruption into the freedom of the glory of the sons of God. For we know that all creation groans and travails in pain until now. And not only it, but we ourselves also who have the first-fruits of the Spirit - we ourselves groan within ourselves, waiting for the adoption as sons of God, the redemption of our body, in Christ Jesus our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Propítius esto, Dómine, peccátis nostris: ne quando dicant gentes: Ubi est Deus eórum?
+  \v~Adiuva nos, Deus, salutáris noster: et propter honórem nóminis tui, Dómine, líbera nos.
+  Allelúia, allelúia.
+  Deus, qui sedes super thronum, et iúdicas æquitátem: esto refúgium páuperum in tribulatióne. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  Pardon our sins, O Lord; why should the nations say, Where is their God?
+  \v~Help us, O God our Saviour; because of the glory of Your name, O Lord, deliver us. Alleluia, alleluia.
+  O God, seated on Your throne, judging justly: be a stronghold for the oppressed in times of distress. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Cum turbæ irrúerent in Iesum, ut audírent verbum Dei, et ipse stabat secus stagnum Genésareth. Et vidit duas naves stantes secus stagnum: piscatóres autem descénderant et lavábant rétia. Ascéndens autem in unam navim, quæ erat Simónis, rogávit eum a terra redúcere pusíllum. Et sedens docébat de navícula turbas. Ut cessávit autem loqui, dixit ad Simónem: Duc in altum, et laxáte rétia vestra in captúram. Et respóndens Simon, dixit illi: Præcéptor, per totam noctem laborántes, nihil cépimus: in verbo autem tuo laxábo rete. Et cum hoc fecíssent, conclusérunt píscium multitúdinem copiósam: rumpebátur autem rete eórum. Et annuérunt sóciis, qui erant in ália navi, ut venírent et adiuvárent eos. Et venérunt, et implevérunt ambas navículas, ita ut pæne mergeréntur. Quod cum vidéret Simon Petrus, prócidit ad génua Iesu, dicens: Exi a me, quia homo peccátor sum, Dómine. Stupor enim circumdéderat eum et omnes, qui cum illo erant, in captúra píscium, quam céperant: simíliter autem Iacóbum et Ioánnem, fílios Zebedǽi, qui erant sócii Simónis. Et ait ad Simónem Iesus: Noli timére: ex hoc iam hómines eris cápiens. Et subdúctis ad terram návibus, relictis ómnibus, secuti sunt eum.
+  }
+  \e{%
+At that time, while the crowds were pressing upon Jesus to hear the word of God, He was standing by Lake Genesareth. And He saw two boats moored by the lake, but the fishermen had left them and were washing their nets. And getting into one of the boats, the one that was Simon’s, He asked him to put out a little from the land. And sitting down, He began to teach the crowds from the boat. But when He had ceased speaking, He said to Simon, Put out into the deep, and lower your nets for a catch. And Simon answered and said to Him, Master, the whole night through we have toiled and have taken nothing; but at Your word I will lower the net. And when they had done so, they enclosed a great number of fishes, but their net was breaking. And they beckoned to their comrades in the other boat to come and help them. And they came and filled both the boats, so that they began to sink. But when Simon Peter saw this, he fell down at Jesus’ knees, saying, Depart from me, for I am a sinful man, O Lord. For he and all who were with him were amazed at the catch of fish they had made; and so were also James and John, the sons of Zebedee, who were partners with Simon. And Jesus said to Simon, Do not be afraid; henceforth you shall catch men. And when they had brought their boats to land, they left all and followed Him.
+  }
+}
+\newcommand{\offertory}{%
+  Illúmina óculos meos, ne umquam obdórmiam in morte: ne quando dicat inimícus meus: Præválui advérsus eum.
+}
+\newcommand{\offertoryTranslation}{%
+  Give light to my eyes that I may never sleep in death, lest my enemy say, I have overcome him.
+}
+\newcommand{\secret}{%
+  \l{%
+    Oblatiónibus nostris, quǽsumus, Dómine, placáre suscéptis: et ad te nostras étiam rebélles compélle propítius voluntátes.
+  }
+  \e{%
+    Oblatiónibus nostris, quǽsumus, Dómine, placáre suscéptis: et ad te nostras étiam rebélles compélle propítius voluntátes.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Dóminus firmaméntum meum, et refúgium meum, et liberátor meus: Deus meus, adiútor meus.
+}
+\newcommand{\communionTranslation}{%
+  O Lord, my rock, my fortress, my deliverer: my God, my rock of refuge!
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Mystéria nos, Dómine, quǽsumus, sumpta puríficent: et suo múnere tueántur.
+  }
+  \e{%
+    May the sacrament we have received cleanse us, we beseech You, O Lord, and by its grace protect us.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
