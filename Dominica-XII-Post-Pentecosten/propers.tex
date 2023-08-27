@@ -1,0 +1,105 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica XII Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Deus, in adiutórium meum inténde: Dómine, ad adiuvándum me festína: confundántur et revereántur inimíci mei, qui quærunt ánimam meam.
+  Avertántur retrórsum et erubéscant: qui cógitant mihi mala.
+}
+\newcommand{\introitTranslation}{%
+  Deign, O God, to rescue me; O Lord, make haste to help me. Let them be put to shame and confounded who seek my life.
+  Let them be turned back in disgrace, who desire my ruin.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Omnípotens et miséricors Deus, de cuius múnere venit, ut tibi a fidélibus tuis digne et laudabíliter serviátur: tríbue, quǽsumus, nobis; ut ad promissiónes tuas sine offensióne currámus.
+  }
+  \e{%
+    Almighty and merciful God, by Whose grace Your faithful people serve You worthily and righteously, grant, we beseech You, that we may hasten without stumbling to those things You have promised us.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Fidúciam talem habémus per Christum ad Deum: non quod sufficiéntes simus cogitáre áliquid a nobis, quasi ex nobis: sed sufficiéntia nostra ex Deo est: qui et idóneos nos fecit minístros novi testaménti: non líttera, sed spíritu: líttera enim occídit, spíritus autem vivíficat. Quod si ministrátio mortis, lítteris deformáta in lapídibus, fuit in glória; ita ut non possent inténdere fili Israël in fáciem Moysi, propter glóriam vultus eius, quæ evacuátur: quómodo non magis ministrátio Spíritus erit in glória? Nam si ministrátio damnatiónis glória est multo magis abúndat ministérium iustítiæ in glória.
+  }
+  \e{%
+    Brethren: Such is the assurance I have through Christ toward God. Not that we are sufficient of ourselves to think anything, as from ourselves, but our sufficiency is from God. He also it is Who has made us fit ministers of the new covenant, not of the letter but of the spirit; for the letter kills, but the spirit gives life. Now if the ministration of death, which was engraved in letters upon stones, was inaugurated in such glory that the children of Israel could not look steadfastly upon the face of Moses on account of the transient glory that shone upon it, shall not the ministration of the spirit be still more glorious? For if there is glory in the ministration that condemned, much more does the ministration that justifies abound in glory.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Benedícam Dóminum in omni témpore: semper laus eius in ore meo.
+  \v~In Dómino laudábitur ánima mea: áudiant mansuéti, et læténtur. Allelúia, allelúia
+  Dómine, Deus salútis meæ, in die clamávi et nocte coram te. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  I will bless the Lord at all times; His praise shall be ever in my mouth.
+  \v~Let my soul glory in the Lord; the lowly will hear and be glad. Alleluia, alleluia.
+  O Lord, the God of my salvation, by day I cry out, at night I clamor in Your presence. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Iesus discípulis suis: Beáti óculi, qui vident quæ vos videtis. Dico enim vobis, quod multi prophétæ et reges voluérunt vidére quæ vos videtis, et non vidérunt: et audire quæ audítis, et non audiérunt. Et ecce, quidam legisperítus surréxit, tentans illum, et dicens: Magister, quid faciéndo vitam ætérnam possidébo? At ille dixit ad eum: In lege quid scriptum est? quómodo legis? Ille respóndens, dixit: Díliges Dóminum, Deum tuum, ex toto corde tuo, et ex tota ánima tua, et ex ómnibus víribus tuis; et ex omni mente tua: et próximum tuum sicut teípsum. Dixítque illi: Recte respondísti: hoc fac, et vives. Ille autem volens iustificáre seípsum, dixit ad Iesum: Et quis est meus próximus? Suscípiens autem Iesus, dixit: Homo quidam descendébat ab Ierúsalem in Iéricho, et íncidit in latrónes, qui étiam despoliavérunt eum: et plagis impósitis abiérunt, semivívo relícto. Accidit autem, ut sacerdos quidam descénderet eádem via: et viso illo præterívit. Simíliter et levíta, cum esset secus locum et vidéret eum, pertránsiit. Samaritánus autem quidam iter fáciens, venit secus eum: et videns eum, misericórdia motus est. Et apprópians, alligávit vulnera eius, infúndens óleum et vinum: et impónens illum in iuméntum suum, duxit in stábulum, et curam eius egit. Et áltera die prótulit duos denários et dedit stabulário, et ait: Curam illíus habe: et quodcúmque supererogáveris, ego cum redíero, reddam tibi. Quis horum trium vidétur tibi próximus fuísse illi, qui íncidit in latrónes? At ille dixit: Qui fecit misericórdiam in illum. Et ait illi Iesus: Vade, et tu fac simíliter.
+  }
+  \e{%
+At that time, Jesus said to His disciples: Blessed are the eyes that see what you see! For I say to you, many prophets and kings have desired to see what you see, and they have not seen it; and to hear what you hear, and they have not heard it. And behold, a certain lawyer got up to test Him, saying, Master, what must I do to gain eternal life? But He said to him, What is written in the Law? How do you read? He answered and said, You shall love the Lord your God with your whole heart, and with your whole soul, and with your whole strength, and with your whole mind; and your neighbor as yourself. And He said to him, You have answered rightly; do this and you shall live. But he, wishing to justify himself, said to Jesus, And who is my neighbor? Jesus answered and said, A certain man was going down from Jerusalem to Jericho, and he fell in with robbers, who after both stripping him and beating him went their way, leaving him half-dead. But, as it happened, a certain priest was going down the same way; and when he saw him, he passed by. And likewise a Levite also, when he was near the place and saw him, passed by. But a certain Samaritan as he journeyed came upon him, and seeing him, was moved with compassion. And he went up to him and bound up his wounds, pouring on oil and wine. And setting him on his own beast, he brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper and said, ‘Take care of him; and whatever more you spend, I, on my way back, will repay you.’ Which of these three, in your opinion, proved himself neighbor to him who fell among the robbers? And he said, He who took pity on him. And Jesus said to him, Go and do also in like manner.
+  }
+}
+\newcommand{\offertory}{%
+  Precátus est Moyses in conspéctu Dómini, Dei sui, et dixit: Quare, Dómine, irásceris in pópulo tuo? Parce iræ ánimæ tuæ: meménto Abraham, Isaac et Iacob, quibus iurásti dare terram fluéntem lac et mel. Et placátus factus est Dóminus de malignitáte, quam dixit fácere pópulo suo.
+}
+\newcommand{\offertoryTranslation}{%
+  Moses prayed in the sight of the Lord his God and said, Why, O Lord, is Your indignation enkindled against Your people? Let the anger of Your mind cease; remember Abraham, Isaac, and Jacob, to whom You swore to give a land flowing with milk and honey. And the Lord was appeased from doing the evil which He had spoken of doing against His people.
+}
+\newcommand{\secret}{%
+  \l{%
+    Hóstias, quǽsumus, Dómine, propítius inténde, quas sacris altáribus exhibémus: ut, nobis indulgéntiam largiéndo, tuo nómini dent honórem.
+  }
+  \e{%
+    O Lord, we beseech You, graciously look upon the offerings which we lay upon Your sacred altar; so that they may bring us plentiful forgiveness while they give honor to Your name.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  De fructu óperum tuórum, Dómine, satiábitur terra: ut edúcas panem de terra, et vinum lætíficet cor hóminis: ut exhílaret fáciem in óleo, et panis cor hóminis confírmet.
+}
+\newcommand{\communionTranslation}{%
+  De fructu óperum tuórum, Dómine, satiábitur terra: ut edúcas panem de terra, et vinum lætíficet cor hóminis: ut exhílaret fáciem in óleo, et panis cor hóminis confírmet.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Vivíficet nos, quǽsumus, Dómine, huius participátio sancta mystérii: et páriter nobis expiatiónem tríbuat et múnimen.
+  }
+  \e{%
+    May the holy reception of this sacrament, we beseech You, O Lord, restore us to life, and bestow upon us forgiveness and protection.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
