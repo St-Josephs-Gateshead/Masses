@@ -1,0 +1,113 @@
+\documentclass[a5paper,10pt]{memoir}
+% Packages
+\usepackage[nobottomtitles]{titlesec}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella} %palatino clone
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage{microtype}
+\usepackage[british, latin]{babel}
+\usepackage[]{gitinfo2}
+% local
+\usepackage{rubrics}
+\usepackage{styling}
+% Config
+\copypagestyle{versionplain}{plain}
+\newcommand{\version}{\tiny Release: v1.0.0 (template v2.3.0)}
+\makeevenfoot{versionplain}{\thepage}{}{\version}
+\makeoddfoot{versionplain}{\version}{}{\thepage}
+\pagestyle{versionplain}
+\thispagestyle{empty}
+% layout
+\setulmarginsandblock{0.5in}{0.7in}{*}
+\setlrmarginsandblock{0.5in}{0.5in}{*}
+\checkandfixthelayout
+% headers
+\setsecnumdepth{chapter}
+\setsecheadstyle{\Large\scshape\raggedright\centering}
+\setafterparaskip{1.5ex plus .2ex}
+
+\begin{document}
+
+\input{propers}
+
+\begin{center}
+  {\LARGE \masstype}
+
+  ~
+
+  {\Large\scshape \feast}
+
+  \greseparator{2}{10}
+\end{center}
+
+% 
+\section{Introit}
+\black{
+  \l{\introit}
+  \e{\introitTranslation}
+}
+% 
+
+\section{Collect}
+\black{\collect}
+
+\section{Lesson}
+\black{\lesson}
+
+% 
+\section{Gradual}
+\black{
+  \l{\gradual}
+  \e{\gradualTranslation}
+}
+% 
+
+\section{Gospel}
+\black{\gospel}
+
+\section{Offertory}
+\black{
+  \l{\offertory}
+  \e{\offertoryTranslation}
+}
+
+\section{Communion}
+\black{
+  \l{\communion}
+  \e{\communionTranslation}
+}
+
+\section{Post Communion}
+\black{\postcommunion}
+
+% 
+\section{Marian Antiphon}
+\red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
+\gregorioscore{marian}
+% 
+
+\vfill
+\red{A motet or hymn may follow.}
+\begin{center}
+  \+
+\end{center}
+
+
+\vfill
+Typeset by John Morris in ten-point Palatino.  Translations from the
+Knox Bible, divinumofficium.com, the St. Dominic Missal, and my own.
+
+% 
+The latest version of this booklet can always be found at
+\url{ https://github.com/St-Josephs-Gateshead/Masses }. Comments?
+Suggestion? Found a mistake? Open an issue in the repository.
+% 
+
+{\centering\footnotesize\texttt{Compositum \today\ hora \currenttime}\par}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: luatex
+%%% End:
