@@ -1,0 +1,105 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica XVII Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Iustus es, Dómine, et rectum iudícium tuum: fac cum servo tuo secúndum misericórdiam tuam.
+Beáti immaculáti in via: qui ámbulant in lege Dómini.
+}
+\newcommand{\introitTranslation}{%
+You are just, O Lord, and Your ordinance is right. Deal with Your servant according to Your kindness.
+Happy are they whose way is blameless, who walk in the law of the Lord.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Da, quǽsumus, Dómine, pópulo tuo diabólica vitáre contágia: et te solum Deum pura mente sectári.
+  }
+  \e{%
+    Grant, we beseech You, O Lord, that Your people may avoid the temptations of the devil, and with pure minds follow You, the only God.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Obsecro vos ego vinctus in Dómino, ut digne ambulétis vocatióne, qua vocáti estis, cum omni humilitáte et mansuetúdine, cum patiéntia, supportántes ínvicem in caritáte, sollíciti serváre unitátem spíritus in vínculo pacis. Unum corpus et unus spíritus, sicut vocáti estis in una spe vocatiónis vestræ. Unus Dóminus, una fides, unum baptísma. Unus Deus et Pater ómnium, qui est super omnes et per ómnia et in ómnibus nobis. Qui est benedíctus in sǽcula sæculórum. Amen.
+  }
+  \e{%
+    Brethren: I, the prisoner in the Lord, exhort you to walk in a manner worthy of the calling with which you were called, with all humility and meekness, with patience, bearing with one another in love, careful to preserve the unity of the Spirit in the bond of peace: one body and one Spirit, even as you were called in one hope of your calling; one Lord, one faith, one Baptism, one God and Father of all, Who is above all, and throughout all, and in us all, Who is blessed forever and ever. Amen.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Beáta gens, cuius est Dóminus Deus eórum: pópulus, quem elégit Dóminus in hereditátem sibi.
+\v~Verbo Dómini cœli firmáti sunt: et spíritu oris eius omnis virtus eórum. Allelúia, allelúia
+\v~Dómine, exáudi oratiónem meam, et clamor meus ad te pervéniat. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  Happy the nation whose God is the Lord, the people the Lord has chosen for His own inheritance.
+\v~By the word of the Lord the heavens were made; by the breath of His mouth all their host. Alleluia, alleluia.
+\v~O Lord, hear my prayer, and let my cry come to You. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Accessérunt ad Iesum pharisǽi: et interrogávit eum unus ex eis legis doctor, tentans eum: Magíster, quod est mandátum magnum in lege? Ait illi Iesus: Díliges Dóminum, Deum tuum, ex toto corde tuo et in tota ánima tua et in tota mente tua. Hoc est máximum et primum mandátum. Secúndum autem símile est huic: Díliges próximum tuum sicut teípsum. In his duóbus mandátis univérsa lex pendet et prophétæ. Congregátis autem pharisǽis, interrogávit eos Iesus, dicens: Quid vobis vidétur de Christo? cuius fílius est? Dicunt ei: David. Ait illis: Quómodo ergo David in spíritu vocat eum Dóminum, dicens: Dixit Dóminus Dómino meo, sede a dextris meis, donec ponam inimícos tuos scabéllum pedum tuórum? Si ergo David vocat eum Dóminum, quómodo fílius eius est? Et nemo poterat ei respóndere verbum: neque ausus fuit quisquam ex illa die eum ámplius interrogáre.
+  }
+  \e{%
+    At that time, the Pharisees came to Jesus and one of them, a doctor of the Law, putting Him to the test, asked Him, Master, which is the great commandment in the Law? Jesus said to him, ‘You shall love the Lord your God with your whole heart, and with your whole soul, and with your whole mind.’ This is the greatest and first commandment. And the second is like it, ‘You shall love your neighbor as yourself.’ On these two commandments depend the whole Law and the Prophets. Now while the Pharisees were gathered together, Jesus questioned them, saying, What do you think of the Christ? Whose son is He? They said to Him, David’s. He said to them, How then does David in the spirit call Him Lord, saying, The Lord said to my Lord: Sit at My right hand, till I make Your enemies Your footstool?’ If David, therefore, calls Him ‘Lord,’ how is He his son? And no one could answer Him a word; neither did anyone dare from that day forth to ask Him any more questions.
+  }
+}
+\newcommand{\offertory}{%
+  Orávi Deum meum ego Dániel, dicens: Exáudi, Dómine, preces servi tui: illúmina fáciem tuam super sanctuárium tuum: et propítius inténde pópulum istum, super quem invocátum est nomen tuum, Deus.
+}
+\newcommand{\offertoryTranslation}{%
+  I, Daniel, prayed to my God, saying, Hear, O Lord, the prayers of Your servant; show Your face upon Your sanctuary, and favorably look down upon this people, upon whom Your name is invoked, O God.
+}
+\newcommand{\secret}{%
+  \l{%
+    Maiestátem tuam, Dómine, supplíciter deprecámur: ut hæc sancta, quæ gérimus, et a prætéritis nos delictis éxuant et futúris.
+  }
+  \e{%
+    O Lord, we humbly pray Your Majesty that the holy rite which we are celebrating may free us from past and future sins.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Vovéte et réddite Dómino, Deo vestro, omnes, qui in circúitu eius affértis múnera: terríbili, et ei qui aufert spíritum príncipum: terríbili apud omnes reges terræ.
+}
+\newcommand{\communionTranslation}{%
+  Make vows to the Lord, your God, and fulfill them; let all round about Him bring gifts to the terrible Lord Who checks the pride of princes, Who is terrible to the kings of the earth.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Sanctificatiónibus tuis, omnípotens Deus, et vítia nostra curéntur, et remédia nobis ætérna provéniant.
+  }
+  \e{%
+    By the workings of Your sanctifying power, almighty God, may our vices be cured and eternal remedies provided for us.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/9/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/9/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/9/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/9/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/9/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
