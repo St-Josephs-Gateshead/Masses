@@ -52,21 +52,21 @@ GTEX += communion.gtex
 
 
 
-../Ordinaries/masses/9/kyrie.gtex: ../Ordinaries/masses/9/kyrie.gabc
+../Ordinaries/masses/8/kyrie.gtex: ../Ordinaries/masses/8/kyrie.gabc
 
-GTEX += ../Ordinaries/masses/9/kyrie.gtex
+GTEX += ../Ordinaries/masses/8/kyrie.gtex
 
-../Ordinaries/masses/9/sanctus.gtex: ../Ordinaries/masses/9/sanctus.gabc
+../Ordinaries/masses/8/sanctus.gtex: ../Ordinaries/masses/8/sanctus.gabc
 
-GTEX += ../Ordinaries/masses/9/sanctus.gtex
+GTEX += ../Ordinaries/masses/8/sanctus.gtex
 
-../Ordinaries/masses/9/agnus.gtex: ../Ordinaries/masses/9/agnus.gabc
+../Ordinaries/masses/8/agnus.gtex: ../Ordinaries/masses/8/agnus.gabc
 
-GTEX += ../Ordinaries/masses/9/agnus.gtex
+GTEX += ../Ordinaries/masses/8/agnus.gtex
 
-../Ordinaries/masses/9/ite.gtex: ../Ordinaries/masses/9/ite.gabc
+../Ordinaries/masses/8/ite.gtex: ../Ordinaries/masses/8/ite.gabc
 
-GTEX += ../Ordinaries/masses/9/ite.gtex
+GTEX += ../Ordinaries/masses/8/ite.gtex
 
 
 ../Ordinaries/credo/1/credo.gtex: ../Ordinaries/credo/1/credo.gabc
@@ -80,9 +80,9 @@ asperges.gtex: asperges.gabc
 GTEX += asperges.gtex
 
 
-../Ordinaries/masses/9/gloria.gtex: ../Ordinaries/masses/9/gloria.gabc
+../Ordinaries/masses/8/gloria.gtex: ../Ordinaries/masses/8/gloria.gabc
 
-GTEX += ../Ordinaries/masses/9/gloria.gtex
+GTEX += ../Ordinaries/masses/8/gloria.gtex
 
 
 gradual.gtex: gradual.gabc

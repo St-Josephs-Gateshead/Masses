@@ -12,7 +12,7 @@ gloria: true
 gradual: true
 img_file: ../img/logo.pdf
 marian: true
-mass_setting: 9
+mass_setting: 8
 mass_type: Missa Cantata
 masses_path: ../Ordinaries/masses
 preface: standard
