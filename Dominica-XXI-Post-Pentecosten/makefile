@@ -80,6 +80,10 @@ asperges.gtex: asperges.gabc
 GTEX += asperges.gtex
 
 
+../Ordinaries/masses/11/gloria.gtex: ../Ordinaries/masses/11/gloria.gabc
+
+GTEX += ../Ordinaries/masses/11/gloria.gtex
+
 
 gradual.gtex: gradual.gabc
 

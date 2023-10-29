@@ -8,7 +8,7 @@ creed: 1
 creed_path: ../Ordinaries/credo
 creedp: true
 feast_name: Dominica XXI Post Pentecosten
-gloria: false
+gloria: true
 gradual: true
 img_file: ../img/logo.pdf
 marian: true
