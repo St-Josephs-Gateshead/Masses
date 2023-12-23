@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier
+_commit: v2.3.0
+_src_path: gh:2e0byo/MassTemplate.git
+alleluia: alleluia
+asperges: ''
+creator_name: John Morris
+creedp: false
+feast_name: In Conceptione Immaculata Beatæ Mariæ Virginis
+gloria: true
+gradual: true
+img_file: ../img/logo.pdf
+marian: true
+mass_setting: 9
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: standard
+repo_url: https://github.com/St-Josephs-Gateshead/Masses
+rite: roman
+version: v1.0.0

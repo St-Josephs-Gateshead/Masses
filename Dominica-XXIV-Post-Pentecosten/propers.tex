@@ -1,0 +1,103 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica XXIV et Ultima Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Dicit Dóminus: Ego cógito cogitatiónes pacis, et non afflictiónis: invocábitis me, et ego exáudiam vos: et redúcam captivitátem vestram de cunctis locis.
+  Benedixísti, Dómine, terram tuam: avertísti captivitátem Iacob.
+}
+\newcommand{\introitTranslation}{%
+  The Lord says: "I think thoughts of peace, and not of affliction. You shall call upon Me, and I will hear you; and I will bring back your captivity from all places."
+  You have favored, O Lord, Your land; You have restored the well-being of Jacob.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Excita, quǽsumus, Dómine, tuórum fidélium voluntátes: ut, divíni óperis fructum propénsius exsequéntes; pietátis tuæ remédia maióra percípiant.
+  }
+  \e{%
+    Stir up, O Lord, the will of Thy people, that seeking more arduously the
+    fruit of divine work, they might receive more abundantly the balm of Thy goodness.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Non cessámus pro vobis orántes et postulántes, ut impleámini agnitióne voluntátis Dei, in omni sapiéntia et intelléctu spiritáli: ut ambulétis digne Deo per ómnia placéntes: in omni ópere bono fructificántes, et crescéntes in scientia Dei: in omni virtúte confortáti secúndum poténtiam claritátis eius in omni patiéntia, et longanimitáte cum gáudio, grátias agentes Deo Patri, qui dignos nos fecit in partem sortis sanctórum in lúmine: qui erípuit nos de potestáte tenebrárum, et tránstulit in regnum Fílii dilectiónis suæ, in quo habémus redemptiónem per sánguinem eius, remissiónem peccatórum.
+  }
+  \e{%
+    Brethren: We have been praying for you unceasingly, asking that you may be filled with knowledge of God’s will, in all spiritual wisdom and understanding. May you walk worthily of God and please Him in all things, bearing fruit in every good work and growing in the knowledge of God. May you be completely strengthened through His glorious power unto perfect patience and long-suffering; joyfully rendering thanks to God the Father, Who has made us worthy to share the lot of the saints in light. He has rescued us from the power of darkness and transferred us into the kingdom of His beloved Son, in Whom we have our redemption, through His Blood, the remission of our sins.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Liberásti nos, Dómine, ex affligéntibus nos: et eos, qui nos odérunt, confudísti.
+  In Deo laudábimur tota die, et in nómine tuo confitébimur in sǽcula. Allelúia, allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  You saved us, O Lord, from our foes, and those who hated us You put to shame.
+  In God we gloried day by day; Your name we praised always. Alleluia, alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Iesus discípulis suis: Cum vidéritis abominatiónem desolatiónis, quæ dicta est a Daniéle Prophéta, stantem in loco sancto: qui legit, intélligat: tunc qui in Iudǽa sunt, fúgiant ad montes: et qui in tecto, non descéndat tóllere áliquid de domo sua: et qui in agro, non revertátur tóllere túnicam suam. Væ autem prægnántibus et nutriéntibus in illis diébus. Oráte autem, ut non fiat fuga vestra in híeme vel sábbato. Erit enim tunc tribulátio magna, qualis non fuit ab inítio mundi usque modo, neque fiet. Et nisi breviáti fuíssent dies illi, non fíeret salva omnis caro: sed propter eléctos breviabúntur dies illi. Tunc si quis vobis díxerit: Ecce, hic est Christus, aut illic: nolíte crédere. Surgent enim pseudochrísti et pseudoprophétæ, et dabunt signa magna et prodígia, ita ut in errórem inducántur - si fíeri potest - étiam elécti. Ecce, prædíxi vobis. Si ergo díxerint vobis: Ecce, in desérto est, nolíte exíre: ecce, in penetrálibus, nolíte crédere. Sicut enim fulgur exit ab Oriénte et paret usque in Occidéntem: ita erit et advéntus Fílii hóminis. Ubicúmque fúerit corpus, illic congregabúntur et áquilæ. Statim autem post tribulatiónem diérum illórum sol obscurábitur, et luna non dabit lumen suum, et stellæ cadent de cælo, et virtútes cœlórum commovebúntur: et tunc parébit signum Fílii hóminis in cœlo: et tunc plangent omnes tribus terræ: et vidébunt Fílium hóminis veniéntem in núbibus cæli cum virtúte multa et maiestáte. Et mittet Angelos suos cum tuba et voce magna: et congregábunt eléctos eius a quátuor ventis, a summis cœlórum usque ad términos eórum. Ab árbore autem fici díscite parábolam: Cum iam ramus eius tener fúerit et fólia nata, scitis, quia prope est æstas: ita et vos cum vidéritis hæc ómnia, scitóte, quia prope est in iánuis. Amen, dico vobis, quia non præteríbit generátio hæc, donec ómnia hæc fiant. Cœlum et terra transíbunt, verba autem mea non præteríbunt.
+  }
+  \e{%
+At that time, Jesus said to His disciples: When you see the abomination of desolation, which was spoken of by Daniel the prophet, standing in the holy place - let him who reads understand - then let those who are in Judea flee to the mountains; and let him who is on the housetop not go down to take anything from his house; and let him who is in the field not turn back to take his cloak. But woe to those who are with child, or have infants at the breast in those days! But pray that your flight may not be in the winter, or on the Sabbath. For then there will be great tribulation, such as has not been from the beginning of the world until now, nor will be. And unless those days had been shortened, no living creature would be saved. But for the sake of the elect those days will be shortened. Then if anyone say to you, ‘Behold, here is the Christ,’ or ‘There He is,’ do not believe it. For false christs and false prophets will arise, and will show great signs and wonders, so as to lead astray, if possible, even the elect. Behold, I have told it to you beforehand. If therefore they say to you, ‘Behold, He is in the desert,’ do not go forth; ‘Behold, He is in the inner chambers,’ do not believe it. For as the lightning comes forth from the east and shines even to the west, so also will the coming of the Son of Man be. Wherever the body is, there will the eagles be gathered together. But immediately after the tribulation of those days, the sun will be darkened, and the moon will not give her light, and the stars will fall from heaven, and the powers of heaven will be shaken. And then will appear the sign of the Son of Man in heaven; and then will all tribes of the earth mourn, and they will see the Son of Man coming upon the clouds of heaven with great power and majesty. And He will send forth His angels with a trumpet and a great sound, and they will gather His elect from the four winds, from one end of the heavens to the other. Now from the fig tree learn this parable. When its branch is now tender, and the leaves break forth, you know that summer is near. Even so, when you see all these things, know that it is near, even at the door. Amen I say to you, this generation will not pass away till all these things have been accomplished. Heaven and earth will pass away, but my words will not pass away.
+  }
+}
+\newcommand{\offertory}{%
+  De profúndis clamávi ad te, Dómine: Dómine, exáudi oratiónem meam: de profúndis clamávi ad te, Dómine.
+}
+\newcommand{\offertoryTranslation}{%
+  Out of the depths I cry to You, O Lord; Lord, hear my prayer! Out of the depths I cry to You, O Lord.
+}
+\newcommand{\secret}{%
+  \l{%
+    Propítius esto, Dómine, supplicatiónibus nostris: et, pópuli tui oblatiónibus precibúsque suscéptis, ómnium nostrum ad te corda convérte; ut, a terrenis cupiditátibus liberáti, ad cœléstia desidéria transeámus.
+  }
+  \e{%
+    Be merciful, O Lord, to our humble requests and accept the offerings and prayers of Your people: turn the hearts of all of us to You, that, freed from earthly cravings, we may pass over to heavenly yearnings.
+  }
+}
+\newcommand{\communion}{%
+  Amen, dico vobis, quidquid orántes pétitis, crédite, quia accipiétis, et fiet vobis.
+}
+\newcommand{\communionTranslation}{%
+  Amen I say to you, all things whatever you ask for in prayer, believe that you shall receive, and it shall be done to you.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Concéde nobis, quǽsumus, Dómine: ut per hæc sacraménta quæ súmpsimus, quidquid in nostra mente vitiósum est, ipsorum medicatiónis dono curétur.
+  }
+  \e{%
+    Grant us, we beseech You, O Lord, that all the evil in our hearts may be cured by the healing power of the sacrament we have received.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

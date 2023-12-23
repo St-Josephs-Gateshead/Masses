@@ -1,0 +1,114 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica I Adventus}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Ad te levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi, qui te exspéctant, non confundéntur.
+  Vias tuas, Dómine, demónstra mihi: et sémitas tuas édoce me.
+}
+\newcommand{\introitTranslation}{%
+  To You I lift up my soul: in You, O my God, I trust; let me not be put to shame; let not my enemies exult over me. No one who waits for You shall be put to shame.
+  Your ways, O Lord, make known to me; teach me Your paths.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:
+  }
+  \e{%
+    Stir up, O Lord we beseech Thee, Thy power, and come: that with Thee
+    as our protector we might be snatched away
+    from the overshadowing peril of our sins
+    our deliverer might obtain salvation.
+  }
+  \l{
+    Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+  }
+  \e{
+    Who livest and reignest with God the Father, in the unity of the Holy Spirit, God, world without end.
+  }
+  \amen
+}
+\newcommand{\lesson}{%
+  \l{
+    Fratres: Sciéntes, quia hora est iam nos de somno súrgere. Nunc enim própior est nostra salus, quam cum credídimus. Nox præcéssit, dies autem appropinquávit. Abiiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus: non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentióne et æmulatióne: sed induímini Dóminum Iesum Christum.
+  }
+  \e{%
+    Brethren: Understand, for it is now the hour for us to rise from sleep, because now our salvation is nearer than when we came to believe. The night is far advanced; the day is at hand. Let us therefore lay aside the works of darkness, and put on the armor of light. Let us walk becomingly as in the day, not in revelry and drunkenness, not in debauchery and wantonness, not in strife and jealousy. But put on the Lord Jesus Christ.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Univérsi, qui te exspéctant, non confundéntur, Dómine.
+  \v~Vias tuas, Dómine, notas fac mihi: et sémitas tuas édoce me. Allelúia, allelúia.
+  \v~Osténde nobis, Dómine, misericórdiam tuam: et salutáre tuum da nobis. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  No one who waits for You shall be put to shame.
+  \v~Your ways, O Lord, make known to me; teach me Your paths. Alleluia, alleluia.
+  \v~Show us, O Lord, Your kindness, and grant us Your salvation. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Dixit Iesus discípulis suis: Erunt signa in sole et luna et stellis, et in terris pressúra géntium præ confusióne sónitus maris et flúctuum: arescéntibus homínibus præ timóre et exspectatióne, quæ supervénient univérso orbi: nam virtútes cœlórum movebúntur. Et tunc vidébunt Fílium hóminis veniéntem in nube cum potestáte magna et maiestáte. His autem fíeri incipiéntibus, respícite et leváte cápita vestra: quóniam appropínquat redémptio vestra. Et dixit illis similitúdinem: Vidéte ficúlneam et omnes árbores: cum prodúcunt iam ex se fructum, scitis, quóniam prope est æstas. Ita et vos, cum vidéritis hæc fíeri, scitóte, quóniam prope est regnum Dei. Amen, dico vobis, quia non præteríbit generátio hæc, donec ómnia fiant. Cœlum et terra transíbunt: verba autem mea non transíbunt. 
+  }
+  \e{%
+    At that time, Jesus said to His disciples: There will be signs in the sun and moon and stars, and upon the earth distress of nations bewildered by the roaring of sea and waves; men fainting for fear and for expectation of the things that are coming on the world; for the powers of heaven will be shaken. And then they will see the son of Man coming upon a cloud with great power and majesty. but when these things begin to come to pass, look up, and lift up your heads, because your redemption is at hand. And He spoke to them a parable. Behold the fig tree, and all the trees. When they now put forth their buds, you know that summer is near. Even so, when you see these things coming to pass, know that the kingdom of God is near. Amen I say to you, this generation will not pass away till all things have been accomplished. Heaven and earth will pass away, but My words will not pass away.
+  }
+}
+\newcommand{\offertory}{%
+  Ad te levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi, qui te exspéctant, non confundéntur.
+}
+\newcommand{\offertoryTranslation}{%
+  To You I lift up my soul: in You, O my God, I trust; let me not be put to shame; let not my enemies exult over me. No one who waits for You shall be put to shame.
+}
+\newcommand{\secret}{%
+  \l{%
+    Hæc sacra nos, Dómine, poténti virtúte mundátos ad suum fáciant purióres veníre princípium.
+  }
+  \e{%
+    May these offerings, O Lord, cleanse us by their mighty power and thus make us come purer before You Who are their author.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Dóminus dabit benignitátem: et terra nostra dabit fructum suum.
+}
+\newcommand{\communionTranslation}{%
+  The Lord will give His benefits: and our land shall yield its increase.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Suscipiámus, Dómine, misericórdiam tuam in médio templi tui: ut reparatiónis nostræ ventúra sollémnia cóngruis honóribus præcedámus.
+  }
+  \e{%
+    May we receive Your mercy, O Lord, in the midst of Your temple, and thus prepare with due observance for the coming festal season of our redemption.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/17/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/17/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/17/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/17/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/17/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

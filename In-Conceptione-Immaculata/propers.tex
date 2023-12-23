@@ -1,0 +1,117 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{In Conceptione Immaculata Beatæ Mariæ Virginis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Gaudens gaudébo in Dómino, et exsultábit ánima mea in Deo meo: quia índuit me vestiméntis salútis: et induménto iustítiæ circúmdedit me, quasi sponsam ornátam monílibus suis.
+  Exaltábo te, Dómine, quóniam suscepísti me: nec delectásti inimícos meos super me.
+}
+\newcommand{\introitTranslation}{%
+  I will heartily rejoice in the Lord, in my God is the joy of my soul; for He has clothed me with a robe of salvation, and wrapped me in a mantle of justice, like a bride bedecked with her jewels.
+  I will extol You, O Lord, for You drew me clear and did not let my enemies rejoice over me.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Deus, qui per immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculum præparásti: quǽsumus; ut, qui ex morte eiúsdem Filii tui prævísa eam ab omni labe præservásti, nos quoque mundos eius intercessióne ad te perveníre concédas.
+  }
+  \e{%
+    O God, Who by the Immaculate Conception of the Virgin, prepared a worthy dwelling for Your Son, and Who, by Your Son’s death, foreseen by You, preserved her from all taint, grant, we beseech You, through her intercession, that we too may come to You unstained by sin.
+  }
+  \l{
+    Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+  }
+  \e{
+    Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+  }
+  \amen
+}
+\newcommand{\lesson}{%
+  \l{%
+Dóminus possedit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. Ab ætérno ordináta sum, et ex antíquis, ántequam terra fíeret. Nondum erant abýssi, et ego iam concépta eram: necdum fontes aquárum erúperant: necdum montes gravi mole constíterant: ante colles ego parturiébar: adhuc terram non fécerat et flúmina et cárdines orbis terræ. Quando præparábat cœlos, áderam: quando certa lege et gyro vallábat abýssos: quando æthera firmábat sursum et librábat fontes aquárum: quando circúmdabat mari términum suum et legem ponébat aquis, ne transírent fines suos: quando appendébat fundaménta terræ. Cum eo eram cuncta compónens: et delectábar per síngulos dies, ludens coram eo omni témpore: ludens in orbe terrárum: et delíciæ meæ esse cum filiis hóminum. Nunc ergo, filii, audíte me: Beáti, qui custódiunt vias meas. Audíte disciplínam, et estóte sapiéntes, et nolíte abiícere eam. Beátus homo, qui audit me et qui vígilat ad fores meas cotídie, et obsérvat ad postes óstii mei. Qui me invénerit, invéniet vitam et háuriet salútem a Dómino.
+  }
+  \e{%
+The Lord begot me, the firstborn of His ways, the forerunner of His prodigies of long ago; from of old I was poured forth, at the first, before the earth. When there were no depths I was brought forth, when there were no fountains or springs of water; before the mountains were settled into place, before the hills, I was brought forth; while as yet the earth and the fields were not made, nor the first clods of the world. When He established the heavens I was there, when He marked out the vault over the face of the deep; when He made firm the skies above, and poised the fountains of waters; when He set for the sea its limit, so that the waters should not transgress His command; when He fixed fast the foundations of the earth; then was I beside Him as His craftsman, and I was His delight day by day, playing before Him all the while, playing on the surface of His earth and I found delight in the sons of men. So now, O children, listen to me; happy those who keep my ways. Hear instruction, and be wise, and refuse it not. Happy the man who obeys me, watching daily at my gates, waiting at my doorsteps, for he who finds me finds life, and wins favor from the Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Benedícta es tu. Virgo María, a Dómino, Deo excélso, præ ómnibus muliéribus super terram.
+  Tu glória Ierúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri. Allelúia, allelúia.
+  Tota pulchra es, María: et mácula originális non est in te. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  Blessed are you, O Virgin Mary, by the Lord the most high God, above all women upon the earth.
+  You are the glory of Jerusalem, you are the joy of Israel, you are the honor of our people. Alleluia, alleluia.
+  You are all-beautiful, O Mary, and there is in you no stain of original sin. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Missus est Angelus Gábriël a Deo in civitátem Galilææ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Ioseph, de domo David, et nomen Vírginis María. Et ingréssus Angelus ad eam, dixit: Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus.
+  }
+  \e{%
+    At that time, the angel Gabriel was sent from God to a town of Galilee called Nazareth, to a virgin betrothed to a man named Joseph, of the house of David, and the virgin’s name was Mary. And when the angel come to her, he said, Hail, full of grace, the Lord is with you. Blessed are you among women.
+  }
+}
+\newcommand{\offertory}{%
+  Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+  Hail Mary full of grace, the Lord is with you; blessed are you among women. Alleluia.
+}
+\newcommand{\secret}{%
+  \l{%
+    Salutárem hóstiam, quam in sollemnitáte immaculátæ Conceptiónis beátæ Vírginis Maríæ tibi, Dómine, offérimus, súscipe et præsta: ut, sicut illam tua grátia præveniénte ab omni labe immúnem profitémur; ita eius intercessióne a culpis ómnibus liberémur.
+  }
+  \e{%
+    Accept, O Lord, the sacrifice of salvation which we offer You on the feast of the Immaculate Conception of the Blessed Virgin Mary; and grant that as we profess that she was kept from all taint of evil, by Your anticipating grace, so, through her intercession, may we be freed from all sin.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Gloriósa dicta sunt de te, María: quia fecit tibi magna qui potens est.
+}
+\newcommand{\communionTranslation}{%
+  Glorious things are said of you, O Mary, for He Who is mighty has done great things for you.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Sacraménta quæ súmpsimus, Dómine, Deus noster: illíus in nobis culpæ vúlnera réparent; a qua immaculátam beátæ Maríæ Conceptiónem singuláriter præservásti.
+  }
+  \e{%
+    May the sacrament we have received, O Lord our God, heal in us the wounds of that sin from which by a singular privilege, You kept immaculate the conception of blessed Mary.
+  }
+  \per
+  \oremus
+  \l{
+    Suscipiámus, Dómine, misericórdiam tuam in médio templi tui: ut reparatiónis nostræ ventúra sollémnia cóngruis honóribus præcedámus.
+  }
+  \e{
+    May we receive Your mercy, O Lord, in the midst of Your temple, and thus prepare with due observance for the coming festal season of our redemption.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/9/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/9/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/9/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/9/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/9/ite}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
