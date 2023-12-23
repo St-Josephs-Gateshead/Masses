@@ -86,6 +86,10 @@ gradual.gtex: gradual.gabc
 GTEX += gradual.gtex
 
 
+alleluia.gtex: alleluia.gabc
+
+GTEX += alleluia.gtex
+
 
 
 marian.gtex: marian.gabc
