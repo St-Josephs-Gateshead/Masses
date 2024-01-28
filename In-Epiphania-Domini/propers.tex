@@ -1,0 +1,113 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{In Epiphania Domini}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Ecce, advénit dominátor Dóminus: et regnum in manu eius et potéstas et impérium.
+  Deus, iudícium tuum Regi da: et iustítiam tuam Fílio Regis.
+}
+\newcommand{\introitTranslation}{%
+  Behold, the Lord and Ruler is come; and the kingdom is in His hand, and power, and dominion.
+  O God, with Your judgment endow the King, and with Your justice, the King’s Son.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Deus, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti: concéde propítius; ut, qui iam te ex fide cognóvimus, usque ad contemplándam spéciem tuæ celsitúdinis perducámur.
+  }
+  \e{%
+    O God, You Who by the guidance of a star this day revealed Your only-begotten Son to the Gentiles; mercifully grant that we who know You now by faith, may come to behold You in glory.
+  }
+  \l{
+    Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+  }
+  \e{
+    Through the same Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end. 
+  }
+  \amen
+}
+\newcommand{\lesson}{%
+  \l{%
+    Surge, illumináre, Ierúsalem: quia venit lumen tuum, et glória Dómini super te orta est. Quia ecce, ténebræ opérient terram et caligo pópulos: super te autem oriétur Dóminus, et glória eius in te vidébitur. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui. Leva in circúitu óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent. Tunc vidébis et áfflues, mirábitur et dilatábitur cor tuum, quando convérsa fúerit ad te multitúdo maris, fortitúdo géntium vénerit tibi. Inundátio camelórum opériet te dromedárii Mádian et Epha: omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes.
+  }
+  \e{%
+    Rise up in splendor, O Jerusalem! Your light has come, the glory of the Lord shines upon you. See, darkness covers the earth, and thick clouds cover the peoples; but upon you the Lord shines, and over you appears His glory. Nations shall walk by your light, and kings by your shining radiance. Raise your eyes and look about; they all gather and come to you: your sons come from afar, and your daughters in the arms of their nurses. Then you shall be radiant at what you see, your heart shall throb and overflow, for the riches of the sea shall be emptied out before you, the wealth of nations shall be brought to you. Caravans of camels shall fill you, dromedaries from Madian and Epha; all from Saba shall come bearing gold and frankincense, and proclaiming the praises of the Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes.
+  Surge et illumináre, Ierúsalem: quia glória Dómini super te orta est. Allelúia, allelúia
+  Vídimus stellam eius in Oriénte, et vénimus cum munéribus adoráre Dóminum. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  All they from Saba shall come, bringing gold and frankincense, and proclaiming the praises of the Lord.
+  Rise up in splendor, O Jerusalem, for the glory of the Lord shines upon you. Alleluia, alleluia.
+  We have seen His star in the East: and have come with gifts to worship the Lord. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+Cum natus esset Iesus in Béthlehem Iuda in diébus Heródis regis, ecce, Magi ab Oriénte venerunt Ierosólymam, dicéntes: Ubi est, qui natus est rex Iudæórum? Vidimus enim stellam eius in Oriénte, et vénimus adoráre eum. Audiens autem Heródes rex, turbatus est, et omnis Ierosólyma cum illo. Et cóngregans omnes principes sacerdotum et scribas pópuli, sciscitabátur ab eis, ubi Christus nasceretur. At illi dixérunt ei: In Béthlehem Iudæ: sic enim scriptum est per Prophétam: Et tu, Béthlehem terra Iuda, nequaquam mínima es in princípibus Iuda; ex te enim éxiet dux, qui regat pópulum meum Israël. Tunc Heródes, clam vocátis Magis, diligénter dídicit ab eis tempus stellæ, quæ appáruit eis: et mittens illos in Béthlehem, dixit: Ite, et interrogáte diligénter de púero: et cum invenéritis, renuntiáte mihi, ut et ego véniens adórem eum. Qui cum audíssent regem, abiérunt. Et ecce, stella, quam víderant in Oriénte, antecedébat eos, usque dum véniens staret supra, ubi erat Puer. Vidéntes autem stellam, gavísi sunt gáudio magno valde. Et intrántes domum, invenérunt Púerum cum María Matre eius et procidéntes adoravérunt eum. Et, apértis thesáuris suis, obtulérunt ei múnera, aurum, thus et myrrham. Et responso accépto in somnis, ne redírent ad Heródem, per aliam viam revérsi sunt in regiónem suam.
+  }
+  \e{%
+When Jesus was born in Bethlehem of Judea, in the days of King Herod, behold, Magi came from the East to Jerusalem, saying, Where is He that is born King of the Jews? For we have seen His star in the east and have come to worship Him. But when King Herod heard this, he was troubled, and so was all Jerusalem with him. And gathering together all the chief priests and Scribes of the people, he inquired of them where the Christ was to be born. And they said to him, In Bethlehem of Judea; for thus it is written by the prophet, ‘And you, Bethlehem, of the land of Juda, are by no means least among the princes of Juda; for from you shall come forth a leader who shall rule My people Israel.’ Then Herod summoned the Magi secretly, and carefully ascertained from them the time when the star had appeared to them. And sending them to Bethlehem, he said, Go and make careful inquiry concerning the Child, and when you have found Him, bring me word, that I too may go and worship Him. Now they, having heard the king, went their way. And behold, the star that they had seen in the East went before them, until it came and stood over the place where the Child was. And when they saw the star they rejoiced exceedingly. And entering the house, they found the Child with Mary His Mother, and falling down they worshipped Him. And opening their treasures they offered Him gifts of gold, frankincense and myrrh. And being warned in a dream not to return to Herod, they went back to their own country by another way.
+  }
+}
+\newcommand{\offertory}{%
+  Reges Tharsis, et ínsulæ múnera ófferent: reges Arabum et Saba dona addúcent: et adorábunt eum omnes reges terræ, omnes gentes sérvient ei.
+}
+\newcommand{\offertoryTranslation}{%
+  The kings of Tharsis and the Isles shall offer gifts; the kings of Arabia and Saba shall bring tribute. All kings shall pay Him homage, all nations shall serve Him.
+}
+\newcommand{\secret}{%
+  \l{%
+    Ecclésiæ tuæ, quǽsumus, Dómine, dona propítius intuere: quibus non iam aurum, thus et myrrha profertur; sed quod eisdem munéribus declarátur, immolátur et súmitur, Iesus Christus, fílius tuus, Dóminus noster:
+  }
+  \e{%
+    O Lord, look favorably upon the gifts of Your Church, which are no longer gifts of gold, frankincense and myrrh, but, as these gifts signify, our offering is Jesus Christ Your Son, our Lord, Who is now sacrifice and food.
+  }
+  \l{Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.}
+  \e{Who livest and reignest with God the Father, in the unity of the Holy Spirit, God, world without end.}
+  \amen
+}
+\newcommand{\communion}{%
+  Vídimus stellam eius in Oriénte, et vénimus cum munéribus adoráre Dóminum.
+}
+\newcommand{\communionTranslation}{%
+  We have seen His star in the East and have come with gifts to worship the Lord.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Præsta, quǽsumus, omnípotens Deus: ut, quæ sollémni celebrámus officio, purificátæ mentis intellegéntia consequámur.
+  }
+  \e{%
+    Grant, we beseech You, almighty God, that, by the understanding of our minds made pure, we may grasp what we celebrate by these solemn rites.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/2/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/2/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/2/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/2/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/2/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
