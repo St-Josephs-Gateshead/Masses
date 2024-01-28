@@ -15,7 +15,11 @@ files: dict[Path, Stem] = {
 def populate(src_dir: Path, dest_dir: Path):
     for target, stem in files.items():
         candidates = list(src_dir.glob(f"{stem}*.gabc"))
-        assert len(candidates) == 1
+        if not candidates:
+            continue
+        assert (
+            len(candidates) == 1
+        ), f"Multiple candidates found for {src_dir}/{stem}*.gabc"
         candidates[0].rename(dest_dir / target)
 
 
