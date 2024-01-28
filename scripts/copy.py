@@ -8,6 +8,7 @@ files: dict[Path, Stem] = {
     Path("alleluia.gabc"): Stem("al--"),
     Path("offertory.gabc"): Stem("of--"),
     Path("communion.gabc"): Stem("co--"),
+    Path("tract.gabc"): Stem("tr--"),
 }
 
 
