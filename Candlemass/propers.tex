@@ -1,0 +1,117 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{In Purificatione Beatæ Mariæ Virginis (seu Candlemass)}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+%
+\newcommand{\introit}{%
+  Suscépimus, Deus, misericórdiam tuam in médio templi tui: secúndum nomen tuum, Deus, ita et laus tua in fines terræ: iustítia plena est déxtera tua.
+  Magnus Dóminus, et laudábilis nimis: in civitáte Dei nostri, in monte sancto eius.
+}
+\newcommand{\introitTranslation}{%
+  O God, we ponder Your kindness within Your temple. As Your name, O God, so also Your praise reaches to the ends of the earth. Of justice Your right hand is full.
+  Great is the Lord, and wholly to be praised in the city of our God, His holy mountain.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Omnípotens sempitérne Deus, maiestátem tuam súpplices exorámus: ut, sicut unigénitus Fílius tuus hodiérna die cum nostræ carnis substántia in templo est præsentátus; ita nos fácias purificátis tibi méntibus præsentári.
+  }
+  \e{%
+    Almighty, eternal God, we humbly beseech Your majesty that, as Your only-begotten Son was this day presented in the temple in the nature of our flesh, so may You grant us to be presented to You with purified minds.
+  }
+  \l{
+    Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+  }
+  \e{
+    Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Hæc dicit Dóminus Deus: Ecce, ego mitto Angelum meum, et præparábit viam ante fáciem meam. Et statim véniet ad templum suum Dominátor, quem vos quæritis, et Angelus testaménti, quem vos vultis. Ecce, venit, dicit Dóminus exercítuum: et quis póterit cogitáre diem advéntus eius, et quis stabit ad vidéndum eum? Ipse enim quasi ignis conflans et quasi herba fullónum: et sedébit conflans et emúndans argéntum, et purgábit fílios Levi et colábit eos quasi aurum et quasi argéntum: et erunt Dómino offeréntes sacrifícia in iustítia. Et placébit Dómino sacrifícium Iuda et Ierúsalem, sicut dies sǽculi et sicut anni antíqui: dicit Dóminus omnípotens.
+  }
+  \e{%
+    Thus says the Lord God: Lo, I am sending My messenger to prepare the way before Me; and suddenly there will come to the temple the Lord Whom you seek, and the Messenger of the covenant Whom you desire. Yes. He is coming, says the Lord of Hosts. But who will endure the day of His coming? And who can stand when He appears? For He is like the refiner's fire, or like the fuller's lye. He will sit refining and purifying silver, and He will purify the sons of Levi, refining them like gold or like silver that they may offer due sacrifice to the Lord. Then the sacrifice of Juda and Jerusalem will please the Lord, as in the days of old, as in years gone by, says the Lord almighty.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Suscépimus, Deus, misericórdiam tuam in médio templi tui: secúndum nomen tuum, Deus, ita et laus tua in fines terræ.
+  \v~Sicut audívimus, ita et vídimus in civitáte Dei nostri, in monte sancto eius.
+  Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace.
+  \v~Quia vidérunt óculi mei salutáre tuum.
+  \v~Quod parásti ante fáciem ómnium populórum.
+  \v~Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+}
+\newcommand{\gradualTranslation}{%
+  O God, we ponder Your kindness within Your temple. As Your name, O God, so also Your praise reaches to the ends of the earth.
+  \v~As we have heard so have we seen, in the city of our God, in His holy mountain.
+  Now You dismiss Your servant, O Lord, according to Your word, in peace.
+  \v~Because my eyes have seen Your salvation.
+  \v~Which You have prepared before the face of all peoples.
+  \v~A light of revelation to the Gentiles, and a glory for Your people Israel.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Postquam impleti sunt dies purgatiónis Maríæ, secúndum legem Moysi, tulérunt Iesum in Ierúsalem, ut sísterent eum Dómino, sicut scriptum est in lege Dómini: Quia omne masculínum adapériens vulvam sanctum Dómino vocábitur. Et ut darent hóstiam, secúndum quod dictum est in lege Dómini, par túrturum aut duos pullos columbárum. Et ecce, homo erat in Ierúsalem, cui nomen Símeon, et homo iste iustus et timorátus, exspéctans consolatiónem Israël, et Spíritus Sanctus erat in eo. Et respónsum accéperat a Spíritu Sancto, non visúrum se mortem, nisi prius vidéret Christum Dómini. Et venit in spíritu in templum. Et cum indúcerent púerum Iesum parentes eius, ut fácerent secúndum consuetúdinem legis pro eo: et ipse accépit eum in ulnas suas, et benedíxit Deum, et dixit: Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace: Quia vidérunt óculi mei salutáre tuum: Quod parásti ante fáciem ómnium populórum: Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+  }
+  \e{%
+At that time, when the days of Mary's purification were fulfilled according to the Law of Moses, they took Jesus up to Jerusalem to present Him to the Lord - as it is written in the Law of the Lord, Every male that opens the womb shall be called holy to the Lord - and to offer a sacrifice according to what is said in the Law of the Lord, a pair of turtle doves or two young pigeons. And behold, there was in Jerusalem a man named Simeon, and this man was just and devout, looking for the consolation of Israel, and the Holy Spirit was upon him. And it had been revealed to him by the Holy Spirit that he should not see death before he had seen the Christ of the Lord. And he came by inspiration of the Spirit into the temple. And when His parents brought in the Child Jesus, to do for Him according to the custom of the Law, he also received Him into his arms and blessed God, saying, Now You dismiss Your servant, O Lord, according to Your word, in peace; because my eyes have seen Your salvation, which You have prepared before the face of all peoples: a light of revelation to the Gentiles, and a glory for Your people Israel.
+  }
+}
+\newcommand{\offertory}{%
+  Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum, et in sǽculum sǽculi.
+}
+\newcommand{\offertoryTranslation}{%
+  Grace is poured out upon your lips; thus God has blessed you forever, and for ages of ages.
+}
+\newcommand{\secret}{%
+  \l{%
+    Exáudi, Dómine, preces nostras: et, ut digna sint múnera, quæ óculis tuæ maiestátis offérimus, subsídium nobis tuæ pietátis impénde.
+  }
+  \e{%
+    O Exáudi, Dómine, preces nostras: et, ut digna sint múnera, quæ óculis tuæ maiestátis offérimus, subsídium nobis tuæ pietátis impénde.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Respónsum accépit Símeon a Spíritu Sancto, non visúrum se mortem, nisi vidéret Christum Dómini.
+}
+\newcommand{\communionTranslation}{%
+  It was revealed to Simeon by the Holy Spirit that he should not see death before he had seen the Christ of the Lord.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Quǽsumus, Dómine, Deus noster: ut sacrosáncta mystéria, quæ pro reparatiónis nostræ munímine contulísti, intercedénte beáta María semper Vírgine, et præsens nobis remédium esse fácias et futúrum.
+  }
+  \e{%
+    We beseech You, O Lord our God, that the sacrament You have given as the bulwark of our atonement may be made a saving remedy for us in this life and in the life to come.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/9/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/9/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/9/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/9/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/9/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
