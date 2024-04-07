@@ -23,7 +23,7 @@
           python311
           copier
           pre-commit
-          nixpkgs.texlive.combined.scheme-medium
+          texlive.combined.scheme-full
         ];
         # allow building c extensions
         env = {
