@@ -1,0 +1,108 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica II Post Pascha}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Misericórdia Dómini plena est terra, allelúia: verbo Dómini cœli firmáti sunt, allelúia, allelúia.
+Exsultáte, iusti, in Dómino: rectos decet collaudátio.
+}
+\newcommand{\introitTranslation}{%
+  The earth is full of the goodness of the Lord, alleluia: by the word of the Lord were the heavens made, alleluia, alleluia.
+Rejoice in the Lord, O ye righteous: praise is comely for the upright.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Deus, qui in Fílii tui humilitáte iacéntem mundum erexísti: fidélibus tuis perpétuam concéde lætítiam; ut, quos perpétuæ mortis eripuísti cásibus, gáudiis fácias pérfrui sempitérnis.
+  }
+  \e{O God, who, by the humility of Thy Son, didst lift up a fallen world, grant unending happiness to Thy faithful: that those whom Thou hast snatched from the perils of endless death, Thou mayest cause to rejoice in everlasting days.%
+  }
+  \l{Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.
+}
+  \e{Through the same Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end. 
+    
+  }
+  \amen
+}
+\newcommand{\lesson}{%
+  \l{%
+    Caríssimi: Christus passus est pro nobis, vobis relínquens exémplum, ut sequámini vestígia eius. Qui peccátum non fecit, nec invéntus est dolus in ore eius: qui cum maledicerétur, non maledicébat: cum paterétur, non comminabátur: tradébat autem iudicánti se iniúste: qui peccáta nostra ipse pértulit in córpore suo super lignum: ut, peccátis mórtui, iustítiæ vivámus: cuius livóre sanáti estis. Erátis enim sicut oves errántes, sed convérsi estis nunc ad pastórem et epíscopum animárum vestrárum.
+  }
+  \e{%
+Dearly beloved, Christ suffered for us, leaving you an example, that you should follow His steps who did no sin, neither was guile found in His mouth. Who when He was reviled, did not revile: when He suffered, He threatened not, but delivered Himself to him that judged Him unjustly: who His own self bore our sins in His body upon the tree: that we, being dead to sins, should live to justice; by whose stripes you were healed. For you were as sheep going astray: but you are now converted to the Shepherd and Bishop of your souls.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Allelúia, allelúia.
+Cognovérunt discípuli Dóminum Iesum in fractióne panis. Allelúia
+Ego sum pastor bonus: et cognósco oves meas, et cognóscunt me meæ. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  Allelúja, allelúja.
+The disciples knew the Lord Jesus in the breaking of bread. Allelúja.
+I am the good Shepherd: and I know My sheep, and Mine know Me. Allelúja.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Iesus pharisǽis: Ego sum pastor bonus. Bonus pastor ánimam suam dat pro óvibus suis. Mercenárius autem et qui non est pastor, cuius non sunt oves própriæ, videt lupum veniéntem, et dimíttit oves et fugit: et lupus rapit et dispérgit oves: mercenárius autem fugit, quia mercenárius est et non pértinet ad eum de óvibus. Ego sum pastor bonus: et cognósco meas et cognóscunt me meæ. Sicut novit me Pater, et ego agnósco Patrem, et ánimam meam pono pro óvibus meis. Et álias oves hábeo, quæ non sunt ex hoc ovíli: et illas opórtet me addúcere, et vocem meam áudient, et fiet unum ovíle et unus pastor. 
+  }
+  \e{%
+At that time Jesus said to the Pharisees: I am the good Shepherd. The good Shepherd giveth his life for his sheep. But the hireling, and he that is not the shepherd, whose own the sheep are not, seeth the wolf coming and leaveth the sheep and flieth: and the wolf catcheth and scattereth the sheep: and the hireling flieth, because he is a hireling, and he hath no care for the sheep. I am the good Shepherd: and I know Mine, and Mine know Me, as the Father knoweth Me, and I know the Father: and I lay down My life for My sheep. And other sheep I have that are not of this fold: them also I must bring, and they shall hear My voice, and there shall be one fold and one shepherd.
+  }
+}
+\newcommand{\offertory}{%
+Deus, Deus meus, ad te de luce vígilo: et in nómine tuo levábo manus meas, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+O God, my God, to Thee do I watch at break of day: and in Thy Name I will lift up my hands, allelúja.
+}
+\newcommand{\secret}{%
+  \l{%
+Benedictiónem nobis, Dómine, cónferat salutárem sacra semper oblátio: ut, quod agit mystério, virtúte perfíciat.
+  }
+  \e{%
+May this holy offering, O Lord, always bring to us Thy healing blessing: that what it represents in a Mystery, it may accomplish with power.
+  }
+}
+\newcommand{\communion}{%
+Ego sum pastor bonus, allelúia: et cognósco oves meas, et cognóscunt me meæ, allelúia, allelúia.
+}
+\newcommand{\communionTranslation}{%
+I am the good Shepherd, alleluia: and I know My sheep, and Mine know Me, allelúja, allelúja.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Præsta nobis, quǽsumus, omnípotens Deus: ut, vivificatiónis tuæ grátiam consequéntes, in tuo semper múnere gloriémur.
+  }
+  \e{%
+Grant unto us, we beseech Thee, almighty God, that having received the grace of a new life, we may ever glory in Thy gift. 
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/1/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/1/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/1/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/1/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
