@@ -1,0 +1,106 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica V Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Exáudi, Dómine, vocem meam, qua clamávi ad te: adiútor meus esto, ne derelínquas me neque despícias me, Deus, salutáris meus.
+Dóminus illuminátio mea et salus mea, quem timébo?
+}
+\newcommand{\introitTranslation}{%
+Hear, O Lord, the sound of my call; be my helper: forsake me not: despise me not, O God my Saviour.
+The Lord is my light and my salvation; whom should I fear?
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Deus, qui diligéntibus te bona invisibília præparásti: infúnde córdibus nostris tui amóris afféctum; ut te in ómnibus et super ómnia diligéntes, promissiónes tuas, quæ omne desidérium súperant, consequámur.
+  }
+  \e{%
+    O God, You Who have prepared good things as yet unseen for those who love You, pour a burning love into our hearts, so that we, loving You in and above all things, may obtain Your promises which surpass all desire.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+Caríssimi: Omnes unánimes in oratióne estóte, compatiéntes, fraternitátis amatóres, misericórdes, modésti, húmiles: non reddéntes malum pro malo, nec maledíctum pro maledícto, sed e contrário benedicéntes: quia in hoc vocáti estis, ut benedictiónem hereditáte possideátis. Qui enim vult vitam dilígere et dies vidére bonos, coérceat linguam suam a malo, et lábia eius ne loquántur dolum. Declínet a malo, et fáciat bonum: inquírat pacem, et sequátur eam. Quia óculi Dómini super iustos, et aures eius in preces eórum: vultus autem Dómini super faciéntes mala. Et quis est, qui vobis nóceat, si boni æmulatóres fuéritis? Sed et si quid patímini propter iustítiam, beáti. Timórem autem eórum ne timuéritis: et non conturbémini. Dóminum autem Christum sanctificáte in córdibus vestris.
+  }
+  \e{%
+Beloved: Be all like-minded in prayer, compassionate, lovers of the brethren, merciful, reserved, humble; not rendering evil for evil, or abuse for abuse, but contrariwise, blessing; for unto this were you called that you might inherit a blessing. For, 'He who would love life, and see good days, let him refrain his tongue from evil, and his lips that they speak no deceit. Let him turn away from evil and do good, let him seek after peace and pursue it. For the eyes of the Lord are upon the just, and His ears unto their prayers; but the face of the Lord is against those who do evil.' And who is there to harm you, if you are zealous for what is good? But even if you suffer anything for justice’ sake, blessed are you. So have no fear of their fear and do not be troubled. But hallow the Lord Christ in your hearts.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Protéctor noster, áspice, Deus, et réspice super servos tuos.
+Dómine, Deus virtútum, exáudi preces servórum tuórum.
+Allelúia, allelúia.
+Dómine, in virtúte tua lætábitur rex: et super salutáre tuum exsultábit veheménter. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Behold, O God, our protector, and look on Your servants.
+O Lord God of Hosts, hear the prayers of Your servants. Alleluia, alleluia.
+O Lord, in Your strength the king is glad; in Your victory how greatly he rejoices! Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Iesus discípulis suis: Nisi abundáverit iustítia vestra plus quam scribárum et pharisæórum, non intrábitis in regnum cœlórum. Audístis, quia dictum est antíquis: Non occídes: qui autem occíderit, reus erit iudício. Ego autem dico vobis: quia omnis, qui iráscitur fratri suo, reus erit iudício. Qui autem díxerit fratri suo, raca: reus erit concílio. Qui autem díxerit, fátue: reus erit gehénnæ ignis. Si ergo offers munus tuum ad altáre, et ibi recordátus fúeris, quia frater tuus habet áliquid advérsum te: relínque ibi munus tuum ante altáre et vade prius reconciliári fratri tuo: et tunc véniens ófferes munus tuum.
+  }
+  \e{%
+At that time, Jesus said to His disciples: Unless your justice exceeds that of the Scribes and Pharisees, you shall not enter the kingdom of heaven. You have heard that it was said to the ancients, ‘You shall not kill’; and that whoever shall kill shall be liable to judgment. But I say to you that everyone who is angry with his brother shall be liable to judgment; and whoever says to his brother, ‘Raca,’ shall be liable to the Sanhedrin; and whoever says, ‘You fool!’, shall be liable to the fire of Gehenna. Therefore, if you are offering your gift at the altar, and there remember that your brother has anything against you, leave your gift before the altar and go first to be reconciled to your brother; and then come and offer your gift.
+  }
+}
+\newcommand{\offertory}{%
+Benedícam Dóminum, qui tríbuit mihi intelléctum: providébam Deum in conspéctu meo semper: quóniam a dextris est mihi, ne commóvear.
+}
+\newcommand{\offertoryTranslation}{%
+I bless the Lord Who counsels me; I set God ever before me; with Him at my right hand I shall not be disturbed.
+}
+\newcommand{\secret}{%
+  \l{%
+Propitiáre, Dómine, supplicatiónibus nostris: et has oblatiónes famulórum famularúmque tuárum benígnus assúme; ut, quod sínguli obtulérunt ad honórem nóminis tui, cunctis profíciat ad salútem.
+  }
+  \e{%
+Be propitious to our supplications, O Lord, and graciously receive these oblations of Your servants and handmaids, that what each one offered to the glory of Your name, may profit all to salvation.
+  }
+  \per
+}
+\newcommand{\communion}{%
+Unam pétii a Dómino, hanc requíram: ut inhábitem in domo Dómini ómnibus diébus vitæ meæ.
+}
+\newcommand{\communionTranslation}{%
+One thing I ask of the Lord; this I seek: to dwell in the house of the Lord all the days of my life.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Quos cœlésti, Dómine, dono satiásti: præsta, quǽsumus; ut a nostris mundémur occúltis et ab hóstium liberémur insídiis.
+  }
+  \e{%
+Grant us, we beseech You, O Lord, that we whom You have filled with the heavenly gift may be cleansed of our hidden sins and delivered from the snares of our enemies.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

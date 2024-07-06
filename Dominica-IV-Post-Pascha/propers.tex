@@ -1,0 +1,105 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica IV Post Pascha}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Cantáte Dómino cánticum novum, allelúia: quia mirabília fecit Dóminus, allelúia: ante conspéctum géntium revelávit iustítiam suam, allelúia, allelúia, allelúia.
+Salvávit sibi déxtera eius: et bráchium sanctum eius.
+}
+\newcommand{\introitTranslation}{%
+Sing ye to the Lord a new canticle, alleluia: because the Lord hath done wonderful things, alleluia. He hath revealed his justice in the sight of the Gentiles, alleluia, alleluia, alleluia.
+His right hand hath wrought for him salvation, and his arm is holy.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Deus, qui fidélium mentes uníus éfficis voluntátis: da pópulis tuis id amáre quod prǽcipis, id desideráre quod promíttis; ut inter mundánas varietátes ibi nostra fixa sint corda, ubi vera sunt gáudia.
+  }
+  \e{%
+O God, of Whom it cometh that the minds of thy faithful people be all of one will, grant unto the same thy people that they may love the thing which Thou commandest, and desire that which Thou dost promise, that so, amid the sundry and manifold changes of the world, our hearts may surely there be fixed, where true joys are to be found.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+Caríssimi: Omne datum óptimum, et omne donum perféctum desúrsum est, descéndens a Patre lúminum, apud quem non est transmutátio nec vicissitúdinis obumbrátio. Voluntárie enim génuit nos verbo veritátis, ut simus inítium áliquod creatúræ eius. Scitis, fratres mei dilectíssimi. Sit autem omnis homo velox ad audiéndum: tardus autem ad loquéndum et tardus ad iram. Ira enim viri iustítiam Dei non operátur. Propter quod abiiciéntes omnem immundítiam et abundántiam malítiæ, in mansuetúdine suscípite ínsitum verbum, quod potest salváre ánimas vestras. 
+  }
+  \e{%
+Dearly beloved: Every best gift, and every perfect gift, is from above, coming down from the Father of lights, with whom there is no change, nor shadow of alteration. For of his own will hath he begotten us by the word of truth, that we might be some beginning of his creatures. You know, my dearest brethren. And let every man be swift to hear, but slow to speak, and slow to anger. For the anger of man worketh not the justice of God. Wherefore casting away all uncleanness, and abundance of naughtiness, with meekness receive the ingrafted word, which is able to save your souls.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Allelúia, allelúia.
+Déxtera Dómini fecit virtútem: déxtera Dómini exaltávit me. Allelúia.
+Christus resúrgens ex mórtuis iam non móritur: mors illi ultra non dominábitur. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Alleluia, alleluia.
+The right hand of the Lord hath wrought strength: the right hand of the Lord hath exalted me: Alleluia.
+Knowing that Christ rising again from the dead, dieth now no more, death shall no more have dominion over him. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Iesus discípulis suis: Vado ad eum, qui misit me: et nemo ex vobis intérrogat me: Quo vadis? Sed quia hæc locútus sum vobis, tristítia implévit cor vestrum. Sed ego veritátem dico vobis: expédit vobis, ut ego vadam: si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos. Et cum vénerit ille, árguet mundum de peccáto et de iustítia et de iudício. De peccáto quidem, quia non credidérunt in me: de iustítia vero, quia ad Patrem vado, et iam non vidébitis me: de iudício autem, quia princeps huius mundi iam iudicátus est. Adhuc multa hábeo vobis dícere: sed non potéstis portáre modo. Cum autem vénerit ille Spíritus veritátis, docébit vos omnem veritátem. Non enim loquétur a semetípso: sed quæcúmque áudiet, loquétur, et quæ ventúra sunt, annuntiábit vobis. Ille me clarificábit: quia de meo accípiet et annuntiábit vobis.
+  }
+  \e{%
+At that time: Jesus said to His disciples: I go to him that sent me, and none of you asketh me: Whither goest thou? But because I have spoken these things to you, sorrow hath filled your heart. But I tell you the truth: it is expedient to you that I go: for if I go not, the Paraclete will not come to you; but if I go, I will send him to you. And when he is come, he will convince the world of sin, and of justice, and of judgment. Of sin: because they believed not in me. And of justice: because I go to the Father; and you shall see me no longer. And of judgment: because the prince of this world is already judged. I have yet many things to say to you: but you cannot bear them now. But when he, the Spirit of truth, is come, he will teach you all truth. For he shall not speak of himself; but what things soever he shall hear, he shall speak; and the things that are to come, he shall shew you. He shall glorify me; because he shall receive of mine, and shall shew it to you.
+  }
+}
+\newcommand{\offertory}{%
+Iubiláte Deo, univérsa terra, psalmum dícite nómini eius: veníte et audíte, et narrábo vobis, omnes qui timétis Deum, quanta fecit Dóminus ánimæ meæ, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+Shout with joy to God, all the earth, sing ye a psalm to His Name: come and hear, and I will tell you, all ye that fear God, what great things the Lord hath done for my soul, alleluia.
+}
+\newcommand{\secret}{%
+  \l{%
+Deus, qui nos, per huius sacrifícii veneránda commércia, uníus summæ divinitátis partícipes effecísti: præsta, quǽsumus; ut, sicut tuam cognóscimus veritátem, sic eam dignis móribus assequámur.
+  }
+  \e{%
+O God, who by the august communion of this sacrifice hast make us partakers of one Sovereign Godhead, grant we beseech thee, that as we know thy truth, so we may follow it up by worthy behavior. 
+  }
+  \per
+}
+\newcommand{\communion}{%
+Cum vénerit Paráclitus Spíritus veritátis, ille árguet mundum de peccáto et de iustítia et de iudício, allelúia, allelúia.
+}
+\newcommand{\communionTranslation}{%
+Cum vénerit Paráclitus Spíritus veritátis, ille árguet mundum de peccáto et de iustítia et de iudício, allelúia, allelúia.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Adésto nobis, Dómine, Deus noster: ut per hæc, quæ fidéliter súmpsimus, et purgémur a vítiis et a perículis ómnibus eruámur.
+  }
+  \e{%
+Stand by us, O Lord, our God, that by what we have faithfully received we may be cleansed from our vices and rescued from all dangers.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/1/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/1/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/1/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/1/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

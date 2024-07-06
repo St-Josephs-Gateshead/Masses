@@ -1,0 +1,104 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica Sanctissimæ Trinitatis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Benedícta sit sancta Trínitas atque indivísa Unitas: confitébimur ei, quia fecit nobíscum misericórdiam suam.
+Dómine, Dóminus noster, quam admirábile est nomen tuum in univérsa terra!
+}
+\newcommand{\introitTranslation}{%
+Blessed be the Holy Trinity and undivided Unity: we will give glory to Him, because He has shown His mercy to us.
+O Lord, our Lord, how glorious is Your Name over all the earth!
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Omnípotens sempitérne Deus, qui dedísti fámulis tuis in confessióne veræ fídei, ætérnæ Trinitátis glóriam agnóscere, et in poténtia maiestátis adoráre Unitátem: quǽsumus; ut, eiúsdem fídei firmitáte, ab ómnibus semper muniámur advérsis.
+  }
+  \e{%
+Almighty, eternal God, You Who have given Your servants, in the confession of the true faith, to acknowledge the glory of the eternal Trinity, and in the power of that majesty to adore its unity, grant, we beseech You, that in the firmness of this faith we may ever be protected from all harm.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+O altitúdo divitiárum sapiéntiæ et sciéntiæ Dei: quam incomprehensibília sunt iudícia eius, et investigábiles viæ eius! Quis enim cognovit sensum Dómini? Aut quis consiliárius eius fuit? Aut quis prior dedit illi, et retribuétur ei? Quóniam ex ipso et per ipsum et in ipso sunt ómnia: ipsi glória in sǽcula. Amen.
+  }
+  \e{%
+Oh, the depth of the riches of the wisdom and of the knowledge of God! How incomprehensible and His judgments and how unsearchable His ways! For Who has known the mind of the Lord, or who has been His counselor? Or who has first given to Him, that recompense should be made him? For from Him and through Him and unto Him are all things. To Him be the glory forever, amen.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Benedíctus es, Dómine, qui intuéris abýssos, et sedes super Chérubim,
+Benedíctus es, Dómine, in firmaménto cæli, et laudábilis in sǽcula. Allelúia, allelúia.
+Benedíctus es, Dómine, Deus patrum nostrórum, et laudábilis in sǽcula. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Blessed are You, O Lord, Who look into the depths from Your throne upon the Cherubim.
+Blessed are You, O Lord, in the firmament of heaven, and praiseworthy forever. Alleluia, alleluia.
+Blessed are You, O Lord, the God of our fathers, and praiseworthy forever. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Iesus discípulis suis: Data est mihi omnis potéstas in cœlo et in terra. Eúntes ergo docéte omnes gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus Sancti: docéntes eos serváre ómnia, quæcúmque mandávi vobis. Et ecce, ego vobíscum sum ómnibus diébus usque ad consummatiónem sǽculi.
+  }
+  \e{%
+At that time, Jesus said to His disciples: All power in heaven and on earth has been given to Me. Go, therefore, and make disciples of all nations, baptizing them in the Name of the Father, and of the Son, and of the Holy Spirit, teaching them to observe all that I have commanded you; and behold, I am with you all days, even unto the consummation of the world.
+  }
+}
+\newcommand{\offertory}{%
+  Benedíctus sit Deus Pater, unigenitúsque Dei Fílius, Sanctus quoque Spíritus: quia fecit nobíscum misericórdiam suam.
+}
+\newcommand{\offertoryTranslation}{%
+Blessed be God the Father, and the only-begotten Son of God, and also the Holy Spirit: because He has shown His mercy to us.
+}
+\newcommand{\secret}{%
+  \l{%
+Sanctífica, quǽsumus, Dómine, Deus noster, per tui sancti nóminis invocatiónem, huius oblatiónis hóstiam: et per eam nosmetípsos tibi pérfice munus ætérnum.
+  }
+  \e{%
+We call upon Your Name, O Lord, and beseech You to hallow this sacrificial offering and through it to make us an eternal offering to You.
+  }
+}
+\newcommand{\communion}{%
+Benedícimus Deum cœli et coram ómnibus vivéntibus confitébimur ei: quia fecit nobíscum misericórdiam suam.
+}
+\newcommand{\communionTranslation}{%
+We bless the God of heaven, and before all living we will praise Him; because He has shown His mercy to us.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Profíciat nobis ad salútem córporis et ánimæ, Dómine, Deus noster, huius sacraménti suscéptio: et sempitérnæ sanctæ Trinitátis eiusdémque indivíduæ Unitátis conféssio.
+  }
+  \e{%
+May the reception of this sacrament, O Lord our God, and the profession of our faith in the eternal holy Trinity and undivided Unity, benefit us for the salvation of body and soul.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/1/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/1/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/1/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/1/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
