@@ -1,0 +1,106 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{In Assumptione Beatæ Mariæ Virginis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Signum magnum appáruit in cœlo: múlier amicta sole, et luna sub pédibus eius, et in cápite eius coróna stellárum duódecim.
+Cantáte Dómino cánticum novum: quóniam mirabília fecit.
+}
+\newcommand{\introitTranslation}{%
+A great sign appeared in heaven: a woman clothed with the sun, and the moon was under her feet, and upon her head a crown of twelve stars.
+Sing to the Lord a new song, for He has done wondrous deeds.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Omnípotens sempitérne Deus, qui Immaculátam Vírginem Maríam, Fílii tui Genetrícem, córpore et ánima ad cœléstem glóriam assumpsísti: concéde, quǽsumus; ut, ad superna semper inténti, ipsíus glóriæ mereámur esse consórtes.
+  }
+  \e{%
+Almighty, everlasting God, Who took up, body and soul, the Immaculate Virgin Mary, Mother of Your Son, into heavenly glory, grant, we beseech You, that, always devoting ourselves to heavenly things, we may be found worthy to share in her glory.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros. Benedícta es tu, fília, a Dómino Deo excelso, præ ómnibus muliéribus super terram. Benedíctus Dóminus, qui creávit cœlum et terram, qui te diréxit in vúlnera cápitis príncipis inimicórum nostrórum; quia hódie nomen tuum ita magnificávit, ut non recédat laus tua de ore hóminum, qui mémores fúerint virtútis Dómini in ætérnum, pro quibus non pepercísti ánimæ tuæ propter angústias et tribulatiónem géneris tui, sed subvenísti ruínæ ante conspéctum Dei nostri. Tu glória Ierúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri.
+  }
+  \e{%
+The Lord has blessed you by His power, because by you He has brought our enemies to nought. Blessed are you, O daughter, by the Lord the Most High God, above all women upon the earth. Blessed be the Lord Who made heaven and earth, Who has directed you to the cutting off the head of the prince of our enemies, because He has so magnified your name this day, that your praise shall not depart out of the mouth of men, who shall be mindful of the power of the Lord forever; for you have not spared your life, by reason of the distress and tribulation of your people, but have prevented our ruin in the presence of our God. You are the glory of Jerusalem, you are the joy of Israel, you are the honor of our people.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Audi, fília, et vide, et inclína aurem tuam, et concupíscit rex decórem tuum.
+Omnis glória eius fíliæ Regis ab intus, in fímbriis áureis circumamícta varietátibus.
+Allelúia, allelúia.
+Assumpta est María in cœlum: gaudet exércitus Angelórum. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Hear, O daughter, and see; turn your ear; for the King shall desire your beauty.
+All glorious is the King’s daughter as she enters; her raiment is threaded with spun gold. Alleluia, alleluia.
+Mary is taken up into heaven: the choirs of the angels rejoice. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Repléta est Spíritu Sancto Elísabeth et exclamávit voce magna, et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi ut véniat mater Dómini mei ad me? Ecce enim ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum; et exsultávit spíritus meus in Deo salutári meo; quia respéxit humilitátem ancíllæ suæ, ecce enim ex hoc beátam me dicent omnes generatiónes. Quia fecit mihi magna qui potens est, et sanctum nomen eius, et misericórdia eius a progénie in progénies timéntibus eum.
+  }
+  \e{%
+At that time, Elizabeth was filled with the Holy Spirit, and cried out with a loud voice, saying, Blessed are you among women and blessed is the fruit of your womb! And how have I deserved that the Mother of my Lord should come to me? For behold, the moment that the sound of your greeting came to my ears, the babe in my womb leapt for joy. And blessed is she who has believed, because the things promised her by the Lord shall be accomplished. And Mary said, My soul magnifies the Lord, and my spirit rejoices in God my Saviour; because He has regarded the lowliness of His handmaid; for, behold, henceforth all generations shall call me blessed; because He Who is mighty has done great things for me, and holy is His name; and His mercy is from generation to generation on those who fear Him.
+  }
+}
+\newcommand{\offertory}{%
+  Inimicítias ponam inter te et mulíerem, et semen tuum et semen illíus.
+}
+\newcommand{\offertoryTranslation}{%
+I will put enmity between you and the Woman, between your seed and her seed.
+}
+\newcommand{\secret}{%
+  \l{%
+Ascéndat ad te, Dómine, nostræ devotiónis oblátio, et, beatíssima Vírgine María in cœlum assumpta intercedénte, corda nostra, caritátis igne succénsa, ad te iúgiter ádspirent.
+  }
+  \e{%
+May the offering of our devotion rise unto You, O Lord, and by the intercession of the most Blessed Virgin Mary, who was taken up into heaven, may our hearts, on fire with love, strive ever upward to You.
+  }
+  \per
+}
+\newcommand{\communion}{%
+Beátam me dicent omnes generatiónes, quia fecit mihi magna qui potens est.
+}
+\newcommand{\communionTranslation}{%
+All generations shall call me blessed; because He Who is mighty has done great things for me.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Sumptis, Dómine, salutáribus sacraméntis: da, quǽsumus; ut, méritis et intercessióne beátæ Vírginis Maríæ in cœlum assúmptæ, ad resurrectiónis glóriam perducámur.
+  }
+  \e{%
+Having partaken, O Lord, of the sacrament of salvation, grant, we beseech You, that through the merits and intercession of the Blessed Virgin Mary, who was taken up into heaven, we may be delivered from all the evils that threaten us.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/9/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/9/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/9/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/9/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/9/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
