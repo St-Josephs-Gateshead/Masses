@@ -1,0 +1,159 @@
+% package to provide common typesetting for liturgy
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{rubrics}
+\RequirePackage{styling}
+\RequirePackage{suffix}         %for starred commands
+\RequirePackage{ifthen}
+\RequirePackage{paracol}
+\RequirePackage{scalerel}
+\RequirePackage{verse,anyfontsize}
+\RequirePackage{stackengine}
+\RequirePackage[hidelinks, final]{hyperref}
+\RequirePackage{etoolbox}
+\RequirePackage[autocompile]{gregoriotex}
+
+% extra symbols
+\renewcommand{\*}{\GreStar}
+\newcommand{\+}{\GreDagger}
+\renewcommand{\r}{\textcolor{red}{\gothRbar.}}
+\renewcommand{\v}{\textcolor{red}{\gothVbar.}}
+\newcommand{\X}{\textcolor{red}{\grecross}}
+
+\newcommand{\ps}[2][]{%typeset `psalmus'
+  \paragraph{Psalmus #2#1}}
+
+\newcommand{\dropcap}[2]{%
+  \lettrine{\textcolor{red}{#1}}{#2}}
+% lengths
+\newlength{\psalmskip}          %skip after ‘psalm’ 
+\setlength{\psalmskip}{\baselineskip}
+\newlength{\psalmquoteskip}     %skip after ‘psalmquote’
+\setlength{\psalmquoteskip}{\baselineskip}
+\newlength{\readingskip}        %skip after ‘reading’
+\setlength{\readingskip}{\baselineskip}
+
+
+\colseprulecolor{red}
+
+\newcommand*\psalm[2]{         %typeset the Psalm Name on the right
+  \needspace{2\baselineskip}
+  \noindent#1\hfill\emph{#2}\par
+  % {\par\centering\emph{#2}\\
+  %  #1\par}
+  % \vspace{\psalmskip}  
+}
+% \WithSuffix\newcommand*\psalm*[1]{    %typeset the Psalm with summary on LHS
+% \vspace{\psalmskip}
+% \hfill\emph{#1}\par
+% }
+
+\newcommand{\reading}[2]{       %typeset anything l-r in subsubsection
+\subsubsection{#1\hfill\normalfont\emph{#2}}
+}
+
+\newcommand*{\psalmquote}[2]{    %typeset the quote before a psalm or
+                                %canticle
+%\noindent\emph{#1}\hfill\emph{#2}\par
+%\noindent\emph{#1} (#2)\par
+%\vspace{\psalmquoteskip}
+
+}
+
+\newcommand\ant[1][]{%
+  \ifstrempty{#1}{   %just ‘ant’
+    \noindent\emph{Ant. }
+  }{
+    \noindent\emph{Ant. #1:}
+    % some other thing with #1 and #2
+  }%
+}
+
+
+% rubrics
+\newcommand*{\vel}{
+  \emph{vel:}\par
+  \vspace{\baselineskip}
+}
+
+\newcommand{\red}[2][\centering]{%do the red....
+  % call with empty optional argument for justified text; or
+  % \raggedright.]
+  % \filbreak
+  {\noindent\textcolor{red}{\itshape#2}#1\par\nopagebreak\medskip\nopagebreak}\nopagebreak}
+\newcommand{\black}[2][0.5]{%say the black...
+  \columnratio{#1}
+  \begin{paracol}{2}
+    \setlength{\parindent}{0em}
+    \setlength{\parskip}{0.2\baselineskip}
+    #2
+  \end{paracol}
+  \medskip
+}
+
+\renewcommand{\l}[2][]{\selectlanguage{latin}
+  \ifthenelse{\equal{s}{#1}}%
+  {\emph{S.}~}%
+  {}%
+  \ifthenelse{\equal{m}{#1}}%
+  {\emph{M.}~}%
+  {}%
+  #2\par\selectlanguage{british}\switchcolumn}
+\newcommand{\e}[2][]{%
+  \ifthenelse{\equal{s}{#1}}%
+  {\emph{P.}~}%
+  {}%
+  \ifthenelse{\equal{m}{#1}}%
+  {\emph{S.}~}%
+  {}%
+  #2\par\switchcolumn*}
+\renewcommand{\S}{\emph{S.}~}
+\newcommand{\M}{\emph{M.}~}
+\newcommand{\amen}{\l{Amen.}\e{Amen.}}
+\newcommand{\dominusvobiscum}{%
+  \l[s]{Dóminus vobíscum.}
+  \e[s]{The Lord be with you.}
+  \l[m]{Et cum spíritu tuo.}
+  \e[m]{And with thy spirit.}}
+\newcommand{\oremus}{
+  \l{Orémus.}
+  \e{Let us pray.}
+}
+\newcommand{\domineexaudi}{
+  \l{\v~Dómine, exáudi oratiónem meam.}
+  \e{\v~O Lord, hear my prayer.}
+  \l{\r~Et clamor meus ad te véniat.}
+  \e{\r~And let my cry come unto thee.}
+}
+\newcommand{\deogratias}{
+  \l{\r~Deo grátias.}
+  \e{\r~Thanks be to God.}
+}
+\newcommand{\per}{
+  \l{Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.}
+  \e{Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.}
+}
+
+% TODO is this still used in anything?
+
+% modified from https://tex.stackexchange.com/questions/163334/using-lettrine-or-equivalent-inside-verse-environment
+
+\def\startverse#1\\#2\\{%
+  \begin{minipage}{4in}%
+    \firstline#1\relax%
+    \def\verselineB{#2}%
+    \if Q\versalletter\def\descstrut{\strut}\else\def\descstrut{}\fi%
+    \def\Versal{\textcolor{red}{%
+        \scalerel*{$\fontsize{28}{30}\selectfont\versalletter$}%
+        {\def\stacktype{L}\stackon{T\descstrut}{T}}}}%
+    \setbox0=\hbox{\Versal\,}%
+    \def\leftoffset{-.5\wd0}%
+    \hspace*{\wd0}\hspace{\leftoffset}%
+    \verselineA\\%
+    \hspace*{\wd0}\hspace{\leftoffset}%
+    \llap{\smash{\box0}}%
+    \hspace{0.5em}\verselineB\strut%
+  \end{minipage}\\%
+}
+
+
+\def\firstline#1#2 #3\relax{\def\versalletter{#1}\def\verselineA{\textsc{#2} #3}}
