@@ -1,0 +1,105 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica XVIII Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Da pacem, Dómine, sustinéntibus te, ut prophétæ tui fidéles inveniántur: exáudi preces servi tui et plebis tuæ Israël
+Lætátus sum in his, quæ dicta sunt mihi: in domum Dómini íbimus.
+}
+\newcommand{\introitTranslation}{%
+  Give peace, O Lord, to those who have hoped in You, and let Your Prophets be proved true. Hear the prayers of Your servant, and of Your people Israel.
+I rejoiced because they said to me, We will go up to the house of the Lord.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Dírigat corda nostra, quǽsumus, Dómine, tuæ miseratiónis operátio: quia tibi sine te placére non póssumus.
+  }
+  \e{%
+    May the working of Your mercy, we beseech You, O Lord, guide our hearts, for without You, we cannot please You.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Grátias ago Deo meo semper pro vobis in grátia Dei, quæ data est vobis in Christo Iesu: quod in ómnibus dívites facti estis in illo, in omni verbo et in omni sciéntia: sicut testimónium Christi confirmátum est in vobis: ita ut nihil vobis desit in ulla grátia, exspectántibus revelatiónem Dómini nostri Iesu Christi, qui et confirmábit vos usque in finem sine crímine, in die advéntus Dómini nostri Iesu Christi.
+  }
+  \e{%
+    Brethren: I give thanks to my God always concerning you for the grace of God which was given you in Christ Jesus, because in everything you have been enriched in Him, in all utterance and in all knowledge; even as the witness to the Christ has been made so firm in you that you lack no grace, while awaiting the appearance of our Lord Jesus Christ, Who will also keep you secure unto the end, unimpeachable in the day of the coming of our Lord Jesus Christ.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Lætátus sum in his, quæ dicta sunt mihi: in domum Dómini íbimus.
+ Fiat pax in virtúte tua: et abundántia in túrribus tuis. Allelúia, allelúia
+Timébunt gentes nomen tuum, Dómine, et omnes reges terræ glóriam tuam. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  I rejoiced because they said to me, We will go up to the house of the Lord.
+May peace be within your walls, prosperity in your buildings. Alleluia, alleluia.
+The nations shall revere Your name, O Lord, and all the kings of the earth Your glory. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Ascéndens Iesus in navículam, transfretávit et venit in civitátem suam. Et ecce, offerébant ei paralýticum iacéntem in lecto. Et videns Iesus fidem illórum, dixit paralýtico: Confíde, fili, remittúntur tibi peccáta tua. Et ecce, quidam de scribis dixérunt intra se: Hic blasphémat. Et cum vidísset Iesus cogitatiónes eórum, dixit: Ut quid cogitátis mala in córdibus vestris? Quid est facílius dícere: Dimittúntur tibi peccáta tua; an dícere: Surge et ámbula? Ut autem sciátis, quia Fílius hóminis habet potestátem in terra dimitténdi peccáta, tunc ait paralýtico: Surge, tolle lectum tuum, et vade in domum tuam. Et surréxit et ábiit in domum suam. Vidéntes autem turbæ timuérunt, et glorificavérunt Deum, qui dedit potestátem talem homínibus.
+  }
+  \e{%
+    At that time, Jesus, getting into a boat, crossed over and came to his own town. And behold, they brought to Him a paralytic lying on a pallet. And Jesus, seeing their faith, said to the paralytic, Take courage, son; your sins are forgiven you. And behold, some of the scribes said within themselves, This man blasphemes. And Jesus, knowing their thoughts, said, Why do you harbor evil thoughts in your hearts? For which is easier, to say, ‘Your sins are forgiven you,’ or to say, ‘Arise, and walk’? But that you may know that the Son of Man has power on earth to forgive sins, - then He said to the paralytic - Arise, take up your pallet and go to your house. And he arose, and went away to his house. But when the crowds saw it, they were struck with fear, and glorified God Who had given such power to men.
+  }
+}
+\newcommand{\offertory}{%
+  Sanctificávit Móyses altáre Dómino, ófferens super illud holocáusta et ímmolans víctimas: fecit sacrifícium vespertínum in odórem suavitátis Dómino Deo, in conspéctu filiórum Israël.
+}
+\newcommand{\offertoryTranslation}{%
+  Moses consecrated an altar to the Lord, offering upon it holocausts, and sacrificing victims: he made an evening sacrifice to the Lord God for an odor of sweetness, in the sight of the Israelites.
+}
+\newcommand{\secret}{%
+  \l{%
+    Deus, qui nos, per huius sacrifícii veneránda commércia, uníus summæ divinitátis partícipes éfficis: præsta, quǽsumus; ut, sicut tuam cognóscimus veritátem, sic eam dignis móribus assequámur.
+  }
+  \e{%
+    O God, Who, through the gifts we have exchanged with You in this sacrament, have made us partakers of the supreme Godhead, grant, we beseech You, that, as we have knowledge of Your truth, so we may fully live up to it.
+  }
+  \per
+}
+\newcommand{\communion}{%
+  Tóllite hóstias, et introíte in átria eius: adoráte Dóminum in aula sancta eius.
+}
+\newcommand{\communionTranslation}{%
+  Bring gifts and enter His courts; worship the Lord in His holy court.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Grátias tibi reférimus, Dómine, sacro múnere vegetáti: tuam misericórdiam deprecántes; ut dignos nos eius participatióne perfícias.
+  }
+  \e{%
+    Strengthened by Your sacred gift, we thank You, O Lord, beseeching Your mercy to make us receive it worthily.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
