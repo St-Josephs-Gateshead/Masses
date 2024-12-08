@@ -1,0 +1,21 @@
+# Changes here will be overwritten by Copier
+_commit: v2.3.0
+_src_path: gh:2e0byo/MassTemplate.git
+alleluia: alleluia
+asperges: asperges
+creator_name: John Morris
+creed: 1
+creed_path: ../Ordinaries/credo
+creedp: true
+feast_name: In Dedicatione S. Michælis Archangelis
+gloria: true
+gradual: true
+img_file: ../img/logo.pdf
+marian: true
+mass_setting: 11
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: standard
+repo_url: https://github.com/St-Josephs-Gateshead/Masses
+rite: roman
+version: v1.0.0

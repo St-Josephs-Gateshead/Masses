@@ -1,0 +1,102 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Omnium Sanctorum}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre Sanctórum ómnium: de quorum sollemnitáte gaudent Angeli et colláudant Fílium Dei.
+Exsultáte, iusti, in Dómino: rectos decet collaudátio.
+}
+\newcommand{\introitTranslation}{%
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus, largiáris.
+  }
+  \e{%
+Almighty, eternal God, Who granted us to honor the merits of all Your Saints in a single solemn festival, bestow on us, we beseech You, through their manifold intercession, that abundance of Your mercy for which we yearn.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+In diébus illis: Ecce, ego Ioánnes vidi álterum Angelum ascendéntem ab ortu solis, habéntem signum Dei vivi: et clamávit voce magna quátuor Angelis, quibus datum est nocére terræ et mari, dicens: Nolíte nocére terræ et mari neque arbóribus, quoadúsque signémus servos Dei nostri in fróntibus eórum. Et audívi númerum signatórum, centum quadragínta quátuor mília signáti, ex omni tribu filiórum Israël, Ex tribu Iuda duódecim mília signáti. Ex tribu Ruben duódecim mília signáti. Ex tribu Gad duódecim mília signati. Ex tribu Aser duódecim mília signáti. Ex tribu Néphthali duódecim mília signáti. Ex tribu Manásse duódecim mília signáti. Ex tribu Símeon duódecim mília signáti. Ex tribu Levi duódecim mília signáti. Ex tribu Issachar duódecim mília signati. Ex tribu Zábulon duódecim mília signáti. Ex tribu Ioseph duódecim mília signati. Ex tribu Béniamin duódecim mília signáti. Post hæc vidi turbam magnam, quam dinumeráre nemo póterat, ex ómnibus géntibus et tríbubus et pópulis et linguis: stantes ante thronum et in conspéctu Agni, amícti stolis albis, et palmæ in mánibus eórum: et clamábant voce magna, dicéntes: Salus Deo nostro, qui sedet super thronum, et Agno. Et omnes Angeli stabant in circúitu throni et seniórum et quátuor animálium: et cecidérunt in conspéctu throni in fácies suas et adoravérunt Deum, dicéntes: Amen. Benedíctio et cláritas et sapiéntia et gratiárum áctio, honor et virtus et fortitúdo Deo nostro in sǽcula sæculórum. Amen.
+  }
+  \e{%
+In those days, behold, I John, saw another angel ascending from the rising of the sun, having the seal of the living God; and he cried with a loud voice to the four angels, who had it in their power to harm the earth and the sea, saying, Do not harm the earth or the sea or the trees, till we have sealed the servants of our God on their foreheads. And I heard the number of those who were sealed, a hundred and forty-four thousand sealed, out of every tribe of the children of Israel; of the tribe of Juda, twelve thousand sealed; of the tribe of Ruben, twelve thousand; of the tribe of Gad, twelve thousand; of the tribe of Aser, twelve thousand; of the tribe of Nephthali, twelve thousand; of the tribe of Manasses, twelve thousand; of the tribe of Simeon, twelve thousand; of the tribe of Levi, twelve thousand; of the tribe of Issachar, twelve thousand; of the tribe of Zabulon, twelve thousand; of the tribe of Joseph, twelve thousand; of the tribe of Benjamin, twelve thousand sealed. After this I saw a great multitude which no man could number, out of all nations and tribes and peoples and tongues, standing before the throne and before the Lamb, clothed in white robes, and with palms in their hands. And they cried with a loud voice, saying, Salvation belongs to our God Who sits upon the throne, and to the Lamb. And all the angels were standing round about the throne, and the elders and the four living creatures; and they fell on their faces before the throne and worshipped God, saying, Amen. Blessing and glory and wisdom and thanksgiving and honor and power and strength to our God forever and ever. Amen.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Timéte Dóminum, omnes Sancti eius: quóniam nihil deest timéntibus eum.
+Inquiréntes autem Dóminum, non defícient omni bono. Allelúia, allelúia.
+Veníte ad me, omnes, qui laborátis et oneráti estis: et ego refíciam vos. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Fear the Lord, you His holy ones, for nought is lacking to those who fear Him.
+But those who seek the Lord want for no good thing. Alleluia, alleluia.
+Come to Me, all you who labor and are burdened, and I will give you rest. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Videns Iesus turbas, ascéndit in montem, et cum sedísset, accessérunt ad eum discípuli eius, et apériens os suum, docébat eos, dicens: Beáti páuperes spíritu: quóniam ipsórum est regnum cœlórum. Beáti mites: quóniam ipsi possidébunt terram. Beáti, qui lugent: quóniam ipsi consolabúntur. Beáti, qui esúriunt et sítiunt iustítiam: quóniam ipsi saturabúntur. Beáti misericórdes: quóniam ipsi misericórdiam consequántur. Beáti mundo corde: quóniam ipsi Deum vidébunt. Beáti pacífici: quóniam fílii Dei vocabúntur. Beáti, qui persecutiónem patiúntur propter iustítiam: quóniam ipsórum est regnum cœlórum. Beáti estis, cum maledíxerint vobis et persecúti vos fúerint, et díxerint omne malum advérsum vos, mentiéntes, propter me: gaudete et exsultáte, quóniam merces vestra copiósa est in cœlis.
+  }
+  \e{%
+At that time, Jesus seeing the crowds, went up the mountain. And when He was seated, His disciples came to Him. And opening His mouth He taught them, saying, Blessed are the poor is spirit, for theirs is the kingdom of heaven. Blessed are the meek, for they shall possess the earth. Blessed are they who mourn, for they shall be comforted. Blessed are they who hunger and thirst for justice, for they shall be satisfied. Blessed are the merciful, for they shall obtain mercy. Blessed are the clean of heart, for they shall see God. Blessed are the peacemakers for they shall be called children of God. Blessed are they who suffer persecution for justice’ sake, for theirs is the kingdom of heaven. Blessed are you when men reproach you, and persecute you, and, speaking falsely, say all manner of evil against you, for My sake. Rejoice and exult, because your reward is great in heaven.
+  }
+}
+\newcommand{\offertory}{%
+Iustórum ánimæ in manu Dei sunt, et non tanget illos torméntum malítiae: visi sunt óculis insipiéntium mori: illi autem sunt in pace, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+The souls of the just are in the hand of God, and no torment shall touch them. They seemed, in the view of the foolish, to be dead: but they are in peace. Alleluia.
+}
+\newcommand{\secret}{%
+  \l{%
+Múnera tibi, Dómine, nostra devotiónis offérimus: quæ et pro tuórum tibi grata sint honóre Iustórum, et nobis salutária, te miseránte, reddántur.
+  }
+  \e{%
+We present to thee, O Lord, these gifts for our sacrifice, as honoring thy holy ones may they please thee, and of thy pity, may they become profitable to us.
+  }
+}
+\newcommand{\communion}{%
+Beáti mundo corde, quóniam ipsi Deum vidébunt; beáti pacífici, quóniam filii Dei vocabúntur: beáti, qui persecutiónem patiúntur propter iustítiam, quóniam ipsórum est regnum cœlórum.
+}
+\newcommand{\communionTranslation}{%
+Blessed are the clean of heart, for they shall see God. Blessed are the peacemakers, for they shall be called children of God. Blessed are they who suffer persecution for justice’ sake, for theirs is the kingdom of heaven.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Da, quǽsumus, Dómine, fidélibus pópulis ómnium Sanctórum semper veneratióne lætári: et eórum perpétua supplicatióne muníri.
+  }
+  \e{%
+Grant Your faithful people, we beseech You, O Lord, ever to rejoice in the veneration of all the Saints, and to be protected by their unceasing prayers.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/4/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/4/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/4/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/4/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/4/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

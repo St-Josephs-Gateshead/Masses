@@ -1,0 +1,106 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{In Dedicatione S. Michælis Archangelis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Benedícite Dóminum, omnes Angeli eius: poténtes virtúte, qui fácitis verbum eius, ad audiéndam vocem sermónum eius.
+Benedic, ánima mea, Dómino: et ómnia, quæ intra me sunt, nómini sancto eius.
+}
+\newcommand{\introitTranslation}{%
+Bless the Lord, all you His Angels, you mighty in strength, who do His bidding, obeying His spoken word.
+Bless the Lord, O my soul; and, all my being, bless His holy name.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Deus, qui, miro ordine, Angelórum ministéria hominúmque dispénsas: concéde propítius; ut, a quibus tibi ministrántibus in cœlo semper assístitur, ab his in terra vita nostra muniátur.
+  }
+  \e{%
+O God, Who assign according to a wondrous order the duties of Angels and men, mercifully grant that our life on earth be guarded by those who continually stand in Your presence and minister to You in heaven.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+In diébus illis: Significávit Deus, quæ opórtet fíeri cito, mittens per Angelum suum servo suo Ioánni, qui testimónium perhíbuit verbo Dei, et testimónium Iesu Christi, quæcúmque vidit. Beátus, qui legit et audit verba prophetíæ huius: et servat ea, quæ in ea scripta sunt: tempus enim prope est. Ioánnes septem ecclésiis, quæ sunt in Asia. Grátia vobis et pax ab eo, qui est et qui erat et qui ventúrus est: et a septem spirítibus, qui in conspéctu throni eius sunt: et a Iesu Christo, qui est testis fidélis, primogénitus mortuórum et princeps regum terræ, qui diléxit nos et lavit nos a peccátis nostris in sánguine suo.
+  }
+  \e{%
+In those days, God signified those things which must shortly come to pass, sending through His Angel to His servant John; who bore witness to the word of God and to the testimony of Jesus Christ, to whatever he saw. Blessed is he who reads and those who hear the words of this prophecy, and keep the things that are written therein; for the time is at hand. John to the seven churches that are in Asia: grace be to you and peace from Him Who is and Who was and Who is coming, and from the seven spirits who are before His throne, and from Jesus Christ, Who is the faithful witness, the firstborn of the dead, and the ruler of the kings of the earth. To Him Who has loved us, and washed us from our sins in His own Blood.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Benedícite Dóminum, omnes Angeli eius: poténtes virtúte, qui fácitis verbum eius.
+Benedic, ánima mea, Dóminum, et ómnia interióra mea, nomen sanctum eius.
+Allelúia, allelúia.
+Sancte Míchaël Archángele, defénde nos in prœ́lio: ut non pereámus in treméndo iudício. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Bless the Lord, all you His Angels, you mighty in strength, who do His bidding.
+Bless the Lord, O my soul; and, all my being, bless His holy name. Alleluia, alleluia.
+St. Michael the Archangel, defend us in battle, that we may not perish in the dreadful judgment. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Accessérunt discípuli ad Iesum, dicéntes: Quis, putas, maior est in regno cœlórum? Et ádvocans Iesus párvulum, státuit eum in médio eórum et dixit: Amen, dico vobis, nisi convérsi fuéritis et efficiámini sicut párvuli, non intrábitis in regnum cœlórum. Quicúmque ergo humiliáverit se sicut párvulus iste, hic est maior in regno cœlórum. Et qui suscéperit unum párvulum talem in nómine meo, me súscipit. Qui autem scandalizáverit unum de pusíllis istis, qui in me credunt, expédit ei, ut suspendátur mola asinária in collo eius, et demergátur in profúndum maris. Væ mundo a scándalis! Necésse est enim, ut véniant scándala: verúmtamen væ hómini illi, per quem scándalum venit! Si autem manus tua vel pes tuus scandalízat te, abscíde eum et proiíce abs te: bonum tibi est ad vitam ingrédi débilem vel claudum, quam duas manus vel duos pedes habéntem niitti in ignem ætérnum. Et si óculus tuus scandalízat te, érue eum et proiice abs te: bonum tibi est cum uno óculo in vitam intráre, quam duos óculos habéntem mitti in gehénnam ignis. Vidéte, ne contemnátis unum ex his pusíllis: dico enim vobis, quia Angeli eórum in cœlis semper vident fáciem Patris mei, qui in cœlis est.
+  }
+  \e{%
+At that time, the disciples came to Jesus, saying, Who then is greatest in the kingdom of heaven? And Jesus called a little child to Him, set him in their midst, and said, Amen I say to you, unless you turn and become like little children, you will not enter into the kingdom of heaven. Whoever, therefore, humbles himself as this little child, he is the greatest in the kingdom of heaven. And whoever receives one such little child for My sake, receives Me. But whoever causes one of these little ones who believe in Me to sin, it were better for him to have a great millstone hung around his neck, and to be drowned in the depths of the sea. Woe to the world because of scandals! For it must needs be that scandals come, but woe to the man through whom scandal does come! And if your hand or your foot is an occasion of sin to you, cut it off and cast it from you! It is better for you to enter life maimed or lame, than, having two hands or two feet, to be cast into the everlasting fire. And if your eye is an occasion of sin to you, pluck it out and cast it from you! It is better for you to enter into life with one eye, than, having two eyes, to be cast into hell-fire. See that you do not despise one of these little ones; for I tell you, their Angels in heaven always behold the face of My Father in heaven.
+  }
+}
+\newcommand{\offertory}{%
+Stetit Angelus iuxta aram templi, habens thuríbulum áureum in manu sua, et data sunt ei incénsa multa: et ascendit fumus arómatum in conspéctu Dei, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+An Angel stood near the altar of the temple, having a golden censer in his hand, and there was given to him much incense; and the smoke of the perfumes ascended before God. Alleluia.
+}
+\newcommand{\secret}{%
+  \l{%
+Hóstias tibi, Dómine, laudis offérimus, supplíciter deprecántes: ut eásdem, angélico pro nobis interveniénte suffrágio, et placátus accípias, et ad salútem nostram proveníre concédas.
+  }
+  \e{%
+We offer You sacrifices of praise, O Lord, humbly praying You to accept them graciously and to grant that they may be helpful for our salvation through the intercession of the Angels who intercede for us.
+  }
+  \per
+}
+\newcommand{\communion}{%
+Benedícite, omnes Angeli Dómini, Dóminum: hymnum dícite et superexaltáte eum in sǽcula, allelúia.
+}
+\newcommand{\communionTranslation}{%
+All you Angels of the Lord, bless the Lord: sing a hymn, and exalt Him above all forever.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Beáti Archángeli tui Michaélis intercessióne suffúlti: súpplices te, Dómine, deprecámur; ut, quod ore proséquimur, contingámus et mente.
+  }
+  \e{%
+Relying upon the intercession of blessed Michael, Your Archangel, O Lord, we humbly pray You, that what we have received by our mouth may give grace to our mind.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
