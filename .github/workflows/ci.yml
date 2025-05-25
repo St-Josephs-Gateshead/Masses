@@ -30,7 +30,7 @@ jobs:
             free -h
             sleep 30
           done &
-          nix develop --command make -j 4
+          nix develop --command make
       - run: |
           nix develop --command python scripts/package.py
       - uses: "marvinpinto/action-automatic-releases@latest"
