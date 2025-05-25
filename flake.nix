@@ -20,7 +20,21 @@
         };
         tex = (pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-basic
-            gregoriotex latexmk;
+            babel
+            fontspec
+            gitinfo2
+            microtype
+            titlesec
+            gregoriotex
+            etoolbox
+            hyperref
+            ifthenx
+            paracol
+            scalerel
+            stackengine
+            verse
+            anyfontsize
+          ;
         });
         buildInputs = with pkgs; [
           (python312.withPackages (ps: [ ps.httpx ]))
