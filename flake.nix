@@ -30,6 +30,7 @@
             ifthenx
             latexmk
             microtype
+            memoir
             paracol
             scalerel
             stackengine
