@@ -19,23 +19,33 @@
           inherit system;
         };
         tex = (pkgs.texlive.combine {
-          inherit (pkgs.texlive) scheme-basic
+          inherit (pkgs.texlive) scheme-small
             anyfontsize
             babel
+            babel-latin
+            bigfoot
+            booktabs
+            datetime
+            ecclesiastic
             etoolbox
+            fmtcount
             fontspec
             gitinfo2
             gregoriotex
             hyperref
             ifthenx
             latexmk
-            microtype
+            luacolor
+            luamplib
             memoir
+            microtype
             paracol
             scalerel
             stackengine
             titlesec
             verse
+            xpatch
+            xstring
           ;
         });
         buildInputs = with pkgs; [
