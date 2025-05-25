@@ -24,6 +24,11 @@ jobs:
       - name: build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          while true
+          do
+            free -h
+            sleep 30
+          done &
           nix develop --command make -j $(ncpu)
       - run: |
           nix develop --command python scripts/package.py
