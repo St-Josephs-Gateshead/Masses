@@ -18,12 +18,15 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        # 'build time' deps
+        tex = (pkgs.texlive.combine {
+          inherit (pkgs.texlive) scheme-basic
+            gregoriotex;
+        });
         buildInputs = with pkgs; [
-          python311
+          python312
           copier
           pre-commit
-          texlive.combined.scheme-full
+          tex
         ];
         # allow building c extensions
         env = {
