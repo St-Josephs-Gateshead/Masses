@@ -43,6 +43,7 @@
             paracol
             scalerel
             stackengine
+            tex-gyre
             titlesec
             verse
             xpatch
@@ -54,6 +55,7 @@
           copier
           pre-commit
           tex
+          gyre-fonts
         ];
         # allow building c extensions
         env = {
