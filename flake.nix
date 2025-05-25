@@ -39,6 +39,7 @@
             luamplib
             memoir
             microtype
+            pagella-otf
             paracol
             scalerel
             stackengine
@@ -53,7 +54,6 @@
           copier
           pre-commit
           tex
-          gyre-fonts
         ];
         # allow building c extensions
         env = {
