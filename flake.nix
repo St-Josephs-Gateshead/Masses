@@ -20,20 +20,21 @@
         };
         tex = (pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-basic
+            anyfontsize
             babel
+            etoolbox
             fontspec
             gitinfo2
-            microtype
-            titlesec
             gregoriotex
-            etoolbox
             hyperref
             ifthenx
+            latexmk
+            microtype
             paracol
             scalerel
             stackengine
+            titlesec
             verse
-            anyfontsize
           ;
         });
         buildInputs = with pkgs; [
