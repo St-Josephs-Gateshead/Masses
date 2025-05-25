@@ -41,6 +41,7 @@
             microtype
             pagella-otf
             paracol
+            pdfjam
             scalerel
             stackengine
             tex-gyre
