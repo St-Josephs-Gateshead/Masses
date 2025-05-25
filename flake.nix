@@ -20,7 +20,7 @@
         };
         tex = (pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-basic
-            gregoriotex;
+            gregoriotex latexmk;
         });
         buildInputs = with pkgs; [
           (python312.withPackages (ps: [ ps.httpx ]))
