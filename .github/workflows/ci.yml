@@ -30,7 +30,6 @@ jobs:
             free -h
             sleep 30
           done &
-          ncpu
           nix develop --command make -j 4
       - run: |
           nix develop --command python scripts/package.py
