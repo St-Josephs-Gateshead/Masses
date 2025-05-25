@@ -24,7 +24,7 @@ jobs:
       - name: build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          nix develop --command make -j
+          nix develop --command make -j $(ncpu)
       - run: |
           nix develop --command python scripts/package.py
       - uses: "marvinpinto/action-automatic-releases@latest"
