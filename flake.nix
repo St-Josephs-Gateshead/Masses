@@ -23,7 +23,7 @@
             gregoriotex;
         });
         buildInputs = with pkgs; [
-          python312
+          (python312.withPackages (ps: [ ps.httpx ]))
           copier
           pre-commit
           tex

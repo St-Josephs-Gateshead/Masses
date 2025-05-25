@@ -9,28 +9,23 @@ jobs:
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
       - name: checkout
         uses: actions/checkout@v4
         with:
           submodules: true
       - name: generate makefile
-        run: |
-          pip install httpx
-          python scripts/configure.py
+        run: |-
+          nix develop --command python scripts/configure.py
           echo "Makefile is:"
           cat makefile
-      - name: install latex
-        run: |
-          sudo apt update && sudo apt install -y texlive texlive-music \
-          texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended \
-          texlive-luatex texlive-lang-english texlive-lang-european latexmk \
-          texlive-extra-utils
       - name: build
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          make -j
+          nix develop --command make -j
       - run: |
-          python scripts/package.py
+          nix develop --command python scripts/package.py
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
