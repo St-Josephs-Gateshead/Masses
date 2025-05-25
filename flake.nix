@@ -1,5 +1,5 @@
 {
-  description = "Pipelines run by prefect";
+  description = "Mass booklets for St Joseph's, Gateshead";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
