@@ -16,23 +16,8 @@ jobs:
           submodules: true
       - name: Install
         run: nix develop --command true
-      - name: generate makefile
-        run: |-
-          nix develop --command python scripts/configure.py
-          echo "Makefile is:"
-          cat makefile
-      - name: build
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          sh scripts/post-xxx-sample.txt # gitinfo2 script
-          while true
-          do
-            free -h
-            sleep 30
-          done &
-          nix develop --command bash -c "make || make"
-      - run: |
-          nix develop --command python scripts/package.py
+      - name: Run CI script
+        run: nix develop --command scripts/ci.sh
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
