@@ -1,3 +1,5 @@
+name: Generate PDFs
+
 on:
   push:
     branches:
