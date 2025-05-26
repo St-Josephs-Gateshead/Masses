@@ -275,5 +275,4 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 *.glog
-*.pdf
 /.direnv/
