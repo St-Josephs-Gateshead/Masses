@@ -50,7 +50,7 @@ def generate_makefile(dirs: Iterable[Path]):
         f.write(f"all: {' '.join(str(x) for x in dirs)}\n\n")
         for dir in dirs:
             f.write(f"{dir}:\n")
-            f.write(f"\tmake -C {dir}\n\n")
+            f.write(f"\tmake -C {dir} || true\n\n")
 
 
 def download_pdfs(outdir: Path) -> int:
