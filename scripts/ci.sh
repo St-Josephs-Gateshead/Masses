@@ -9,7 +9,7 @@ set -u
 # Exit on error in pipeline (e.g. cmd1 | cmd2)
 set -o pipefail
 
-JOBS=
+JOBS=4
 
 monitor() {
     while true
