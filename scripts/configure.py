@@ -20,6 +20,8 @@ from package import oldname
 
 root = Path(__file__).parent.parent
 
+EXPECTED_NO_PDFS = 4 # (misallette + pew sheet) * (normal, booklet)
+
 
 def get(*args, **kwargs):
     while True:
@@ -51,7 +53,8 @@ def generate_makefile(dirs: Iterable[Path]):
             f.write(f"\tmake -C {dir}\n\n")
 
 
-def download_pdfs(outdir: Path):
+def download_pdfs(outdir: Path) -> int:
+    count = 0
     for asset in assets:
         name = asset["name"]
         if not name.endswith(".pdf") or "_" not in name:
@@ -63,6 +66,9 @@ def download_pdfs(outdir: Path):
             r = get(asset["browser_download_url"])
             with (outdir / old.name).open("wb") as f:
                 f.write(r.content)
+            count += 1
+
+    return  count
 
 
 Version = namedtuple("Version", "document_version,template_version")
@@ -111,9 +117,12 @@ if __name__ == "__main__":
                     print(origf, "differs from", currentf)
                 else:
                     print(origf, "is identical to", currentf)
-                    download_pdfs(currentf.parent)
-                    with suppress(KeyError):
-                        all_dirs.remove(currentf.parent)
+                    count = download_pdfs(currentf.parent)
+                    if count == EXPECTED_NO_PDFS:
+                        with suppress(KeyError):
+                            all_dirs.remove(currentf.parent)
+                    else:
+                        print("incorrect number of pdfs found, will rebuild", currentf)
             else:
                 print(origf, "has no version, skipping...")
     except Exception as e:
