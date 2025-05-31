@@ -7,7 +7,7 @@ creator_name: John Morris
 creed: 1
 creed_path: ../Ordinaries/credo
 creedp: true
-feast_name: Dominica III Post Pentecosten
+feast_name: Dominica III Post Pascha
 gloria: true
 gradual: true
 img_file: ../img/logo.pdf
@@ -18,4 +18,4 @@ masses_path: ../Ordinaries/masses
 preface: standard
 repo_url: https://github.com/St-Josephs-Gateshead/Masses
 rite: roman
-version: v1.0.0
+version: v1.0.1
