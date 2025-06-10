@@ -1,0 +1,99 @@
+name: "Individual Releases"
+
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      dirs: ${{steps.dirs.outputs.dirs}}
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: get dirs
+        id: dirs
+        run: |
+          echo "dirs=$(cat scripts/folders_to_generate.json)" >> "$GITHUB_OUTPUT"
+
+          
+  generate-pdfs:
+    runs-on: ubuntu-latest
+    needs: setup
+    continue-on-error: true
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.setup.outputs.dirs) }}
+    permissions:
+      contents: write
+
+    steps:
+      - uses: DeterminateSystems/nix-installer-action@main
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: install
+        run: nix develop --command true
+      - name: build
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          bash scripts/post-xxx-sample.txt
+          while true
+          do
+            free -h
+            sleep 30
+          done &
+          nix develop --command bash -c "make -C ${{ matrix.dir }} --keep-going"
+      - name: try making booklets
+        if: failure()
+        run: |
+          if [[ -f "${{ matrix.dir }}/missalette.pdf" ]] && ! [[ -f "${{ matrix.dir }}/missalette-booklet.pdf" ]]; then
+            nix develop --command bash -c "cd ${{matrix.dir}}; pdfjam --landscape --suffix booklet --booklet true missalette.pdf; cd .."
+          fi
+          if [[ -f "${{ matrix.dir }}/pew-sheet.pdf" ]] && ! [[ -f "${{ matrix.dir }}/pew-sheet-booklet.pdf" ]]; then
+            nix develop --command bash -c "cd ${{matrix.dir}}; pdfjam --landscape --suffix booklet --booklet true pew-sheet.pdf; cd .."
+          fi
+      - name: upload files on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.dir }}
+          path: "${{ matrix.dir }}/*"
+      - name: check all files present
+        if: failure()
+        run: |
+          if [[ -f "${{ matrix.dir }}/missalette.pdf" ]] && [[ -f "${{ matrix.dir }}/missalette-booklet.pdf" ]] && [[ -f "${{ matrix.dir }}/pew-sheet.pdf" ]] && [[ -f "${{ matrix.dir }}/pew-sheet-booklet.pdf" ]]; then
+            TAG="${{matrix.dir}}-${{github.sha}}"
+            echo "PRERELEASE=true" >> $GITHUB_ENV
+            echo "DRAFT=false" >> $GITHUB_ENV
+          else
+            TAG="${{matrix.dir}}-${{github.sha}}-CHECK"
+            echo "PRERELEASE=false" >> $GITHUB_ENV
+            echo "DRAFT=true" >> $GITHUB_ENV
+          fi
+          echo "TAG=$TAG" >> $GITHUB_ENV
+      - name: release on failure
+        uses: "softprops/action-gh-release@v2"
+        if: failure()
+        with:
+          tag_name: ${{env.TAG}}
+          prerelease: ${{env.PRERELEASE}}
+          draft: ${{env.DRAFT}}
+          files: |
+            ${{ matrix.dir }}/*.pdf
+      - name: release on success
+        uses: "softprops/action-gh-release@v2"
+        if: success()
+        with:
+          tag_name: ${{ matrix.dir }}
+          prerelease: false
+          draft: false
+          files: |
+            ${{ matrix.dir }}/*.pdf
