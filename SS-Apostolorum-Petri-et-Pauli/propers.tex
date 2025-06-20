@@ -1,0 +1,106 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{SS Apostolorum Petri et Pauli}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Nunc scio vere, quia misit Dóminus Angelum suum: et erípuit me de manu Heródis et de omni exspectatióne plebis Iudæórum.
+Dómine; probásti me et cognovísti me: tu cognovísti sessiónem meam et resurrectiónem meam.
+}
+\newcommand{\introitTranslation}{%
+Now I know for certain that the Lord has sent His angel, and rescued me from the power of Herod, and from all that the Jewish people were expecting.
+O Lord, You have probed me and You know me; You know when I sit and when I stand.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+  Deus, qui hodiérnam diem Apostolórum tuórum Petri et Pauli martýrio consecrásti: da Ecclésiæ tuæ, eórum in ómnibus sequi præcéptum; per quos religiónis sumpsit exórdium.
+  }
+  \e{%
+  O God, Who made this day holy by the martyrdom of Your Apostles Peter and Paul, grant Your Church to follow in all things the teaching of those from whom she first received the faith.
+  }
+  \per
+  \amen
+}
+\newcommand{\lesson}{%
+  \l{%
+  In diébus illis: Misit Heródes rex manus, ut afflígeret quosdam de ecclésia. Occidit autem Iacóbum fratrem Ioánnis gládio. Videns autem, quia pláceret Iudæis, appósuit, ut apprehénderet et Petrum. Erant autem dies azymórum. Quem cum apprehendísset, misit in cárcerem, tradens quátuor quaterniónibus mílitum custodiéndum, volens post Pascha prodúcere eum pópulo. Et Petrus quidem servabátur in cárcere. Orátio autem fiébat sine intermissióne ab ecclésia ad Deum pro eo. Cum autem productúrus eum esset Heródes, in ipsa nocte erat Petrus dórmiens inter duos mílites, vinctus caténis duábus: et custódes ante óstium custodiébant cárcerem. Et ecce, Angelus Dómini ástitit: et lumen refúlsit in habitáculo: percussóque látere Petri, excitávit eum, dicens: Surge velóciter. Et cecidérunt caténæ de mánibus eius. Dixit autem Angelus ad eum: Præcíngere, et cálcea te cáligas tuas. Et fecit sic. Et dixit illi: Circúmda tibi vestiméntum tuum, et séquere me. Et éxiens sequebátur eum, et nesciébat, quia verum est, quod fiébat per Angelum: existimábat autem se visum vidére. Transeúntes autem primam et secúndam custódiam, venérunt ad portam férream, quæ ducit ad civitátem: quæ ultro apérta est eis. Et exeúntes processérunt vicum unum: et contínuo discéssit Angelus ab eo. Et Petrus ad se revérsus, dixit: Nunc scio vere, quia misit Dóminus Angelum suum, et erípuit me de manu Heródis et de omni exspectatióne plebis Iudæórum.
+  }
+  \e{%
+  In those days, Herod the king set hands on certain members of the Church to persecute them. He killed James the brother of John with the sword, and seeing that it pleased the Jews, he proceeded to arrest Peter also, during the days of the Unleavened Bread. After arresting him he cast him into prison, committing the custody of him to four guards of soldiers, four in each guard, intending to bring him forth to the people after the Passover. So Peter was being kept in the prison; but prayer was being made to God for him by the Church without ceasing. Now when Herod was about to bring him forth, that same night Peter was sleeping between two soldiers, bound with two chains, and outside the door sentries guarded the prison. And behold, an angel of the Lord stood beside him, and a light shone in the room; and he struck Peter on the side and woke him, saying, Get up quickly. The chains dropped from his hands. And the angel said to him, Gird yourself and put on your sandals. And he did so; and he said to him, Wrap your cloak about you and follow me. And he followed him out, without knowing that what was being done by the angel was real, for he thought he was having a vision. They passed through the first and second guard and came to the iron gate that leads into the city; and this opened to them of its own accord. And they went out, and passed on through one street, and straightway the angel left him. Then Peter came to himself, and he said, Now I know for certain that the Lord has sent His angel and rescued me from the power of Herod and from all that the Jewish people were expecting.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Constítues eos príncipes super omnem terram: mémores erunt nóminis tui, Dómine.
+Pro pátribus tuis nati sunt tibi fílii: proptérea pópuli confitebúntur tibi. Allelúia, allelúia.
+Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+You shall make them princes through all the land; they shall remember Your name, O Lord.
+The place of your fathers your sons shall have; therefore shall nations praise You. Alleluia, alleluia.
+You are Peter, and upon this rock I will build My Church. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+  In illo témpore: Venit Iesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Ioánnem Baptístam, alii autem Elíam, álii vero Ieremíam, aut unum ex prophétis. Dicit illis Iesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Iesus, dixit ei: Beátus es, Simon Bar Iona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis.
+  }
+  \e{%
+  At that time: Jesus came into the quarters of Caesarea Philippi: and he asked his disciples, saying: Whom do men say that the Son of man is? But they said: Some John the Baptist, and other some Elias, and others Jeremias, or one of the prophets. Jesus saith to them: But whom do you say that I am? Simon Peter answered and said: Thou art Christ, the Son of the living God. And Jesus answering, said to him: Blessed art thou, Simon Bar-Jona: because flesh and blood hath not revealed it to thee, but my Father who is in heaven. And I say to thee: That thou art Peter; and upon this rock I will build My Church, and the gates of hell shall not prevail against it. And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.
+  }
+}
+\newcommand{\offertory}{%
+Constítues eos príncipes super omnem terram: mémores erunt nóminis tui, Dómine, in omni progénie et generatióne.
+}
+\newcommand{\offertoryTranslation}{%
+You shall make them princes through all the land; they shall remember Your name, O Lord, through all generations.
+}
+\newcommand{\secret}{%
+  \l{%
+  Hóstias, Dómine, quas nómini tuo sacrándas offérimus, apostólica prosequátur orátio: per quam nos expiári tríbuas et deféndi.
+  }
+  \e{%
+  May the prayers of Your holy Apostles, O Lord, accompany the sacrificial gifts which we offer to be hallowed in Your name, so that we may obtain pardon and protection.
+  }
+}
+\newcommand{\communion}{%
+Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.
+}
+\newcommand{\communionTranslation}{%
+Thou art Peter; and upon this rock I will build My Church, and the gates of hell shall not prevail against it.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+  Quos cœlésti, Dómine, aliménto satiásti: apostólicis intercessiónibus ab omni adversitáte custódi.
+  }
+  \e{%
+  O Lord, by the intercession of Your Apostles, defend from all harm those whom You have filled with heavenly food.
+  }
+  \per
+  \amen
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
