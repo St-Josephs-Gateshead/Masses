@@ -33,6 +33,7 @@
             gitinfo2
             gregoriotex
             hyperref
+            hyphen-latin
             ifthenx
             latexmk
             luacolor
