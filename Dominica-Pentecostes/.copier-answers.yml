@@ -16,6 +16,6 @@ mass_setting: 1
 mass_type: Missa Cantata
 masses_path: ../Ordinaries/masses
 preface: standard
-repo_url: ''
+repo_url: ' https://github.com/St-Josephs-Gateshead/Masses'
 rite: roman
-version: v1.0.0
+version: v1.0.1
