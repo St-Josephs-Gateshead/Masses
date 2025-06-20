@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 import traceback
-from collections import namedtuple
+from collections import defaultdict, namedtuple
 from contextlib import suppress
 from datetime import datetime
 from io import BytesIO
 from os import environ
 from pathlib import Path
-from re import findall
+from re import search
 from sys import path
 from time import sleep
-from typing import Iterable
+from typing import Any, Iterable
 from zipfile import ZipFile
 
 import httpx
@@ -37,6 +37,19 @@ def get(*args, **kwargs):
             return r
 
 
+def get_pdf_links(assets: list[dict[str, Any]]) -> dict[str, dict[str, str]]:
+    links = defaultdict(dict)
+    for asset in assets:
+        name = asset["name"]
+        if not name.endswith(".pdf") or "_" not in name:
+            print("skipping", name)
+            continue
+        else:
+            parent, name = name.split("_", 1)
+            links[parent][name] = asset["browser_download_url"]
+    return links
+
+
 def generate_makefile(dirs: Iterable[Path]):
     print("generating makefile for", dirs)
     makefile = root / "makefile"
@@ -54,38 +67,33 @@ def generate_makefile(dirs: Iterable[Path]):
 
 
 def download_pdfs(outdir: Path) -> int:
-    count = 0
-    for asset in assets:
-        name = asset["name"]
-        if not name.endswith(".pdf") or "_" not in name:
-            print("skipping", name)
-            continue
-        old = oldname(Path(name))
-        if old.parent.name == outdir.name:
-            print("downloading", old)
-            r = get(asset["browser_download_url"])
-            with (outdir / old.name).open("wb") as f:
-                f.write(r.content)
-            count += 1
+    for name, link in asset_links[outdir.name].items():
+        print(f"downloading {outdir.name}/{name}")
+        r = get(link)
+        with (outdir / name).open("wb") as f:
+            f.write(r.content)
 
-    return  count
+    return len(asset_links[outdir.name])
 
 
 Version = namedtuple("Version", "document_version,template_version")
 
 
 def version(texf: Path) -> Version | None:
-    assert texf.suffix == ".tex"
-    try:
-        line = next(l for l in texf.read_text().splitlines() if "\\version" in l)
-    except StopIteration:
-        return None
+    assert texf.suffix == ".yml"
+    match = []
+    for v in ["_commit", "version"]:
+        try:
+            line = next(l for l in texf.read_text().splitlines() if v in l)
+        except StopIteration:
+            return None
 
-    match = findall(r"(v[0-9]+\.[0-9]+\.[0-9]+.+?)", line)
-    if match:
-        assert len(match) == 2
-        # regex catches any trailing chars for e.g. v1.0.0rc1, but we also have a ) after it
-        return Version(match[0].strip(), match[1].replace(")", "").strip())
+        found = search(r"((0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$)", line)
+        if found:
+            match.append(found.group(0))
+
+    if len(match) == 2:
+        return Version(match[0], match[1])
     else:
         return None
 
@@ -98,7 +106,7 @@ if __name__ == "__main__":
     url = f"https://api.github.com/repos/{repo}/releases/latest"
     try:
         data = get(url).json()
-        assets = get(data["assets_url"]).json()
+        asset_links = get_pdf_links(data["assets"])
         zipf = get(data["zipball_url"]).content
         zipf = ZipFile(BytesIO(zipf))
         outer = Path(zipf.namelist()[0])
@@ -108,7 +116,7 @@ if __name__ == "__main__":
         assert release.exists()
 
         changed_dirs = set()
-        fs = list(release.glob("**/*.tex"))
+        fs = list(release.glob("**/.copier-answers.yml"))
         print("fs", fs)
         for origf in fs:
             currentf = root / origf.relative_to(release)
