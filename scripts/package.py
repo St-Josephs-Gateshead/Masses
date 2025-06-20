@@ -19,7 +19,7 @@ if __name__ == "__main__":
     outdir.mkdir(exist_ok=True)
 
     for pdf in root.glob("**/*.pdf"):
-        if pdf.parent.name == "pdfs":
+        if pdf.parent.name in ["pdfs", "img"]:
             continue
         target = outdir / newname(pdf)
         copyfile(pdf, target)
