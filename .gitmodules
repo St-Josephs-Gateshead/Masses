@@ -1,3 +1,9 @@
 [submodule "Ordinaries"]
 	path = Ordinaries
 	url = https://github.com/St-Josephs-Gateshead/Ordinaries.git
+[submodule "ToniCommunes"]
+	path = ToniCommunes
+	url = https://github.com/St-Josephs-Gateshead/ToniCommunes
+[submodule "MarianAntiphons"]
+	path = MarianAntiphons
+	url = https://github.com/St-Josephs-Gateshead/MarianAntiphons
