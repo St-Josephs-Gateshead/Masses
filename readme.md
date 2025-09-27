@@ -6,7 +6,8 @@ template, such as [MassTemplate](https://github.com/St-Josephs-Gateshead/MassTem
 
 ## Getting pdfs
 
-Pdfs should built automatically and deployed to the
+See [here](releases.md) for a list of releases.
+Otherwise pdfs should built automatically and deployed to the
 [latest release](https://github.com/St-Josephs-Gateshead/Masses/releases).
 
 ## Adding a mass
