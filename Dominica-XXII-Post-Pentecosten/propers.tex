@@ -1,0 +1,132 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica XXII Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Si iniquitátes observáveris, Dómine: Dómine, quis sustinébit? quia apud te propitiátio est, Deus Israël.
+De profúndis clamávi ad te, Dómine: Dómine, exáudi vocem meam.
+}
+\newcommand{\introitTranslation}{%
+If You, O Lord, mark iniquities, Lord, who can stand? But with You is forgiveness, O God of Israel.
+Out of the depths I cry to You, O Lord; Lord, hear my voice!
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+  Deus, refúgium nostrum et virtus: adésto piis Ecclésiæ tuæ précibus, auctor ipse pietátis, et præsta; ut, quod fidéliter pétimus, efficáciter consequámur.
+  }
+  \e{%
+  O God, our refuge and our strength, the very source of holiness, heed the devout prayers of Your Church, and grant that what we seek in faith we may obtain in fact.
+  }
+  \perDominum
+}
+\newcommand{\lesson}{%
+  \l{%
+  Fratres: Confídimus in Dómino Jesu, quia, qui cœpit in vobis opus bonum, perfíciet usque in diem Christi Jesu. Sicut est mihi justum hoc sentíre pro ómnibus vobis: eo quod hábeam vos in corde, et in vínculis meis, et in defensióne, et confirmatióne Evangélii, sócios gáudii mei omnes vos esse. Testis enim mihi est Deus, quómodo cúpiam omnes vos in viscéribus Jesu Christi. Et hoc oro, ut cáritas vestra magis ac magis abúndet in sciéntia et in omni sensu: ut probétis potióra, ut sitis sincéri et sine offénsa in diem Christi, repléti fructu justítiæ per Jesum Christum, in glóriam et laudem Dei.
+  }
+  \e{%
+  Brethren: We are confident in the Lord Jesus that He Who has begun a good work in you will bring it to perfection until the day of Christ Jesus. And I have the right to feel so about you all, because I have you in my heart, all of you, alike in my chains and in the defense and confirmation of the Gospel, as sharers in my joy. For God is my witness how I long for you all in the heart of Christ Jesus. And this I pray, that your charity may more and more abound in knowledge and all discernment, so that you may approve the better things, that you may be upright and without offense unto the day of Christ, filled with the fruit of justice, through Jesus Christ, to the glory and praise of God.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Ecce, quam bonum et quam jucúndum, habitáre fratres in unum!
+Sicut unguéntum in cápite, quod descéndit in barbam, barbam Aaron. 
+Allelúja, allelúja.
+Qui timent Dóminum sperent in eo: adjútor et protéctor eórum est. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+Behold how good it is, and how pleasant where brethren dwell as one!
+It is as when the precious ointment upon the head runs down over the beard, the beard of Aaron.
+Alleluia, alleluia.
+Those who fear the Lord trust in the Lord: He is their help and their shield. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+  In illo témpore: Abeúntes pharisǽi consílium iniérunt, ut cáperent Jesum in sermóne. Et mittunt ei discípulos suos cum Herodiánis, dicéntes: Magíster, scimus, quia verax es et viam Dei in veritáte doces, et non est tibi cura de áliquo: non enim réspicis persónam hóminum: dic ergo nobis, quid tibi vidétur, licet censum dare Cǽsari, an non? Cógnita autem Jesus nequítia eórum, ait: Quid me tentátis, hypócritæ? Osténdite mihi numísma census. At illi obtulérunt ei denárium. Et ait illis Jesus: Cujus est imágo hæc et superscríptio? Dicunt ei: Cǽsaris. Tunc ait illis: Réddite ergo, quæ sunt Cǽsaris, Cǽsari; et, quæ sunt Dei, Deo.
+  }
+  \e{%
+  At that time, the Pharisees went and took counsel how they might trap Jesus in His talk. And they sent to Him their disciples with the Herodians, saying, Master, we know that You are truthful, and that You teach the way of God in truth, and that You care naught for any man; for You do not regard the person of men. Tell us, therefore, what do You think: Is it lawful to give tribute to Caesar, or not? But Jesus, knowing their wickedness, said, Why do you test Me, you hypocrites? Show Me the coin of the tribute. So they offered Him a denarius. Then Jesus said to them, Whose are this image and the inscription? They said to Him, Caesar’s. Then He said to them, Render, therefore, to Caesar the things that are Caesar’s, and to God the things that are God’s.
+  }
+}
+\newcommand{\offertory}{%
+Recordáre mei, Dómine, omni potentátui dóminans: et da sermónem rectum in os meum, ut pláceant verba mea in conspéctu príncipis.
+}
+\newcommand{\offertoryTranslation}{%
+Remember me, O Lord, You Who rule above all power: and give a well-ordered speech in my mouth, that my words may be pleasing in the sight of the prince.
+}
+\newcommand{\secret}{%
+  \l{%
+  Da, miséricors Deus: ut hæc salutáris oblátio et a própriis nos reátibus indesinénter expédiat, et ab ómnibus tueátur advérsis.
+  }
+  \e{%
+  Grant, O merciful God, that this saving sacrifice may always free us from sin, and protect us from all that works against us.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Ego clamávi, quóniam exaudísti me, Deus: inclína aurem tuam et exáudi verba mea.
+}
+\newcommand{\communionTranslation}{%
+I call upon You, for You will answer me, O God; incline Your ear to me; hear my word.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+  Súmpsimus, Dómine, sacri dona mystérii, humíliter deprecántes: ut, quæ in tui commemoratiónem nos fácere præcepísti, in nostræ profíciant infirmitátis auxílium:
+  }
+  \e{%
+  We who have received the gift of Your blessed sacrament, O Lord, humbly pray that what You have taught us to do in commemoration of You, may profit and help us in our weakness.
+  }
+  \quiVivis
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/salve-regina}
+\input{../MarianAntiphons/salve-regina_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
