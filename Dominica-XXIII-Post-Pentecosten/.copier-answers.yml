@@ -4,11 +4,11 @@ _src_path: gh:St-Josephs-Gateshead/MassTemplate.git
 alleluia: alleluia
 asperges: asperges
 common_tones_path: ../ToniCommunes
-creator_name: John Morris
+creator_name: Anne Foo
 creed: 1
 creed_path: ../Ordinaries/credo
 creedp: true
-feast_name: Dominica XVIII Post Pentecosten
+feast_name: Dominica XXIII Post Pentecosten
 gloria: true
 gradual: true
 img_file: ../img/logo.pdf
@@ -22,4 +22,4 @@ preface: standard
 repo_url: https://github.com/St-Josephs-Gateshead/Masses
 rite: roman
 sequentia: false
-version: v1.0.1
+version: v1.0.0
