@@ -1,8 +1,9 @@
 # Changes here will be overwritten by Copier
-_commit: v2.3.0
-_src_path: gh:2e0byo/MassTemplate.git
+_commit: v2.4.2
+_src_path: gh:St-Josephs-Gateshead/MassTemplate.git
 alleluia: alleluia
 asperges: vidi-aquam
+common_tones_path: ../ToniCommunes
 creator_name: John Morris
 creed: 1
 creed_path: ../Ordinaries/credo
@@ -12,10 +13,13 @@ gloria: true
 gradual: true
 img_file: ../img/logo.pdf
 marian: true
+marian_path: ../MarianAntiphons
+marian_type: regina-caeli
 mass_setting: 1
 mass_type: Missa Cantata
 masses_path: ../Ordinaries/masses
 preface: standard
 repo_url: https://github.com/St-Josephs-Gateshead/Masses
 rite: roman
-version: v1.0.0
+sequentia: false
+version: v1.0.1

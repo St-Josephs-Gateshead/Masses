@@ -12,7 +12,7 @@
 \usepackage{styling}
 % Config
 \copypagestyle{versionplain}{plain}
-\newcommand{\version}{\tiny Release: v1.0.0 (template v2.3.0)}
+\newcommand{\version}{\tiny Release: v1.1.0 (template v2.4.2)}
 \makeevenfoot{versionplain}{\thepage}{}{\version}
 \makeoddfoot{versionplain}{\version}{}{\thepage}
 \pagestyle{versionplain}
@@ -25,6 +25,7 @@
 \setsecnumdepth{chapter}
 \setsecheadstyle{\Large\scshape\raggedright\centering}
 \setafterparaskip{1.5ex plus .2ex}
+\setlength{\parindent}{0em}
 
 \begin{document}
 
@@ -61,6 +62,7 @@
   \e{\gradualTranslation}
 }
 % 
+% 
 
 \section{Gospel}
 \black{\gospel}
@@ -83,7 +85,8 @@
 % 
 \section{Marian Antiphon}
 \red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
-\gregorioscore{marian}
+\gregorioscore{\marianPath}
+\black{\marianResp}
 % 
 
 \vfill

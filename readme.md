@@ -2,7 +2,7 @@
 
 This repository holds source code to generate missalettes for Masses at
 St. Joseph's Catholic Church, Gateshead.  Masses are generated with a copier
-template, such as [MassTemplate](https://github.com/2e0byo/MassTemplate).
+template, such as [MassTemplate](https://github.com/St-Josephs-Gateshead/MassTemplate).
 
 ## Getting pdfs
 
@@ -16,7 +16,7 @@ Clone/fork this repository, make an appropriate directory, and use copier, e.g.:
 ```shell
 cd /path/to/repo
 mkdir new-mass # do pick a good name...
-copier copy gh:2e0byo/MassTemplate.git new-mass
+copier copy gh:St-Josephs-Gateshead/MassTemplate.git new-mass
 ```
 
 Then edit `propers.tex` and add the required `.gabc` files, e.g. from

@@ -14,40 +14,19 @@ all: missalette-booklet.pdf pew-sheet-booklet.pdf
 	pdfjam --landscape --suffix booklet --booklet true $<
 
 
-amen.gtex: amen.gabc
-
-GTEX += amen.gtex
-
-dominus-vobiscum.gtex: dominus-vobiscum.gabc
-
-GTEX += dominus-vobiscum.gtex
-
-pax-domini.gtex: pax-domini.gabc
-
-GTEX += pax-domini.gtex
-
-preface.gtex: preface.gabc
-
-GTEX += preface.gtex
-
-sed-libera-nos.gtex: sed-libera-nos.gabc
-
-GTEX += sed-libera-nos.gtex
-
-sequenti.gtex: sequenti.gabc
-
-GTEX += sequenti.gtex
-
 introit.gtex: introit.gabc
-
 GTEX += introit.gtex
 
-offertory.gtex: offertory.gabc
+gradual.gtex: gradual.gabc
+GTEX += gradual.gtex
 
+alleluia.gtex: alleluia.gabc
+GTEX += alleluia.gtex
+
+offertory.gtex: offertory.gabc
 GTEX += offertory.gtex
 
 communion.gtex: communion.gabc
-
 GTEX += communion.gtex
 
 
@@ -75,30 +54,32 @@ GTEX += ../Ordinaries/credo/1/credo.gtex
 
 
 
-asperges.gtex: asperges.gabc
+../ToniCommunes/roman/amen.gtex: ../ToniCommunes/roman/amen.gabc
+GTEX += ../ToniCommunes/roman/amen.gtex
 
-GTEX += asperges.gtex
+../ToniCommunes/roman/asperges.gtex: ../ToniCommunes/roman/asperges.gabc
+GTEX += ../ToniCommunes/roman/asperges.gtex
+
+../ToniCommunes/roman/dominus-vobiscum.gtex: ../ToniCommunes/roman/dominus-vobiscum.gabc
+GTEX += ../ToniCommunes/roman/dominus-vobiscum.gtex
+
+../ToniCommunes/roman/pax-domini.gtex: ../ToniCommunes/roman/pax-domini.gabc
+GTEX += ../ToniCommunes/roman/pax-domini.gtex
+
+../ToniCommunes/roman/preface_standard.gtex: ../ToniCommunes/roman/preface_standard.gabc
+GTEX += ../ToniCommunes/roman/preface_standard.gtex
+
+../ToniCommunes/roman/sed-libera-nos.gtex: ../ToniCommunes/roman/sed-libera-nos.gabc
+GTEX += ../ToniCommunes/roman/sed-libera-nos.gtex
+
+../ToniCommunes/roman/sequenti.gtex: ../ToniCommunes/roman/sequenti.gabc
+GTEX += ../ToniCommunes/roman/sequenti.gtex
 
 
-../Ordinaries/masses/11/gloria.gtex: ../Ordinaries/masses/11/gloria.gabc
 
-GTEX += ../Ordinaries/masses/11/gloria.gtex
-
-
-gradual.gtex: gradual.gabc
-
-GTEX += gradual.gtex
-
-
-alleluia.gtex: alleluia.gabc
-
-GTEX += alleluia.gtex
-
-
-
-marian.gtex: marian.gabc
-
-MARIAN_GTEX += marian.gtex
+../MarianAntiphons/roman/salve-regina.gtex: ../MarianAntiphons/roman/salve-regina.gabc
+MARIAN += ../MarianAntiphons/roman/salve-regina.gtex
+MARIAN += ../MarianAntiphons/salve-regina_resp.tex
 
 
 missalette.pdf: missalette.tex propers.tex styling.sty rubrics.sty titlepage.sty ${GTEX} ${MARIAN}

@@ -49,6 +49,7 @@ Blessed are You, O Lord, in the firmament of heaven, and praiseworthy forever. A
 Blessed are You, O Lord, the God of our fathers, and praiseworthy forever. Alleluia.
 }
 % 
+% 
 \newcommand{\gospel}{%
   \l{%
 In illo témpore: Dixit Iesus discípulis suis: Data est mihi omnis potéstas in cœlo et in terra. Eúntes ergo docéte omnes gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus Sancti: docéntes eos serváre ómnia, quæcúmque mandávi vobis. Et ecce, ego vobíscum sum ómnibus diébus usque ad consummatiónem sǽculi.
@@ -58,7 +59,7 @@ At that time, Jesus said to His disciples: All power in heaven and on earth has 
   }
 }
 \newcommand{\offertory}{%
-  Benedíctus sit Deus Pater, unigenitúsque Dei Fílius, Sanctus quoque Spíritus: quia fecit nobíscum misericórdiam suam.
+Benedíctus sit Deus Pater, unigenitúsque Dei Fílius, Sanctus quoque Spíritus: quia fecit nobíscum misericórdiam suam.
 }
 \newcommand{\offertoryTranslation}{%
 Blessed be God the Father, and the only-begotten Son of God, and also the Holy Spirit: because He has shown His mercy to us.
@@ -70,6 +71,7 @@ Sanctífica, quǽsumus, Dómine, Deus noster, per tui sancti nóminis invocatió
   \e{%
 We call upon Your Name, O Lord, and beseech You to hallow this sacrificial offering and through it to make us an eternal offering to You.
   }
+  \per
 }
 \newcommand{\communion}{%
 Benedícimus Deum cœli et coram ómnibus vivéntibus confitébimur ei: quia fecit nobíscum misericórdiam suam.
@@ -79,7 +81,7 @@ We bless the God of heaven, and before all living we will praise Him; because He
 }
 \newcommand{\postcommunion}{%
   \l{%
-    Profíciat nobis ad salútem córporis et ánimæ, Dómine, Deus noster, huius sacraménti suscéptio: et sempitérnæ sanctæ Trinitátis eiusdémque indivíduæ Unitátis conféssio.
+Profíciat nobis ad salútem córporis et ánimæ, Dómine, Deus noster, huius sacraménti suscéptio: et sempitérnæ sanctæ Trinitátis eiusdémque indivíduæ Unitátis conféssio.
   }
   \e{%
 May the reception of this sacrament, O Lord our God, and the profession of our faith in the eternal holy Trinity and undivided Unity, benefit us for the salvation of body and soul.
@@ -90,14 +92,39 @@ May the reception of this sacrament, O Lord our God, and the profession of our f
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
+
 \newcommand{\gloriaPath}{../Ordinaries/masses/1/gloria}
+
 \newcommand{\sanctusPath}{../Ordinaries/masses/1/sanctus}
+
 \newcommand{\agnusPath}{../Ordinaries/masses/1/agnus}
+
 \newcommand{\itePath}{../Ordinaries/masses/1/ite}
-% 
+
+
 \newcommand{\creedPath}{../Ordinaries/credo/1/credo}
-% 
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/salve-regina}
+\input{../MarianAntiphons/salve-regina_resp}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "missalette"
