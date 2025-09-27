@@ -1,0 +1,40 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{titlepage}
+
+\RequirePackage[autocompile]{gregoriotex} 
+% titlepage
+\newlength{\TPpreseriesskip}      %skip before series heading
+\setlength{\TPpreseriesskip}{4\baselineskip}
+\newlength{\TPpretitleskip}      %skip before title
+\setlength{\TPpretitleskip}{9\baselineskip}
+\newlength{\TPpresubtitleskip}      %skip before subtitle
+\setlength{\TPpresubtitleskip}{1.5\baselineskip}
+
+\newcommand{\titlePage}[4]{
+  % typeset the title page for liturgy booklets
+  % First argument is title, second subtitle, third series heading, fourth image file
+  \thispagestyle{empty}
+  \frontmatter
+  {  ~\vspace{\TPpreseriesskip}
+
+    {\noindent\huge #1}\centering
+
+    \noindent\greseparator{2}{10}
+
+    \vspace{\TPpretitleskip}
+
+    {\noindent\HUGE #2}\centering
+
+    \vspace{\TPpresubtitleskip}
+
+    {\noindent\LARGE #3}\centering
+
+    \vfill
+
+    \noindent\includegraphics[width=0.4\linewidth]{#4}\centering
+
+
+    \cleardoublepage
+    \pagenumbering{arabic}
+
+  }}
