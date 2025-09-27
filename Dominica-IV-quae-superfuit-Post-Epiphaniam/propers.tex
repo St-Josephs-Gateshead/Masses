@@ -1,0 +1,130 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica IV quæ superfuit Post Epiphaniam}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Dicit Dóminus: Ego cógito cogitatiónes pacis, et non afflictiónis: invocábitis me, et ego exáudiam vos: et redúcam captivitátem vestram de cunctis locis.
+Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob.
+}
+\newcommand{\introitTranslation}{%
+The Lord says: “I think thoughts of peace, and not of affliction. You shall call upon Me, and I will hear you; and I will bring back your captivity from all places.”
+You have favored, O Lord, Your land; You have restored the well-being of Jacob.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+  Deus, qui nos, in tantis perículis constitútos, pro humána scis fragilitáte non posse subsístere: da nobis salútem mentis et córporis; ut ea, quæ pro peccátis nostris pátimur, te adjuvánte vincámus.
+  }
+  \e{%
+  O God, You Who know that our human frailty cannot stand fast against the great dangers that beset us, grant us health of mind and body, that with your help we may overcome what we suffer on account of our sins.
+  }
+  \perDominum
+}
+\newcommand{\lesson}{%
+  \l{%
+  Fratres: Némini quidquam debeátis, nisi ut ínvicem diligátis: qui enim díligit próximum, legem implévit. Nam: Non adulterábis, Non occídes, Non furáberis, Non falsum testimónium dices, Non concupísces: et si quod est áliud mandátum, in hoc verbo instaurátur: Díliges próximum tuum sicut teípsum. Diléctio próximi malum non operátur. Plenitúdo ergo legis est diléctio.
+  }
+  \e{%
+  Brethren: Owe no man anything except to love one another; for he who loves his neighbor has fulfilled the Law. For You shall not commit adultery. You shall not kill. You shall not steal. You shall not bear false witness. You shall not covet; and if there is any other commandment, it is summed up in this saying, You shall love your neighbor as yourself. Love does no evil to a neighbor. Love therefore is the fulfillment of the Law.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Liberásti nos, Dómine, ex affligéntibus nos: et eos, qui nos odérunt, confudísti.
+In Deo laudábimur tota die, et in nómine tuo confitébimur in sǽcula. Allelúja, allelúja.
+De profúndis clamávi ad te, Dómine: Dómine, exáudi oratiónem meam. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+You saved us, O Lord, from our foes, and those who hated us You put to shame.
+Out of the depths I have cried to thee, O Lord: Lord, hear my prayer.
+Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+  In illo témpore: Ascendénte Jesu in navículam, secúti sunt eum discípuli ejus: et ecce, motus magnus factus est in mari, ita ut navícula operirétur flúctibus, ipse vero dormiébat. Et accessérunt ad eum discípuli ejus, et suscitavérunt eum, dicéntes: Dómine, salva nos, perímus. Et dicit eis Jesus: Quid tímidi estis, módicæ fídei? Tunc surgens, imperávit ventis et mari, et facta est tranquíllitas magna. Porro hómines miráti sunt, dicéntes: Qualis est hic, quia venti et mare obœ́diunt ei?
+  }
+  \e{%
+  At that time, Jesus got into a boat, and His disciples followed Him. And behold, there arose a great storm on the sea, so that the boat was covered by the waves; but He was asleep. So they came and woke Him, saying, Lord, save us! we are perishing! But He said to them, Why are you fearful, O you of little faith? Then He arose and rebuked the wind and the sea, and there came a great calm. And the men marvelled, saying, What manner of Man is this, that even the wind and the sea obey Him?
+  }
+}
+\newcommand{\offertory}{%
+De profúndis clamávi ad te, Dómine: Dómine, exáudi oratiónem meam: de profúndis clamávi ad te, Dómine.
+}
+\newcommand{\offertoryTranslation}{%
+Out of the depths I cry to You, O Lord; Lord, hear my prayer! Out of the depths I cry to You, O Lord.
+}
+\newcommand{\secret}{%
+  \l{%
+  Concéde, quǽsumus, omnípotens Deus: ut hujus sacrifícii munus oblátum fragilitátem nostram ab omni malo purget semper et múniat.
+  }
+  \e{%
+  Grant, we beseech You, almighty God, that the offering of this sacrifice may always cleanse and strengthen the weakness of our nature.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Amen, dico vobis, quidquid orántes pétitis, crédite, quia accipiétis, et fiet vobis.
+}
+\newcommand{\communionTranslation}{%
+Amen I say to you, all things whatever you ask for in prayer, believe that you shall receive, and it shall be done to you.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+  Múnera tua nos, Deus, a delectatiónibus terrenis expédiant: et cœléstibus semper instáurent aliméntis.
+  }
+  \e{%
+  May Your gifts, O God, free us from the attraction of earthly pleasures and give us new strength through Your heavenly nourishment.
+  }
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/salve-regina}
+\input{../MarianAntiphons/salve-regina_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
