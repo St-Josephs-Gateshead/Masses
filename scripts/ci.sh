@@ -37,10 +37,20 @@ build () {
     python scripts/package.py
 }
 
+update () {
+    python scripts/update_release_page.py
+    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    git config user.name "github-actions[bot]"
+    git add releases.md
+    git commit -m "[skip ci] update: releases"
+    git push
+}
+
 monitor
 init
 configure
 build
+update
 
 
 
