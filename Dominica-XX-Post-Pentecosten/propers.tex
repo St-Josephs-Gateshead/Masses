@@ -1,0 +1,130 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica XX Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Omnia, quæ fecísti nobis, Dómine, in vero judício fecísti, quia peccávimus tibi et mandátis tuis non obœdívimus: sed da glóriam nómini tuo, et fac nobíscum secúndum multitúdinem misericórdiæ tuæ.
+Beáti immaculáti in via: qui ámbulant in lege Dómini.
+}
+\newcommand{\introitTranslation}{%
+All that You have done to us, O Lord, You have done in true judgment; because we have sinned against You, and we have not obeyed your commandments; but give glory to Your name, and deal with us according to the multitude of Your mercy.
+Happy are they whose way is blameless, who walk in the law of the Lord.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+  Largíre, quǽsumus, Dómine, fidélibus tuis indulgéntiam placátus et pacem: ut páriter ab ómnibus mundéntur offénsis, et secúra tibi mente desérviant.
+  }
+  \e{%
+  O Lord, we beseech You, graciously grant Your faithful forgiveness and peace, that they may be cleansed of all sin and serve You with minds free from care.
+  }
+  \perDominum
+}
+\newcommand{\lesson}{%
+  \l{%
+  Fratres: Vidéte, quómodo caute ambulétis: non quasi insipiéntes, sed ut sapiéntes, rediméntes tempus, quóniam dies mali sunt. Proptérea nolíte fíeri imprudéntes, sed intellegéntes, quæ sit volúntas Dei. Et nolíte inebriári vino, in quo est luxúria: sed implémini Spíritu Sancto, loquéntes vobismetípsis in psalmis et hymnis et cánticis spirituálibus, cantántes et psalléntes in córdibus vestris Dómino: grátias agéntes semper pro ómnibus, in nómine Dómini nostri Jesu Christi, Deo et Patri. Subjecti ínvicem in timóre Christi.
+  }
+  \e{%
+  Brethren: See to it that you walk with care: not as unwise but as wise, making the most of your time, because the days are evil. Therefore, do not become foolish, but understand what the will of the Lord is. And do not be drunk with wine, for in that is debauchery; but be filled with the Spirit, speaking to one another in psalms and hymns and spiritual songs, singing and making melody in your hearts to the Lord, giving thanks always for all things in the name of our Lord Jesus Christ to God the Father. Be subject to one another in the fear of Christ.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Oculi ómnium in te sperant, Dómine: et tu das illis escam in témpore opportúno.
+Aperis tu manum tuam: et imples omne ánimal benedictióne. Allelúja, allelúja
+Parátum cor meum, Deus, parátum cor meum: cantábo, et psallam tibi, glória mea. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+The eyes of all look hopefully to You, O Lord, and You give them their food in due season.
+You open Your hand and satisfy the desire of every living thing. Alleluia, alleluia.
+My heart is steadfast, O God; my heart is steadfast; I will sing and chant praise to You, my glory. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+  In illo témpore: Erat quidam régulus, cujus fílius infirmabátur Caphárnaum. Hic cum audísset, quia Jesus adveníret a Judǽa in Galilǽam, ábiit ad eum, et rogábat eum, ut descénderet et sanáret fílium ejus: incipiébat enim mori. Dixit ergo Jesus ad eum: Nisi signa et prodígia vidéritis, non créditis. Dicit ad eum régulus: Dómine, descénde, priúsquam moriátur fílius meus. Dicit ei Jesus: Vade, fílius tuus vivit. Crédidit homo sermóni, quem dixit ei Jesus, et ibat. Jam autem eo descendénte, servi occurrérunt ei et nuntiavérunt, dicéntes, quia fílius ejus víveret. Interrogábat ergo horam ab eis, in qua mélius habúerit. Et dixérunt ei: Quia heri hora séptima relíquit eum febris. Cognóvit ergo pater, quia illa hora erat, in qua dixit ei Jesus: Fílius tuus vivit: et crédidit ipse et domus ejus tota.
+  }
+  \e{%
+  At that time, there was a certain royal official whose son was lying sick at Capharnaum. When he heard that Jesus had come from Judea into Galilee, he went to Him and besought Him to come down and heal his son, for he was at the point of death. Jesus therefore said to him, Unless you see signs and wonders, you do not believe. The royal official said to Him, Sir, come down before my child dies. Jesus said to him, Go your way, your son lives. The man believed the word that Jesus spoke to him, and departed. But even as he was now going down, his servants met him and brought word saying that his son lived. He asked of them therefore the hour in which he had got better. And they told him, Yesterday, at the seventh hour, the fever left him. The father knew then that it was at that very hour in which Jesus had said to him, Your son lives. And he himself believed, and his whole household.
+  }
+}
+\newcommand{\offertory}{%
+Super flúmina Babylónis illic sédimus et flévimus: dum recordarémur tui, Sion.
+}
+\newcommand{\offertoryTranslation}{%
+By the streams of Babylon we sat and wept when we remembered you, O Sion.
+}
+\newcommand{\secret}{%
+  \l{%
+  Cœléstem nobis prǽbeant hæc mystéria, quǽsumus, Dómine, medicínam: et vítia nostri cordis expúrgent.
+  }
+  \e{%
+  May these sacramental rites, O Lord, we beseech You, be our heavenly medicine and expel evil from our hearts.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Meménto verbi tui servo tuo, Dómine, in quo mihi spem dedísti: hæc me consoláta est in humilitáte mea.
+}
+\newcommand{\communionTranslation}{%
+Remember Your word to Your servant, O Lord, since You have given me hope. This is my comfort in my affliction.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+  Ut sacris, Dómine, reddámur digni munéribus: fac nos, qu&#509;sumus, tuis semper obœdíre mandátis.
+  }
+  \e{%
+  That we may be made worthy, O Lord, of Your sacred gifts, make us, we beseech You, ever obedient to Your commandments.
+  }
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/salve-regina}
+\input{../MarianAntiphons/salve-regina_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
