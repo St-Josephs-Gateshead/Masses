@@ -1,0 +1,132 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica VI Post Pentecosten}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Dóminus fortitudo plebis suæ, et protéctor salutárium Christi sui est: salvum fac pópulum tuum, Dómine, et benedic hereditáti tuæ, et rege eos usque in sǽculum.
+Ad te, Dómine, clamábo, Deus meus, ne síleas a me: ne quando táceas a me, et assimilábor descendéntibus in lacum.
+}
+\newcommand{\introitTranslation}{%
+The Lord is the strength of His people, the saving refuge of His anointed. Save Your people, O Lord, and bless Your inheritance; and rule them forever!
+To You, O Lord, I call; O my God, be not deaf to me, lest, if You heed me not, I become one of those going down into the pit.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+  Deus virtútum, cuius est totum quod est óptimum: ínsere pectóribus nostris amórem tui nóminis, et præsta in nobis religiónis augméntum; ut, quæ sunt bona, nútrias, ac pietátis stúdio, quæ sunt nutríta, custódias.
+  }
+  \e{%
+  O God of the heavenly powers, creator of all good things, implant in our hearts the love of Your Name, and bestow upon us an increase of godliness, fostering what is good, and, by Your loving care, guarding what You have fostered.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+  Fratres: Quicúmque baptizáti sumus in Christo Iesu, in morte ipsíus baptizáti sumus. Consepúlti enim sumus cum illo per baptísmum in mortem: ut, quómodo Christus surréxit a mórtuis per glóriam Patris, ita et nos in novitáte vitæ ambulémus. Si enim complantáti facti sumus similitúdini mortis eius: simul et resurrectiónis érimus. Hoc sciéntes, quia vetus homo noster simul crucifíxus est: ut destruátur corpus peccáti, et ultra non serviámus peccáto. Qui enim mórtuus est, iustificátus est a peccáto. Si autem mórtui sumus cum Christo: crédimus, quia simul étiam vivémus cum Christo: sciéntes, quod Christus resurgens ex mórtuis, iam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo. Ita et vos existimáte, vos mórtuos quidem esse peccáto, vivéntes autem Deo, in Christo Iesu, Dómino nostro.
+  }
+  \e{%
+  Brethren: All we who have been baptized into Christ Jesus have been baptized into His death. For we were buried with Him by means of Baptism into death, in order that, just as Christ has arisen from the dead through the glory of the Father, so we also may walk in newness of life. For if we have been united with Him in the likeness of His death, we shall be so in the likeness of His resurrection also. For we know that our old self has been crucified with Him, in order that the body of sin may be destroyed, that we may no longer be slaves to sin; for he who is dead is acquitted of sin. But if we have died with Christ, we believe that we shall also live together with Christ; for we know that Christ, having risen from the dead, dies now no more, death shall no longer have dominion over Him. For the death that He died, He died to sin once for all, but the life that He lives, He lives unto God. Thus do you consider yourselves also as dead to sin, but alive to God in Christ Jesus our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Convértere, Dómine, aliquántulum, et deprecáre super servos tuos.
+Dómine, refúgium factus es nobis, a generatióne et progénie.
+Allelúia, allelúia.
+In te, Dómine, sperávi, non confúndar in ætérnum: in iustítia tua líbera me et éripe me: inclína ad me aurem tuam, accélera, ut erípias me. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+Return, O Lord! How long? Have pity on Your servants!
+O Lord, You have been our refuge through all generations. Alleluia, alleluia.
+In You, O Lord, I take refuge; let me never be put to shame. In Your justice rescue me and release me, incline Your ear to me, make haste to deliver me! Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+  In illo témpore: Cum turba multa esset cum Iesu, nec habérent, quod manducárent, convocátis discípulis, ait illis: Miséreor super turbam: quia ecce iam tríduo sústinent me, nec habent quod mandúcent: et si dimísero eos ieiúnos in domum suam, defícient in via: quidam enim ex eis de longe venérunt. Et respondérunt ei discípuli sui: Unde illos quis póterit hic saturáre pánibus in solitúdine? Et interrogávit eos: Quot panes habétis? Qui dixérunt: Septem. Et præcépit turbæ discúmbere super terram. Et accípiens septem panes, grátias agens fregit, et dabat discípulis suis, ut appónerent, et apposuérunt turbæ. Et habébant piscículos paucos: et ipsos benedíxit, et iussit appóni. Et manducavérunt, et saturáti sunt, et sustulérunt quod superáverat de fragméntis, septem sportas. Erant autem qui manducáverant, quasi quátuor mília: et dimísit eos.
+  }
+  \e{%
+  At that time, when there was a great crowd with Jesus, and they had nothing to eat, He called His disciples together and said to them, I have compassion on the crowd, for behold, they have now been with Me three days, and have nothing to eat; and if I send them away to their homes fasting, they will faint on the way, for some of them have come from a distance. And His disciples answered Him, How will anyone be able to satisfy these with bread, here in a desert? And He asked them, How many loaves have you? And they said, Seven. And He bade the crowd recline on the ground. Then taking the seven loaves, He gave thanks, broke them and gave them to His disciples to distribute; and they set them before the crowd. And they had a few little fishes; and He blessed them, and ordered them to be distributed. And they ate and were satisfied; and they took up what was left of the fragments, seven baskets. Now those who had eaten were about four thousand. And He dismissed them.
+  }
+}
+\newcommand{\offertory}{%
+Pérfice gressus meos in sémitis tuis, ut non moveántur vestígia mea: inclína aurem tuam, et exáudi verba mea: mirífica misericórdias tuas, qui salvos facis sperántes in te, Dómine.
+}
+\newcommand{\offertoryTranslation}{%
+Make my steps steadfast in Your paths, that my feet may not falter. Incline Your ear to me; hear my word. Show Your wondrous kindness, O Lord, O Saviour of those who trust in You.
+}
+\newcommand{\secret}{%
+  \l{%
+  Propitiáre, Dómine, supplicatiónibus nostris, et has pópuli tui oblatiónes benígnus assúme: et, ut nullíus sit írritum votum, nullíus vácua postulátio, præsta; ut, quod fidéliter pétimus, efficáciter consequámur.
+  }
+  \e{%
+  Mercifully hear our humble prayers, O Lord, and graciously accept these offerings of Your people, and grant that no prayer may be without effect, no petition in vain, so that what we ask in faith, we may really obtain.
+  }
+  \per
+}
+\newcommand{\communion}{%
+Circuíbo et immolábo in tabernáculo eius hóstiam iubilatiónis: cantábo et psalmum dicam Dómino.
+}
+\newcommand{\communionTranslation}{%
+I will go round, and offer in His tent, sacrifices with shouts of gladness; I will sing and chant praise to the Lord.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+  Repléti sumus, Dómine, munéribus tuis: tríbue, quǽsumus; ut eórum et mundémur efféctu et muniámur auxílio.
+  }
+  \e{%
+  We have been filled with Your gifts, O Lord; grant, we beseech You, that we may be cleansed and strengthened by their effect.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/salve-regina}
+\input{../MarianAntiphons/salve-regina_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
