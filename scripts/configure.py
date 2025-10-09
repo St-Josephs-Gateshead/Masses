@@ -76,7 +76,7 @@ def download_pdfs(outdir: Path) -> int:
     return len(asset_links[outdir.name])
 
 
-Version = namedtuple("Version", "document_version,template_version")
+Version = namedtuple("Version", "template_version,document_version")
 
 
 def version(texf: Path) -> Version | None:
@@ -120,9 +120,11 @@ if __name__ == "__main__":
         print("fs", fs)
         for origf in fs:
             currentf = root / origf.relative_to(release)
-            if v := version(origf):
-                if v != version(currentf):
-                    print(origf, "differs from", currentf)
+            if not currentf.exists():
+                continue
+            if v_original := version(origf):
+                if v_original != (v_current:=version(currentf)):
+                    print(f"{origf} [{v_original}] differs from {currentf} [{v_current}]")
                 else:
                     print(origf, "is identical to", currentf)
                     count = download_pdfs(currentf.parent)
