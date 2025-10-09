@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{In Epiphania Domini}
@@ -26,7 +26,7 @@
   \e{%
     O God, You Who by the guidance of a star this day revealed Your only-begotten Son to the Gentiles; mercifully grant that we who know You now by faith, may come to behold You in glory.
   }
-  \per
+  \perEundem
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ When Jesus was born in Bethlehem of Judea, in the days of King Herod, behold, Ma
   \e{%
     O Lord, look favorably upon the gifts of Your Church, which are no longer gifts of gold, frankincense and myrrh, but, as these gifts signify, our offering is Jesus Christ Your Son, our Lord, Who is now sacrifice and food.
   }
-  \qui
+  \quiTecum
 }
 \newcommand{\communion}{%
   Vídimus stellam eius in Oriénte, et vénimus cum munéribus adoráre Dóminum.
@@ -86,11 +86,12 @@ When Jesus was born in Bethlehem of Judea, in the days of King Herod, behold, Ma
   \e{%
     Grant, we beseech You, almighty God, that, by the understanding of our minds made pure, we may grasp what we celebrate by these solemn rites.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
+
 
 
 \newcommand{\kyriePath}{../Ordinaries/masses/2/kyrie}

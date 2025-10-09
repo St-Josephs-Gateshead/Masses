@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica X Post Pentecosten}
@@ -26,7 +26,7 @@ Deus, qui omnipoténtiam tuam parcéndo máxime et miserándo maniféstas: mult�
   \e{%
 O God, You manifest Your power, particularly in forbearance and pity, show us Your mercy again and again, so that hastening toward Your promises we may become partakers of the blessings of heaven.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -72,7 +72,7 @@ Tibi, Dómine, sacrifícia dicáta reddántur: quæ sic ad honórem nóminis tui
   \e{%
 Let the sacred gifts be offered to You, O Lord, Who have given them to be presented for the honor of Your name, for in them You have given us a remedy for all our ills.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Acceptábis sacrificium iustítiæ, oblatiónes et holocáusta, super altáre tuum, Dómine.
@@ -87,12 +87,13 @@ Quǽsumus, Dómine, Deus noster: ut, quos divínis reparáre non désinis sacram
   \e{%
 We beseech You, O Lord our God, that in Your mercy You will not withhold Your help from those whom You constantly restore with divine sacraments.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -109,8 +110,6 @@ We beseech You, O Lord our God, that in Your mercy You will not withhold Your he
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

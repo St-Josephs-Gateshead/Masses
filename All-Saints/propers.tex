@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Omnium Sanctorum}
@@ -16,6 +16,7 @@ Exsultáte, iusti, in Dómino: rectos decet collaudátio.
 }
 \newcommand{\introitTranslation}{%
 Let us all rejoice in the Lord, celebrating a feast day in honor of all the Saints, on whose solemnity the angels rejoice, and join in praising the Son of God.
+Exult, you just, in the Lord; praise from the upright is fitting.
 }
 % 
 \newcommand{\collect}{%
@@ -25,7 +26,7 @@ Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una
   \e{%
 Almighty, eternal God, Who granted us to honor the merits of all Your Saints in a single solemn festival, bestow on us, we beseech You, through their manifold intercession, that abundance of Your mercy for which we yearn.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -70,7 +71,7 @@ Múnera tibi, Dómine, nostra devotiónis offérimus: quæ et pro tuórum tibi g
   \e{%
 We present to thee, O Lord, these gifts for our sacrifice, as honoring thy holy ones may they please thee, and of thy pity, may they become profitable to us.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Beáti mundo corde, quóniam ipsi Deum vidébunt; beáti pacífici, quóniam filii Dei vocabúntur: beáti, qui persecutiónem patiúntur propter iustítiam, quóniam ipsórum est regnum cœlórum.
@@ -85,11 +86,12 @@ Da, quǽsumus, Dómine, fidélibus pópulis ómnium Sanctórum semper veneratió
   \e{%
 Grant Your faithful people, we beseech You, O Lord, ever to rejoice in the veneration of all the Saints, and to be protected by their unceasing prayers.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
+
 
 
 \newcommand{\kyriePath}{../Ordinaries/masses/4/kyrie}

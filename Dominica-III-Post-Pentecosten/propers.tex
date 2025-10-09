@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica III Post Pentecosten}
@@ -26,7 +26,7 @@ Protéctor in te sperántium, Deus, sine quo nihil est válidum, nihil sanctum: 
   \e{%
 O God, protector of all who hope in You, without Whom nothing is strong, nothing is holy, increase Your mercy toward us, that, with Your guidance and direction we may so pass through the things of this temporal life as not to lose those of life eternal.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ Réspice, Dómine, múnera supplicántis Ecclésiæ: et salúti credéntium perp
   \e{%
 Look favorably, O Lord, upon the offerings of Your prayerful Church and grant that those who believe may, in continual holiness, partake of them for their salvation.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Dico vobis: gáudium est Angelis Dei super uno peccatóre pœniténtiam agénte.
@@ -86,12 +86,13 @@ Sancta tua nos, Dómine, sumpta vivíficent: et misericórdiæ sempitérnæ prǽ
   \e{%
 May the holy things of which we have partaken bring us to life and prepare for Your everlasting mercy those whom You have cleansed from sin.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -108,8 +109,6 @@ May the holy things of which we have partaken bring us to life and prepare for Y
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

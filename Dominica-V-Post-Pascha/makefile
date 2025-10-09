@@ -5,7 +5,7 @@ MARIAN?=
 all: missalette-booklet.pdf pew-sheet-booklet.pdf
 
 %.pdf: %.tex
-	env openout_any=a latexmk -f --pdflatex=lualatex --pdf $<
+	env openout_any=a latexmk --pdflatex=lualatex --pdf $<
 
 %.gtex: %.gabc
 	openout_any=a gregorio $< -o $@

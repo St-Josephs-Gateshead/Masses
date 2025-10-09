@@ -23,6 +23,9 @@ GTEX += gradual.gtex
 alleluia.gtex: alleluia.gabc
 GTEX += alleluia.gtex
 
+sequentia.gtex: sequentia.gabc
+GTEX += sequentia.gtex
+
 offertory.gtex: offertory.gabc
 GTEX += offertory.gtex
 

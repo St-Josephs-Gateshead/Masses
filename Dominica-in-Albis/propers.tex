@@ -26,7 +26,7 @@ Præsta, quǽsumus, omnípotens Deus: ut, qui paschália festa perégimus, hæc,
   \e{%
 Grant, we beseech Thee, almighty God, that we who have celebrated the Paschal Feast, may, by Thy bounty, retain its fruits in our daily habits and behavior.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ Súscipe múnera, Dómine, quǽsumus, exsultántis Ecclésiæ: et, cui causam ta
   \e{%
 Receive, we beseech Thee, O Lord, the gifts of Thine exultant Church: and to her whom Thou hast given cause for so great joy, grant the fruit of perpetual happiness.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Mitte manum tuam, et cognósce loca clavórum, allelúia: et noli esse incrédulus, sed fidélis, allelúia, allelúia.
@@ -86,12 +86,13 @@ Quǽsumus, Dómine, Deus noster: ut sacrosáncta mystéria, quæ pro reparatión
   \e{%
 We beseech Thee, O Lord, our God, to make the most holy Mysteries which Thou hast given us as a defense of our renewal, a remedy for us now, and in the future.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
 
@@ -109,8 +110,6 @@ We beseech Thee, O Lord, our God, to make the most holy Mysteries which Thou has
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
 
-\newcommand{\vidiAquamPath}{../ToniCommunes/roman/vidi-aquam}
-
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 
 \newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
@@ -123,7 +122,7 @@ We beseech Thee, O Lord, our God, to make the most holy Mysteries which Thou has
 
 
 \newcommand{\marianPath}{../MarianAntiphons/roman/regina-caeli}
-\include{../MarianAntiphons/regina-caeli_resp}
+\input{../MarianAntiphons/regina-caeli_resp}
 
 %%% Local Variables:
 %%% mode: latex

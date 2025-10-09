@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{In Conceptione Immaculata Beatæ Mariæ Virginis}
@@ -26,7 +26,7 @@
   \e{%
     O God, Who by the Immaculate Conception of the Virgin, prepared a worthy dwelling for Your Son, and Who, by Your Son’s death, foreseen by You, preserved her from all taint, grant, we beseech You, through her intercession, that we too may come to You unstained by sin.
   }
-  \per
+  \perEundem
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ The Lord begot me, the firstborn of His ways, the forerunner of His prodigies of
   \e{%
     Accept, O Lord, the sacrifice of salvation which we offer You on the feast of the Immaculate Conception of the Blessed Virgin Mary; and grant that as we profess that she was kept from all taint of evil, by Your anticipating grace, so, through her intercession, may we be freed from all sin.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
   Gloriósa dicta sunt de te, María: quia fecit tibi magna qui potens est.
@@ -86,19 +86,12 @@ The Lord begot me, the firstborn of His ways, the forerunner of His prodigies of
   \e{%
     May the sacrament we have received, O Lord our God, heal in us the wounds of that sin from which by a singular privilege, You kept immaculate the conception of blessed Mary.
   }
-  \per
-  \oremus
-  \l{
-    Suscipiámus, Dómine, misericórdiam tuam in médio templi tui: ut reparatiónis nostræ ventúra sollémnia cóngruis honóribus præcedámus.
-  }
-  \e{
-    May we receive Your mercy, O Lord, in the midst of Your temple, and thus prepare with due observance for the coming festal season of our redemption.
-  }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
+
 
 
 \newcommand{\kyriePath}{../Ordinaries/masses/9/kyrie}

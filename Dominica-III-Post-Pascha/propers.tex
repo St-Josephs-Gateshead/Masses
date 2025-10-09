@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica III Post Pascha}
@@ -26,7 +26,7 @@ Deus, qui errántibus, ut in viam possint redíre iustítiæ, veritátis tuæ lu
   \e{%
 Almighty God, Who showest to them that be in error the light of thy truth, to the intent that they may return into the way of righteousness, grant unto all them that are admitted into the Christian faith may eschew those things that are contrary to their profession, and follow all such things as are agreeable to the same.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ His nobis, Dómine, mystériis conferátur, quo, terréna desidéria mitigántes
   \e{%
 Confer on us, O Lord, by these mysteries the moderation of our earthly desires: and teach us to love the things of heaven.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Módicum, et non vidébitis me, allelúia: íterum módicum, et vidébitis me, quia vado ad Patrem, allelúia, allelúia.
@@ -86,12 +86,13 @@ Sacraménta quæ súmpsimus, quǽsumus, Dómine: et spirituálibus nos instáure
   \e{%
 May the Sacraments which we have received, O Lord, we ask, refresh us with spiritual nourishment, and preserve us with bodily assistance.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
 
@@ -108,8 +109,6 @@ May the Sacraments which we have received, O Lord, we ask, refresh us with spiri
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\vidiAquamPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

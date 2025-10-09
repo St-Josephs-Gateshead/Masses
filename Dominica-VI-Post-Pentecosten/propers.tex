@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica VI Post Pentecosten}
@@ -26,7 +26,7 @@ To You, O Lord, I call; O my God, be not deaf to me, lest, if You heed me not, I
   \e{%
   O God of the heavenly powers, creator of all good things, implant in our hearts the love of Your Name, and bestow upon us an increase of godliness, fostering what is good, and, by Your loving care, guarding what You have fostered.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -72,7 +72,7 @@ Make my steps steadfast in Your paths, that my feet may not falter. Incline Your
   \e{%
   Mercifully hear our humble prayers, O Lord, and graciously accept these offerings of Your people, and grant that no prayer may be without effect, no petition in vain, so that what we ask in faith, we may really obtain.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Circuíbo et immolábo in tabernáculo eius hóstiam iubilatiónis: cantábo et psalmum dicam Dómino.
@@ -87,12 +87,13 @@ I will go round, and offer in His tent, sacrifices with shouts of gladness; I wi
   \e{%
   We have been filled with Your gifts, O Lord; grant, we beseech You, that we may be cleansed and strengthened by their effect.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -109,8 +110,6 @@ I will go round, and offer in His tent, sacrifices with shouts of gladness; I wi
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

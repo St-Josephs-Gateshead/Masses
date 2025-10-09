@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{SS Apostolorum Petri et Pauli}
@@ -26,7 +26,7 @@ O Lord, You have probed me and You know me; You know when I sit and when I stand
   \e{%
   O God, Who made this day holy by the martyrdom of Your Apostles Peter and Paul, grant Your Church to follow in all things the teaching of those from whom she first received the faith.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ You shall make them princes through all the land; they shall remember Your name,
   \e{%
   May the prayers of Your holy Apostles, O Lord, accompany the sacrificial gifts which we offer to be hallowed in Your name, so that we may obtain pardon and protection.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.
@@ -86,12 +86,13 @@ Thou art Peter; and upon this rock I will build My Church, and the gates of hell
   \e{%
   O Lord, by the intercession of Your Apostles, defend from all harm those whom You have filled with heavenly food.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -108,8 +109,6 @@ Thou art Peter; and upon this rock I will build My Church, and the gates of hell
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

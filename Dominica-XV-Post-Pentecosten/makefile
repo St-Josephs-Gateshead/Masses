@@ -32,24 +32,23 @@ GTEX += communion.gtex
 
 
 ../Ordinaries/masses/11/kyrie.gtex: ../Ordinaries/masses/11/kyrie.gabc
-
 GTEX += ../Ordinaries/masses/11/kyrie.gtex
 
-../Ordinaries/masses/11/sanctus.gtex: ../Ordinaries/masses/11/sanctus.gabc
+../Ordinaries/masses/11/gloria.gtex: ../Ordinaries/masses/11/gloria.gabc
+GTEX += ../Ordinaries/masses/11/gloria.gtex
 
+../Ordinaries/masses/11/sanctus.gtex: ../Ordinaries/masses/11/sanctus.gabc
 GTEX += ../Ordinaries/masses/11/sanctus.gtex
 
 ../Ordinaries/masses/11/agnus.gtex: ../Ordinaries/masses/11/agnus.gabc
-
 GTEX += ../Ordinaries/masses/11/agnus.gtex
 
 ../Ordinaries/masses/11/ite.gtex: ../Ordinaries/masses/11/ite.gabc
-
 GTEX += ../Ordinaries/masses/11/ite.gtex
 
 
-../Ordinaries/credo/1/credo.gtex: ../Ordinaries/credo/1/credo.gabc
 
+../Ordinaries/credo/1/credo.gtex: ../Ordinaries/credo/1/credo.gabc
 GTEX += ../Ordinaries/credo/1/credo.gtex
 
 

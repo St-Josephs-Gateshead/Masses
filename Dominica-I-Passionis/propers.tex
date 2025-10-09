@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica I Passionis}
@@ -26,7 +26,7 @@
   \e{%
     Look graciously upon Your household, almighty God, we beseech You, that by Your grace we may be governed in body, and by Your protection safeguarded in mind.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -76,7 +76,7 @@ At that time, Jesus said to the crowds of the Jews: Which of you can convict Me 
   \e{%
     May these offerings, we beseech You, O Lord, loose the bonds of our wickedness, and obtain for us the gifts of Your mercy.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
   Hoc corpus, quod pro vobis tradétur: hic calix novi Testaménti est in meo sánguine, dicit Dóminus: hoc fácite, quotiescúmque súmitis, in meam commemoratiónem.
@@ -91,16 +91,15 @@ At that time, Jesus said to the crowds of the Jews: Which of you can convict Me 
   \e{%
     Stand by us, O Lord our God, and protect by Your everlasting help those to whom You have given new strength through Your sacrament.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/17/kyrie}
-
-\newcommand{\gloriaPath}{../Ordinaries/masses/17/gloria}
 
 \newcommand{\sanctusPath}{../Ordinaries/masses/17/sanctus}
 
@@ -113,8 +112,6 @@ At that time, Jesus said to the crowds of the Jews: Which of you can convict Me 
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

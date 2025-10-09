@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica Pentecostes}
@@ -26,7 +26,7 @@ God arises; His enemies are scat\-tered, and those who hate Him flee before Him.
   \e{%
   O God, You Who on this day have taught the hearts of the faithful by the light of the Holy Spirit, grant us by that Holy Spirit Himself, to know what is right and ever to rejoice in His help.
   }
-  \per
+  \perDominumEiusdem
 }
 \newcommand{\lesson}{%
   \l{%
@@ -132,8 +132,7 @@ give salvation's end,
 give joy eternal.
 Amen. Alleluia.
 }
-%
-
+% 
 \newcommand{\gospel}{%
   \l{%
   In illo témpore: Dixit Iesus discípulis suis: Si quis díligit me, sermónem meum servábit, et Pater meus díliget eum, et ad eum veniémus et mansiónem apud eum faciémus: qui non díligit me, sermónes meos non servat. Et sermónem quem audístis, non est meus: sed eius, qui misit me, Patris. Hæc locútus sum vobis, apud vos manens. Paráclitus autem Spíritus Sanctus, quem mittet Pater in nómine meo, ille vos docébit ómnia et súggeret vobis ómnia, quæcúmque díxero vobis. Pacem relínquo vobis, pacem meam do vobis: non quómodo mundus dat, ego do vobis. Non turbétur cor vestrum neque formídet. Audístis, quia ego dixi vobis: Vado et vénio ad vos. Si diligerétis me, gauderétis útique, quia vado ad Patrem: quia Pater maior me est. Et nunc dixi vobis, priúsquam fiat: ut, cum factum fúerit, credátis. Iam non multa loquar vobíscum. Venit enim princeps mundi huius, et in me non habet quidquam. Sed ut cognóscat mundus, quia díligo Patrem, et sicut mandátum dedit mihi Pater, sic fácio.
@@ -155,7 +154,7 @@ Confirm this, O God, what You have wrought in us; from Your temple, which is in 
   \e{%
   Sanctify these offerings, we beseech You, O Lord, and cleanse our hearts by the light of the Holy Spirit.
   }
-  \per
+  \perDominumEiusdem
 }
 \newcommand{\communion}{%
 Factus est repénte de cœlo sonus, tamquam adveniéntis spíritus veheméntis, ubi erant sedéntes, allelúia: et repléti sunt omnes Spíritu Sancto, loquéntes magnália Dei, allelúia, allelúia.
@@ -170,12 +169,13 @@ Suddenly there came a sound from hea\-ven, as of a violent wind blowing, where t
   \e{%
   May the inpouring of the Holy Spirit cleanse our hearts, O Lord, and make them fertile through the dew He sprin\-kles upon them.
   }
-  \per
+  \perDominumEiusdem
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
 
@@ -192,8 +192,6 @@ Suddenly there came a sound from hea\-ven, as of a violent wind blowing, where t
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\vidiAquamPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica XV Post Pentecosten}
@@ -26,7 +26,7 @@
   \e{%
     May Your abiding mercy, O Lord, cleanse and strengthen Your Church, and, since without You she cannot exist in safety, let her be ever guided by Your grace.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ Brethren: If we live by the Spirit, by the Spirit let us also walk. Let us not b
   \e{%
     May Your sacrament, O Lord, always keep us and guard us from the assaults of the devil.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
   Panis, quem ego dédero, caro mea est pro sǽculi vita.
@@ -86,12 +86,13 @@ Brethren: If we live by the Spirit, by the Spirit let us also walk. Let us not b
   \e{%
     May the working of the heavenly gift, O Lord, so possess us, mind and body, that the action of the sacrament, rather than our senses, may continually prevail in us.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -108,8 +109,6 @@ Brethren: If we live by the Spirit, by the Spirit let us also walk. Let us not b
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

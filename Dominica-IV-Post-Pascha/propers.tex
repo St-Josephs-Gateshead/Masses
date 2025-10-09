@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica IV Post Pascha}
@@ -26,7 +26,7 @@ Deus, qui fidélium mentes uníus éfficis voluntátis: da pópulis tuis id amá
   \e{%
 O God, of Whom it cometh that the minds of thy faithful people be all of one will, grant unto the same thy people that they may love the thing which Thou commandest, and desire that which Thou dost promise, that so, amid the sundry and manifold changes of the world, our hearts may surely there be fixed, where true joys are to be found.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ Deus, qui nos, per huius sacrifícii veneránda commércia, uníus summæ divini
   \e{%
 O God, who by the august communion of this sacrifice hast make us partakers of one Sovereign Godhead, grant we beseech thee, that as we know thy truth, so we may follow it up by worthy behavior. 
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Cum vénerit Paráclitus Spíritus veritátis, ille árguet mundum de peccáto et de iustítia et de iudício, allelúia, allelúia.
@@ -86,12 +86,13 @@ Adésto nobis, Dómine, Deus noster: ut per hæc, quæ fidéliter súmpsimus, et
   \e{%
 Stand by us, O Lord, our God, that by what we have faithfully received we may be cleansed from our vices and rescued from all dangers.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
 
@@ -108,8 +109,6 @@ Stand by us, O Lord, our God, that by what we have faithfully received we may be
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\vidiAquamPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

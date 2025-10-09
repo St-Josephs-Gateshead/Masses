@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{In Dedicatione S. Michælis Archangelis}
@@ -26,7 +26,7 @@ Deus, qui, miro ordine, Angelórum ministéria hominúmque dispénsas: concéde 
   \e{%
 O God, Who assign according to a wondrous order the duties of Angels and men, mercifully grant that our life on earth be guarded by those who continually stand in Your presence and minister to You in heaven.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -72,7 +72,7 @@ Hóstias tibi, Dómine, laudis offérimus, supplíciter deprecántes: ut eásdem
   \e{%
 We offer You sacrifices of praise, O Lord, humbly praying You to accept them graciously and to grant that they may be helpful for our salvation through the intercession of the Angels who intercede for us.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Benedícite, omnes Angeli Dómini, Dóminum: hymnum dícite et superexaltáte eum in sǽcula, allelúia.
@@ -87,12 +87,13 @@ Beáti Archángeli tui Michaélis intercessióne suffúlti: súpplices te, Dómi
   \e{%
 Relying upon the intercession of blessed Michael, Your Archangel, O Lord, we humbly pray You, that what we have received by our mouth may give grace to our mind.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -109,8 +110,6 @@ Relying upon the intercession of blessed Michael, Your Archangel, O Lord, we hum
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

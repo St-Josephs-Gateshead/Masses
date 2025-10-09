@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{In Ascensione Domini}
@@ -21,17 +21,12 @@
 % 
 \newcommand{\collect}{%
   \l{%
-    Aufer a nobis, quǽsumus, Dómine, iniquitátes nostras: ut ad Sancta sanctórum puris mereámur méntibus introíre. Per Christum, Dóminum nostrum. Amen.
+  Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum, Redemptórem nostrum, ad cœlos ascendísse crédimus; ipsi quoque mente in cœléstibus habitémus.
   }
   \e{%
-    Take away from us our iniquities, we beseech Thee, O Lord, that we may be worthy to enter with pure minds into the Holy of Holies, through Christ our Lord. Amen. 
+  Grant, we beseech thee, Almighty God, that like as we do believe thine Only-Begotten Son our Saviour to have this day ascended into the heavens, so we may also in heart and mind thither ascend, and with Him continually dwell.
   }
-  \l{
-    Orámus te, Dómine, per mérita Sanctórum tuórum, quorum relíquiæ hic sunt, et ómnium Sanctórum: ut indulgére dignéris ómnia peccáta mea. Amen.
-  }
-  \e{
-    We beseech Thee, O Lord, by the merits of Thy Saints, whose relics are here, and of all the Saints, that Thou wouldst vouchsafe to forgive me all my sins. Amen.
-  }
+  \perEundem
 }
 \newcommand{\lesson}{%
   \l{%
@@ -76,7 +71,7 @@ The former treatise I made, O Theophilus, of all things which Jesus began to do 
   \e{%
     Receive, O Lord, the gifts which we offer for the glorious Ascension of thy Son, and mercifully grant that we may be delivered from present dangers and attain eternal life.
   }
-  \per
+  \perEundem
 }
 \newcommand{\communion}{%
   Psállite Dómino, qui ascéndit super cœlos cœlórum ad Oriéntem, allelúia.
@@ -89,13 +84,13 @@ The former treatise I made, O Theophilus, of all things which Jesus began to do 
     Præsta nobis, quǽsumus, omnípotens et miséricors Deus: ut, quæ visibílibus mystériis suménda percépimus, invisíbili consequámur efféctu.
   }
   \e{%
-    Grant us, we beseech thee, almighty and merciful God, that what we have taken and received in visible mysteries, may profit us by its invisible effects.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
+
 
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}

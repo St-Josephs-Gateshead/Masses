@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica IV Post Pentecosten}
@@ -26,7 +26,7 @@
   \e{%
     Grant us, we beseech You, O Lord, that the course of the world may be directed according to Your rule in peace and that Your Church may have the joy of serving You undisturbed.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -72,7 +72,7 @@ At that time, while the crowds were pressing upon Jesus to hear the word of God,
   \e{%
     Oblatiónibus nostris, quǽsumus, Dómine, placáre suscéptis: et ad te nostras étiam rebélles compélle propítius voluntátes.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
   Dóminus firmaméntum meum, et refúgium meum, et liberátor meus: Deus meus, adiútor meus.
@@ -87,12 +87,13 @@ At that time, while the crowds were pressing upon Jesus to hear the word of God,
   \e{%
     May the sacrament we have received cleanse us, we beseech You, O Lord, and by its grace protect us.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
 
@@ -109,8 +110,6 @@ At that time, while the crowds were pressing upon Jesus to hear the word of God,
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

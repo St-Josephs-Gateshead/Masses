@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{In Exaltatione Sanctæ Crucis}
@@ -26,7 +26,7 @@ May God have pity on us and bless us; may He let His face shine upon us; and may
   \e{%
   O God, Who gladden us this day by the yearly feast of the Exaltation of the Holy Cross, grant, we beseech You, that we who know on earth the mysteries of Christ may be found worthy to obtain in heaven the rewards of His redemption.
   }
-  \per
+  \perEundem
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ Through the sign of the Holy Cross protect Your people, O Lord, from the snares 
   \e{%
   We who are about to take as nourishment the Body and Blood of Jesus Christ our Lord, through Whom the Cross became a holy emblem, beseech You, O Lord, that just as we have the grace to honor it, so we may forever enjoy the salvation it has won for us.
   }
-  \per
+  \perEundem
 }
 \newcommand{\communion}{%
 Per signum Crucis de inimícis nostris líbera nos, Deus noster.
@@ -86,12 +86,13 @@ Through the sign of the Cross, deliver us from our enemies, O our God.
   \e{%
   Stand by us, O Lord our God, and protect by Your everlasting help those to whom You have given strength through Your sacrament.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/8/kyrie}
 
@@ -108,8 +109,6 @@ Through the sign of the Cross, deliver us from our enemies, O our God.
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

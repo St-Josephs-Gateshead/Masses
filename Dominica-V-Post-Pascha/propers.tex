@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica V Post Pascha}
@@ -26,7 +26,7 @@
   \e{%
     O God, from Whom all good things do come, grant to us thy humble servants that by thy holy inspiration we may think those things that be good, and by thy merciful guiding may perform the same.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@
   \e{%
     Receive, O Lord, the prayers of thy faithful with offerings of victims, that by these services of pious devotion we may pass to heavenly glory.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
   Cantáte Dómino, allelúia: cantáte Dómino et benedícite nomen eius: bene nuntiáte de die in diem salutáre eius, allelúia, allelúia.
@@ -86,12 +86,13 @@
   \e{%
     Grant us, O Lord, fed with the virtue of a heavenly table, to desire what is right, and to gain what we desire.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
 
@@ -108,8 +109,6 @@
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\vidiAquamPath}{../ToniCommunes/roman/vidi-aquam}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 

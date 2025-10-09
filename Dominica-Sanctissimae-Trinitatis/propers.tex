@@ -1,8 +1,8 @@
-% This file defines the propert to be inserted into missalette.tex  In this way
+% This file defines the properties to be inserted into missalette.tex  In this way
 % multiple feasts can be typeset very quickly.  missalette.tex should not normally
 % need changing.  Note that this is not the most readable way to insert text
 % into a LaTeX document, but it is the most powerful: the macros defined here
-% are directly excecuted when building the document.
+% are directly executed when building the document.
 
 % For the title page
 \newcommand{\feast}{Dominica Sanctissimæ Trinitatis}
@@ -26,7 +26,7 @@ Omnípotens sempitérne Deus, qui dedísti fámulis tuis in confessióne veræ f
   \e{%
 Almighty, eternal God, You Who have given Your servants, in the confession of the true faith, to acknowledge the glory of the eternal Trinity, and in the power of that majesty to adore its unity, grant, we beseech You, that in the firmness of this faith we may ever be protected from all harm.
   }
-  \per
+  \perDominum
 }
 \newcommand{\lesson}{%
   \l{%
@@ -71,7 +71,7 @@ Sanctífica, quǽsumus, Dómine, Deus noster, per tui sancti nóminis invocatió
   \e{%
 We call upon Your Name, O Lord, and beseech You to hallow this sacrificial offering and through it to make us an eternal offering to You.
   }
-  \per
+  \perDominum
 }
 \newcommand{\communion}{%
 Benedícimus Deum cœli et coram ómnibus vivéntibus confitébimur ei: quia fecit nobíscum misericórdiam suam.
@@ -86,12 +86,13 @@ Profíciat nobis ad salútem córporis et ánimæ, Dómine, Deus noster, huius s
   \e{%
 May the reception of this sacrament, O Lord our God, and the profession of our faith in the eternal holy Trinity and undivided Unity, benefit us for the salvation of body and soul.
   }
-  \per
+  \perDominum
 }
 
 % File paths: we don't use symlinks as (a) not all platforms support them, and
 % (b) they don't fit nicely with the flow we're using.
 
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\kyriePath}{../Ordinaries/masses/1/kyrie}
 
@@ -108,8 +109,6 @@ May the reception of this sacrament, O Lord our God, and the profession of our f
 
 
 \newcommand{\amenPath}{../ToniCommunes/roman/amen}
-
-\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
 
 \newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
 
