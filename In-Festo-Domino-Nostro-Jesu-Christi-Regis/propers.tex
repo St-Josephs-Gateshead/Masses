@@ -1,0 +1,129 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{In Festo Domino Nostro Iesu Christi Regis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+  Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem. Ipsi glória et impérium in sǽcula sæculórum.
+  Deus, iudícium tuum Regi da: et iustítiam tuam Fílio Regis.
+}
+\newcommand{\introitTranslation}{%
+  Worthy is the Lamb Who was slain to receive power, and divinity, and wisdom, and strength, and honor. To Him belong glory and dominion forever and ever.
+  O God, with Your judgment endow the King and with Your justice, the King's son.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Omnípotens sempitérne Deus, qui in dilécto Fílio tuo, universórum Rege, ómnia instauráre voluísti: concéde propítius; ut cunctæ famíliæ géntium, peccáti vúlnere disgregátæ, eius suavissímo subdántur império:
+  }
+  \e{%
+    Almighty and eternal God, Who willed to restore all things in Your beloved Son, the King of the Universe, graciously grant that the peoples of the earth torn asunder by the wound of sin, may submit to His most gentle rule:
+  }
+  \quiTecum
+}
+\newcommand{\lesson}{%
+  \l{%
+    Fratres: Grátias ágimus Deo Patri, qui dignos nos fecit in partem sortis sanctórum in lúmine: qui erípuit nos de potestáte tenebrárum, et tránstulit in regnum Fílii dilectiónis suæ, in quo habémus redemptiónem per sánguinem eius, remissiónem peccatórum: qui est imágo Dei invisíbilis, primogénitus omnis creatúra: quóniam in ipso cóndita sunt univérsa in cœlis et in terra, visibília et invisibília, sive Throni, sive Dominatiónes, sive Principátus, sive Potestátes: ómnia per ipsum, et in ipso creáta sunt: et ipse est ante omnes, et ómnia in ipso constant. Et ipse est caput córporis Ecclésiæ, qui est princípium, primogénitus ex mórtuis: ut sit in ómnibus ipse primátum tenens; quia in ipso complácuit omnem plenitúdinem inhabitáre; et per eum reconciliáre ómnia in ipsum, pacíficans per sánguinem crucis eius, sive quæ in terris, sive quæ in cœlis sunt, in Christo Iesu Dómino nostro.
+  }
+  \e{%
+Brethren: We give thanks to God the Father Who has made us worthy to share the lot of the saints in light. He has rescued us from the power of darkness, and transferred us into the kingdom of His beloved Son, in Whom we have our redemption through His blood, the remission of sins. He is the image of the invisible God, the firstborn of every creature. For in Him were created all things in the heavens and on the earth, things visible and things invisible, whether Thrones, or Dominations, or Principalities, or Powers. All things have been created through and unto Him, and He is before all creatures, and in Him all things hold together. Again, He is the head of the body, the Church; He, Who is the beginning, the firstborn from the dead, that in all things He may have the first place. For it has pleased God the Father that in Him all fullness should dwell and that through Him He should reconcile to Himself all things, whether on the earth or in the heavens, making peace through the blood of His Cross, in Christ Jesus our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+  Dominábitur a mari usque ad mare, et a flúmine usque ad términos orbis terrárum.
+  Et adorábunt eum omnes reges terræ: omnes gentes sérvient ei. Allelúia, allelúia.
+  Potéstas eius, potéstas ætérna, quæ non auferétur: et regnum eius, quod non corrumpétur. Allelúia.
+}
+\newcommand{\gradualTranslation}{%
+  He shall rule from sea to sea, and from the River to the ends of the earth.
+  All kings shall pay Him homage, all nations shall serve Him. Alleluia, alleluia.
+  His dominion is an everlasting dominion that shall not be taken away: and His kingdom shall not be destroyed. Alleluia.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Dixit Pilátus ad Iesum: Tu es Rex Iudæórum? Respóndit Iesus: A temetípso hoc dicis, an álii dixérunt tibi de me? Respóndit Pilátus: Numquid ego Iudǽus sum? Gens tua et pontífices tradidérunt te mihi: quid fecísti? Respóndit Iesus: Regnum meum non est de hoc mundo. Si ex hoc mundo esset regnum meum, minístri mei útique decertárent, ut non tráderer Iudǽis: nunc autem regnum meum non est hinc. Dixit ítaque ei Pilátus: Ergo Rex es tu? Respóndit Iesus: Tu dicis, quia Rex sum ego. Ego in hoc natus sum et ad hoc veni in mundum, ut testimónium perhíbeam veritáti: omnis, qui est ex veritáte, audit vocem meam.
+  }
+  \e{%
+    At that time, Pilate said to Jesus, Are You the King of the Jews? Jesus answered, Do you say this of yourself, or have others told you of Me? Pilate answered, Am I a Jew? Your own people and the chief priests have delivered You to me. What have You done? Jesus answered, My kingdom is not of this world. If My kingdom were of this world, My followers would certainly have fought that I might not be delivered to the Hebrews. But, as it is, My kingdom is not from here. Pilate therefore said to Him, You are then a King? Jesus answered, You say it: I am a King. This is why I was born, and why I have come into the world, to bear witness to the truth. Everyone who is of the truth hears My voice.
+  }
+}
+\newcommand{\offertory}{%
+  Póstula a me, et dabo tibi gentes hereditátem tuam, et possessiónem tuam términos terræ.
+}
+\newcommand{\offertoryTranslation}{%
+  Ask of Me and I will give You the nations for an inheritance and the ends of the earth for Your possession.
+}
+\newcommand{\secret}{%
+  \l{%
+    Hóstiam tibi, Dómine, humánæ reconciliatiónis offérimus: præsta, quǽsumus; ut, quem sacrifíciis præséntibus immolámus, ipse cunctis géntibus unitátis et pacis dona concédat, Iesus Christus Fílius tuus, Dóminus noster:
+  }
+  \e{%
+    O Lord, we offer You this sacrificial Victim of mankind's reconciliation with You; grant, we beseech You, that our Lord Jesus Christ, your Son, Whom we offer in this sacrifice, may bestow upon all peoples the gifts of unity and peace.
+  }
+  \quiTecum
+}
+\newcommand{\communion}{%
+Sedébit Dóminus Rex in ætérnum: Dóminus benedícet pópulo suo in pace.
+}
+\newcommand{\communionTranslation}{%
+The Lord is enthroned as King forever; may the Lord bless His people with peace!
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Immortalitátis alimóniam consecúti, quǽsumus, Dómine: ut, qui sub Christi Regis vexíllis militáre gloriámur, cum ipso, in cœlésti sede, iúgiter regnáre possímus:
+  }
+  \e{%
+    We have received the food of eternal life, and we beseech You, O Lord, that we who are proud to serve under the flag of Christ the King may forever reign with Him in the Kingdom of heaven.
+  }
+  \quiTecum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/salve-regina}
+\input{../MarianAntiphons/salve-regina_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
