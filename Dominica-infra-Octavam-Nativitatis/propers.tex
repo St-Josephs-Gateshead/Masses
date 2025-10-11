@@ -1,0 +1,151 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica infra Octavam Nativitatis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Dum médium siléntium tenérent ómnia, et nox in suo cursu médium iter háberet, omnípotens Sermo tuus, Dómine, de cœlis a regálibus sédibus venit.
+Dóminus regnávit, decórem indútus est: indútus est Dóminus fortitúdinem, et præcínxit se.
+}
+\newcommand{\introitTranslation}{%
+When a profound stillness compassed everything and the night in its swift course was half spent, Your all-powerful Word, O Lord, bounded from heaven’s royal throne.
+The Lord is King, in splendor robed; robed is the Lord and girt about with strength.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre:
+  }
+  \e{%
+O Almighty and eternal God, direct our actions in conformity with Your will, that in the name of Your beloved Son we may be worthy to do good works in abundance.
+  }
+  \quiTecum
+  \l{
+Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
+  }
+  \e{
+Grant, we beseech You, almighty God, that the new birth, in the flesh, of Your only-begotten Son may deliver us whom the bondage of old keeps under the yoke of sin.
+  }
+  \perEundem
+  }
+\newcommand{\lesson}{%
+  \l{%
+Fratres: Quanto témpore heres párvulus est, nihil differt a servo, cum sit dóminus ómnium: sed sub tutóribus et actóribus est usque ad præfinítum tempus a patre: ita et nos, cum essémus párvuli, sub eleméntis mundi erámus serviéntes. At ubi venit plenitúdo témporis, misit Deus Fílium suum, factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum reciperémus. Quóniam autem estis fílii, misit Deus Spíritum Fílii sui in corda vestra, clamántem: Abba, Pater. Itaque jam non est servus, sed fílius: quod si fílius, et heres per Deum.
+  }
+  \e{%
+Brethren: As long as the heir is a child, he differs in no way from a slave, though he is the master of all; but he is under guardians and stewards until the time set by his father. So we too, when we were children, were enslaved under the elements of the world. But when the fullness of time came, God sent His Son, born of a woman, born under the Law, that He might redeem those who were under the Law, that we might receive the adoption of sons. And because you are sons, God has sent the Spirit of His Son into our hearts, crying, Abba, Father. So that He is no longer a slave, but a son; and if a son, an heir also through God.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Speciósus forma præ filiis hóminum: diffúsa est gratia in lábiis tuis.
+Eructávit cor meum verbum bonum, dico ego ópera mea Regi: lingua mea cálamus scribæ, velóciter scribéntis. Allelúja, allelúja.
+Dóminus regnávit, decórem índuit: índuit Dóminus fortitúdinem, et præcínxit se virtúte. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+Fairer in beauty are You than the sons of men; grace is poured out upon Your lips.
+My heart overflows with a goodly theme; as I sing my ode to the King, my tongue is nimble as the pen of a skillful scribe. Alleluia, alleluia.
+The Lord is King, in splendor robed; robed is the Lord and girt about with strength. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Erat Joseph et María Mater Jesu, mirántes super his quæ dicebántur de illo. Et benedíxit illis Símeon, et dixit ad Maríam Matrem ejus: Ecce, pósitus est hic in ruínam et in resurrectiónem multórum in Israël: et in signum, cui contradicétur: et tuam ipsíus ánimam pertransíbit gládius, ut reveléntur ex multis córdibus cogitatiónes. Et erat Anna prophetíssa, fília Phánuel, de tribu Aser: hæc procésserat in diébus multis, et víxerat cum viro suo annis septem a virginitáte sua. Et hæc vídua usque ad annos octogínta quátuor: quæ non discedébat de templo, jejúniis et obsecratiónibus sérviens nocte ac die. Et hæc, ipsa hora supervéniens, confitebátur Dómino, et loquebátur de illo ómnibus, qui exspectábant redemptiónem Israël. Et ut perfecérunt ómnia secúndum legem Dómini, revérsi sunt in Galilǽam in civitátem suam Názareth. Puer autem crescébat, et confortabátur, plenus sapiéntia: et grátia Dei erat in illo.
+  }
+  \e{%
+At that time, Joseph and Mary, the mother of Jesus were marvelling at the things spoken concerning Him. And Simeon blessed them, and said to Mary His mother, Behold, this Child is destined for the fall and for the rise of many in Israel, and for a sign that shall be contradicted. And your own soul a sword shall pierce, that the thoughts of many hearts may be revealed. There was also Anna, a prophetess, daughter of Phanuel, of the tribe of Aser. She was of a great age, having lived with her husband seven years from her maidenhood, and by herself as a widow to eighty-four years. She never left the temple, with fastings and prayers worshipping night and day. And coming up at that very hour, she began to give praise to the Lord, and spoke of Him to all who were awaiting the redemption of Jerusalem. And when they had fulfilled all things as prescribed in the Law of the Lord, they returned to Galilee, into their own town of Nazareth. And the Child grew and became strong. He was full of wisdom and the grace of God was upon Him.
+  }
+}
+\newcommand{\offertory}{%
+Deus firmávit orbem terræ, qui non commovébitur: paráta sedes tua, Deus, ex tunc, a sǽculo tu es.
+}
+\newcommand{\offertoryTranslation}{%
+God has made the world firm, not to be moved. Your throne, O God, stands firm from of old; from everlasting You are.
+}
+\newcommand{\secret}{%
+  \l{%
+Concéde, quǽsumus, omnípotens Deus: ut óculis tuæ majestátis munus oblátum, et grátiam nobis piæ devotiónis obtineat, et efféctum beátæ perennitátis acquírat.
+  }
+  \e{%
+Grant, we beseech You, almighty God, that the gift offered in the sight of Your majesty may obtain for us the grace of reverent devotion and secure us eternal happiness.
+  }
+  \perDominum
+  \l{
+Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda.
+  }
+  \e{
+Make holy the sacrificial gifts we offer, O Lord, and by the new birth of Your only-begotten Son cleanse us from the stains of our sins.
+  }
+  \perEundem
+}
+\newcommand{\communion}{%
+Tolle Púerum et Matrem ejus, et vade in terram Israël: defúncti sunt enim, qui quærébant ánimam Púeri.
+}
+\newcommand{\communionTranslation}{%
+Take the Child and His mother, and go into the land of Israel, for those who sought the Child’s life are dead.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Per hujus, Dómine, operatiónem mystérii, et vitia nostra purgéntur, et justa desidéria compleántur.
+  }
+  \e{%
+By the working of this sacrament, O Lord, may our sins be erased and our just desires fulfilled.
+  }
+  \perDominum
+  \l{
+Præsta, quǽsumus, omnípotens Deus: ut natus hódie Salvátor mundi, sicut divínæ nobis generatiónis est auctor; ita et immortalitátis sit ipse largítor:
+  }
+  \e{
+Grant, we beseech You, almighty God, that the Saviour of the world, born this day, Who is the author of our birth in godliness, may bestow on us immortal life.
+  }
+  \quiTecum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/2/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/2/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/2/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/2/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/2/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
