@@ -1,0 +1,130 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Sanctissimi Nominis Jesu}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+In nómine Jesu omne genu flectátur, cœléstium, terréstrium et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.
+Dómine, Dóminus noster, quam admirábile est nomen tuum in univérsa terra!
+}
+\newcommand{\introitTranslation}{%
+At the Name of Jesus every knee should bend of those in heaven, on earth, and under the earth, and every tongue should confess that the Lord Jesus Christ is in the glory of God the Father.
+O Lord, our Lord, how glorious is Your Name over all the earth.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: concéde propítius; ut, cujus sanctum nomen venerámur in terris, ejus quoque aspéctu perfruámur in cœlis.
+  }
+  \e{%
+O God, You Who appointed Your only-begotten Son to be the Saviour of the human race, and commanded that He be called Jesus, mercifully grant that we may enjoy in heaven the vision of Him Whose holy Name we venerate on earth.
+  }
+  \perEundem
+}
+\newcommand{\lesson}{%
+  \l{%
+In diébus illis: Petrus, replétus Spíritu Sancto, dixit: Príncipes pópuli et senióres, audíte: Si nos hódie dijudicámur in benefácto hóminis infírmi, in quo iste salvus factus est, notum sit ómnibus vobis et omni plebi Israël: quia in nómine Dómini nostri Jesu Christi Nazaréni, quem vos crucifixístis, quem Deus suscitávit a mórtuis, in hoc iste astat coram vobis sanus. Hic est lapis, qui reprobátus est a vobis ædificántibus: qui factus est in caput ánguli: et non est in alio áliquo salus. Nec enim aliud nomen est sub cœlo datum homínibus, in quo opórteat nos salvos fíeri.
+  }
+  \e{%
+In those days, Peter, filled with the Holy Spirit, said, Rulers of the people and elders, if we are on trial today about a good work done to a cripple, as to how this man has been cured, be it known to all of you and to all the people of Israel that in the Name of Jesus Christ of Nazareth, Whom you crucified, Whom God has raised from the dead, even in this Name does he stand here before you, sound. This is ‘The stone that was rejected by you, the builders, which has become the cornerstone.’ Neither is there salvation in any other. For there is no other name under heaven given to men by which we must be saved.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Salvos fac nos, Dómine, Deus noster, et cóngrega nos de natiónibus: ut confiteámur nómini sancto tuo, et gloriémur in glória tua.
+Tu, Dómine, Pater noster et Redémptor noster: a sǽculo nomen tuum. Allelúja, allelúja
+Laudem Dómini loquétur os meum, et benedícat omnis caro nomen sanctum ejus. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+Save us, O Lord, our God, and gather us from among the nations, that we may give thanks to Your holy Name and glory in praising You.
+You, O Lord, are our Father and our Redeemer, from everlasting is Your Name. Alleluia, alleluia.
+May my mouth speak the praise of the Lord, and may all flesh bless His holy Name. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Postquam consummáti sunt dies octo, ut circumciderétur Puer: vocátum est nomen ejus Jesus, quod vocátum est ab Angelo, priúsquam in útero conciperétur.
+  }
+  \e{%
+At that time, when eight days were fulfilled for the circumcision of the Child, His name was called Jesus, the name given Him by the angel before He was conceived in the womb.
+  }
+}
+\newcommand{\offertory}{%
+Confitébor tibi, Dómine, Deus meus, in toto corde meo, et glorificábo nomen tuum in ætérnum: quóniam tu, Dómine, suávis et mitis es: et multæ misericórdiæ ómnibus invocántibus te, allelúja.
+}
+\newcommand{\offertoryTranslation}{%
+I will give thanks to You, O Lord my God, with all my heart, and I will glorify Your Name forever. For You, O Lord, are good and forgiving, abounding in kindness to all who call upon You. Alleluia.
+}
+\newcommand{\secret}{%
+  \l{%
+Benedíctio tua, clementíssime Deus, qua omnis viget creatúra, sanctíficet, quǽsumus, hoc sacrifícium nostrum, quod ad glóriam nóminis Fílii tui, Dómini nostri Jesu Christi, offérimus tibi: ut majestáti tuæ placére possit ad laudem, et nobis profícere ad salútem.
+  }
+  \e{%
+May Your blessing, O most merciful God, which makes all creation flourish, sanctify this our sacrifice, which we offer You to the glory of the Name of Your Son, our Lord Jesus Christ, and may it be pleasing to Your majesty as an act of praise and be profitable to us for our salvation.
+  }
+  \perEundem
+}
+\newcommand{\communion}{%
+Omnes gentes, quascúmque fecísti, vénient et adorábunt coram te, Dómine, et glorificábunt nomen tuum: quóniam magnus es tu et fáciens mirabília: tu es Deus solus, allelúja.
+}
+\newcommand{\communionTranslation}{%
+All the nations You have made shall come and worship You, O Lord, and glorify Your Name. For You are great, and do wondrous deeds; You alone are God. Alleluia.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Omnípotens ætérne Deus, qui creásti et redemísti nos, réspice propítius vota nostra: et sacrifícium salutáris hóstiæ, quod in honórem nóminis Fílii tui, Dómini nostri Jesu Christi, majestáti tuæ obtúlimus, plácido et benígno vultu suscípere dignéris; ut grátia tua nobis infúsa, sub glorióso nómine Jesu, ætérnæ prædestinatiónis titulo gaudeámus nómina nostra scripta esse in cœlis.
+  }
+  \e{%
+Almighty, eternal God, You Who have created and redeemed us, graciously look upon our needs, and deign to receive with kind and favorable countenance the sacrifice of the Saving Victim, which we have offered to Your majesty, in honor of the Name of Your Son, our Lord Jesus Christ, that, Your grace being poured out upon us, we may have the joy of seeing our names written in heaven, under the glorious Name of Jesus, the sign of eternal predestination.
+  }
+  \perEundem
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/2/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/2/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/2/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/2/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/2/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
