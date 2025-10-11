@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .superheading {
+        font-weight: 1000;
+        font-size: xx-large;
+      }
+      .heading {
+        font-weight: 900;
+        font-size: x-large;
+        padding-top: 10%;
+      }
+      .subheading {
+        font-weight: 800;
+        font-size: large;
+        padding-top: 5%;
+      }
+      th,
+      td {
+        padding: 0.25rem;
+      }
+      .mass {
+        text-align: left;
+      }
+      td {
+        text-align: center;
+      }
+      thead {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        box-shadow: 0px 10px 20px lightgray;
+      }
+      tfoot {
+        text-align: right;
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+        box-shadow: 0px -10px 20px lightgray;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="releases"></span>
+
+    <script>
+      const repo = "St-Josephs-Gateshead/Masses";
+      const mini_calendar = {
+        Tempore: {
+          Advent: [
+            "Dominica I Adventus",
+            "Dominica II Adventus",
+            "Dominica III Adventus",
+            "Dominica IV Adventus",
+          ],
+          Christmastide: [
+            "In Vigilia Nativitatis Domini",
+            "In Nativitate Domini",
+            "Dominica Infra Octavam Nativitatis",
+            "Sanctissimi Nominis Jesu",
+            "In Circumcisione Domini",
+            "In Epiphania Domini",
+          ],
+          Post_Epiphany: [
+            "Sanctae Familiae Jesu Mariae Joseph",
+            "Dominica II Post Epiphaniam",
+            "Dominica III Post Epiphaniam",
+            "Dominica IV Post Epiphaniam",
+            "Dominica V Post Epiphaniam",
+            "Dominica VI Post Epiphaniam",
+          ],
+          Septuagesima: [
+            "Dominica in Septuagesima",
+            "Dominica in Sexagesima",
+            "Dominica in Quinquagesima",
+            "Feria IV Cinerum",
+            "Dominica I in Quadragesima",
+            "Dominica II in Quadragesima",
+            "Dominica III in Quadragesima",
+            "Dominica IV in Quadragesima",
+            "Dominica de Passione",
+            "Dominica in Palmis",
+            "Feria Quinta in Coena Domini",
+            "Feria Sexta in Passione et Morte Domini",
+            "Sabbato Sancto",
+          ],
+          Eastertide: [
+            "Dominica Resurrectionis",
+            "Dominica in Albis",
+            "Dominica II Post Pascha",
+            "Dominica III Post Pascha",
+            "Dominica IV Post Pascha",
+            "Dominica V Post Pascha",
+            "In Ascensione Domini",
+            "Dominica infra Octavam Ascensionis",
+            "Dominica Pentecostes",
+          ],
+          Post_Pentecost: [
+            "Dominica Sanctissimae Trinitatis",
+            "Festum Sanctissimi Corporis Christi",
+            "Sacratissimi Cordis DNJC",
+            "Dominica II Post Pentecosten",
+            "Dominica III Post Pentecosten",
+            "Dominica IV Post Pentecosten",
+            "Dominica V Post Pentecosten",
+            "Dominica VI Post Pentecosten",
+            "Dominica VII Post Pentecosten",
+            "Dominica VIII Post Pentecosten",
+            "Dominica IX Post Pentecosten",
+            "Dominica X Post Pentecosten",
+            "Dominica XI Post Pentecosten",
+            "Dominica XII Post Pentecosten",
+            "Dominica XIII Post Pentecosten",
+            "Dominica XIV Post Pentecosten",
+            "Dominica XV Post Pentecosten",
+            "Dominica XVI Post Pentecosten",
+            "Dominica XVII Post Pentecosten",
+            "Dominica XVIII Post Pentecosten",
+            "Dominica XIX Post Pentecosten",
+            "Dominica XX Post Pentecosten",
+            "Dominica XXI Post Pentecosten",
+            "Dominica XXII Post Pentecosten",
+            "Dominica XXIII Post Pentecosten",
+            "Dominica XXIV et ultima Post Pentecosten",
+            "Dominica III quae superfuit Post Epiphaniam",
+            "Dominica IV quae superfuit Post Epiphaniam",
+            "Dominica V quae superfuit Post Epiphaniam",
+            "Dominica VI quae superfuit Post Epiphaniam",
+          ],
+        },
+        Sancti: {
+          December: ["In Conceptione Immaculata BMV"],
+          January: [],
+          February: ["In Purificatione BMV"],
+          March: ["S Joseph Sponsi BMV Confessoris"],
+          April: [],
+          May: [],
+          June: ["SS Apostolorum Petri et Pauli"],
+          July: [],
+          August: ["In Assumptione BMV"],
+          September: [
+            "Nativitate BMV",
+            "In Exaltatione Sanctae Crucis",
+            "In Dedicatione S Michaelis Archangelis",
+          ],
+          October: ["In Festo Domino Nostro Jesu Christi Regis"],
+          November: ["Omnium Sanctorum"],
+        },
+        // Commune: {},
+      };
+
+      const getObjectValues = (obj) =>
+        obj && typeof obj === "object"
+          ? Object.values(obj).map(getObjectValues).flat()
+          : [obj];
+      masses_not_found = getObjectValues(mini_calendar);
+      const symbols = { found: "✅", missing: "❌", todo: "✏️" };
+
+      function fromKebabKase(s) {
+        return s.split("_").join(" ");
+      }
+
+      function fromSnakeCase(s) {
+        return s.split("-").join(" ");
+      }
+
+      function to_kebab_case(s) {
+        return s.split(" ").join("-");
+      }
+
+      function getLinks(assets) {
+        links = {};
+        for (const asset of assets) {
+          links[asset.name.replace(".pdf", "")] = asset["browser_download_url"];
+        }
+        return links;
+      }
+
+      function createElement(
+        tagName,
+        parent = null,
+        innerText = null,
+        attrs = {}
+      ) {
+        const elem = document.createElement(tagName);
+        if (parent != null) parent.appendChild(elem);
+        if (innerText != null) elem.innerText = innerText;
+        for (const [k, v] of Object.entries(attrs)) elem.setAttribute(k, v);
+        return elem;
+      }
+
+      function setupTable() {
+        const t = createElement("table", document.getElementById("releases"));
+
+        const thead = createElement("thead", t);
+        createElement(
+          "th",
+          createElement("tr", thead),
+          "St. Joseph's, Gateshead - Releases",
+          {
+            colSpan: 5,
+            class: "superheading",
+          }
+        );
+        const tr = createElement("tr", thead);
+        createElement("th", tr, "Mass");
+        createElement("th", tr, "Missalette");
+        createElement("th", tr, "Missalette\n[Booklet]");
+        createElement("th", tr, "Pew Sheet");
+        createElement("th", tr, "Pew Sheet\n[Booklet]");
+
+        createElement(
+          "th",
+          createElement("tr", createElement("tfoot", t)),
+          `${symbols.found}: Click to download | ${symbols.missing}: Missing | ${symbols.todo}: WIP`,
+          { colSpan: 5 }
+        );
+
+        return createElement("tbody", t);
+      }
+
+      function fillWithMasses(masses, tbody) {
+        for (const mass of masses) {
+          const mass_r = createElement("tr", tbody);
+          createElement("td", mass_r, mass, { class: "mass" });
+          if (masses_not_found.indexOf(mass) >= 0) {
+            for (i = 0; i < 4; i++) createElement("td", mass_r, symbols.todo);
+            continue;
+          }
+          for (const p_type of [
+            "missalette",
+            "missalette-booklet",
+            "pew-sheet",
+            "pew-sheet-booklet",
+          ]) {
+            fn = to_kebab_case(mass) + "_" + p_type;
+            if (fn in links) {
+              const f_r = createElement("td", mass_r);
+              createElement("a", f_r, symbols.found, {
+                href: links[fn],
+              });
+            } else {
+              createElement("td", mass_r, symbols.missing);
+            }
+          }
+        }
+      }
+
+      fetch(`https://api.github.com/repos/${repo}/contents/`)
+        .then((response) => {
+          if (!response.ok) throw new Error("HTTP status: " + response.status);
+          return response.json();
+        })
+        .then((data) => {
+          for (const v of data.values()) {
+            i = masses_not_found.indexOf(fromSnakeCase(v.name));
+            if (i >= 0) masses_not_found.splice(i, 1);
+          }
+        });
+
+      fetch(`https://api.github.com/repos/${repo}/releases/latest`)
+        .then((response) => {
+          if (!response.ok) throw new Error("HTTP status: " + response.status);
+          return response.json();
+        })
+        .then((data) => {
+          const links = getLinks(data.assets);
+          const tbody = setupTable();
+          for (const [heading, subheading] of Object.entries(mini_calendar)) {
+            createElement(
+              "th",
+              createElement("tr", tbody),
+              fromKebabKase(heading),
+              {
+                colSpan: 5,
+                class: "heading",
+              }
+            );
+            for (const [period, masses] of Object.entries(subheading)) {
+              createElement(
+                "td",
+                createElement("tr", tbody),
+                fromKebabKase(period),
+                {
+                  colSpan: 5,
+                  class: "subheading",
+                }
+              );
+              fillWithMasses(masses, tbody);
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

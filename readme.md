@@ -6,7 +6,7 @@ template, such as [MassTemplate](https://github.com/St-Josephs-Gateshead/MassTem
 
 ## Getting pdfs
 
-See [here](releases.md) for a list of releases.
+See [here](https://html-preview.github.io/?url=https://github.com/St-Josephs-Gateshead/Masses/blob/main/releases.html) for a list of releases.
 Otherwise pdfs should built automatically and deployed to the
 [latest release](https://github.com/St-Josephs-Gateshead/Masses/releases).
 
