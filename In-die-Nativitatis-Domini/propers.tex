@@ -1,0 +1,130 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{In die Nativitatis Domini (Christmas Third Mass)}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Puer natus est nobis, et fílius datus est nobis: cujus impérium super húmerum ejus: et vocábitur nomen ejus magni consílii Angelus.
+Cantáte Dómino cánticum novum, quia mirabília fecit.
+}
+\newcommand{\introitTranslation}{%
+A Child is born to us, a Son is given to us; upon His shoulder dominion rests; and His name shall be called the Angel of great counsel.
+Sing to the Lord a new song, for He has done wondrous deeds.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet. 
+  }
+  \e{%
+Grant, we beseech You, almighty God, that the new birth, in the flesh, of Your only-begotten Son may deliver us whom the bondage of old keeps under the yoke of sin.
+  }
+  \perEundem
+}
+\newcommand{\lesson}{%
+  \l{%
+Multifáriam, multísque modis olim Deus loquens pátribus in Prophétis: novíssime diébus istis locútus est nobis in Fílio, quem constítuit herédem universórum, per quem fecit et sǽcula: qui cum sit splendor glóriæ, et figúra substántia? ejus, portánsque ómnia verbo virtútis suæ, purgatiónem peccatórum fáciens, sedet ad déxteram majestátis in excélsis: tanto mélior Angelis efféctus, quanto differéntius præ illis nomen hereditávit. Cui enim dixit aliquándo Angelórum: Fílius meus es tu, ego hódie génui te? Et rursum: Ego ero illi in patrem, et ipse erit mihi in fílium? Et cum íterum introdúcit Primogénitum in orbem terræ, dicit: Et adórent eum omnes Angeli Dei. Et ad Angelos quidem dicit: Qui facit Angelos suos spíritus, et minístros suos flammam ignis. Ad Fílium autem: Thronus tuus, Deus, in sǽculum sǽculi: virga æquitátis, virga regni tui. Dilexísti justítiam et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo exsultatiónis præ particípibus tuis. Et: Tu in princípio, Dómine, terram fundásti: et ópera mánuum tuárum sunt cœli. Ipsi períbunt, tu autem permanébis; et omnes ut vestiméntum veteráscent: et velut amíctum mutábis eos, et mutabúntur: tu autem idem ipse es, et anni tui non defícient.
+  }
+  \e{%
+God, Who at sundry times and in divers manners spoke in times past to the fathers by the prophets, last of all in these days has spoken to us by His Son, Whom He appointed heir of all things, by Whom also He made the world; Who, being the brightness of His glory and the image of His substance, and upholding all things by the word of His power, has effected man’s purgation from sin and taken His seat at the right hand of the Majesty on high, having become so much superior to the angels as He has inherited a more excellent name than they. For to which of the angels has He ever said, You are My Son, I this day have begotten You? and again, I will be to Him a Father, and He shall be to Me a Son? And again, when He brings the firstborn into the world, He says, And let all the angels of God adore Him. And of the angels indeed He says, He makes His angels spirits, and His ministers a flame of fire. But of the Son, Your throne, O God, is forever and ever, and a sceptre of equity is the sceptre of Your kingdom. You have loved justice and hated iniquity; therefore God, Your God, has anointed You with the oil of gladness above Your fellows. And, You in the beginning, O Lord, did found the earth, and the heavens are works of Your hands. They shall perish, but You shall continue; and they shall all grow old as does a garment, and as a vesture shall You change them, and they shall be changed. But You are the same, and Your years shall not fail.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Vidérunt omnes fines terræ salutare Dei nostri: jubiláte Deo, omnis terra.
+Notum fecit Dominus salutare suum: ante conspéctum géntium revelávit justitiam suam. Allelúja, allelúja.
+Dies sanctificátus illúxit nobis: veníte, gentes, et adoráte Dóminum: quia hódie descéndit lux magna super terram. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+All the ends of the earth have seen the salvation by our God. Sing joyfully to God, all you lands.
+The Lord has made His salvation known: in the sight of the nations He has revealed His justice. Alleluia, alleluia.
+A sanctified day has shone upon us; come, you nations, and adore the Lord: for this day a great light has descended upon the earth. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Hoc erat in princípio apud Deum. Omnia per ipsum facta sunt: et sine ipso factum est nihil, quod factum est: in ipso vita erat, et vita erat lux hóminum: et lux in ténebris lucet, et ténebræ eam non comprehendérunt. Fuit homo missus a Deo, cui nomen erat Joánnes. Hic venit in testimónium, ut testimónium perhibéret de lúmine, ut omnes créderent per illum. Non erat ille lux, sed ut testimónium perhibéret de lúmine. Erat lux vera, quæ illúminat omnem hóminem veniéntem in hunc mundum. In mundo erat, et mundus per ipsum factus est, et mundus eum non cognóvit. In própria venit, et sui eum non recepérunt. Quotquot autem recepérunt eum, dedit eis potestátem fílios Dei fíeri, his, qui credunt in nómine ejus: qui non ex sanguínibus, neque ex voluntáte carnis, neque ex voluntáte viri, sed ex Deo nati sunt. (Hic genuflectitur) Et Verbum caro factum est, et habitávit in nobis: et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre, plenum grátiæ et veritátis.
+  }
+  \e{%
+In the beginning was the Word, and the Word was with God; and the Word was God. He was in the beginning with God. All things were made through Him, and without Him was made nothing that has been made. In Him was life, and the life was the light of men. And the light shines in the darkness; and the darkness grasped it not. There was a man, one sent from God, whose name was John. This man came as a witness, to bear witness concerning the light, that all might believe through him. He was not himself the light, but was to bear witness to the light. It was the true light that enlightens every man who comes into the world. He was in the world, and the world was made through Him, and the world knew Him not. He came unto His own, and His own received Him not. But to as many as received Him He gave the power of becoming sons of God; to those who believe in His name: who were born not of blood, nor of the will of the flesh, nor of the will of man, but of God. And the Word was made flesh (Genuflect), and dwelt among us. And we saw His glory - glory as of the Only-begotten of the Father - full of grace and of truth.
+  }
+}
+\newcommand{\offertory}{%
+Tui sunt cœli et tua est terra: orbem terrárum et plenitúdinem ejus tu fundásti: justítia et judícium præparátio sedis tuæ.
+}
+\newcommand{\offertoryTranslation}{%
+Yours are the heavens, and Yours is the earth; the world and its fullness You have founded. Justice and judgment are the foundation of Your throne.
+}
+\newcommand{\secret}{%
+  \l{%
+Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda.
+  }
+  \e{%
+Make holy the sacrificial gifts we offer, O Lord, and by the new birth of Your only-begotten Son cleanse us from the stains of our sins.
+  }
+  \perEundem
+}
+\newcommand{\communion}{%
+Vidérunt omnes fines terræ salutáre Dei nostri.
+}
+\newcommand{\communionTranslation}{%
+All the ends of the earth have seen the salvation by our God.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Præsta, quǽsumus, omnípotens Deus: ut natus hódie Salvátor mundi, sicut divínæ nobis generatiónis est auctor; ita et immortalitátis sit ipse largítor:
+  }
+  \e{%
+Grant, we beseech You, almighty God, that the Saviour of the world, born this day, Who is the author of our birth in godliness, may bestow on us immortal life.
+  }
+  \quiTecum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/4/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/4/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/4/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/4/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/4/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

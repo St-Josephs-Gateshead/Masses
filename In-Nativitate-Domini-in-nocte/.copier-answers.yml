@@ -1,0 +1,25 @@
+# Changes here will be overwritten by Copier
+_commit: v2.4.5
+_src_path: gh:St-Josephs-Gateshead/MassTemplate.git
+alleluia: alleluia
+asperges: asperges
+common_tones_path: ../ToniCommunes
+creator_name: Anne Foo
+creed: 1
+creed_path: ../Ordinaries/credo
+creedp: true
+feast_name: In Nativitate Domini in nocte (Christmas First Mass, at midnight)
+gloria: true
+gradual: true
+img_file: ../img/logo.pdf
+marian: true
+marian_path: ../MarianAntiphons
+marian_type: alma-redemptoris-mater
+mass_setting: 2
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: standard
+repo_url: https://github.com/St-Josephs-Gateshead/Masses
+rite: roman
+sequentia: false
+version: v1.0.0

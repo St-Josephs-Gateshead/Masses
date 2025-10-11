@@ -1,0 +1,131 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{In Nativitate Domini in aurora (Christmas Second Mass, at break of day)}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Lux fulgébit hódie super nos: quia natus est nobis Dóminus: et vocábitur Admirábilis, Deus, Princeps pacis, Pater futúri sǽculi: cujus regni non erit finis.
+Dóminus regnávit, decórem indútus est: indútus est Dóminus fortitúdinem, et præcínxit se.
+}
+\newcommand{\introitTranslation}{%
+A light shall shine upon this day: for the Lord is born to us: and He shall be called Wonder-Counselor, God-Hero, Father-Forever, Prince of Peace: of Whose reign there shall be no end.
+The Lord is King, in splendor robed; robed is the Lord and girt about with strength.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Da nobis, quǽsumus, omnípotens Deus: ut, qui nova incarnáti Verbi tui luce perfúndimur; hoc in nostro respléndeat ópere, quod per fidem fulget in mente.
+  }
+  \e{%
+Grant, we beseech You, almighty God, that this new light of Your Incarnate Word which shines upon our minds by faith, may be reflected in our deeds.
+  }
+  \perEundem
+}
+\newcommand{\lesson}{%
+  \l{%
+Caríssime: Appáruit benígnitas et humánitas Salvatóris nostri Dei: non ex opéribus justítiæ, quæ fécimus nos, sed secúndum suam misericórdiam salvos nos fecit, per lavácrum regeneratiónis et renovatiónis Spíritus Sancti, quem effúdit in nos abúnde per Jesum Christum, Salvatórem nostrum: ut, justificáti grátia ipsíus, herédes simus secúndum spem vitæ ætérnæ: in Christo Jesu, Dómino nostro.
+  }
+  \e{%
+Dearly beloved: When the goodness and kindness of God our Saviour appeared, then not by reason of good works that we did ourselves, but according to His mercy, He saved us through the bath of regeneration and renewal by the Holy Spirit; Whom He has abundantly poured out upon us through Jesus Christ our Saviour, in order that, justified by His grace, we may be heirs in the hope of life everlasting, in Christ Jesus our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Benedíctus, qui venit in nómine Dómini: Deus Dóminus, et illúxit nobis.
+A Dómino factum est istud: et est mirábile in óculis nostris. 
+Allelúja, allelúja.
+Dóminus regnávit, decórem índuit: índuit Dóminus fortitúdinem, et præcínxit se virtúte. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+Blessed is He Who comes in the name of the Lord; the Lord is God, and He has given us light.
+By the Lord has this been done; it is wonderful in our eyes. Alleluia, alleluia.
+The Lord is King, in splendor robed; robed is the Lord and girt about with strength. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum, quod factum est, quod Dóminus osténdit nobis. Et venérunt festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio. Vidéntes autem cognovérunt de verbo, quod dictum erat illis de Púero hoc. Et omnes, qui audiérunt, miráti sunt: et de his, quæ dicta erant a pastóribus ad ipsos. María autem conservábat ómnia verba hæc, cónferens in corde suo. Et revérsi sunt pastores, glorificántes et laudántes Deum in ómnibus, quæ audíerant et víderant, sicut dictum est ad illos.
+  }
+  \e{%
+At that time, the shepherds were saying to one another, Let us go over to Bethlehem and see this thing that has come to pass, which the Lord has made known to us. So they went with haste, and they found Mary and Joseph, and the Babe lying in the manger. And when they had seen, they understood what had been told them concerning this Child. And all who heard marveled at the things told them by the shepherds. But Mary kept in mind all these things, pondering them in her heart. And the shepherds returned, glorifying and praising God for all that they had heard and seen, even as it was spoken to them.
+  }
+}
+\newcommand{\offertory}{%
+Deus firmávit orbem terræ, qui non commovébitur: paráta sedes tua, Deus, ex tunc, a sǽculo tu es.
+}
+\newcommand{\offertoryTranslation}{%
+God has made the world firm, not to be moved. Your throne, O God, stands firm from of old; from everlasting You are.
+}
+\newcommand{\secret}{%
+  \l{%
+Múnera nostra, quǽsumus, Dómine, Nativitátis hodiérnæ mystériis apta provéniant, et pacem nobis semper infúndant: ut, sicut homo génitus idem refúlsit et Deus, sic nobis hæc terréna substántia cónferat, quod divínum est.
+  }
+  \e{%
+May our gifts, we beseech You, O Lord, prove suitable for the celebration of this day’s nativity: may they incessantly lavish peace upon us, that, as He Who became man shone also with the brightness of the Godhead, so may these things of earth bring us those of God.
+  }
+  \perEundem
+}
+\newcommand{\communion}{%
+Exsúlta, fília Sion, lauda, fília Jerúsalem: ecce, Rex tuus venit sanctus et Salvátor mundi.
+}
+\newcommand{\communionTranslation}{%
+Rejoice heartily, O daughter Sion, shout for joy, O daughter Jerusalem! See, your King shall come, a just Saviour of the world is He.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Hujus nos, Dómine, sacraménti semper nóvitas natális instáuret: cujus Natívitas singuláris humánam réppulit vetustátem.
+  }
+  \e{%
+May we be renewed continually by the ever new celebration of Christ’s birth, O Lord, Whose miraculous nativity has replaced the human order of olden times.
+  }
+  \perEundem
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/3/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/3/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/3/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/3/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/3/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

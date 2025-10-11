@@ -1,0 +1,130 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{In Nativitate Domini in nocte (Christmas First Mass, at midnight)}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Dóminus dixit ad me: Fílius meus es tu, ego hódie génui te.
+Quare fremuérunt gentes: et pópuli meditáti sunt inánia?
+}
+\newcommand{\introitTranslation}{%
+The Lord said to Me, You are My Son; this day I have begotten You.
+Why do the nations rage and the people utter folly?
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Deus, qui hanc sacratíssimam noctem veri lúminis fecísti illustratióne claréscere: da, quǽsumus; ut, cujus lucis mystéria in terra cognóvimus, ejus quoque gáudiis in cœlo perfruámur:
+  }
+  \e{%
+O God, Who have brightened this most holy night with the splendor of the true light, grant, we beseech You, that we may know in heaven the joy of that light which we have known mystically on earth.
+  }
+  \quiTecum
+}
+\newcommand{\lesson}{%
+  \l{%
+Caríssime: Appáruit grátia Dei Salvatóris nostri ómnibus homínibus, erúdiens nos, ut, abnegántes impietátem et sæculária desidéria, sóbrie et juste et pie vivámus in hoc sǽculo, exspectántes beátam spem et advéntum glóriæ magni Dei et Salvatóris nostri Jesu Christi: qui dedit semetípsum pro nobis: ut nos redímeret ab omni iniquitáte, et mundáret sibi pópulum acceptábilem, sectatórem bonórum óperum. Hæc lóquere et exhortáre: in Christo Jesu, Dómino nostro.
+  }
+  \e{%
+Beloved: The grace of God our Saviour has appeared to all men, instructing us, in order that, rejecting ungodliness and worldly lusts, we may live temperately and justly and piously in this world; looking for the blessed hope and glorious coming of our great God and Saviour, Jesus Christ, Who gave Himself for us that He might redeem us from all iniquity and cleanse for Himself an acceptable people, pursuing good works. Thus speak, and exhort, in Christ Jesus our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Tecum princípium in die virtútis tuæ: in splendóribus Sanctórum, ex útero ante lucíferum génui te.
+Dixit Dóminus Dómino meo: Sede a dextris meis: donec ponam inimícos tuos, scabéllum pedum tuórum. Allelúja, allelúja.
+Dóminus dixit ad me: Fílius meus es tu, ego hódie génui te. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+Yours is princely power in the day of Your birth, in holy splendor; before the daystar, I have begotten You.
+The Lord said to my Lord, Sit at My right hand, till I make Your enemies Your footstool. Alleluia, alleluia.
+The Lord said to Me, You are My Son; this day I have begotten You. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Exiit edíctum a Cæsare Augústo, ut describerétur univérsus orbis. Hæc descríptio prima facta est a præside Sýriæ Cyríno: et ibant omnes ut profiteréntur sínguli in suam civitátem. Ascéndit autem et Joseph a Galilæa de civitáte Názareth, in Judæam in civitátem David, quæ vocatur Béthlehem: eo quod esset de domo et fámilia David, ut profiterétur cum María desponsáta sibi uxóre prægnánte. Factum est autem, cum essent ibi, impléti sunt dies, ut páreret. Et péperit fílium suum primogénitum, et pannis eum invólvit, et reclinávit eum in præsépio: quia non erat eis locus in diversório. Et pastóres erant in regióne eádem vigilántes, et custodiéntes vigílias noctis super gregem suum. Et ecce, Angelus Dómini stetit juxta illos, et cláritas Dei circumfúlsit illos, et timuérunt timóre magno. Et dixit illis Angelus: Nolíte timére: ecce enim, evangelízo vobis gáudium magnum, quod erit omni pópulo: quia natus est vobis hódie Salvátor, qui est Christus Dóminus, in civitáte David. Et hoc vobis signum: Inveniétis infántem pannis involútum, et pósitum in præsépio. Et súbito facta est cum Angelo multitúdo milítiæ cœléstis, laudántium Deum et dicéntium: Glória in altíssimis Deo, et in terra pax hóminibus bonæ voluntátis.
+  }
+  \e{%
+At that time, there went forth a decree from Caesar Augustus that a census of the whole world should be taken. This first census took place while Cyrinus was governor of Syria. And all were going, each to his own town, to register. And Joseph also went from Galilee out of the town of Nazareth into Judea to the town of David, which is called Bethlehem - because he was of the house and family of David - to register, together with Mary his espoused wife, who was with child. And it came to pass while they were there, that the days for her to be delivered were fulfilled. And she brought forth her firstborn Son, and wrapped Him in swaddling clothes, and laid Him in a manger, because there was no room for them in the inn. And there were shepherds in the same district living in the fields and keeping watch over their flock by night. And behold, an angel of the Lord stood by them and the glory of God shone round about them, and they feared exceedingly. And the angel said to them, Do not be afraid, for behold, I bring you good news of great joy which shall be to all the people; for today in the town of David a Saviour has been born to you, Who is Christ the Lord. And this shall be a sign to you: you will find an Infant wrapped in swaddling clothes and lying in a manger. And suddenly there was with the angel a multitude of the heavenly host praising God and saying, Glory to God in the highest, and on earth peace among men of good will.
+  }
+}
+\newcommand{\offertory}{%
+Læténtur cœli et exsúltet terra ante fáciem Dómini: quóniam venit.
+}
+\newcommand{\offertoryTranslation}{%
+Let the heavens be glad and the earth rejoice before the Lord, for He comes.
+}
+\newcommand{\secret}{%
+  \l{%
+Accépta tibi sit, Dómine, quǽsumus, hodiérnæ festivitátis oblátio: ut, tua gratia largiénte, per hæc sacrosáncta commércia, in illíus inveniámur forma, in quo tecum est nostra substántia:
+  }
+  \e{%
+May the offering of this day’s festivity, we beseech You, O Lord, find acceptance with You; that, by the bounty of Your grace, we may, through these sacred dealings, be made like unto Him in Whom our nature is united with You.
+  }
+  \quiTecum
+}
+\newcommand{\communion}{%
+In splendóribus Sanctórum, ex útero ante lucíferum génui te.
+}
+\newcommand{\communionTranslation}{%
+In holy splendor, before the daystar I have begotten You.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Da nobis, quǽsumus, Dómine, Deus noster: ut, qui Nativitátem Dómini nostri Jesu Christi mystériis nos frequentáre gaudémus; dignis conversatiónibus ad ejus mereámur perveníre consórtium:
+  }
+  \e{%
+Grant, we beseech You, O Lord our God, that we who joyfully celebrate the birth of our Lord Jesus Christ, in this sacrament may gain His companionship by worthy living.
+  }
+  \quiTecum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/2/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/2/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/2/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/2/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/2/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
