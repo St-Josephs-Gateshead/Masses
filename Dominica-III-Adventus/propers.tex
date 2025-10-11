@@ -1,0 +1,128 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica III Adventus}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus enim prope est. Nihil sollíciti sitis: sed in omni oratióne petitiónes vestræ innotéscant apud Deum.
+Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob.
+}
+\newcommand{\introitTranslation}{%
+Rejoice in the Lord always: again I say, rejoice. Let your moderation be known to all men: for the Lord is near. Have no anxiety, but in everything, by prayer let your petitions be made known to God.
+You have favoured, O Lord, Your land; You have restored the well-being of Jacob.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Aurem tuam, quǽsumus, Dómine, précibus nostris accómmoda: et mentis nostræ ténebras, grátia tuæ visitatiónis illústra:
+  }
+  \e{%
+Lend Your ear to our prayers, O Lord, we beseech You; and brighten the darkness of our minds by the grace of Your coming.
+  }
+  \quiVivis
+}
+\newcommand{\lesson}{%
+  \l{%
+Fratres: Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus prope est. Nihil sollíciti sitis: sed in omni oratióne et obsecratióne, cum gratiárum actióne, petitiónes vestræ innotéscant apud Deum. Et pax Dei, quæ exsúperat omnem sensum, custódiat corda vestra et intellegéntias vestras, in Christo Jesu, Dómino nostro.
+  }
+  \e{%
+Brethren: Rejoice in the Lord always; again I say, rejoice. Let your moderation be known to all men. The Lord is near. Have no anxiety, but in every prayer and supplication with thanksgiving let your petitions be made known to God. And may the peace of God which surpasses all understanding guard your hearts and your minds in Christ Jesus, our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Qui sedes, Dómine, super Chérubim, éxcita poténtiam tuam, et veni.
+Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph. Allelúja, allelúja,
+Excita, Dómine, potentiam tuam, et veni, ut salvos fácias nos. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+From Your throne, O Lord, upon the Cherubim, rouse Your power, and come.
+O Shepherd of Israel, hearken, O Guide of the flock of Joseph! Alleluia, alleluia.
+Rouse, O Lord, Your power, and come to save us. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo tempore: Misérunt Judǽi ab Jerosólymis sacerdótes et levítas ad Joánnem, ut interrogárent eum: Tu quis es? Et conféssus est, et non negávit: et conféssus est: Quia non sum ego Christus. Et interrogavérunt eum: Quid ergo? Elías es tu? Et dixit: Non sum. Prophéta es tu? Et respondit: Non. Dixérunt ergo ei: Quis es, ut respónsum demus his, qui misérunt nos? Quid dicis de te ipso? Ait: Ego vox clamántis in desérto: Dirígite viam Dómini, sicut dixit Isaías Prophéta. Et qui missi fúerant, erant ex pharisǽis. Et interrogavérunt eum, et dixérunt ei: Quid ergo baptízas, si tu non es Christus, neque Elías, neque Prophéta? Respóndit eis Joánnes, dicens: Ego baptízo in aqua: médius autem vestrum stetit, quem vos nescítis. Ipse est, qui post me ventúrus est, qui ante me factus est: cujus ego non sum dignus ut solvam ejus corrígiam calceaménti. Hæc in Bethánia facta sunt trans Jordánem, ubi erat Joánnes baptízans.
+  }
+  \e{%
+At that time, the Jews sent to John from Jerusalem priests and Levites to ask him, Who are you? And he acknowledged and did not deny; and he acknowledged, I am not the Christ. And they asked him, What then? Are you Elias? And he said, I am not. Are you the Prophet? And he answered, No. They therefore said to him, Who are you? that we may give an answer to those who sent us. What have you to say of yourself? He said, I am the voice of one crying in the desert, ‘Make straight the way of the Lord,’ as said Isaias the prophet. And they who had been sent were from among the Pharisees. And they asked him, and said to him, Why, then, do you baptize, if you are not the Christ, nor Elias, nor the Prophet? John said to them in answer, I baptize with water; but in the midst of you there has stood One Whom you do not know. He it is Who is to come after me, Who has been set above me, the strap of Whose sandal I am not worthy to loose. These things took place at Bethany, beyond the Jordan, where John was baptizing.
+  }
+}
+\newcommand{\offertory}{%
+Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob: remisísti iniquitatem plebis tuæ.
+}
+\newcommand{\offertoryTranslation}{%
+You have favored, O Lord, Your land; You have restored the well-being of Jacob. You have forgiven the guilt of Your people.
+}
+\newcommand{\secret}{%
+  \l{%
+Devotiónis nostræ tibi, quǽsumus, Dómine, hóstia júgiter immolétur: quæ et sacri péragat institúta mystérii, et salutáre tuum in nobis mirabíliter operétur.
+  }
+  \e{%
+We beseech You, O Lord, that the gift we dedicate to You, may be sacrificed continually, so that the sacramental rite You have ordained may be fully observed, and the work of Your salvation may be wonderfully effective within us.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Dícite: pusillánimes, confortámini et nolíte timére: ecce, Deus noster véniet et salvábit nos.
+}
+\newcommand{\communionTranslation}{%
+Say to those who are frightened: Be strong, fear not! Here is our God, He comes to save us.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Implorámus, Dómine, cleméntiam tuam: ut hæc divína subsídia, a vítiis expiátos, ad festa ventúra nos prǽparent.
+  }
+  \e{%
+We entreat You, merciful Lord, that these divine helps may cleanse us from our sins and prepare us for the coming festal season.
+  }
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/17/kyrie}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/17/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/17/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/17/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
