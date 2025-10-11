@@ -16,7 +16,6 @@ Clone/fork this repository, make an appropriate directory, and use copier, e.g.:
 
 ```shell
 cd /path/to/repo
-mkdir new-mass # do pick a good name...
 copier copy gh:St-Josephs-Gateshead/MassTemplate.git new-mass
 ```
 
