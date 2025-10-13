@@ -1,0 +1,130 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica IV Post Epiphaniam}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Adoráte Deum, omnes Angeli ejus: audívit, et lætáta est Sion: et exsultavérunt fíliæ Judæ.
+Dóminus regnávit, exsúltet terra: læténtur ínsulæ multæ. 
+}
+\newcommand{\introitTranslation}{%
+Adore God, all you His angels: Sion hears and is glad, and the cities of Juda rejoice.
+The Lord is King; let the earth rejoice; let the many isles be glad.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Deus, qui nos, in tantis perículis constitútos, pro humána scis fragilitáte non posse subsístere: da nobis salútem mentis et córporis; ut ea, quæ pro peccátis nostris pátimur, te adjuvánte vincámus.
+  }
+  \e{%
+O God, You Who know that our human frailty cannot stand fast against the great dangers that beset us, grant us health of mind and body, that with your help we may overcome what we suffer on account of our sins.
+  }
+  \perDominum
+}
+\newcommand{\lesson}{%
+  \l{%
+Fratres: Némini quidquam debeátis, nisi ut ínvicem diligátis: qui enim díligit próximum, legem implévit. Nam: Non adulterábis, Non occídes, Non furáberis, Non falsum testimónium dices, Non concupísces: et si quod est áliud mandátum, in hoc verbo instaurátur: Díliges próximum tuum sicut teípsum. Diléctio próximi malum non operátur. Plenitúdo ergo legis est diléctio.
+  }
+  \e{%
+Brethren: Owe no man anything except to love one another; for he who loves his neighbor has fulfilled the Law. For You shall not commit adultery. You shall not kill. You shall not steal. You shall not bear false witness. You shall not covet; and if there is any other commandment, it is summed up in this saying, You shall love your neighbor as yourself. Love does no evil to a neighbor. Love therefore is the fulfillment of the Law.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Timébunt gentes nomen tuum, Dómine, et omnes reges terræ glóriam tuam.
+Quóniam ædificávit Dóminus Sion, et vidébitur in majestáte sua. Allelúja, allelúja.
+Dóminus regnávit, exsúltet terra: læténtur ínsulæ multæ. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+The nations shall revere Your name, O Lord, and all the kings of the earth Your glory.
+For the Lord has rebuilt Sion, and He shall appear in His glory. Alleluia, alleluia.
+The Lord is King; let the earth rejoice; let the many isles be glad.  Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Ascendénte Jesu in navículam, secúti sunt eum discípuli ejus: et ecce, motus magnus factus est in mari, ita ut navícula operirétur flúctibus, ipse vero dormiébat. Et accessérunt ad eum discípuli ejus, et suscitavérunt eum, dicéntes: Dómine, salva nos, perímus. Et dicit eis Jesus: Quid tímidi estis, módicæ fídei? Tunc surgens, imperávit ventis et mari, et facta est tranquíllitas magna. Porro hómines miráti sunt, dicéntes: Qualis est hic, quia venti et mare obœ́diunt ei?
+  }
+  \e{%
+At that time, Jesus got into a boat, and His disciples followed Him. And behold, there arose a great storm on the sea, so that the boat was covered by the waves; but He was asleep. So they came and woke Him, saying, Lord, save us! we are perishing! But He said to them, Why are you fearful, O you of little faith? Then He arose and rebuked the wind and the sea, and there came a great calm. And the men marvelled, saying, What manner of Man is this, that even the wind and the sea obey Him?
+  }
+}
+\newcommand{\offertory}{%
+Déxtera Dómini fecit virtutem, déxtera Dómini exaltávit me: non móriar, sed vivam, et narrábo ópera Dómini.
+}
+\newcommand{\offertoryTranslation}{%
+The right hand of the Lord has struck with power: the right hand of the Lord has exalted me; I shall not die, but live, and declare the works of the Lord.
+}
+\newcommand{\secret}{%
+  \l{%
+Concéde, quǽsumus, omnípotens Deus: ut hujus sacrifícii munus oblátum fragilitátem nostram ab omni malo purget semper et múniat.
+  }
+  \e{%
+Grant, we beseech You, almighty God, that the offering of this sacrifice may always cleanse and strengthen the weakness of our nature.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Mirabántur omnes de his, quæ procedébant de ore Dei.
+}
+\newcommand{\communionTranslation}{%
+All marvelled at the words that came from the mouth of God.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Múnera tua nos, Deus, a delectatiónibus terrenis expédiant: et cœléstibus semper instáurent aliméntis.
+  }
+  \e{%
+May Your gifts, O God, free us from the attraction of earthly pleasures and give us new strength through Your heavenly nourishment.
+  }
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\aspergesPath}{../ToniCommunes/roman/asperges}
+
+\newcommand{\kyriePath}{../Ordinaries/masses/4/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/4/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/4/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/4/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/4/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
