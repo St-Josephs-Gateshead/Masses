@@ -1,0 +1,163 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Sanctæ Familiæ Jesu Mariæ Joseph}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Exsúltet gáudio pater Justi, gáudeat Pater tuus et Mater tua, et exsúltet quæ génuit te.
+!Ps 83:2-3
+Quam dilécta tabernácula tua, Dómine virtútum! concupíscit et déficit ánima mea in átria Dómini.
+}
+\newcommand{\introitTranslation}{%
+The father of the Just will exult with glee; let Your father and mother have joy; let her who bore You exult.
+!Ps 83:2-3
+How lovely is Your dwelling place, O Lord of Hosts! My soul yearns and pines for the courts of the Lord.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Dómine Jesu Christe, qui, Maríæ et Joseph súbditus, domésticam vitam ineffabílibus virtútibus consecrásti: fac nos, utriúsque auxílio, Famíliæ sanctæ tuæ exémplis ínstrui; et consórtium cónsequi sempitérnum:
+  }
+  \e{%
+Lord Jesus Christ, You Who while subject to Mary and Joseph, hallowed family life with virtues beyond description, grant us by their combined intercession, that, having been taught by the example of the Holy Family, we may attain unto their everlasting companionship.
+  }
+  \quiVivis
+  \amen
+  \l{
+    \red{Pro Dominica infra Octavam Epiphaniae}
+Vota, quǽsumus, Dómine, supplicántis pópuli cœlésti pietáte proséquere: ut et, quæ agénda sunt, vídeant, et ad implénda, quæ víderint, convaléscant.
+  }
+  \e{
+O Lord, we beseech You, in Your heavenly goodness, hear Your people who pray to You; that they may perceive what they ought to do, and have the strength to fulfill what they have seen.
+  }
+  \perDominum
+}
+\newcommand{\lesson}{%
+  \l{%
+Fratres: Indúite vos sicut elécti Dei, sancti et dilécti, víscera misericórdiæ, benignitátem, humilitátem, modéstiam, patiéntiam: supportántes ínvicem, et donántes vobismetípsis, si quis advérsus áliquem habet querélam: sicut et Dóminus donávit vobis, ita et vos. Super ómnia autem hæc caritátem habéte, quod est vínculum perfectiónis: et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore: et grati estóte. Verbum Christi hábitet in vobis abundánter, in omni sapiéntia, docéntes et commonéntes vosmetípsos psalmis, hymnis et cánticis spirituálibus, in grátia cantántes in córdibus vestris Deo. Omne, quodcúmque fácitis in verbo aut in ópere, ómnia in nómine Dómini Jesu Christi, grátias agéntes Deo et Patri per ipsum.
+  }
+  \e{%
+Brethren: Put on, as God’s chosen ones, holy and beloved, a heart of mercy, kindness, humility, meekness, patience. Bear with one another and forgive one another, if anyone has a grievance against any other; even as the Lord has forgiven you, so also do you forgive. But above all these things have charity, which is the bond of perfection. And may the peace of Christ reign in your hearts; unto that peace, indeed, you were called in one body. Show yourselves thankful. Let the word of Christ dwell in you abundantly: in all wisdom teach and admonish one another by psalms, hymns and spiritual songs, singing in your hearts to God by His grace. Whatever you do in word or in work, do all in the name of the Lord Jesus Christ, giving thanks to God the Father through Jesus Christ our Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Unam pétii a Dómino, hanc requíram: ut inhábitem in domo Dómini ómnibus diébus vitæ meæ.
+!Ps 83:5.
+Beáti, qui hábitant in domo tua, Dómine: in sǽcula sæculórum laudábunt te. Allelúja, allelúja,
+!Isa 45:15
+Vere tu es Rex abscónditus, Deus Israël Salvátor. Allelúja.
+}
+\newcommand{\gradualTranslation}{%
+One thing I ask of the Lord; this I seek: to dwell in the house of the Lord all the days of my life.
+!Ps 83:5
+V. Happy they who dwell in Your house. O Lord! continually they praise You. Alleluia, alleluia.
+!Isa 45:15
+V. Truly You are a hidden God, the God of Israel, the Saviour. Alleluia.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+Cum factus esset Jesus annórum duódecim, ascendéntibus illis Jerosólymam secúndum consuetúdinem diéi festi, consummatísque diébus, cum redírent, remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus. Existimántes autem illum esse in comitátu, venérunt iter diéi, et requirébant eum inter cognátos et notos. Et non inveniéntes, regréssi sunt in Jerúsalem, requiréntes eum. Et factum est, post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem illos et interrogántem eos. Stupébant autem omnes, qui eum audiébant, super prudéntia et respónsis ejus. Et vidéntes admiráti sunt. Et dixit Mater ejus ad illum: Fili, quid fecísti nobis sic? Ecce, pater tuus et ego doléntes quærebámus te. Et ait ad illos: Quid est, quod me quærebátis? Nesciebátis, quia in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum, quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat súbditus illis. Et Mater ejus conservábat ómnia verba hæc in corde suo. Et Jesus proficiébat sapiéntia et ætáte et grátia apud Deum et hómines.
+  }
+  \e{%
+When Jesus was twelve years old, they went up to Jerusalem according to the custom of the feast. And after they had fulfilled the days, when they were returning, the Boy Jesus remained in Jerusalem, and His parents did not know it. But thinking that He was in the caravan, they had come a day’s journey before it occurred to them to look for Him among their relatives and acquaintances. And not finding Him, they returned to Jerusalem in search of Him. And it came to pass after three days, that they found Him in the temple, sitting in the midst of the teachers, listening to them and asking them questions. And all who were listening to Him were amazed at His understanding and His answers. And when they saw Him, they were astonished. And His Mother said to Him, Son, why have You done so to us? Behold, in sorrow Your father and I have been seeking You. And He said to them, How is it that you sought Me? Did you not know that I must be about My Father’s business? And they did not understand the word that He spoke to them. And He went down with them and came to Nazareth, and was subject to them; and His Mother kept all these things carefully in her heart. And Jesus advanced in wisdom and age and grace before God and men.
+  }
+}
+\newcommand{\offertory}{%
+Tulérunt Jesum paréntes ejus in Jerúsalem, ut sísterent eum Dómino.
+}
+\newcommand{\offertoryTranslation}{%
+The parents of Jesus took Him up to Jerusalem, to present Him to the Lord.
+}
+\newcommand{\secret}{%
+  \l{%
+Placatiónis hostiam offérimus tibi, Dómine, supplíciter ut, per intercessiónem Deíparæ Vírginis cum beáto Joseph, famílias nostras in pace et grátia tua fírmiter constítuas.
+  }
+  \e{%
+In appeasement, O Lord, we offer You this sacrifice, humbly praying that through the intercession of the Virgin Mother of God, and that of St. Joseph, You will establish our households in Your peace and grace.
+  }
+  \perEundem
+  \amen
+  \l{
+    \red{Pro Dominica infra Octavam Epiphaniae}
+Oblátum tibi, Dómine, sacrifícium vivíficet nos semper et múniat.
+  }
+  \e{
+May this sacrifice that we offer You, O Lord, ever give us new life and protection.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Descéndit Jesus cum eis, et venit Názareth, et erat súbditus illis.
+}
+\newcommand{\communionTranslation}{%
+Jesus went down with them, and came to Nazareth and was subject to them.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Quos cœléstibus réficis sacraméntis, fac, Dómine Jesu, sanctæ Famíliæ tuæ exémpla júgiter imitári: ut in hora mortis nostræ, occurrénte gloriósa Vírgine Matre tua cum beáto Joseph; per te in ætérna tabernácula récipi mereámur:
+  }
+  \e{%
+Grant, Lord Jesus, that those whom You refresh with the heavenly sacrament may ever imitate the example of Your Holy Family, so that at the hour of our death, with the glorious Virgin Mary and St. Joseph welcoming us, we may be found worthy to be received into Your everlasting home.
+  }
+  \quiVivis
+  \amen
+  \l{
+    \red{Pro Dominica infra Octavam Epiphaniae}
+Súpplices te rogámus, omnípotens Deus: ut, quos tuis réficis sacraméntis, tibi étiam plácitis móribus dignánter deservíre concédas.
+  }
+  \e{
+O Almighty God, grant, we humbly beseech You, that those whom You refresh with Your sacrament may also worthily serve You in a way that is well pleasing to You.
+  }
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+
+
+\newcommand{\kyriePath}{../Ordinaries/masses/4/kyrie}
+
+\newcommand{\gloriaPath}{../Ordinaries/masses/4/gloria}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/4/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/4/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/4/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/alma-redemptoris-mater}
+\input{../MarianAntiphons/alma-redemptoris-mater_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
