@@ -2,6 +2,9 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{styling}
 \RequirePackage{multicol}
+\RequirePackage[iso]{datetime}
+\RequirePackage{gitinfo2}
+\RequirePackage{ifthenx}
 
 \newcommand{\oneColumnTranslation}[1]{%
   {\small #1}}
@@ -16,3 +19,25 @@
 \renewcommand{\columnseprulecolor}{\color{red}}
 \setlength{\multicolsep}{0em}
 \setlength{\columnseprule}{0.4pt}
+
+\newcommand{\composeDate}{
+  \ifthenelse{\equal{\gitAuthorIsoDate}{(None)}}
+  {\today\ \currenttime}
+  {\gitAuthorIsoDate}
+}
+
+\newcommand{\printFoot}{
+  \vspace*{\fill}
+  \begin{minipage}{1\textwidth}
+  Typeset by John Morris in ten-point Palatino.  Translations from the
+  Knox Bible, divinumofficium.com, the St. Dominic Missal, and my own.
+
+  % 
+  The latest version of this booklet can always be found at
+  \url{ https://github.com/St-Josephs-Gateshead/Masses }. Comments?
+  Suggestion? Found a mistake? Open an issue in the repository.
+  % 
+
+  {\centering\footnotesize\texttt{Compositum \composeDate}\par}
+  \end{minipage}
+}

@@ -3,16 +3,14 @@
 \usepackage[nobottomtitles]{titlesec}
 \usepackage{fontspec}
 \setmainfont{TeX Gyre Pagella} %palatino clone
-\usepackage[yyyymmdd,hhmmss]{datetime}
 \usepackage{microtype}
 \usepackage[british, latin]{babel}
-\usepackage[]{gitinfo2}
 % local
 \usepackage{rubrics}
 \usepackage{styling}
 % Config
 \copypagestyle{versionplain}{plain}
-\newcommand{\version}{\tiny Release: v1.0.5 (template v2.4.4)}
+\newcommand{\version}{\tiny Release: v1.0.5 (template v2.4.6)}
 \makeevenfoot{versionplain}{\thepage}{}{\version}
 \makeoddfoot{versionplain}{\version}{}{\thepage}
 \pagestyle{versionplain}
@@ -26,6 +24,7 @@
 \setsecheadstyle{\Large\scshape\raggedright\centering}
 \setafterparaskip{1.5ex plus .2ex}
 \setlength{\parindent}{0em}
+\midsloppy
 
 \begin{document}
 
@@ -86,7 +85,7 @@
 \section{Marian Antiphon}
 \red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
 \gregorioscore{\marianPath}
-\black{\marianResp}
+\marianResp
 % 
 
 \vfill
@@ -96,17 +95,7 @@
 \end{center}
 
 
-\vfill
-Typeset by John Morris in ten-point Palatino.  Translations from the
-Knox Bible, divinumofficium.com, the St. Dominic Missal, and my own.
-
-% 
-The latest version of this booklet can always be found at
-\url{ https://github.com/St-Josephs-Gateshead/Masses }. Comments?
-Suggestion? Found a mistake? Open an issue in the repository.
-% 
-
-{\centering\footnotesize\texttt{Compositum \today\ hora \currenttime}\par}
+\printFoot
 
 \end{document}
 
