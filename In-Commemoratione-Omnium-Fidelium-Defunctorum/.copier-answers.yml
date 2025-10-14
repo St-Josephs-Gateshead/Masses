@@ -1,0 +1,21 @@
+# Changes here will be overwritten by Copier
+_commit: v2.4.7
+_src_path: gh:St-Josephs-Gateshead/MassTemplate.git
+alleluia: tract
+asperges: ''
+common_tones_path: ../ToniCommunes
+creator_name: Anne Foo
+creedp: false
+feast_name: In Commemoratione Omnium Fidelium Defunctorum (All Souls, first mass)
+gloria: false
+gradual: true
+img_file: ../img/logo.pdf
+marian: false
+mass_setting: 19
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: standard
+repo_url: https://github.com/St-Josephs-Gateshead/Masses
+rite: roman
+sequentia: true
+version: v1.0.0

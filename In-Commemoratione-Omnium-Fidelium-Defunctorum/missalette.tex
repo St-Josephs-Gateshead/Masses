@@ -1,0 +1,190 @@
+\documentclass[a5paper,10pt]{memoir}
+% Packages
+\usepackage[nobottomtitles]{titlesec}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella} %palatino clone
+\usepackage{microtype}
+\usepackage[british, latin]{babel}
+% local
+\usepackage{rubrics}
+\usepackage{styling}
+\usepackage{titlepage}
+% Config
+\copypagestyle{versionplain}{plain}
+\newcommand{\version}{\tiny Release: v1.0.0 (template v2.4.7)}
+\makeevenfoot{versionplain}{\thepage}{}{\version}
+\makeoddfoot{versionplain}{\version}{}{\thepage}
+\pagestyle{versionplain}
+\thispagestyle{empty}
+% =========
+% per-document styling: we don't set this in `styling.sty' as we might want
+% different layouts.
+% =========
+% layout
+\setulmarginsandblock{0.5in}{0.7in}{*}
+\setlrmarginsandblock{0.5in}{0.5in}{*}
+\checkandfixthelayout
+% headers
+\setsecnumdepth{chapter}
+\setsecheadstyle{\Large\scshape\raggedright\centering}
+\setsubsubsecheadstyle{\color{red}\large\scshape\raggedright\centering}
+\setparaheadstyle{\color{red}\large\raggedright\centering}
+\setafterparaskip{1.5ex plus .2ex}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0em}
+\midsloppy
+
+\input{propers}
+
+\begin{document}
+\selectlanguage{latin}
+
+\titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.pdf}
+
+% 
+
+% 
+\section{Introit}
+% 
+\red{When the celebrant reaches the altar:}
+% 
+\gregorioscore{introit}
+\oneColumnTranslation{\introitTranslation}
+% 
+
+\section{Kyrie}
+\red{Immediately after the Introit:}
+\gregorioscore{\kyriePath}
+
+% 
+
+\section{Collect}
+\gregorioscore{\dominusVobiscumPath}
+\black{
+  \oremus
+  \collect
+}
+\gregorioscore{\amenPath}
+
+\section{Lesson}
+\red{The lesson is chanted:}
+\black{\lesson}
+
+% 
+% 
+\section{Gradual}
+% 
+\red{After the Chanting of the lesson, or during the (secret) reading if
+  so appointed:}
+\gregorioscore{gradual}
+% 
+% 
+\gregorioscore{tract}
+% 
+% 
+\oneColumnTranslation{\gradualTranslation}
+% 
+
+% 
+\section{Sequence}
+\gregorioscore{sequentia}
+\oneColumnTranslation{\sequentiaTranslation}
+% 
+
+\section{Gospel}
+\red{The choir sings the responses at the Holy Gospel:}
+\gregorioscore{\dominusVobiscumPath}
+\gregorioscore{\sequentiPath}
+\black{\gospel}
+
+% 
+
+\section{Response prior to the Offertory}
+\red{Just before the chanting of the Offertory:}
+\gregorioscore{\dominusVobiscumPath}
+
+\section{Offertory}
+\red{Immediately after the Celebrant chants the previous “Oremus”:}
+\gregorioscore{offertory}
+\oneColumnTranslation{\offertoryTranslation}
+
+\red{A motet or hymn may be sung here.}
+
+\section{Secret}
+\black{\secret}
+
+\section{Responses at the Preface}
+\gregorioscore{\prefacePath}
+
+\section{Sanctus and Benedictus}
+\red{Immediately after the Celebrant concludes the chanting of the Preface:}
+\gregorioscore{\sanctusPath}
+
+\section{Amen at the end of the Canon of the Mass}
+\gregorioscore{\amenPath}
+
+\section{Pater Noster}
+\red{The Celebrant alone chants the “Pater Noster.” The Choir sings the conclusion:}
+\gregorioscore{\sedLiberaNosPath}
+
+\section{Breaking of the Host}
+\gregorioscore{\paxDominiPath}
+
+
+\section{Agnus Dei}
+\gregorioscore{\agnusPath}
+
+\section{Communion}
+\red{Once the Celebrant begins to distribute Holy Communion:}
+\gregorioscore{communion}
+\oneColumnTranslation{\communionTranslation}
+
+\red{A motet or hymn may be sung here.}
+
+\section{Post-Communion Collect}
+\gregorioscore{\dominusVobiscumPath}
+\black{
+  \oremus
+  \postcommunion
+}
+\gregorioscore{\amenPath}
+
+
+\section{The Absolution}
+\red{When the celebrant goes to the catafalque:}
+\gregorioscore{libera}
+\oneColumnTranslation{\liberaTranslation}
+
+\red{Then the celebrant sings the Pater noster in silence, resuming:}
+\black{
+  \l{\v~Et ne nos indúcas in tentatiónem.}
+  \e{\v~And lead us not into temptation.}
+  \l{\r~Sed líbera nos a málo.}
+  \e{\r~But deliver us from evil.}
+  \l{\v~A pórta inferi.}
+  \e{\v~From the gate of hell.}
+  \l{\r~Erue, Dómine, ánimas eorum.}
+  \e{\r~Rescue, O Lord, their souls.}
+  \l{\v~Requiéscant in páce.}
+  \e{\v~May they rest in peace.}
+  \amen
+  \domineexaudi
+  \dominusvobiscum
+}
+\red{After the prayer:}\black{
+  \l{\v~Réquiem aetérnam dóna éis Dómine.}
+  \e{\v~Eternal rest grant unto them, O Lord. }
+  \l{\r~Et lux perpétua lúceat éis.}
+  \e{\r~And let perpetual light shine upon them.}
+}
+\gregorioscore{\itePath}
+
+
+\printFoot
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: luatex
+%%% End:

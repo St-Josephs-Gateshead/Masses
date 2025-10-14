@@ -1,0 +1,304 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{In Commemoratione Omnium Fidelium Defunctorum (All Souls, first mass)}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis.
+Te decet hymnus, Deus, in Sion, et tibi reddétur votum in Jerúsalem: exáudi oratiónem meam, ad te omnis caro véniet.
+}
+\newcommand{\introitTranslation}{%
+Eternal rest give to them, O Lord; and let perpetual light shine upon them.
+To You we owe our hymn of praise, O God, in Sion; to You must vows be fulfilled in Jerusalem. Hear my prayer; to You all flesh must come.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Fidélium, Deus, ómnium Cónditor et Redémptor: animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum; ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
+  }
+  \e{%
+O God, Creator and Redeemer of all the faithful, grant to the souls of Your servants and handmaids the remission of all their sins, that they may obtain by our loving prayers the forgiveness which they have always desired.
+  }
+  \quiVivis
+}
+\newcommand{\lesson}{%
+  \l{%
+Fratres: Ecce, mystérium vobis dico: Omnes quidem resurgámus, sed non omnes immutábimur. In moménto, in ictu óculi, in novíssima tuba: canet enim tuba, et mórtui resúrgent incorrúpti: et nos immutábimur. Opórtet enim corruptíbile hoc induere incorruptiónem: et mortále hoc indúere immortalitátem. Cum autem mortále hoc indúerit immortalitátem, tunc fiet sermo, qui scriptus est: Absórpta est mors in victória. Ubi est, mors, victória tua? Ubi est, mors, stímulus tuus? Stímulus autem mortis peccátum est: virtus vero peccáti lex. Deo autem grátias, qui dedit nobis victóriam per Dóminum nostrum Jesum Christum.
+  }
+  \e{%
+Brethren: Behold, I tell you a mystery: we shall all indeed rise, but we shall not all be changed - in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet shall sound, and the dead shall rise incorruptible and we shall be changed. For this corruptible body must put on incorruption, and this mortal body must put on immortality. But when this mortal body put on immortality, then shall come to pass the word that is written, Death is swallowed up in victory! O death, where is your victory? O death, where is your sting? Now the sting of death is sin, and the power of sin is the Law. But thanks be to God Who has given us the victory through our Lord Jesus Christ.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis.
+In memória ætérna erit justus: ab auditióne mala non timébit.
+Absólve, Dómine, ánimas ómnium fidélium ab omni vínculo delictórum.
+Et grátia tua illis succurrénte, mereántur evádere judícium ultiónis.
+Et lucis ætérnæ beatitúdine pérfrui.
+}
+\newcommand{\gradualTranslation}{%
+Eternal rest give to them, O Lord; and let perpetual light shine upon them.
+The just man shall be in everlasting remembrance; an evil report he shall not fear.
+O Lord, absolve the souls of all the faithful departed from every bond of sin.
+And by the help of Your grace may they be worthy to escape the sentence of vengeance.
+And to enjoy all the beatitude of the light eternal.
+}
+% 
+% 
+\newcommand{\sequentia}{%
+Dies iræ, dies illa
+Solvet sæclum in favílla:
+Teste David cum Sibýlla.
+
+Quantus tremor est futúrus,
+Quando judex est ventúrus,
+Cuncta stricte discussúrus!
+
+Tuba mirum spargens sonum
+Per sepúlcra regiónum,
+Coget omnes ante thronum.
+
+Mors stupébit et natúra,
+Cum resúrget creatúra,
+Judicánti responsúra.
+
+Liber scriptus proferétur,
+In quo totum continétur,
+Unde mundus judicétur.
+
+Judex ergo cum sedébit,
+Quidquid latet, apparébit:
+Nil inúltum remanébit.
+
+Quid sum miser tunc dictúrus?
+Quem patrónum rogatúrus,
+Cum vix justus sit secúrus?
+
+Rex treméndæ majestátis,
+Qui salvándos salvas gratis,
+Salva me, fons pietátis.
+
+Recordáre, Jesu pie,
+Quod sum causa tuæ viæ:
+Ne me perdas illa die.
+
+Quærens me, sedísti lassus:
+Redemísti Crucem passus:
+Tantus labor non sit cassus.
+
+Juste judex ultiónis,
+Donum fac remissiónis
+Ante diem ratiónis.
+
+Ingemísco, tamquam reus:
+Culpa rubet vultus meus:
+Supplicánti parce, Deus.
+
+Qui Maríam absolvísti,
+Et latrónem exaudísti,
+Mihi quoque spem dedísti.
+
+Preces meæ non sunt dignæ:
+Sed tu bonus fac benígne,
+Ne perénni cremer igne.
+
+Inter oves locum præsta,
+Et ab hœdis me sequéstra,
+Státuens in parte dextra.
+
+Confutátis maledíctis,
+Flammis ácribus addíctis:
+Voca me cum benedíctis.
+
+Oro supplex et acclínis,
+Cor contrítum quasi cinis:
+Gere curam mei finis.
+
+Lacrimósa dies illa,
+Qua resúrget ex favílla
+Judicándus homo reus.
+
+Huic ergo parce, Deus:
+Pie Jesu Dómine,
+Dona eis réquiem.
+Amen.
+}
+\newcommand{\sequentiaTranslation}{%
+Dreaded day, that day of ire,
+When the world shall melt in fire,
+Told by Sibyl and David’s lyre.
+
+Fright men’s hearts shall rudely shift,
+As the Judge through gleaming rift
+Comes each soul to closely sift.
+
+Then, the trumpet’s shrill refrain,
+Piercing tombs by hill and plain,
+Souls to judgment shall arraign.
+
+Death and nature stand aghast,
+As the bodies rising fast,
+Hie to hear the sentence passed.
+
+Then, before Him shall be placed,
+That whereon the verdict’s based,
+Book wherein each deed is traced.
+
+When the Judge His seat shall gain,
+All that’s hidden shall be plain,
+Nothing shall unjudged remain.
+
+Wretched man, what can I plead?
+Whom to ask to intercede,
+When the just much mercy need?
+
+You, O awe-inspiring Lord,
+Saving e’en when unimplored,
+Save me, mercy’s fount adored.
+
+O sweet Jesus, mindful be,
+That You came on earth for me:
+Cast me not from You this day.
+
+Seeking me Your strength was spent
+Ransoming Your limbs were rent:
+Is this toil to no intent?
+
+You, awarding pains condign,
+Mercy’s ear to me incline,
+Ere the reckoning You assign.
+
+I, felon-like, my lot bewail,
+Suffused cheeks my shame unveil:
+God! O let my prayer prevail.
+
+Mary’s soul You fashioned white,
+And did to heaven the thief invite;
+Hope in me these now excite.
+
+Prayers of mine in vain ascend:
+You are good and will forefend,
+In quenchless fire my life to end.
+
+When the cursed by shame oppressed,
+Enter flames at Your behest,
+Call me then to join the blessed.
+
+Place amid Your sheep accord,
+Keep me from the tainted horde,
+Set me in Your sight, O Lord.
+
+Prostrate, suppliant, now no more
+Unrepenting, as of yore,
+Save me dying, I implore.
+
+Mournful day that day of sighs,
+When from dust shall man arise,
+Stained with guilt his doom to know,
+
+Mercy, Lord, on him bestow.
+Jesus, kind! Your souls release,
+Led them thence to realms of peace.
+Amen.
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Jesus turbis Judæórum: Amen, amen, dico vobis, quia venit hora, et nunc est, quando mórtui áudient vocem Fílii Dei: et qui audíerint, vivent. Sicut enim Pater habet vitam in semetípso, sic dedit et Fílio habére vitam in semetípso: et potestátem dedit ei judícium fácere, quia Fílius hóminis est. Nolíte mirári hoc, quia venit hora, in qua omnes, qui in monuméntis sunt, áudient vocem Fílii Dei: et procédent, qui bona fecérunt, in resurrectiónem vitæ: qui vero mala egérunt, in resurrectiónem judícii.
+  }
+  \e{%
+At that time, Jesus said to the multitudes of the Jews, Amen, amen, I say to you, the hour is coming, and now is here, when the dead shall hear the voice of the Son of God, and those who hear shall live. For as the Father has life in Himself, even so He has given to the Son also to have life in Himself; and He has granted Him power to render judgment, because He is Son of Man. Do not wonder at this, for the hour is coming in which all who are in the tombs shall hear the voice of the Son of God. And they who have done good shall come forth unto resurrection of life; but they who have done evil unto resurrection of judgment.
+  }
+}
+\newcommand{\offertory}{%
+Dómine Jesu Christe, Rex glóriæ, líbera ánimas ómnium fidélium defunctórum de pœnis inférni et de profúndo lacu: líbera eas de ore leónis, ne absórbeat eas tártarus, ne cadant in obscúrum: sed sígnifer sanctus Míchaël repræséntet eas in lucem sanctam: 
+* Quam olim Abrahæ promisísti et sémini ejus.
+Hóstias et preces tibi, Dómine, laudis offérimus: tu súscipe pro animábus illis, quarum hódie memóriam fácimus: fac eas, Dómine, de morte transíre ad vitam. 
+* Quam olim Abrahæ promisísti et sémini ejus.
+}
+\newcommand{\offertoryTranslation}{%
+O Lord, Jesus Christ, King of glory, deliver the souls of all the faithful departed from the pains of hell and the deep pit; deliver them from the lion’s mouth, that hell engulf them not, nor they fall into darkness, but that Michael, the holy standard-bearer, bring them into the holy light * which You once promised to Abraham and his seed.
+We offer You, O Lord, sacrifices and prayers of praise; accept them for those souls whom we this day commemorate; grant them, O Lord, to pass from death to the life * which You once promised to Abraham and his seed.
+}
+\newcommand{\secret}{%
+  \l{%
+Hóstias, quǽsumus, Dómine, quas tibi pro animábus famulórum famularúmque tuárum offérimus, propitiátus inténde: ut, quibus fídei christiánæ méritum contulísti, dones et prǽmium.
+  }
+  \e{%
+Look with mercy, we beseech You, O Lord, upon the sacrificial gifts we offer for the souls of Your servants and handmaids, so that, to those upon whom You conferred the merits of Christian faith, You will also grant its reward.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Lux ætérna lúceat eis, Dómine: 
+* Cum Sanctis tuis in ætérnum: quia pius es.
+Requiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis. 
+* Cum Sanctis tuis in ætérnum: quia pius es.
+}
+\newcommand{\communionTranslation}{%
+May light eternal shine upon them, O Lord, * with Your Saints forever, for You are kind.
+Grant them eternal rest, O Lord; and let perpetual light shine upon them: * with Your Saints forever, for You are kind.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Animábus, quǽsumus, Dómine, famulórum famularúmque tuárum orátio profíciat supplicántium: ut eas et a peccátis ómnibus éxuas, et tuæ redemptiónis fácias esse partícipes:
+  }
+  \e{%
+May the prayer of Your suppliants, O Lord, benefit the souls of Your servants and handmaids, that You may deliver them from all sins and make them sharers in Your redemption.
+  }
+  \quiVivis
+}
+\newcommand{\libera}{
+Líbera me, Dómine, de morte ætérna in die illa treménda,
+* Quando cæli movéndi sunt et terra, * Dum véneris judicáre sǽculum per ignem.
+Tremens factus sum ego et tímeo, dum discússio vénerit atque ventúra ira.
+Dies illa, dies iræ, calamitátis et misériæ, dies magna et amára valde.
+}
+\newcommand{\liberaTranslation}{
+  Deliver me, O Lord, from eternal death in that awful day;
+* when the heavens and the earth shall be shaken, and Thou shalt come to judge the world by fire.
+Quaking and dread take hold upon me, when I look for the coming of the trial and the wrath to come.
+That day is a day of wrath, of wasteness and desolation, a great day and exceeding bitter.
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+
+
+\newcommand{\kyriePath}{../Ordinaries/masses/19/kyrie}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/19/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/19/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/19/ite}
+
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
