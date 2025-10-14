@@ -15,7 +15,7 @@ img_file: ../img/logo.pdf
 marian: true
 marian_path: ../MarianAntiphons
 marian_type: ave-regina-caelorum
-mass_setting: 17
+mass_setting: 11
 mass_type: Missa Cantata
 masses_path: ../Ordinaries/masses
 preface: standard
