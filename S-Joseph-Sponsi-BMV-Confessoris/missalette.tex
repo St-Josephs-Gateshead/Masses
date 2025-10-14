@@ -1,0 +1,180 @@
+\documentclass[a5paper,10pt]{memoir}
+% Packages
+\usepackage[nobottomtitles]{titlesec}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella} %palatino clone
+\usepackage{microtype}
+\usepackage[british, latin]{babel}
+% local
+\usepackage{rubrics}
+\usepackage{styling}
+\usepackage{titlepage}
+% Config
+\copypagestyle{versionplain}{plain}
+\newcommand{\version}{\tiny Release: v1.0.0 (template v2.4.7)}
+\makeevenfoot{versionplain}{\thepage}{}{\version}
+\makeoddfoot{versionplain}{\version}{}{\thepage}
+\pagestyle{versionplain}
+\thispagestyle{empty}
+% =========
+% per-document styling: we don't set this in `styling.sty' as we might want
+% different layouts.
+% =========
+% layout
+\setulmarginsandblock{0.5in}{0.7in}{*}
+\setlrmarginsandblock{0.5in}{0.5in}{*}
+\checkandfixthelayout
+% headers
+\setsecnumdepth{chapter}
+\setsecheadstyle{\Large\scshape\raggedright\centering}
+\setsubsubsecheadstyle{\color{red}\large\scshape\raggedright\centering}
+\setparaheadstyle{\color{red}\large\raggedright\centering}
+\setafterparaskip{1.5ex plus .2ex}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0em}
+\midsloppy
+
+\input{propers}
+
+\begin{document}
+\selectlanguage{latin}
+
+\titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.pdf}
+
+% 
+
+% 
+\section{Introit}
+% 
+\red{When the celebrant reaches the altar:}
+% 
+\gregorioscore{introit}
+\oneColumnTranslation{\introitTranslation}
+% 
+
+\section{Kyrie}
+\red{Immediately after the Introit:}
+\gregorioscore{\kyriePath}
+
+% 
+\section{Gloria}
+\red{Immediately after the Kyrie:}
+\gregorioscore{\gloriaPath}
+% 
+
+\section{Collect}
+\gregorioscore{\dominusVobiscumPath}
+\black{
+  \oremus
+  \collect
+}
+\gregorioscore{\amenPath}
+
+\section{Lesson}
+\red{The lesson is chanted:}
+\black{\lesson}
+
+% 
+% 
+\section{Gradual}
+% 
+\red{After the Chanting of the lesson, or during the (secret) reading if
+  so appointed:}
+\gregorioscore{gradual}
+% 
+% 
+\gregorioscore{tract}
+% 
+% 
+\oneColumnTranslation{\gradualTranslation}
+% 
+
+% 
+
+\section{Gospel}
+\red{The choir sings the responses at the Holy Gospel:}
+\gregorioscore{\dominusVobiscumPath}
+\gregorioscore{\sequentiPath}
+\black{\gospel}
+
+% 
+\section{Creed}
+\red{The creed is sung:}
+\gregorioscore{\creedPath}
+% 
+
+\section{Response prior to the Offertory}
+\red{Just before the chanting of the Offertory:}
+\gregorioscore{\dominusVobiscumPath}
+
+\section{Offertory}
+\red{Immediately after the Celebrant chants the previous “Oremus”:}
+\gregorioscore{offertory}
+\oneColumnTranslation{\offertoryTranslation}
+
+\red{A motet or hymn may be sung here.}
+
+\section{Secret}
+\black{\secret}
+
+\section{Responses at the Preface}
+\gregorioscore{\prefacePath}
+
+\section{Sanctus and Benedictus}
+\red{Immediately after the Celebrant concludes the chanting of the Preface:}
+\gregorioscore{\sanctusPath}
+
+\section{Amen at the end of the Canon of the Mass}
+\gregorioscore{\amenPath}
+
+\section{Pater Noster}
+\red{The Celebrant alone chants the “Pater Noster.” The Choir sings the conclusion:}
+\gregorioscore{\sedLiberaNosPath}
+
+\section{Breaking of the Host}
+\gregorioscore{\paxDominiPath}
+
+
+\section{Agnus Dei}
+\gregorioscore{\agnusPath}
+
+\section{Communion}
+\red{Once the Celebrant begins to distribute Holy Communion:}
+\gregorioscore{communion}
+\oneColumnTranslation{\communionTranslation}
+
+\red{A motet or hymn may be sung here.}
+
+\section{Post-Communion Collect}
+\gregorioscore{\dominusVobiscumPath}
+\black{
+  \oremus
+  \postcommunion
+}
+\gregorioscore{\amenPath}
+
+\section{Dismissal}
+\gregorioscore{\dominusVobiscumPath}
+\gregorioscore{\itePath}
+
+% 
+\section{Marian Antiphon}
+\red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
+\gregorioscore{\marianPath}
+\marianResp
+% 
+
+\red{A motet or hymn may follow.}
+\begin{center}
+  \+
+\end{center}
+
+
+\printFoot
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: luatex
+%%% End:
