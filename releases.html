@@ -152,7 +152,10 @@
             "In Dedicatione S Michaelis Archangelis",
           ],
           October: ["In Festo Domino Nostro Jesu Christi Regis"],
-          November: ["Omnium Sanctorum", "In-Commemoratione-Omnium-Fidelium-Defunctorum"],
+          November: [
+            "Omnium Sanctorum",
+            "In Commemoratione Omnium Fidelium Defunctorum",
+          ],
         },
         // Commune: {},
       };
@@ -161,7 +164,6 @@
         obj && typeof obj === "object"
           ? Object.values(obj).map(getObjectValues).flat()
           : [obj];
-      masses_not_found = getObjectValues(mini_calendar);
       const symbols = { found: "✅", missing: "❌", todo: "✏️" };
 
       function fromKebabKase(s) {
@@ -254,50 +256,75 @@
         }
       }
 
-      fetch(`https://api.github.com/repos/${repo}/contents/`)
-        .then((response) => {
-          if (!response.ok) throw new Error("HTTP status: " + response.status);
-          return response.json();
-        })
-        .then((data) => {
-          for (const v of data.values()) {
-            i = masses_not_found.indexOf(fromSnakeCase(v.name));
-            if (i >= 0) masses_not_found.splice(i, 1);
-          }
-        });
-
-      fetch(`https://api.github.com/repos/${repo}/releases/latest`)
-        .then((response) => {
-          if (!response.ok) throw new Error("HTTP status: " + response.status);
-          return response.json();
-        })
-        .then((data) => {
-          const links = getLinks(data.assets);
-          const tbody = setupTable();
-          for (const [heading, subheading] of Object.entries(mini_calendar)) {
-            createElement(
-              "th",
-              createElement("tr", tbody),
-              fromKebabKase(heading),
-              {
-                colSpan: 5,
-                class: "heading",
-              }
-            );
-            for (const [period, masses] of Object.entries(subheading)) {
+      async function getMassesNotFound() {
+        return fetch(`https://api.github.com/repos/${repo}/tags`)
+          .then((response) => {
+            if (!response.ok)
+              throw new Error("HTTP status: " + response.status);
+            return response.json();
+          })
+          .then((data) => {
+            return "?ref=" + data[0]["name"];
+          })
+          .then((tag) => {
+            fetch(`https://api.github.com/repos/${repo}/contents/${tag}`)
+              .then((response) => {
+                if (!response.ok)
+                  throw new Error("HTTP status: " + response.status);
+                return response.json();
+              })
+              .then((data) => {
+                masses_not_found = getObjectValues(mini_calendar);
+                for (const v of data.values()) {
+                  i = masses_not_found.indexOf(fromSnakeCase(v.name));
+                  if (i >= 0) masses_not_found.splice(i, 1);
+                }
+                return masses_not_found;
+              });
+          });
+      }
+      
+      async function updatePage(masses_not_found) {
+        fetch(`https://api.github.com/repos/${repo}/releases/latest`)
+          .then((response) => {
+            if (!response.ok)
+              throw new Error("HTTP status: " + response.status);
+            return response.json();
+          })
+          .then((data) => {
+            const links = getLinks(data.assets);
+            const tbody = setupTable();
+            for (const [heading, subheading] of Object.entries(mini_calendar)) {
               createElement(
-                "td",
+                "th",
                 createElement("tr", tbody),
-                fromKebabKase(period),
+                fromKebabKase(heading),
                 {
                   colSpan: 5,
-                  class: "subheading",
+                  class: "heading",
                 }
               );
-              fillWithMasses(masses, tbody);
+              for (const [period, masses] of Object.entries(subheading)) {
+                createElement(
+                  "td",
+                  createElement("tr", tbody),
+                  fromKebabKase(period),
+                  {
+                    colSpan: 5,
+                    class: "subheading",
+                  }
+                );
+                fillWithMasses(masses, tbody);
+              }
             }
-          }
-        });
+          });
+      }
+
+      async function loadPage() {
+        updatePage(await getMassesNotFound());
+      }
+
+      loadPage();
     </script>
   </body>
 </html>
