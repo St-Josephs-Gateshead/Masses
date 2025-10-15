@@ -248,6 +248,7 @@
               const f_r = createElement("td", mass_r);
               createElement("a", f_r, symbols.found, {
                 href: links[fn],
+                id: fn,
               });
             } else {
               createElement("td", mass_r, symbols.missing);
@@ -283,9 +284,9 @@
               });
           });
       }
-      
+
       async function updatePage(masses_not_found) {
-        fetch(`https://api.github.com/repos/${repo}/releases/latest`)
+        return fetch(`https://api.github.com/repos/${repo}/releases/latest`)
           .then((response) => {
             if (!response.ok)
               throw new Error("HTTP status: " + response.status);
@@ -321,10 +322,22 @@
       }
 
       async function loadPage() {
-        updatePage(await getMassesNotFound());
+        return updatePage(await getMassesNotFound());
       }
 
-      loadPage();
+      loadPage().then(() => {
+        if (location.hash) {
+          id = location.hash.substring(1);
+          if (!document.getElementById(id)) {
+            console.log(`${id} not found!`);
+            return;
+          }
+          link = document.getElementById(id).href;
+          [massTitle, printType, ..._] = id.split("_");
+          if (confirm(`Download ${printType} of ${fromSnakeCase(massTitle)}?`))
+            open(link);
+        }
+      });
     </script>
   </body>
 </html>
