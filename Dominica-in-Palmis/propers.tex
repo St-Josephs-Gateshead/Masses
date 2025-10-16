@@ -1,0 +1,305 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Dominica in Palmis}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+%
+
+\newcommand{\hosanna}{
+Hosánna fílio David: benedíctus, qui venit in nómine Dómini. O Rex Israël: Hosánna in excélsis.
+}
+\newcommand{\hosannaTranslation}{
+Hosanna to the Son of David! Blessed is He that cometh in the Name of the Lord. O King of Israel: Hosanna in the highest!
+}
+\newcommand{\collectPhosanna}{
+  \oremus
+  \l{Bene{\X}dic, quǽsumus, Dómine, hos palmárum \textit{(seu olivárum aut aliarum arborum)} ramos: et præsta; ut, quod pópulus tuus in tui veneratiónem hodiérna die corporáliter agit, hoc spirituáliter summa devotióne perfíciat, de hoste victóriam reportándo et opus misericórdiæ summópere diligéndo.}
+  \e{Bless, {\X} we beseech Thee, O Lord, these branches of palm \textit{(or olive or other trees)}: - and grant that what Thy people today bodily perform for Thy honor, they may perfect spiritually with the utmost devotion, by gaining the victory over the enemy, and ardently loving every work of mercy.}
+  \perChristum
+  \amen
+}
+\newcommand{\pueriPortantes}{
+Pueri Hebræórum, portántes ramos olivárum, obviavérunt Dómino, clamántes et dicéntes: Hosánna in excélsis.
+}
+\newcommand{\pueriPortantesTranslation}{
+The Hebrew children bearing olive branches, went forth to meet the Lord, crying out, and saying, Hosanna in the highest. 
+}
+\newcommand{\pueriPortantesV}{
+  \l{1. Dómini est terra et pleni\textbf{tú}do \textbf{e}jus, \* orbis terrárum et univérsi qui hábi\textit{tant in} \textbf{e}o.}
+  \e{2. Quia ipse super mária fun\textbf{dá}vit \textbf{e}um \*  et super flúmina præpa\textit{rávit} \textbf{e}um. \textit{Ant.}}
+  \l{3. Attóllite portas, príncipes, vestras: \+ et elevámini, portæ \textbf{æ}ter\textbf{ná}les: \* et introí\textit{bit Rex} \textbf{gló}riæ.}
+  \e{4. Quis est iste rex glóriæ? \+ Dóminus \textbf{for}tis et \textbf{po}tens: \* Dóminus po\textit{tens in} \textbf{prǽ}lio. \textit{Ant.}}
+  \l{5. Attóllite portas, príncipes, vestras: \+ et elevámini, portæ \textbf{æ}ter\textbf{ná}les: \+ et introí\textit{bit Rex} \textbf{gló}riæ.}
+  \e{6. Quis est \textbf{is}te Rex \textbf{gló}riæ? \* Dóminus virtútum ipse \textit{est Rex} \textbf{gló}riæ. \textit{Ant.}}
+  \l{Glória \textbf{Pa}tri, et \textbf{Fí}lio, \* et Spirí\textit{tui} \textbf{Sanc}to.}
+  \e{Sicut erat in princípio, et \textbf{nunc}, et \textbf{sem}per, \* et in sǽcula sæcu\textit{lórum.} \textbf{A}men. \textit{Ant.}}
+}
+\newcommand{\pueriVestimenta}{
+Púeri Hebræórum vestiménta prosternébant in via et clamábant, dicéntes: Hosánna fílio David: benedíctus, qui venit in nómine Dómini.
+}
+\newcommand{\pueriVestimentaTranslation}{
+The Hebrew children spread their garments in the way, and cried out, saying: Hosanna to the Son of David: blessed is He that cometh in the Name of the Lord.
+}
+\newcommand{\pueriVestimentaV}{
+  \l{1. Omnes gentes \textbf{pláu}dite \textbf{má}nibus: \* jubiláte Deo in voce exul\textit{tati}\textbf{ó}nis.}
+  \e{2. Quóniam Dóminus ex\textbf{cél}sus, ter\textbf{rí}bilis: \* Rex magnus super \textit{omnem} \textbf{ter}ram. \textit{Ant.}}
+  \l{3. Subjécit \textbf{pó}pulos \textbf{no}bis: \* et gentes sub pé\textit{dibus} \textbf{nós}tris.}
+  \e{4. Elegit nobis heredi\textbf{tá}tem \textbf{su}am: \* spéciem Jacob \textit{quam di}\textbf{lé}xit. \textit{Ant.}}
+  \l{5. Ascéndit \textbf{De}us in \textbf{jú}bilo: \* et Dóminus in \textit{voce} \textbf{tu}bæ.}
+  \e{6. Psállite Deo \textbf{nos}tro, \textbf{psál}lite: \* psállite Regi \textit{nostro,} \textbf{psál}lite. \textit{Ant.}}
+  \l{7. Quóniam Rex omnis \textbf{ter}ræ \textbf{De}us: \* psállite \textit{sapi}\textbf{én}ter.}
+  \e{8. Regnábit Deus \textbf{su}per \textbf{Gen}tes: \* Deus sedit super sedem \textit{sanctam} \textbf{su}am. \textit{Ant.}}
+  \l{9. Príncipes populórum congregáti sunt cum \textbf{De}o \textit{A}braham: \* quóniam Dei fortes terræ veheménter \textit{ele}\textbf{va}ti sunt. \textit{Ant.}}
+  \e{}
+  \l{Glória \textbf{Pa}tri, et \textbf{Fí}lio, \* et Spirí\textit{tui} \textbf{Sanc}to.}
+  \e{Sicut erat in princípio, et \textbf{nunc}, et \textbf{sem}per, \* et in sǽcula sæcu\textit{lórum}. \textbf{A}men. \textit{Ant.}}
+}
+\newcommand{\gospelP}{
+  \l{
+    In illo témpore: Cum appropinquásset Iesus Ierosólymis, et venísset Béthphage ad montem Olivéti: tunc misit duos discípulos suos, dicens eis: Ite in castéllum, quod contra vos est, et statim inveniétis ásinam alligátam et pullum cum ea: sólvite et addúcite mihi: et si quis vobis áliquid díxerit, dícite, quia Dóminus his opus habet, et conféstim dimíttet eos. Hoc autem totum factum est, ut adimplerétur, quod dictum est per Prophétam, dicéntem: Dícite fíliæ Sion: Ecce, Rex tuus venit tibi mansuétus, sedens super ásinam et pullum, fílium subiugális. Eúntes autem discípuli, fecérunt, sicut præcépit illis Iesus. Et adduxérunt ásinam et pullum: et imposuérunt super eos vestiménta sua, et eum désuper sedére tecérunt. Plúrima autem turba stravérunt vestiménta sua in via: álii autem cædébant ramos de arbóribus, et sternébant in via: turbæ autem, quæ præcedébant et quæ sequebántur, clamábant, dicéntes: Hosánna fílio David: benedíctus, qui venit in nómine Dómini.
+  }
+  \e{
+    At that time, when Jesus drew nigh to Jerusalem, and was come to Bethphage, unto Mount Olivet, then He sent two disciples, saying to them: Go ye into the village that is over against you, and immediately you shall find an ass tied, and a colt with her: loose them and bring them to Me. And if any man shall say anything to you, say ye, that the Lord hath need of them: and forthwith he will let them go. Now all this was done that it might be fulfilled which was spoken by the prophet, saying: Tell ye the daughter of Sion: Behold thy King cometh to thee, meek, and sitting upon an ass, and a colt the foal of her that is used to the yoke. And the disciples going, did as Jesus commanded them. And they brought the ass and the colt, and laid their garments upon them, and made him sit thereon. And a very great multitude spread their garments in the way: and others cut boughs from the trees, and strewed them in the way, and the multitudes that went before and that followed, cried, saying: Hosanna to the Son of David: Blessed is He that cometh in the name of the Lord.
+  }
+}
+\newcommand{\procession}{
+  \l{\v~Procedámus in pace.}
+  \e{\v~Let us go forth in peace.}
+  \l{\r~In nómine Christi. Amen.}
+  \e{\r~In the Name of Christ. Amen.}
+}
+\newcommand{\occurruntTurbae}{
+Occúrrunt turbæ cum flóribus et palmis Redemptóri óbviam: et victóri triumphánti digna dant obséquia: Fílium Dei ore gentes prædicant: et in laudem Christi voces tonant per núbila: Hosánna in excélsis.
+}
+\newcommand{\occurruntTurbaeTranslation}{
+The multitude goeth forth to meet our Redeemer with flowers and palms, and payeth the homage due to a triumphant Conqueror: the Gentiles proclaim the Son of God; and their voices thunder through the skies in praise of Christ: Hosanna in the highest!
+}
+\newcommand{\cumAngelis}{
+Cum Angelis et púeris fidéles inveniántur, triumphatóri mortis damántes: Hosánna in excélsis. Alia Antiphona. Turba multa, quæ convénerat ad diem festum, clamábat Dómino: Benedíctus, qui venit in nómine Dómini: Hosánna in excélsis.
+}
+\newcommand{\cumAngelisTranslation}{
+Let the faithful join with the Angels and children, singing to the Conqueror of death: Hosanna in the highest!
+}
+\newcommand{\turbaMulta}{
+Turba multa, quæ convénerat ad diem festum, clamábat Dómino: Benedíctus, qui venit in nómine Dómini: Hosánna in excélsis.
+}
+\newcommand{\turbaMultaTranslation}{
+A great multitude that was met together at the festival cried out to the Lord: Blessed is He that cometh in the Name of the Lord: Hosanna in the Highest!
+}
+\newcommand{\coeperunt}{
+Cœpérunt omnes turbæ descendéntium gaudéntes laudáre Deum voce magna, super ómnibus quas víderant virtútibus, dicéntes: «Benedíctus qui venit Rex in nómine Dómini; pax in terra, et glória in excélsis».
+}
+\newcommand{\coeperuntTranslation}{
+Near the descent the whole multitude began with joy to praise God with a loud voice for all the mighty works they had seen, saying: Blessed be the King who cometh in the name of the Lord; peace on earth and glory on high.
+}
+\newcommand{\gloriaLaus}{
+Glória, laus et honor tibi sit, Rex Christe, Redémptor: Cui pueríle decus prompsit Hosánna pium.
+}
+\newcommand{\gloriaLausTranslation}{
+Glory, praise and honor to Thee, O King Christ, the Redeemer: to whom children poured their glad and sweet hosanna's song.
+}
+\newcommand{\omnesCollaudant}{
+Omnes colláudant nomen tuum, et dicunt: «Benedíctus qui venit in nómine Dómini: Hosánna in excélsis».
+}
+\newcommand{\omnesCollaudantTranslation}{
+All praise Thy name highly and say: Blessed is He who cometh in the name of the Lord: Hosanna in the highest.
+}
+\newcommand{\omnesCollaudantV}{
+  \l{1. Lauda, Ierúsalem, \textbf{Dó}minum: \* lauda Deum \textit{tuum}, \textbf{Si}on.}
+  \e{2. Quóniam confortávit seras portárum tu\textbf{á}rum: \* benedíxit fíliis \textit{tuis} \textbf{in} te.}
+  \l{3. Qui pósuit fines tuos \textbf{pa}cem: \* et ádipe fruménti \textit{sáti}\textbf{at} te.}
+  \e{4. Qui emíttit elóquium suum \textbf{ter}ræ: \* velóciter currit \textit{sermo} \textbf{e}jus.}
+  \l{5. Qui dat nivem sicut \textbf{la}nam: \* nébulam sicut cí\textit{nerem} \textbf{spar}git.}
+  \e{6. Mittit crystállum suam sicut buc\textbf{cél}las: \* ante fáciem frígoris eius quis \textit{susti}\textbf{né}bit?}
+  \l{7. Emíttet verbum suum, et liquefáciet \textbf{e}a: \* flabit spíritus eius, et \textit{fluent} \textbf{a}quæ.}
+  \e{8. Qui annúntiat verbum suum \textbf{Ja}cob: \* justítias, et judícia \textit{sua} \textbf{Is}raël.}
+  \l{9. Non fecit táliter omni nati\textbf{ó}ni: \* et judícia sua non manifes\textit{távit} \textbf{e}is.}
+  \e{}
+  \l{Glória Patri, et \textbf{Fí}lio, \* et Spirí\textit{tui} \textbf{Sanc}to.}
+  \e{Sicut erat in princípio, et nunc, et \textbf{sem}per, \* et in sǽcula sæcu\textit{lórum}. \textbf{A}men. \textit{Ant.}}
+}
+\newcommand{\fulgentibusPalmis}{
+Fulgéntibus palmis prostérnimur adveniénti Dómino: huic omnes occurrámus cum hymnis et cánticis, glorificántes et dicéntes: «Benedíctus Dóminus».
+}
+\newcommand{\fulgentibusPalmisTranslation}{
+We are strewn with the shining palms before the Lord as He approacheth; let us all run to meet Him with hymns and songs, glorify Him and say: Blessed be the Lord!
+}
+\newcommand{\aveRexNoster}{
+Ave, Rex noster, Fili David, Redémptor mundi, quem prophétæ prædixérunt Salvatórem dómui Israël esse ventúrum. Te enim ad salutárem víctimam Pater misit in mundum, quem exspectábant omnes sancti ab orígine mundi, et nunc: «Hosánna Fílio David. Benedíctus qui venit in nómine Dómini. Hosánna in excélsis».
+}
+\newcommand{\aveRexNosterTranslation}{
+Hail, our King, O Son of David, O world's Redeemer, whom prophets did foretell as the Saviour to come of the house of Israel. For the Father sent Thee into the world as victim for salvation; from the beginning of the world all the saints awaited Thee: Hosanna now to the Son of David! Blessed be He who cometh in the name of the Lord. Hosanna in the highest.
+}
+\newcommand{\ingrediente}{
+Ingrediénte Dómino in sanctam civitátem, Hebræórum púeri resurrectiónem vitæ pronuntiántes,
+Cum ramis palmárum: Hosánna, clamábant, in excélsis.
+Cum audísset pópulus, quod Jesus veníret Jerosólymam, exiérunt óbviam ei.
+}
+\newcommand{\ingredienteTranslation}{
+As our Lord entered the holy city, the Hebrew children, declaring the resuurection of life, 
+With palm branches, cried out: Hosanna in the highest.
+When the people heard that Jesus was coming to Jerusalem, they went forth to meet Him:
+}
+\newcommand{\collectPprocession}{
+  \oremus
+  \l{
+    Dómine Jesu Christe, Rex ac Redémptor noster, in cuius honórem, hoc ramos gestántes, solémnes laudes decantávimus: concéde propítius ut, quocúmque hi rami deportáti fúerint, ibi tuæ benedictiónis grátia descéndat, et quavis dǽmonum iniquitáte vel illusióne profligáta, déxtera tua prótegat, quos redémit: Qui vivis et regnas in sǽcula sæculórum.
+  }
+  \e{
+    Lord Jesus Christ, our King and Redeemer, in whose honor we have borne these palms and gone on praising Thee with song and solemnity: mercifully grant that whithersoever these palms are taken, there the grace of Thy blessing may descend; may every wickedness and trick of the demons be frustrated; and may Thy right hand protect those it hath redeemed.  Who livest and reignest for ever and ever.  
+  }
+  \amen
+}
+%
+\newcommand{\introit}{%
+Dómine, ne longe fácias auxílium tuum a me, ad defensiónem meam áspice: líbera me de ore leónis, et a córnibus unicórnium humilitátem meam.
+Deus, Deus meus, réspice in me: quare me dereliquísti? longe a salúte mea verba delictórum meórum.
+}
+\newcommand{\introitTranslation}{%
+O Lord, be not far from me; O my help, hasten to aid me. Save me from the lion's mouth; form the horns of the wild bulls, my wretched life.
+My God, my God, look upon me, why have You forsaken me? Far from my salvation are the words of my sins.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+  Omnípotens sempitérne Deus, qui humáno géneri, ad imitándum humilitátis exémplum, Salvatórem nostrum carnem súmere et crucem subíre fecísti: concéde propítius; ut et patiéntiæ ipsíus habére documénta et resurrectiónis consórtia mereámur.
+  }
+  \e{%
+  Almighty, eternal God, Who, to provide mankind an example of humility for it to imitate, willed that the Saviour should assume our flesh and suffer death upon the Cross, mercifully grant that we may be found worthy of the lesson of His endurance and the fellowship of His resurrection.
+  }
+  \perEundem
+}
+\newcommand{\lesson}{%
+  \l{%
+  Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo. Humiliávit semetípsum, factus obédiens usque ad mortem, mortem autem crucis. Propter quod et Deus exaltávit illum: et donávit illi nomen, quod est super omne nomen: \textit{[hic genuflectitur]} ut in nómine Jesu omne genu flectátur cœléstium, terréstrium et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.
+  }
+  \e{%
+  Brethren: Have this in mind in you which was also in Christ Jesus, Who, though He was by nature God, did not consider being equal to God a thing to be clung to, but emptied Himself, taking the nature of a slave and being made like unto men. And appearing in the form of man, He humbled Himself, becoming obedient to death, even to death on a cross. Therefore God also has exalted Him and has bestowed upon Him the Name that is above every name, \textit{[Kneel]} so that at the Name of Jesus every knee should bend of those in heaven, on earth and under the earth and every tongue should confess that the Lord Jesus Christ is in the glory of God the Father.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Tenuísti manum déxteram meam: et in voluntáte tua deduxísti me: et cum glória assumpsísti me.
+Quam bonus Israël Deus rectis corde! mei autem pæne moti sunt pedes: pæne effúsi sunt gressus mei: quia zelávi in peccatóribus, pacem peccatórum videns.
+Deus, Deus meus, réspice in me: quare me dereliquísti?
+Longe a salúte mea verba delictórum meórum.
+Deus meus, clamábo per diem, nec exáudies: in nocte, et non ad insipiéntiam mihi.
+Tu autem in sancto hábitas, laus Israël.
+In te speravérunt patres nostri: speravérunt, et liberásti eos.
+Ad te clamavérunt, et salvi facti sunt: in te speravérunt, et non sunt confúsi.
+Ego autem sum vermis, et non homo: oppróbrium hóminum et abjéctio plebis.
+Omnes, qui vidébant me, aspernabántur me: locúti sunt lábiis et movérunt caput.
+Sperávit in Dómino, erípiat eum: salvum fáciat eum, quóniam vult eum.
+Ipsi vero consideravérunt et conspexérunt me: divisérunt sibi vestiménta mea, et super vestem meam misérunt sortem.
+Líbera me de ore leónis: et a córnibus unicórnium humilitátem meam.
+Qui timétis Dóminum, laudáte eum: univérsum semen Jacob, magnificáte eum.
+Annuntiábitur Dómino generátio ventúra: et annuntiábunt cœli justítiam ejus.
+Pópulo, qui nascétur, quem fecit Dóminus.
+}
+\newcommand{\gradualTranslation}{%
+You have hold of my right hand; with Your counsel You guide me; and in the end You will receive me in glory.
+How good God is to Israel, to those who are clean of heart! But, as for me, I almost lost my balance; my feet all but slipped, because I was envious of sinners when I saw them prosper though they were wicked.
+My God, my God, look upon me: why have You forsaken me?
+Far from my salvation, are the words of my sins.
+O my God, I cry out by day and You answer not; by night, and there is no relief.
+But You are enthroned in the holy place, O glory of Israel!
+In You our fathers trusted; they trusted and You delivered them.
+To You they cried, and they escaped; in You they trusted, and they were not put to shame.
+But I am a worm, not a man; the scorn of men, despised by the people.
+All who see me, scoff at me; they mock me with parted lips, they wag their heads.
+He relied on the Lord; let Him deliver him, let Him rescue him, if He loves him.
+But they look on and gloat over me; they divide my garments among them, and for my vesture they cast lots.
+Save me from the lion's mouth; from the horns of the wild bulls, my wretched life.
+You who fear the Lord, praise Him: all you descendants of Jacob, give glory to Him.
+There shall be declared to the Lord a generation to come: and the heavens shall show forth His justice.
+To a people that shall be born, which the Lord has made.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+Tunc venit Jesus cum illis in villam, quæ dícitur Gethsémani, et dixit discípulis suis: Sedéte hic, donec vadam illuc et orem. Et assúmpto Petro et duóbus fíliis Zebedæi, cœpit contristári et mæstus esse. Tunc ait illis: Tristis est ánima mea usque ad mortem: sustinéte hic, et vigilate mecum. Et progréssus pusíllum, prócidit in fáciem suam, orans et dicens: Pater mi, si possíbile est, tránseat a me calix iste: Verúmtamen non sicut ego volo, sed sicut tu. Et venit ad discípulos suos, et invénit eos dormiéntes: et dicit Petro: Sic non potuístis una hora vigiláre mecum? Vigiláte et oráte, ut non intrétis in tentatiónem. Spíritus quidem promptus est, caro autem infírma. Iterum secúndo ábiit et orávit, dicens: Pater mi, si non potest hic calix transíre, nisi bibam illum, fiat volúntas tua. Et venit íterum, et invenit eos dormiéntes: erant enim óculi eórum graváti. Et relíctis illis, íterum ábiit et orávit tértio, eúndem sermónem dicens. Tunc venit ad discípulos suos, et dicit illis: Dormíte jam et requiéscite: ecce, appropinquávit hora, et Fílius hóminis tradétur in manus peccatórum. Súrgite, eámus: ecce, appropinquávit, qui me tradet. Adhuc eo loquénte, ecce, Judas, unus de duódecim, venit, et cum eo turba multa cum gládiis et fústibus, missi a princípibus sacerdótum et senióribus pópuli. Qui autem trádidit eum, dedit illis signum, dicens: Quemcúmque osculátus fúero, ipse est, tenéte eum. Et conféstim accédens ad Jesum, dixit: Ave, Rabbi. Et osculátus est eum. Dixítque illi Jesus: Amíce, ad quid venísti? Tunc accessérunt, et manus injecérunt in Jesum et tenuérunt eum. Et ecce, unus ex his, qui erant cum Jesu, exténdens manum, exémit gládium suum, et percútiens servum príncipis sacerdótum, amputávit aurículam ejus. Tunc ait illi Jesus: Convérte gládium tuum in locum suum. Omnes enim, qui accéperint gládium, gládio períbunt. An putas, quia non possum rogáre Patrem meum, et exhibébit mihi modo plus quam duódecim legiónes Angelórum? Quómodo ergo implebúntur Scripturæ, quia sic oportet fíeri? In illa hora dixit Jesus turbis: Tamquam ad latrónem exístis cum gládiis et fústibus comprehéndere me: cotídie apud vos sedébam docens in templo, et non me tenuístis. Hoc autem totum factum est, ut adimpleréntur Scripturæ Prophetárum. Tunc discípuli omnes, relícto eo, fugérunt. At illi tenéntes Jesum, duxérunt ad Cáipham, príncipem sacerdótum, ubi scribæ et senióres convénerant. Petrus autem sequebátur eum a longe, usque in átrium príncipis sacerdótum. Et ingréssus intro, sedébat cum minístris, ut vidéret finem. Príncipes autem sacerdótum et omne concílium quærébant falsum testimónium contra Jesum, ut eum morti tráderent: et non invenérunt, cum multi falsi testes accessíssent. Novíssime autem venérunt duo falsi testes et dixérunt: Hic dixit: Possum destrúere templum Dei, et post tríduum reædificáre illud. Et surgens princeps sacerdótum, ait illi: Nihil respóndes ad ea, quæ isti advérsum te testificántur? Jesus autem tacébat. Et princeps sacerdótum ait illi: Adjúro te per Deum vivum, ut dicas nobis, si tu es Christus, Fílius Dei. Dicit illi Jesus: Tu dixísti. Verúmtamen dico vobis, ámodo vidébitis Fílium hóminis sedéntem a dextris virtútis Dei, et veniéntem in núbibus cœli. Tunc princeps sacerdótum scidit vestiménta sua, dicens: Blasphemávit: quid adhuc egémus téstibus? Ecce, nunc audístis blasphémiam: quid vobis vidétur? At illi respondéntes dixérunt: Reus est mortis. Tunc exspuérunt in fáciem ejus, et cólaphis eum cecidérunt, álii autem palmas in fáciem ejus dedérunt, dicéntes: Prophetíza nobis, Christe, quis est, qui te percússit? Petrus vero sedébat foris in átrio: et accéssit ad eum una ancílla, dicens: Et tu cum Jesu Galilæo eras. At ille negávit coram ómnibus, dicens: Néscio, quid dicis. Exeúnte autem illo jánuam, vidit eum ália ancílla, et ait his, qui erant ibi: Et hic erat cum Jesu Nazaréno. Et íterum negávit cum juraménto: Quia non novi hóminem. Et post pusíllum accessérunt, qui stabant, et dixérunt Petro: Vere et tu ex illis es: nam et loquéla tua maniféstum te facit. Tunc cœpit detestári et juráre, quia non novísset hóminem. Et contínuo gallus cantávit. Et recordátus est Petrus verbi Jesu, quod díxerat: Priúsquam gallus cantet, ter me negábis. Et egréssus foras, flevit amáre. Mane autem facto, consílium iniérunt omnes príncipes sacerdótum et senióres pópuli advérsus Jesum, ut eum morti tráderent. Et vinctum adduxérunt eum, et tradidérunt Póntio Piláto præsidi. Tunc videns Judas, qui eum trádidit, quod damnátus esset, pæniténtia ductus, réttulit trigínta argénteos princípibus sacerdótum et senióribus, dicens: Peccávi, tradens sánguinem justum. At illi dixérunt: Quid ad nos? Tu vidéris. Et projéctis argénteis in templo, recéssit: et ábiens, láqueo se suspéndit. Príncipes autem sacerdótum, accéptis argénteis, dixérunt: Non licet eos míttere in córbonam: quia prétium sánguinis est. Consílio autem ínito, emérunt ex illis agrum fíguli, in sepultúram peregrinórum. Propter hoc vocátus est ager ille, Hacéldama, hoc est, ager sánguinis, usque in hodiérnum diem. Tunc implétum est, quod dictum est per Jeremíam Prophétam, dicéntem: Et accepérunt trigínta argénteos prétium appretiáti, quem appretiavérunt a fíliis Israël: et dedérunt eos in agrum fíguli, sicut constítuit mihi Dóminus. Jesus autem stetit ante præsidem, et interrogávit eum præses, dicens: Tu es Rex Judæórum? Dicit illi Jesus: Tu dicis. Et cum accusarétur a princípibus sacerdótum et senióribus, nihil respóndit. Tunc dicit illi Pilátus: Non audis, quanta advérsum te dicunt testimónia? Et non respóndit ei ad ullum verbum, ita ut mirarétur præses veheménter. Per diem autem sollémnem consuéverat præses pópulo dimíttere unum vinctum, quem voluíssent. Habébat autem tunc vinctum insígnem, qui dicebátur Barábbas. Congregátis ergo illis, dixit Pilátus: Quem vultis dimíttam vobis: Barábbam, an Jesum, qui dícitur Christus? Sciébat enim, quod per invídiam tradidíssent eum. Sedénte autem illo pro tribunáli, misit ad eum uxor ejus, dicens: Nihil tibi et justo illi: multa enim passa sum hódie per visum propter eum. Príncipes autem sacerdótum et senióres persuasérunt populis, ut péterent Barábbam, Jesum vero pérderent. Respóndens autem præses, ait illis: Quem vultis vobis de duóbus dimítti? At illi dixérunt: Barábbam. Dicit illis Pilátus: Quid ígitur fáciam de Jesu, qui dícitur Christus? Dicunt omnes: Crucifigátur. Ait illis præses: Quid enim mali fecit? At illi magis clamábant, dicéntes: Crucifigátur. Videns autem Pilátus, quia nihil profíceret, sed magis tumúltus fíeret: accépta aqua, lavit manus coram pópulo, dicens: Innocens ego sum a sánguine justi hujus: vos vidéritis. Et respóndens univérsus pópulus, dixit: Sanguis ejus super nos et super fílios nostros. Tunc dimísit illis Barábbam: Jesum autem flagellátum trádidit eis, ut crucifigerétur. Tunc mílites præsidis suscipiéntes Jesum in prætórium, congregavérunt ad eum univérsam cohórtem: et exuéntes eum, chlámydem coccíneam circumdedérunt ei: et plecténtes corónam de spinis, posuérunt super caput ejus, et arúndinem in déxtera ejus. Et genu flexo ante eum, illudébant ei, dicéntes: Ave, Rex Judæórum. Et exspuéntes in eum, accepérunt arúndinem, et percutiébant caput ejus. Et postquam illusérunt ei, exuérunt eum chlámyde et induérunt eum vestiméntis ejus, et duxérunt eum, ut crucifígerent. Exeúntes autem, invenérunt hóminem Cyrenæum, nómine Simónem: hunc angariavérunt, ut tólleret crucem ejus. Et venérunt in locum, qui dícitur Gólgotha, quod est Calváriæ locus. Et dedérunt ei vinum bíbere cum felle mixtum. Et cum gustásset, nóluit bibere. Postquam autem crucifixérunt eum, divisérunt vestiménta ejus, sortem mitténtes: ut implerétur, quod dictum est per Prophétam dicentem: Divisérunt sibi vestiménta mea, et super vestem meam misérunt sortem. Et sedéntes, servábant eum. Et imposuérunt super caput ejus causam ipsíus scriptam: Hic est Jesus, Rex Judæórum. Tunc crucifíxi sunt cum eo duo latrónes: unus a dextris et unus a sinístris. Prætereúntes autem blasphemábant eum, movéntes cápita sua et dicéntes: Vah, qui déstruis templum Dei et in tríduo illud reædíficas: salva temetípsum. Si Fílius Dei es, descénde de cruce. Simíliter et príncipes sacerdótum illudéntes cum scribis et senióribus, dicébant: Alios salvos fecit, seípsum non potest salvum fácere: si Rex Israël est, descéndat nunc de cruce, et crédimus ei: confídit in Deo: líberet nunc, si vult eum: dixit enim: Quia Fílius Dei sum. Idípsum autem et latrónes, qui crucifíxi erant cum eo, improperábant ei. A sexta autem hora ténebræ factæ sunt super univérsam terram usque ad horam nonam. Et circa horam nonam clamávit Jesus voce magna, dicens: Eli, Eli, lamma sabactháni? Hoc est: Deus meus, Deus meus, ut quid dereliquísti me? Quidam autem illic stantes et audiéntes dicébant: Elíam vocat iste. Et contínuo currens unus ex eis, accéptam spóngiam implévit acéto et impósuit arúndini, et dabat ei bíbere. Céteri vero dicébant: Sine, videámus, an véniat Elías líberans eum. Jesus autem íterum clamans voce magna, emísit spíritum.
+\textit{[Hic genuflectitur, et pausatur aliquantulum.]}
+Et ecce, velum templi scissum est in duas partes a summo usque deórsum: et terra mota est, et petræ scissæ sunt, et monuménta apérta sunt: et multa córpora sanctórum, qui dormíerant, surrexérunt. Et exeúntes de monuméntis post resurrectiónem ejus, venérunt in sanctam civitátem, et apparuérunt multis. Centúrio autem et qui cum eo erant, custodiéntes Jesum, viso terræmótu et his, quæ fiébant, timuérunt valde, dicéntes: Vere Fílius Dei erat iste. Erant autem ibi mulíeres multæ a longe, quæ secútæ erant Jesum a Galilæa, ministrántes ei: inter quas erat María Magdaléne, et María Jacóbi, et Joseph mater, et mater filiórum Zebedæi. Cum autem sero factum esset, venit quidam homo dives ab Arimathæa, nómine Joseph, qui et ipse discípulus erat Jesu. Hic accéssit ad Pilátum, et pétiit corpus Jesu. Tunc Pilátus jussit reddi corpus. Et accépto córpore, Joseph invólvit illud in síndone munda. Et pósuit illud in monuménto suo novo, quod excíderat in petra. Et advólvit saxum magnum ad óstium monuménti, et ábiit.
+  }
+  \e{%
+Then Jesus came with them into a country place which is called Gethsemani; and He said to His disciples: Sit you here, till I go yonder and pray. And taking with Him Peter and the two sons of Zebedee, He began to grow sorrowful and to be sad. Then He saith to them: My soul is sorrowful even unto death; stay you here and watch with Me. And going a little further, He fell upon His face, praying and saying: My Father, if it be possible, let this chalice pass from Me; nevertheless, not as I will, but as Thou wilt. And He cometh to His disciples, and findeth them asleep. And He saith to Peter: What! Could you not watch one hour with Me? Watch ye, and pray that ye enter not into temptation. The spirit indeed is willing, but the flesh is weak. Again the second time, He went and prayed, saying: My Father, if this chalice may not pass away, but I must drink it, Thy will be done. And He cometh again, and findeth them sleeping, for their eyes were heavy. And leaving them, He went again and He prayed the third time, saying the self-same word. Then He cometh to His disciples, and saith to them: Sleep ye now and take your rest; behold, the hour is at hand, and the Son of Man shall be betrayed into the hands of sinners. Rise, let us go; behold, he is at hand that will betray Me.  As He yet spoke, behold Judas, one of the twelve, came, and with him a great multitude with swords and clubs, sent from the chief priests and the ancients of the people. And he that betrayed Him gave them a sign, saying: Whomsoever I shall kiss, that is He; hold Him fast. And forthwith coming to Jesus, he said: Hail, Rabbi. And he kissed Him. And Jesus said to him: Friend, whereto art thou come? Then they came up and laid hands on Jesus, and held Him. And behold one of them that were with Jesus, stretching forth his hand, drew out his sword, and striking the servant of the high priest, cut off his ear. Then Jesus saith to him: Put up again thy sword into its place; for all that take the sword shall perish with the sword. Thinkest thou that I cannot ask My Father, and He will give Me presently more than twelve legions of Angels? How then shall the Scriptures be fulfilled, that so it must be done? In that same hour Jesus said to the multitudes: You are come out, as it were to a robber, with swords and clubs to apprehend Me. I sat daily with you, teaching in the temple, and you laid not hands on Me. Now all this was done that the Scriptures of the prophets might be fulfilled. Then the disciples, all leaving Him, fled. But they holding Jesus led Him to Caiphas the high priest, where the scribes and the ancients were assembled. And Peter followed Him afar off, even to the court of the high priest. And going in, he sat with the servants, that he might see the end. And the chief priests and the whole council sought false witness against Jesus, that they might put Him to death. And they found none, whereas many false witnesses had come in. And last of all there came two false witnesses; and they said: This man said, I am able to destroy the temple of God, and after three days to rebuild it. And the high priest, rising up, said to Him: Answerest Thou nothing to the things which these witness against Thee? But Jesus held His peace. And the high priest said to Him: I adjure Thee by the living God, that Thou tell us if Thou be the Christ the Son of God. Jesus saith to him: Thou hast said it. Nevertheless I say to you, hereafter you shall see the Son of Man sitting on the right hand of the power of God, and coming in the clouds of heaven. Then the high priest rent his garments, saying: He hath blasphemed; what further need have we of witnesses? Behold, now you have heard the blasphemy. What think you? But they answering, said: He is guilty of death. Then they did spit in His face and buffeted Him; and others struck His face with the palms of their hands, saying: Prophesy unto us, O Christ, who is he that struck Thee?  But Peter sat without in the court, and there came to him a servant maid, saying: Thou also wast with Jesus the Galilean. But he denied it before them all, saying: I know not what thou sayest. And as he went out of the gate, another maid saw him, and she saith to them that were there: This man also was with Jesus of Nazareth. And again he denied it with an oath: I know not the man. And after a little while, they came that stood by and said to Peter: Surely thou also art one of them; for even thy speech doth discover thee. Then he began to curse and to swear that he knew not the man; and immediately the cock crew. And Peter remembered the words of Jesus which He had said: before the cock crow, thou wilt deny Me thrice. And going forth, he wept bitterly. And when morning was come, all the chief priests and ancients ofthe people took counsel against Jesus, that they might put Him to death. And they brought Him bound, and delivered Him to Pontius Pilate the governor.  Then Judas, who betrayed Him, seeing that He was condemned, repenting himself, brought back the thirty pieces of silver to the chief priests and ancients, saying: I have sinned in betraying innocent blood. But they said: What is that to us? Look thou to it. And casting down the pieces of silver in the temple, he departed, and went and hanged himself with a halter. But the chief priests having taken the pieces of silver, said: It is not lawful to put them into the corbona, because it is the price of blood. And after they had consulted together, they bought with them the potter's field, to be a burying-place for strangers. For this cause that field was called Haceldama, that is, the field of blood, even to this day. Then was fulfilled that which was spoken by Jeremias the prophet, saying: And they took the thirty pieces of silver, the price of Him that was prized, whom they prized of the children of Israel: and they gave them unto the potter's field, as the Lord appointed to me.  And Jesus stood before the governor, and the governor asked Him, saying:Art Thou the King of the Jews? Jesus saith to him: Thou sayest it. And when He was accused by the chief priests and ancients, He answered nothing. Then Pilate saith to Him: Dost not Thou hear how great testimonies they allege against Thee? And He answered to him never a word, so that the governor wondered exceedingly. Now upon the solemn day the governor was accustomed to release to the people one prisoner, whom they would. And he had then a notorious prisoner that was called Barabbas. They therefore being gathered together, Pilate said: Whom will you that I release to you: Barabbas, or Jesus that is called Christ? For he knew that for envy they had delivered Him. And as he was sitting in the place of judgment his wife sent to him, saying: Have thou nothing to do with that just man, for I have suffered many things this day in a dream because of Him. But the chief priests and ancients persuaded the people that they should ask Barabbas, and make Jesus away. And the governor answering, said to them: Whither will you of the two to be released unto you? But they said: Barabbas. Pilate saith to them: What shall I do then with Jesus that is called Christ? They all call: Let Him be crucified. The governor said to them: Why, what evil hath He done? But they cried out the more, saying: Let Him be crucified. And Pilate seeing that he prevailed nothing, but that rather a tumult was made, taking water washed his hands before the people, saying: I am innocent of the blood of this just man; look you to it. And the whole people answering, said: His blood be upon us and upon our children. Then he released to them Barabbas, and having scourged Jesus, delivered Him unto them to be crucified. Then the soldiers of the governor, taking Jesus into the hall, gathered together unto Him the whole band; and stripping Him they put a scarlet cloak about Him. And platting a crown of thorns they put it upon His head and a reed in His right hand. And bowing the knee before Him, they mocked Him, saying: Hail, King of the Jews. And spitting upon Him, they took the reed and struck His head. And after they had mocked Him, they took off the cloak from Him, and put on Him His own garments, and led Him away to crucify Him.  And going out, they found a man of Cyrene, named Simon; him they forced to take up His cross. And they came to the place that is called Golgotha, which is, the place of Calvary. And they gave Him wine to drink mingled with gall; and when He had tasted He would not drink. And after they had crucified Him, they divided His garments, casting lots; that it might be fulfilled which was spoken by the prophet, saying: They divided My garments among them, and upon my vesture they cast lots. And they sat and watched Him. And they put over His head His cause written: This is Jesus the King of the Jews. Then were crucified with Him two thieves; one on the right hand and one on the left. And they that passed by blasphemed Him, wagging their heads, and saying: Vah, Thou that destroyest the temple of God and in three days dost rebuild it, save Thine own self. If Thou be the Son of God, come down from the cross. In like manner also the chief priests with the scribes and ancients, mocking, said: He saved others, Himself He cannot save; if He be the king of Israel, let Him now come down from the cross, and we will believe Him; He trusted in God, let Him now deliver Him if He will have Him; for He said: I am the Son of God. And the self-same thing the thieves also that were crucified with Him reproached Him with. Now from the sixth hour there was a darkness over the whole earth, until the ninth hour.  And about the ninth hour, Jesus cried out with a loud voice, saying: Eli, Eli, lamma sabacthani? That is: My God, My God, why hast Thou forsaken Me? And some that stood there and heard said: This man calleth Elias. And immediately one of them running took a sponge and filled it with vinegar and and gave Him to drink. And the others said: Let be; let us see whether Elias will come to deliver Him. And Jesus again crying with a loud voice, yielded up the ghost.
+\textit{[Here all kneel and pause for a few moments.]}
+And behold the veil of the temple was rent in two from top even to the bottom; and the earth quaked and the rocks were rent; and the graves were opened, and many bodies of the saints that had slept arose, and coming out of the tombs after His resurrection, came into the holy city, and appeared to many. Now the centurion and they that were with him watching Jesus, having seen the earthquake and the things that were done, were sore afraid, saying: Indeed this was the Son of God. And there were there many women afar off, who had followed Jesus from Galilee, ministering unto Him: among whom was Mary Magdalen, and Mary the mother of James and Joseph, and the mother of the sons of Zebedee.  And when it was evening, there came a certain rich man of Arimathea, named Joseph, who also himself was a disciple of Jesus. He went to Pilate and asked the body of Jesus. Then Pilate commanded that the body should be delivered. And Joseph taking the body wrapt it up in a clean linen cloth, and laid it in his own new monument, which he had hewed out in a rock. And he rolled a great stone to the door of the monument and went his way.
+  }
+}
+\newcommand{\offertory}{%
+Impropérium exspectávit cor meum et misériam: et sustínui, qui simul mecum contristarétur, et non fuit: consolántem me quæsívi, et non invéni: et dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
+}
+\newcommand{\offertoryTranslation}{%
+Insult has broken my heart, and I am weak; I looked for sympathy, but there was none; for comforters, and I found none. Rather they put gall in My food and in My thirst they gave Me vinegar to drink.
+}
+\newcommand{\secret}{%
+  \l{%
+  Concéde, quǽsumus, Dómine: ut óculis tuæ majestátis munus oblátum, et grátiam nobis devotiónis obtíneat, et efféctum beátæ perennitátis acquírat.
+  }
+  \e{%
+  Grant, we beseech You, almighty God, that the gift offered in the sight of Your majesty may obtain for us the grace of reverent devotion and assure us eternal happiness.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Pater, si non potest hic calix transíre, nisi bibam illum: fiat volúntas tua.
+}
+\newcommand{\communionTranslation}{%
+Father, if this cup cannot pass away, unless I drink it, Your will be done.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+  Per hujus, Dómine, operatiónem mystérii: et vitia nostra purgéntur, et justa desidéria compleántur.
+  }
+  \e{%
+  By the working of this sacred rite, O Lord, may our sins be erased and our just desires fulfilled.
+  }
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+
+
+\newcommand{\kyriePath}{../Ordinaries/masses/17/kyrie}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/17/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/17/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/17/ite}
+
+
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/ave-regina-caelorum}
+\input{../MarianAntiphons/ave-regina-caelorum_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
