@@ -67,7 +67,7 @@ pueriPortantesV.gtex: pueriPortantesV.gabc
 GTEX += pueriPortantesV.gtex
 
 pueriVestimenta.gtex: pueriVestimenta.gabc
-GTEX += pueriVestimenta.
+GTEX += pueriVestimenta.gtex
 
 pueriVestimentaV.gtex: pueriVestimentaV.gabc
 GTEX += pueriVestimentaV.gtex

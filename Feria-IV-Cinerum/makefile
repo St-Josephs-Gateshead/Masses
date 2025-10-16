@@ -33,8 +33,8 @@ GTEX += communion.gtex
 emendemus.gtex: emendemus.gabc
 GTEX += emendemus.gtex
 
-exaudiNos.gtex: exaudiNos.gabc
-GTEX += exaudiNos.gtex
+exaudiNosDomine.gtex: exaudiNosDomine.gabc
+GTEX += exaudiNosDomine.gtex
 
 immutemurHabitu.gtex: immutemurHabitu.gabc
 GTEX += immutemurHabitu.gtex
