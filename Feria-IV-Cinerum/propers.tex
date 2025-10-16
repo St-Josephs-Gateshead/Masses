@@ -1,0 +1,205 @@
+% This file defines the properties to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly executed when building the document.
+
+% For the title page
+\newcommand{\feast}{Feria IV Cinerum (Ash Wednesday)}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+
+\newcommand{\exaudiNosDomine}{
+Exáudi nos, Dómine, quóniam benígna est misericórdia tua: secúndum multitúdinem miseratiónum tuárum réspice nos, Dómine.
+Salvum me fac, Deus: quóniam intravérunt aquæ usque ad ánimam meam.
+}
+\newcommand{\exaudiNosDomineTranslation}{
+Hear me, O Lord, for thy mercy is kind; look upon me according to the multitude of thy tender mercies, O Lord.
+Save me, O God: for the waters are come in even unto my soul. 
+}
+\newcommand{\collectPexaudi}{
+  \dominusvobiscum
+  \oremus
+  \l{Omnípotens sempitérne Deus, parce pæniténtibus, propitiáre supplicántibus: et míttere dignéris sanctum Angelum tuum de coelis, qui bene{\X}dícat et sanctí{\X}ficet hos cíneres, ut sint remédium salúbre ómnibus nomen sanctum tuum humilíter implorántibus, ac semetípsos pro consciéntia delictórum suórum accusántibus, ante conspéctum divínæ cleméntiæ tuæ facínora sua deplorántibus, vel sereníssimam pietátem tuam supplíciter obnixéque flagitántibus: et præsta per invocatiónem sanctíssimi nóminis tui; ut, quicúmque per eos aspérsi fúerint, pro redemptióne peccatórum suórum, córporis sanitátem et ánimæ tutélam percípiant.}
+  \e{Almighty, everlasting God, spare those who are repentant, be merciful to those who pray to You, and graciously send Your holy angel from heaven to bless {\X} and hallow {\X} these ashes, that they may be a wholesome remedy for all who humbly implore Your holy Name; who accuse themselves by acknowledging their sins, who weep for their evil deeds in the sight of Your divine mercy; who humbly and earnestly seek Your fatherly love. Grant to us who call upon Your holy Name, that all who are sprinkled with these ashes for the forgiveness of their sins, may receive health for their bodies and salvation for their souls.}
+  \perChristum
+  \amen
+
+  \oremus
+  \l{Deus, qui non mortem, sed pæniténtiam desíderas peccatórum: fragilitátem condiciónis humánæ benigníssime réspice; et hos cíneres, quos, causa proferéndæ humilitátis atque promeréndæ véniæ, capítibus nostris impóni decérnimus, bene{\X}dícere pro tua pietáte dignáre: ut, qui nos cínerem esse, et ob pravitátis nostræ deméritum in púlverem reversúros cognóscimus; peccatórum ómnium véniam, et præmia pæniténtibus repromíssa, misericórditer cónsequi mereámur.}
+  \e{O God, You Who desire not the death but the repentance of sinners, look graciously upon the weakness of our human nature, and in Your fatherly love mercifully bless {\X} these ashes which are to be placed upon our heads as a sign of humility and a pledge of Your forgiveness. We know that we are but ashes, and because of our wickedness must return to dust. May we obtain from Your mercy the pardon of all our sins and the rewards promised to those who repent.}
+  \perChristum
+  \amen
+
+  \oremus
+  \l{Deus, qui humiliatióne flécteris, et satisfactióne placáris: aurem tuæ pietátis inclína précibus nostris; et capítibus servórum tuórum, horum cínerum aspersióne contáctis, effúnde propítius grátiam tuæ benedictiónis: ut eos et spíritu compunctiónis répleas et, quæ juste postuláverint, efficáciter tríbuas; et concéssa perpétuo stabilíta et intácta manére decérnas.}
+  \e{O God, You Who are moved by our acts of humility and appeased by our works of penance, turn Your ear lovingly to our prayers, and by the ashes sprinkled upon the heads of Your servants mercifully pour forth upon them the grace of Your blessing, fill them with the spirit of compunction and effectually grant what they have justly prayed for; and ordain whatever You grant be established and unchanged always.}
+  \perChristum
+  \amen
+
+  \oremus
+  \l{Omnípotens sempitérne Deus, qui Ninivítis, in cínere et cilício pæniténtibus, indulgéntiæ tuæ remédia præstitísti: concéde propítius; ut sic eos imitémur hábitu, quaténus véniæ prosequámur obténtu.}
+  \e{Almighty, everlasting God, Who bestowed upon the people of Niniveh, who repented in sackcloth and ashes, Your merciful remedies, graciously grant that we may so imitate their outward behavior as inwardly to obtain Your forgiveness.}
+  \perChristum
+  \amen
+}
+\newcommand{\ashed}{
+  \l{Memento, homo, quia pulvis es, et in púlverem revertéris.}
+  \e{Remember, man, that thou art dust, and into dust thou shalt return.}
+}
+\newcommand{\immutemurHabitu}{
+Immutémur habitu, in cínere et cilício: jejunémus, et plorémus ante Dóminum: quia multum miséricors est dimíttere peccáta nostra Deus noster.
+}
+\newcommand{\immutemurHabituTranslation}{
+Let us change our garment for ashes and sackcloth: let us fast and lament before the Lord: for our God is plenteous in mercy to forgive sins.
+}
+\newcommand{\interVestibulum}{
+Inter vestíbulum et altáre plorábunt sacerdótes minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne claudas ora canéntium te, Dómine.
+}
+\newcommand{\interVestibulumTranslation}{
+Between the porch and the altar the priests the Lord's ministers shall weep, and shall say: Spare, O Lord, spare thy people: and shut not the mouths of them that sing to thee, O Lord?
+}
+\newcommand{\emendemus}{
+Emendémus in mélius, quæ ignoránter peccávimus: ne, subito præoccupáti die mortis, quærámus spátium pæniténtiæ, et inveníre non possímus. Atténde, Dómine, et miserére: quia peccávimus tibi.
+Adjuva nos, Deus, salutáris noster: et propter honórem nóminis tui, Dómine, líbera nos. Atténde, Dómine, et miserére: quia peccávimus tibi.
+Glória Patri, et Fílio, et Spirítui Sancto. Atténde, Dómine, et miserére: quia peccávimus tibi.
+}
+\newcommand{\emendemusTranslation}{
+Let us amend for the better in those things in which we have sinned through ignorance: lest suddenly overtaken by the day of death, we seek space for penance, and are not able to find it. Hear O Lord, and have mercy: for we have sinned against thee.
+Help us, O God, our saviour: and for the glory of thy name, O Lord, deliver us: and forgive us our sins for thy name's sake: O Lord deliver us. Hear O Lord, and have mercy: for we have sinned against thee
+Glory be to the Father, and to the Son, and to the Holy Ghost. Hear O Lord, and have mercy: for we have sinned against thee
+}
+\newcommand{\collectPimposition}{
+  \dominusvobiscum
+  \oremus
+  \l{Concéde nobis, Dómine, præsídia milítiæ christiánæ sanctis inchoáre jejúniis: ut, contra spiritáles nequítias pugnatúri, continéntiæ muniámur auxíliis. Per Christum, Dóminum nostrum.}
+  \e{Grant us, O Lord, to take up our duty as soldiers of Christ by holy fasting that we, who are going to struggle with the evil spirits, may be protected by the help of self-restraint. Through Christ our Lord.}
+  \amen
+}
+\newcommand{\introit}{%
+Miseréris ómnium, Dómine, et nihil odísti eórum quæ fecísti, dissímulans peccáta hóminum propter pæniténtiam et parcens illis: quia tu es Dóminus, Deus noster
+Miserére mei, Deus, miserére mei: quóniam in te confídit ánima mea.
+}
+\newcommand{\introitTranslation}{%
+You have mercy on all, O Lord, and hate none of the things which You have made, overlooking the sins of men for the sake of repentance, and sparing them: because You are the Lord our God.
+Have pity on me, O God; have pity on me, for in You I take refuge.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+Præsta, Dómine, fidélibus tuis: ut jejuniórum veneránda sollémnia, et cóngrua pietáte suscípiant, et secúra devotióne percúrrant.
+  }
+  \e{%
+Grant, O Lord, that Your faithful people may, with true piety, undertake the time-honored custom of fasting and may carry it out with unwavering devotion.
+  }
+  \perDominum
+}
+\newcommand{\lesson}{%
+  \l{%
+Hæc dicit Dóminus: Convertímini ad me in toto corde vestro, in jejúnio, et in fletu, et in planctu. Et scíndite corda vestra, et non vestiménta vestra, et convertímini ad Dóminum, Deum vestrum: quia benígnus et miséricors est, pátiens, et multæ misericórdiæ, et præstábilis super malítia. Quis scit, si convertátur, et ignóscat, et relínquat post se benedictiónem, sacrifícium et libámen Dómino, Deo vestro? Cánite tuba in Sion, sanctificáte jejúnium, vocáte coetum, congregáte pópulum, sanctificáte ecclésiam, coadunáte senes, congregáte parvulos et sugéntes úbera: egrediátur sponsus de cubíli suo, et sponsa de thálamo suo. Inter vestíbulum et altare plorábunt sacerdótes minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes. Quare dicunt in pópulis: Ubi est Deus eórum? Zelátus est Dóminus terram suam, et pepércit pópulo suo. Et respóndit Dóminus, et dixit populo suo: Ecce, ego mittam vobis fruméntum et vinum et óleum, et replebímini eis: et non dabo vos ultra oppróbrium in géntibus: dicit Dóminus omnípotens.
+  }
+  \e{%
+Thus says the Lord: Return to Me with your whole heart, with fasting, and weeping, and mourning; rend your hearts, not your garments, and return to the Lord, your God. For gracious and merciful is He, slow to anger, rich in kindness, and relenting in punishment. Perhaps He will again relent and leave behind Him a blessing, offerings and libations for the Lord, your God. Blow the trumpet in Sion! proclaim a fast, call an assembly; gather the people, notify the congregation; assemble the elders, gather the children and the infants at the breast; let the bridegroom quit his room, and the bride her chamber. Between the porch and the altar let the priests, the ministers of the Lord, weep, and say, ‘Spare, O Lord, Your people, and make not Your heritage a reproach, with the nations ruling over them! Why should they say among the peoples: Where is their God?’ Then the Lord was stirred to concern for His land and took pity on His people. The Lord answered and said to His people: See, I will send you grain, and wine, and oil, and you shall be filled with them; no more will I make you a reproach among the nations, says the Lord almighty.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Miserére mei, Deus, miserére mei: quóniam in te confídit ánima mea.
+Misit de coelo, et liberávit me, dedit in oppróbrium conculcántes me.
+Dómine, non secúndum peccáta nostra, quæ fécimus nos: neque secúndum iniquitátes nostras retríbuas nobis.
+Dómine, ne memíneris iniquitátum nostrarum antiquarum: cito antícipent nos misericórdiæ tuæ, quia páuperes facti sumus nimis. (Hic genuflectitur)
+Adjuva nos, Deus, salutáris noster: et propter glóriam nóminis tui, Dómine, libera nos: et propítius esto peccátis nostris, propter nomen tuum.
+}
+\newcommand{\gradualTranslation}{%
+Have pity on me, O God; have pity on me, for in You I take refuge.
+He has sent from heaven and saved me; He has made those a reproach who trample upon me.
+O Lord, deal with us not according to our sins, nor requite us according to our crimes.
+O Lord, remember not against us the iniquities of the past; may Your compassion quickly come to us, for we are brought very low. (kneel)
+Help us, O God, our Saviour, because of the glory of Your Name, O Lord; deliver us and pardon our sins for Your Name’s sake.
+}
+% 
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Dixit Jesus discípulis suis: Cum jejunátis, nolíte fíeri, sicut hypócritæ, tristes. Extérminant enim fácies suas, ut appáreant homínibus jejunántes. Amen, dico vobis, quia recepérunt mercédem suam. Tu autem, cum jejúnas, unge caput tuum, et fáciem tuam lava, ne videáris homínibus jejúnans, sed Patri tuo, qui est in abscóndito: et Pater tuus, qui videt in abscóndito, reddet tibi. Nolíte thesaurizáre vobis thesáuros in terra: ubi ærúgo et tínea demolítur: et ubi fures effódiunt et furántur. Thesaurizáte autem vobis thesáuros in coelo: ubi neque ærúgo neque tínea demolítur; et ubi fures non effódiunt nec furántur. Ubi enim est thesáurus tuus, ibi est et cor tuum.
+  }
+  \e{%
+At that time, Jesus said to His disciples, When you fast, do not look gloomy like the hypocrites, who disfigure their face in order to appear to men as fasting. Amen I say to you, they have received their reward. But you, when you do fast, anoint your head and wash your face, so that you may not be seen fasting by men, but by your Father, Who is in secret; and your Father, Who sees in secret, will reward you. Do not lay up for yourselves treasures on earth, where rust and moth consume, and where thieves break in and steal; but lay up for yourselves treasures in heaven, where neither rust nor moth consumes, nor thieves break in and steal. For where your treasure is, there also will your heart be.
+  }
+}
+\newcommand{\offertory}{%
+Exaltábo te, Dómine, quóniam suscepísti me, nec delectásti inimícos meos super me: Dómine, clamávi ad te, et sanásti me.
+}
+\newcommand{\offertoryTranslation}{%
+I will extol you, O Lord, for You drew me clear and did not let my enemies rejoice over me. O Lord, I cried out to You and You healed me.
+}
+\newcommand{\secret}{%
+  \l{%
+Fac nos, quǽsumus, Dómine, his munéribus offeréndis conveniénter aptári: quibus ipsíus venerábilis sacraménti celebrámus exórdium.
+  }
+  \e{%
+O Lord, we beseech You, make us truly fit to offer these gifts by which we celebrate the beginning of this venerable observance.
+  }
+  \perDominum
+}
+\newcommand{\communion}{%
+Qui meditábitur in lege Dómini die ac nocte, dabit fructum suum in témpore suo.
+}
+\newcommand{\communionTranslation}{%
+He who shall meditate day and night on the law of the Lord shall yield his fruit in due season.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Percépta nobis, Dómine, prǽbeant sacraménta subsídium: ut tibi grata sint nostra jejúnia, et nobis profíciant ad medélam.
+  }
+  \e{%
+May the sacrament that we have received, O Lord, give us help, that our fast may be pleasing to You and may profit us as a healing remedy.
+  }
+  \perDominum
+  \amen
+  \oremus
+  \l{Humiliáte cápita vestra Deo.}
+  \e{Bow down your heads before God.}
+  \l{Inclinántes se, Dómine, majestáti tuæ, propitiátus inténde: ut, qui divíno múnere sunt refécti, coeléstibus semper nutriántur auxíliis.}
+  \e{Look graciously O Lord, upon those who bow down before Your divine majesty, that they, being fed by Your holy gift, may always be nourished by help from heaven.}
+  \perDominum
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+
+
+\newcommand{\kyriePath}{../Ordinaries/masses/17/kyrie}
+
+\newcommand{\sanctusPath}{../Ordinaries/masses/17/sanctus}
+
+\newcommand{\agnusPath}{../Ordinaries/masses/17/agnus}
+
+\newcommand{\itePath}{../Ordinaries/masses/17/ite}
+
+
+
+\newcommand{\amenPath}{../ToniCommunes/roman/amen}
+
+\newcommand{\dominusVobiscumPath}{../ToniCommunes/roman/dominus-vobiscum}
+
+\newcommand{\paxDominiPath}{../ToniCommunes/roman/pax-domini}
+
+\newcommand{\prefacePath}{../ToniCommunes/roman/preface_standard}
+
+\newcommand{\sedLiberaNosPath}{../ToniCommunes/roman/sed-libera-nos}
+
+\newcommand{\sequentiPath}{../ToniCommunes/roman/sequenti}
+
+
+\newcommand{\marianPath}{../MarianAntiphons/roman/ave-regina-caelorum}
+\input{../MarianAntiphons/ave-regina-caelorum_resp}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
