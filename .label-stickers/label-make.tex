@@ -1,0 +1,29 @@
+%% A sticky label maker for the mass folders, with qr codes to download files. 
+%% get-labels.py updates labels.tex which contains individual mass labels.
+
+\documentclass[a4paper,11pt,oneside]{memoir}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\usepackage[final]{qrcode}
+\usepackage{graphicx}
+\usepackage[newdimens]{labels}
+\LabelCols=2%
+\LabelRows=7%
+\LeftPageMargin=5mm%
+\RightPageMargin=5mm%
+\TopPageMargin=15mm%
+\BottomPageMargin=15mm%
+\InterLabelColumn=2mm%
+\InterLabelRow=0mm%
+\LeftLabelBorder=2mm%
+\RightLabelBorder=2mm%
+\TopLabelBorder=1mm%
+\BottomLabelBorder=0mm%
+\numberoflabels=1%
+\LabelGridtrue%  <-- or \LabelGridtrue to check alignment
+\hyphenpenalty=10000
+\qrset{height=3cm}
+
+\begin{document}
+\input{labels}
+\end{document}
