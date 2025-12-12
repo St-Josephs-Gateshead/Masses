@@ -2,13 +2,16 @@
 GTEX?=
 MARIAN?=
 
-all: missalette-booklet.pdf pew-sheet-booklet.pdf
+all: missalette-a4.pdf missalette-booklet.pdf pew-sheet-booklet.pdf
 
 %.pdf: %.tex
 	env openout_any=a latexmk --pdflatex=lualatex --pdf $<
 
 %.gtex: %.gabc
 	openout_any=a gregorio $< -o $@
+
+%-a4.pdf: %.pdf
+	pdfjam --a4paper --suffix a4 $<
 
 %-booklet.pdf: %.pdf
 	pdfjam --landscape --suffix booklet --booklet true $<
@@ -85,6 +88,8 @@ MARIAN += ../MarianAntiphons/regina-caeli_resp.tex
 
 
 missalette.pdf: missalette.tex propers.tex styling.sty rubrics.sty titlepage.sty ${GTEX} ${MARIAN}
+
+missalette-a4.pdf: missalette.pdf
 
 missalette-booklet.pdf: missalette.pdf
 
