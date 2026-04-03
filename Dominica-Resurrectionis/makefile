@@ -40,6 +40,9 @@ GTEX += communion.gtex
 ../Ordinaries/masses/1/kyrie.gtex: ../Ordinaries/masses/1/kyrie.gabc
 GTEX += ../Ordinaries/masses/1/kyrie.gtex
 
+../Ordinaries/masses/1/gloria.gtex: ../Ordinaries/masses/1/gloria.gabc
+GTEX += ../Ordinaries/masses/1/gloria.gtex
+
 ../Ordinaries/masses/1/sanctus.gtex: ../Ordinaries/masses/1/sanctus.gabc
 GTEX += ../Ordinaries/masses/1/sanctus.gtex
 
