@@ -20,7 +20,7 @@ from package import oldname
 
 root = Path(__file__).parent.parent
 
-EXPECTED_NO_PDFS = 4 # (misallette + pew sheet) * (normal, booklet)
+EXPECTED_NO_PDFS = 5 # (missalette + pew sheet) * (normal, booklet) + a4 missalette
 
 
 def get(*args, **kwargs):
